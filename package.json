@@ -1,0 +1,30 @@
+{
+  "name": "simple-url-shortener",
+  "version": "0.0.1",
+  "description": "A simple URL Shortener in nodeJS",
+  "main": "app.js",
+  "author": "majesnix <dominic@dominic-classen.de>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.2",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "helmet": "^3.14.0",
+    "morgan": "^1.9.1",
+    "pg": "^7.6.0",
+    "pg-hstore": "^2.3.2",
+    "pino": "^5.8.0",
+    "pino-pretty": "^2.2.3",
+    "sequelize": "^4.41.0",
+    "shortid": "^2.2.13",
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.5"
+  }
+}
