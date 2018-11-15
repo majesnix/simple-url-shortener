@@ -6,7 +6,7 @@
 	"author": "majesnix <dominic@dominic-classen.de>",
 	"license": "MIT",
 	"scripts": {
-		"dev": "next",
+		"dev": "next server.js",
 		"build": "next build",
 		"start": "next start"
 	},
