@@ -32,3 +32,21 @@ exports.create_url = async (req, res) => {
 		});
 	}
 };
+
+exports.get_url = async (req, res) => {
+	const { id } = req.body;
+
+	try {
+		const urlObj = await Urls.findOne({ short_url: id });
+		if (urlObj) {
+			return res.status(200).json({
+				url: urlObj.long_url
+			});
+		}
+	} catch (err) {
+		req.log.error(err);
+		return res.status(404).json({
+			message: 'ID not found'
+		});
+	}
+};

@@ -1,5 +1,8 @@
 const express = require('express');
-const app = express();
+const next = require('next');
+const dev = process.env.NODE_ENV !== 'production';
+const app = next({ dev });
+const handle = app.getRequestHandler();
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -9,35 +12,43 @@ const addLogger = require('./src/middleware/addLogger');
 
 const urlRoutes = require('./src/routes/url');
 
-app.use(morgan('dev'));
-// enhance your app security with Helmet
-app.use(helmet());
+app.prepare()
+	.then(() => {
+		const server = express();
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-// enable all CORS requests
-app.use(cors());
+		server.use(morgan('dev'));
+		// enhance your app security with Helmet
+		server.use(helmet());
 
-app.use(addLogger);
+		server.use(bodyParser.urlencoded({ extended: true }));
+		server.use(bodyParser.json());
+		// enable all CORS requests
+		server.use(cors());
 
-// Routes which should handle requests
-app.use('/', urlRoutes);
-app.use('/v1/', urlRoutes);
+		server.use(addLogger);
 
+		// Routes which should handle requests
+		server.use('/api', urlRoutes);
+		server.use('/api/v1/', urlRoutes);
 
-app.use((req, res, next) => {
-	const error = new Error('Not found');
-	error.status = 404;
-	next(error);
-});
+		server.get('*', (req, res) => {
+			return handle(req, res);
+		});
 
-app.use((error, req, res) => {
-	res.status(error.status || 500);
-	res.json({
-		error: {
-			message: error.message
-		}
+		server.use((req, res, next) => {
+			const error = new Error('Not found');
+			error.status = 404;
+			next(error);
+		});
+
+		server.use((error, req, res) => {
+			res.status(error.status || 500);
+			res.json({ error: { message: error.message } });
+		});
+	})
+	.catch(ex => {
+		console.error(ex.stack); //eslint-disable-line
+		process.exit(1);
 	});
-});
 
 module.exports = app;
