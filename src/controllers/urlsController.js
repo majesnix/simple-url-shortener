@@ -20,7 +20,7 @@ exports.create_url = async (req, res) => {
 				long_url: url,
 			});
 	
-			return res.status(201).json({
+			return res.status(200).json({
 				base: url,
 				short: id
 			});
