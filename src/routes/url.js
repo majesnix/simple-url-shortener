@@ -7,6 +7,6 @@ const {
 } = require('../controllers/urlsController');
 
 router.post('/', create_url);
-router.get('/:shortUrl', get_url);
+router.get('/:short_url', get_url);
 
 module.exports = router;

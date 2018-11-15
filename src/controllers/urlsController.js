@@ -10,7 +10,7 @@ const shortid = require('shortid');
 exports.create_url = async (req, res) => {
 	const { url } = req.body;
 
-	// create the user in the database
+	// create and save shortlink to database
 	try {
 
 		const id = shortid.generate();
@@ -34,10 +34,10 @@ exports.create_url = async (req, res) => {
 };
 
 exports.get_url = async (req, res) => {
-	const { id } = req.body;
+	const { short_url } = req.params;
 
 	try {
-		const urlObj = await Urls.findOne({ short_url: id });
+		const urlObj = await Urls.findOne({ short_url });
 		if (urlObj) {
 			return res.status(200).json({
 				url: urlObj.long_url
