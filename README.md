@@ -1,0 +1,1 @@
+This will be a simple url shortener build with React, Next.js, Express and dunno what else.
