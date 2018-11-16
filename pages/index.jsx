@@ -12,7 +12,7 @@ class Index extends Component {
 		};
 		this.base =
 			process.env.NODE_ENV !== 'production'
-				? `https://${process.env.BASE_URL}:${process.env.PORT}`
+				? `http://${process.env.BASE_URL}:${process.env.PORT}`
 				: `https://${process.env.BASE_URL}`;
 	}
 
@@ -56,6 +56,7 @@ class Index extends Component {
 						height: '100%',
 					}}
 				>
+					<a href="/login" style={{ position: 'absolute', right: '0', top: '0', margin: '15px 15px 0 0', color: '#FBFBFB', textDecoration: 'none' }}>Login</a>
 					<h1>{process.env.BASE_URL}</h1>
 					<form style={{ marginLeft: '15px', marginTop: '15px' }}>
 						<input

@@ -10,7 +10,7 @@ class Error extends Component {
 		};
 		this.base =
 			process.env.NODE_ENV !== 'production'
-				? `https://${process.env.BASE_URL}:${process.env.PORT}`
+				? `http://${process.env.BASE_URL}:${process.env.PORT}`
 				: `https://${process.env.BASE_URL}`;
 	}
 

@@ -32,7 +32,7 @@ app.prepare()
 		server.use(addLogger);
 
 		// Routes which should handle requests
-		server.use('/api', urlRoutes);
+		server.use('/api/', urlRoutes);
 		server.use('/api/v1/', urlRoutes);
 
 		server.get('*', (req, res) => {
