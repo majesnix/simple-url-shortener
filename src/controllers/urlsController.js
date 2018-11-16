@@ -39,7 +39,7 @@ exports.get_url = async (req, res) => {
 	const { short_url } = req.params;
 
 	try {
-		const urlObj = await Urls.findOne({ short_url });
+		const urlObj = await Urls.findOne({ where: { short_url } });
 		if (urlObj) {
 			return res.status(200).json({
 				url: urlObj.long_url,
