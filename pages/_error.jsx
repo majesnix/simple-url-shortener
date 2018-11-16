@@ -10,8 +10,8 @@ class Error extends Component {
 		};
 		this.base =
 			process.env.NODE_ENV !== 'production'
-				? `http://${process.env.BASE_URL}:${process.env.PORT}`
-				: `http://${process.env.BASE_URL}`;
+				? `https://${process.env.BASE_URL}:${process.env.PORT}`
+				: `https://${process.env.BASE_URL}`;
 	}
 
 	static async getInitialProps({ asPath }) {
