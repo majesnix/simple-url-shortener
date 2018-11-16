@@ -8,6 +8,10 @@ class Error extends Component {
 		this.state = {
 			err: false,
 		};
+		this.base =
+			process.env.NODE_ENV !== 'production'
+				? `http://${process.env.BASE_URL}:${process.env.PORT}`
+				: `http://${process.env.BASE_URL}`;
 	}
 
 	static async getInitialProps({ asPath }) {
@@ -17,13 +21,13 @@ class Error extends Component {
 	componentDidMount = async () => {
 		try {
 			const { data } = await axios.get(
-				`http://${process.env.BASE_URL}:3000/api${this.props.asPath}`
+				`${this.base}/api${this.props.asPath}`
 			);
 			window.location.href = data.url;
 		} catch (err) {
 			this.setState({
-				err: true
-			})
+				err: true,
+			});
 		}
 	};
 
@@ -32,11 +36,11 @@ class Error extends Component {
 			<div>
 				<Meta />
 				{this.state.err 
-					? <div>
+				? <div>
 						<h1>404</h1>
 						<p>Something went wrong</p>
 					</div>
-					: null}
+				: null}
 			</div>
 		);
 	}

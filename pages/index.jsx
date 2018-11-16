@@ -10,15 +10,22 @@ class Index extends Component {
 			shortID: null,
 			err: false,
 		};
+		this.base =
+			process.env.NODE_ENV !== 'production'
+				? `http://${process.env.BASE_URL}:${process.env.PORT}`
+				: `http://${process.env.BASE_URL}`;
 	}
 
 	handleSubmit = async evt => {
 		evt.preventDefault();
 		const {
 			data: { short },
-		} = await Axios.post(`http://${process.env.BASE_URL}:3000/api/`, {
-			url: this.state.url,
-		});
+		} = await Axios.post(
+			`${this.base}/api/`,
+			{
+				url: this.state.url,
+			}
+		);
 		this.setState({
 			shortID: short,
 		});
@@ -43,7 +50,7 @@ class Index extends Component {
 						height: '100%',
 					}}
 				>
-					<h1>dcl.re</h1>
+					<h1>{process.env.BASE_URL}</h1>
 					<form style={{ marginLeft: '15px', marginTop: '15px' }}>
 						<input
 							type="text"
@@ -62,8 +69,9 @@ class Index extends Component {
 						</button>
 					</form>
 					{this.state.shortID ? (
-						<div style={{ marginTop: '15px'}}>
-							http://{process.env.BASE_URL}/{this.state.shortID}
+						<div style={{ marginTop: '15px' }}>
+							{this.base}/
+							{this.state.shortID}
 						</div>
 					) : null}
 					{this.state.err ? <div>Something went wrong</div> : null}
