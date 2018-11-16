@@ -21,3 +21,15 @@ module.exports = {
 // next.config.js
 const withESLint = require('next-eslint');
 module.exports = withESLint();
+
+// make process.env usable in next.js / clientReact / webpack
+const { parsed: localEnv } = require('dotenv').config();
+const webpack = require('webpack');
+
+module.exports = {
+	webpack(config) {
+		config.plugins.push(new webpack.EnvironmentPlugin(localEnv));
+
+		return config;
+	},
+};
