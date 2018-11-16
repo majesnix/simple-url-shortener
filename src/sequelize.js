@@ -13,7 +13,7 @@ const Urls = sequelize.define('urls', UrlsMeta.attributes, UrlsMeta.options);
 sequelize
 	.authenticate()
 	.then(async () => {
-		// check if db exists, otherwise create it
+		// check if table exists, otherwise create it
 		await Urls.sync();
 	})
 	.catch(err => {
