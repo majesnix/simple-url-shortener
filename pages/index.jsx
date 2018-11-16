@@ -18,17 +18,23 @@ class Index extends Component {
 
 	handleSubmit = async evt => {
 		evt.preventDefault();
-		const {
-			data: { short },
-		} = await Axios.post(
-			`${this.base}/api/`,
-			{
-				url: this.state.url,
-			}
-		);
-		this.setState({
-			shortID: short,
-		});
+		try {
+			const {
+				data: { short },
+			} = await Axios.post(
+				`${this.base}/api/`,
+				{
+					url: this.state.url,
+				}
+			);
+			this.setState({
+				shortID: short,
+			});	
+		} catch (error) {
+			this.setState({
+				err: true,
+			})
+		}
 	};
 
 	handleChange = evt => {

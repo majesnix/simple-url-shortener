@@ -38,7 +38,7 @@ class Error extends Component {
 				{this.state.err 
 				? <div>
 						<h1>404</h1>
-						<p>Something went wrong</p>
+						<p>No Shortlink with this ID exists or something went wrong</p>
 					</div>
 				: null}
 			</div>

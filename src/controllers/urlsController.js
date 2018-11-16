@@ -23,9 +23,7 @@ exports.create_url = async (req, res) => {
 				short: id,
 			});
 		} else {
-			return res.status(400).json({
-				message: 'Not a valid url',
-			});
+			return res.status(400);
 		}
 	} catch (err) {
 		req.log.error(err);
