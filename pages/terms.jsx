@@ -15,7 +15,7 @@ const Impressum = () => (
 		>
 			<h1>Terms of Service</h1>
 			<div style={{ width: '50%', fontSize: 20, marginTop: 20 }}>
-				dcl.re Terms of Service By accessing the website at
+				By accessing the website at
 				https://dcl.re, you are agreeing to be bound by these terms of
 				service, all applicable laws and regulations, and agree that you
 				are responsible for compliance with any applicable local laws.
