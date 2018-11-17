@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+	// This defines what 1rem is
+    font-size: 62.5%;
+}
+
+body {
+	box-sizing: border-box;
+	background-color: #121212;
+	color: #fbfbfb;
+}
+
+a {
+	text-decoration: none;
+}
+
+.hoverTable {
+	td {
+		padding: 0 25px;
+	}
+	tr:hover {
+		background-color: #4e4e4e;
+	}
+}
+
+.message {
+	border-radius: 25px;
+	padding-left: 15px;
+	margin: 15px;
+
+	&Success {
+		background-color: green;
+	}
+
+	&Failed {
+		background-color: red;
+	}
+}

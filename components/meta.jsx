@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import Head from 'next/head';
+import '../styles/main.scss';
 
 export default () => (
 	<Fragment>
@@ -89,7 +90,7 @@ export default () => (
 		<style jsx global>{`
 			body {
 				background: #121212;
-				font: 11px menlo;
+				font: 10px menlo;
 				color: #fbfbfb;
 			}
 			* {
