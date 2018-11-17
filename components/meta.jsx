@@ -5,6 +5,7 @@ import '../styles/main.scss';
 export default () => (
 	<Fragment>
 		<Head>
+			<title>{process.env.BASE_URL}</title>
 			<meta
 				name="viewport"
 				content="width=device-width, initial-scale=1"
