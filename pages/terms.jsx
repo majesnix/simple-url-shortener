@@ -11,6 +11,7 @@ const Impressum = () => (
 				justifyContent: 'center',
 				alignItems: 'center',
 				height: '100%',
+				marginTop: '15px'
 			}}
 		>
 			<h1>Terms of Service</h1>
