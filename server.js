@@ -13,6 +13,7 @@ const helmet = require('helmet');
 const addLogger = require('./src/middleware/addLogger');
 
 const urlRoutes = require('./src/routes/url');
+const userRoutes = require('./src/routes/user');
 
 const port = process.env.PORT || 3000;
 
@@ -32,6 +33,8 @@ app.prepare()
 		server.use(addLogger);
 
 		// Routes which should handle requests
+		server.use('/api/users/', userRoutes);
+		server.use('/api/v1/users/', userRoutes);
 		server.use('/api/', urlRoutes);
 		server.use('/api/v1/', urlRoutes);
 

@@ -33,6 +33,19 @@ exports.create_url = async (req, res) => {
 	}
 };
 
+exports.delete_url = async (req, res) => {
+	const { id } = req.params;
+
+	try {
+		const url = await Urls.findOne({ where: { id } });
+		url.destroy()
+
+		return res.status(201);		
+	} catch (error) {
+		return res.status(500);
+	}
+}
+
 exports.get_url = async (req, res) => {
 	const { short_url } = req.params;
 
@@ -45,8 +58,17 @@ exports.get_url = async (req, res) => {
 		}
 	} catch (err) {
 		req.log.error(err);
-		return res.status(404).json({
-			message: 'ID not found',
+		return res.status(404);
+	}
+};
+
+exports.getAll_url = async (req, res) => {
+	try {
+		const urls = await Urls.findAll();
+		return res.status(200).json({
+			urls,
 		});
+	} catch (err) {
+		return res.status(500);
 	}
 };

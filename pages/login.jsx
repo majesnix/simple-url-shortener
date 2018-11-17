@@ -7,40 +7,42 @@ class Login extends Component {
 		this.email = React.createRef();
 		this.password = React.createRef();
 		this.state = {
-			errResponse: null
+			errResponse: null,
 		};
+		this.base =
+			process.env.NODE_ENV !== 'production'
+				? `http://${process.env.BASE_URL}:${process.env.PORT}`
+				: `https://${process.env.BASE_URL}`;
 	}
 
-	_handleSubmit = async e => {
-		e.preventDefault();
-		return console.log('NOT IMPLEMENTED');
-		/*try {
+	_handleSubmit = async evt => {
+		evt.preventDefault();
+		try {
 			const {
-				data: { token, refreshToken },
-			} = await axios.post(
-				this.email.current.value,
-				this.password.current.value
-			);
+				data: { token },
+			} = await axios.post(`${this.base}/api/users/login`, {
+				username: this.email.current.value,
+				password: this.password.current.value,
+			});
 			localStorage.setItem('token', token);
-			localStorage.setItem('refreshToken', refreshToken);
-			this.props.history.push('/admin');
+			window.location.href = `${this.base}/admin`;
 		} catch (err) {
-			console.log(err.response);
 			this.setState({
-				errResponse: err.response.data.message
-			})
-		}*/
+				errResponse: err.response.data.message,
+			});
+		}
 	};
 
 	render() {
 		return (
 			<div className="hero">
 				<div className="login__wrapper">
-					<form
-						className="login__box"
-						onSubmit={this._handleSubmit}
-					>
-						{this.state.errResponse && <div className="login__authfailed">{this.state.errResponse}</div>}
+					<form className="login__box" onSubmit={this._handleSubmit}>
+						{this.state.errResponse && (
+							<div className="login__authfailed">
+								{this.state.errResponse}
+							</div>
+						)}
 						<label htmlFor="username">Username</label>
 						<br />
 						<input
