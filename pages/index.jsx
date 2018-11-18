@@ -69,13 +69,13 @@ class Index extends Component {
 							onChange={evt => this.handleChange(evt)}
 							style={{ marginRight: '15px' }}
 						/>
-						<button
-							style={{ padding: '5px', borderRadius: '15px' }}
+						<div
+							style={{ padding: '8px', borderRadius: '15px', display: 'inline', backgroundColor: '#252525' }}
 							type="submit"
 							onClick={evt => this.handleSubmit(evt)}
 						>
 							Shorten
-						</button>
+						</div>
 					</form>
 					{this.state.shortID ? (
 						<div style={{ marginTop: '15px' }}>
