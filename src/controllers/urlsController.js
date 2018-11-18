@@ -7,7 +7,11 @@ const { isUri } = require('valid-url');
 const shortid = require('shortid');
 
 exports.create_url = async (req, res) => {
-	const { url } = req.body;
+	const { url: urlFromBody } = req.body;
+	const { url: urlFromQuery } = req.query;
+
+	let url = urlFromBody ? urlFromBody : urlFromQuery;
+	console.log(url);
 
 	// create and save shortlink to database
 	try {
