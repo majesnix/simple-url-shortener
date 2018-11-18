@@ -38,13 +38,16 @@ exports.delete_url = async (req, res) => {
 
 	try {
 		const url = await Urls.findOne({ where: { id } });
-		url.destroy()
+		url.destroy();
+		const urls = await Urls.findAll();
 
-		return res.status(201);		
+		return res.status(200).json({
+			urls,
+		});
 	} catch (error) {
 		return res.status(500);
 	}
-}
+};
 
 exports.get_url = async (req, res) => {
 	const { short_url } = req.params;

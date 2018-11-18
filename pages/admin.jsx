@@ -44,11 +44,16 @@ class Admin extends Component {
 	handleClick = async (evt, id) => {
 		evt.preventDefault();
 		try {
-			await Axios.delete(`${this.base}/api/${id}`, {
+			const {
+				data: { urls: links },
+			} = await Axios.delete(`${this.base}/api/${id}`, {
 				headers: {
 					Authorization: `Bearer ${localStorage.getItem('token')}`,
 				},
 			});
+			this.setState({
+				links,
+			})
 		} catch (error) {
 			console.log(error);
 		}
