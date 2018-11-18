@@ -1,6 +1,6 @@
 {
 	"name": "simple-url-shortener",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "A simple URL Shortener in nodeJS",
 	"main": "app.js",
 	"author": "majesnix <dominic@dominic-classen.de>",
