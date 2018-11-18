@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Meta from '../components/meta.jsx';
 
 const Api = () => (
@@ -14,6 +15,10 @@ const Api = () => (
 				marginTop: '15px',
 			}}
 		>
+			<Link href={{ pathname: '/login' }}><div style={{ position: 'absolute', right: '0', top: '0', margin: '15px 15px 0 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Admin</div></Link>
+			<Link href={{ pathname: '/' }}><div style={{ position: 'absolute', right: '50px', bottom: '0', margin: '0 15px 15px 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Home</div></Link>
+			<Link href={{ pathname: '/terms' }}><div style={{ position: 'absolute', right: '0', bottom: '0', margin: '0 15px 15px 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Terms</div></Link>
+
 			<h1>API Documentation</h1>
 			<div style={{ width: '50%', fontSize: '1.5rem', marginTop: 20 }}>
 				Yes, you can use our service with an API.

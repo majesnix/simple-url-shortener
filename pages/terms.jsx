@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Meta from '../components/meta.jsx';
 
 const Terms = () => (
@@ -14,6 +15,10 @@ const Terms = () => (
 				marginTop: '15px'
 			}}
 		>
+			<Link href={{ pathname: '/login' }}><div style={{ position: 'absolute', right: '0', top: '0', margin: '15px 15px 0 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Admin</div></Link>
+			<Link href={{ pathname: '/' }}><div style={{ position: 'absolute', right: '50px', bottom: '0', margin: '0 15px 15px 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Home</div></Link>
+			<Link href={{ pathname: '/apidocs' }}><div style={{ position: 'absolute', right: '0', bottom: '0', margin: '0 15px 15px 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Api</div></Link>
+
 			<h1>Terms of Service</h1>
 			<div style={{ width: '50%', fontSize: 20, marginTop: 20 }}>
 				By accessing the website at
