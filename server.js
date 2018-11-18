@@ -5,7 +5,6 @@ const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handle = app.getRequestHandler();
 const express = require('express');
-const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const helmet = require('helmet');
@@ -21,7 +20,6 @@ app.prepare()
 	.then(() => {
 		const server = express();
 
-		server.use(morgan('dev'));
 		// enhance your app security with Helmet
 		server.use(helmet());
 
