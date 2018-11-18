@@ -1,7 +1,7 @@
 import React from 'react';
 import Meta from '../components/meta.jsx';
 
-const Impressum = () => (
+const Terms = () => (
 	<div>
 		<Meta />
 		<div
@@ -55,4 +55,4 @@ const Impressum = () => (
 	</div>
 );
 
-export default Impressum;
+export default Terms;

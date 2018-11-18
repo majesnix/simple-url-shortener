@@ -1,0 +1,14 @@
+.button {
+	display: inline;
+	background-color: #747474;
+	line-height: 4rem;
+	border-radius: 25px;
+	text-align: center;
+	padding: 7px;
+	color: #fbfbfb;
+	margin: 10px;
+
+	&:hover {
+		cursor: pointer;
+	}
+}

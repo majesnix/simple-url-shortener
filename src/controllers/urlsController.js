@@ -20,7 +20,7 @@ exports.create_url = async (req, res) => {
 
 			return res.status(200).json({
 				base: url,
-				short: id,
+				short: process.env.NODE_ENV !== 'production' ? `http://${process.env.BASE_URL}:${process.env.PORT}/${id}` : `https://${process.env.BASE_URL}/${id}`,
 			});
 		} else {
 			return res.status(400);

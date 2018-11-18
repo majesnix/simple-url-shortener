@@ -8,7 +8,7 @@ class Index extends Component {
 		super(props);
 		this.state = {
 			url: 'https://',
-			shortID: null,
+			shortURL: null,
 			err: false,
 		};
 		this.base =
@@ -29,7 +29,7 @@ class Index extends Component {
 				}
 			);
 			this.setState({
-				shortID: short,
+				shortURL: short,
 			});	
 		} catch (error) {
 			this.setState({
@@ -58,6 +58,7 @@ class Index extends Component {
 					}}
 				>
 					<Link href={{ pathname: '/login' }}><div style={{ position: 'absolute', right: '0', top: '0', margin: '15px 15px 0 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Admin</div></Link>
+					<Link href={{ pathname: '/apidocs' }}><div style={{ position: 'absolute', right: '50px', bottom: '0', margin: '0 15px 15px 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer'  }}>Api</div></Link>
 					<Link href={{ pathname: '/terms' }}><div style={{ position: 'absolute', right: '0', bottom: '0', margin: '0 15px 15px 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer'  }}>Terms</div></Link>
 					<h1>{process.env.BASE_URL}</h1>
 					<form style={{ marginLeft: '15px', marginTop: '15px' }}>
@@ -70,17 +71,16 @@ class Index extends Component {
 							style={{ marginRight: '15px' }}
 						/>
 						<div
-							style={{ padding: '8px', borderRadius: '15px', display: 'inline', backgroundColor: '#252525' }}
+							className="button"
 							type="submit"
 							onClick={evt => this.handleSubmit(evt)}
 						>
 							Shorten
 						</div>
 					</form>
-					{this.state.shortID ? (
+					{this.state.shortURL ? (
 						<div style={{ marginTop: '15px' }}>
-							{this.base}/
-							{this.state.shortID}
+							{this.state.shortURL}
 						</div>
 					) : null}
 					{this.state.err ? <div>Something went wrong</div> : null}

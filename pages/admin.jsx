@@ -88,28 +88,13 @@ class Admin extends Component {
 						{this.state.users
 							? this.state.users.map(user => (
 									<tr key={`user-${user.id}`}>
-										<td
-											style={{
-												width: 200,
-												textAlign: 'center',
-											}}
-										>
+										<td>
 											<strong>{user.id}</strong>
 										</td>
-										<td
-											style={{
-												width: 350,
-												textAlign: 'center',
-											}}
-										>
+										<td>
 											{user.username}
 										</td>
-										<td
-											style={{
-												width: 350,
-												textAlign: 'center',
-											}}
-										>
+										<td>
 											{user.email}
 										</td>
 									</tr>
@@ -136,26 +121,13 @@ class Admin extends Component {
 										<td>
 											<strong>{link.id}</strong>
 										</td>
-										<td
-											style={{
-												width: 200,
-												textAlign: 'center',
-											}}
-										>
+										<td>
 											{link.long_url}
 										</td>
-										<td
-											style={{
-												width: 150,
-												textAlign: 'center',
-											}}
-										>
+										<td>
 											{link.short_url}
 										</td>
 										<td
-											style={{
-												textAlign: 'center',
-											}}
 											onClick={evt =>
 												this.handleClick(evt, link.id)
 											}
