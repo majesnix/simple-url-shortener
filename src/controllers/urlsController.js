@@ -9,9 +9,9 @@ const shortid = require('shortid');
 exports.create_url = async (req, res) => {
 	const { url: urlFromBody } = req.body;
 	const { url: urlFromQuery } = req.query;
+	console.log(req);
 
 	let url = urlFromBody ? urlFromBody : urlFromQuery;
-	console.log(url);
 
 	// create and save shortlink to database
 	try {
@@ -27,7 +27,7 @@ exports.create_url = async (req, res) => {
 				short: process.env.NODE_ENV !== 'production' ? `http://${process.env.BASE_URL}:${process.env.PORT}/${id}` : `https://${process.env.BASE_URL}/${id}`,
 			});
 		} else {
-			return res.status(400);
+			return res.status(400).end();
 		}
 	} catch (err) {
 		req.log.error(err);
@@ -49,7 +49,7 @@ exports.delete_url = async (req, res) => {
 			urls,
 		});
 	} catch (error) {
-		return res.status(500);
+		return res.status(500).end();
 	}
 };
 
@@ -65,7 +65,7 @@ exports.get_url = async (req, res) => {
 		}
 	} catch (err) {
 		req.log.error(err);
-		return res.status(404);
+		return res.status(404).end();
 	}
 };
 
@@ -76,6 +76,6 @@ exports.getAll_url = async (req, res) => {
 			urls,
 		});
 	} catch (err) {
-		return res.status(500);
+		return res.status(500).end();
 	}
 };
