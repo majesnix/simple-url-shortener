@@ -19,20 +19,28 @@ class Admin extends Component {
 
 	componentDidMount = async () => {
 		try {
-			const {
-				data: { users },
-			} = await Axios.get(`${this.base}/api/users/`, {
-				headers: {
-					Authorization: `Bearer ${localStorage.getItem('token')}`,
-				},
-			});
-			const {
-				data: { urls: links },
-			} = await Axios.get(`${this.base}/api/urls`, {
-				headers: {
-					Authorization: `Bearer ${localStorage.getItem('token')}`,
-				},
-			});
+			const { data: { users } } = await Axios.get(
+				`${this.base}/api/users/`,
+				{
+					headers: {
+						Authorization: `Bearer ${localStorage.getItem(
+							'token'
+						)}`,
+					},
+					timeout: 5000,
+				}
+			);
+			const { data: { urls: links } } = await Axios.get(
+				`${this.base}/api/urls/getAll`,
+				{
+					headers: {
+						Authorization: `Bearer ${localStorage.getItem(
+							'token'
+						)}`,
+					},
+					timeout: 5000,
+				}
+			);
 
 			this.setState({
 				users,

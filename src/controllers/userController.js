@@ -8,9 +8,6 @@
  *
  * Authentication Routes
  * login_user
- * logout_user
- *
- * refreshToken
  */
 const { Users } = require('../db');
 //const fs = require('fs');
@@ -95,7 +92,6 @@ exports.update_user = async (req, res) => {
 };
 
 exports.delete_user = async (req, res) => {
-	// TODO: maybe better checks which key will be searched for
 	const { id } = req.body;
 
 	try {
@@ -112,7 +108,6 @@ exports.delete_user = async (req, res) => {
 
 exports.login_user = async (req, res) => {
 	const { username, email, password } = req.body;
-	console.log(req.body);
 
 	try {
 		let user;

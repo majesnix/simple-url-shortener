@@ -23,7 +23,7 @@ class Index extends Component {
 			const {
 				data: { short },
 			} = await Axios.post(
-				`${this.base}/api/`,
+				`${this.base}/api/urls`,
 				{
 					url: this.state.url,
 				}

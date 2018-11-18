@@ -21,7 +21,7 @@ class Error extends Component {
 	componentDidMount = async () => {
 		try {
 			const { data } = await axios.get(
-				`${this.base}/api${this.props.asPath}`
+				`${this.base}/api/urls${this.props.asPath}`
 			);
 			window.location.href = data.url;
 		} catch (err) {

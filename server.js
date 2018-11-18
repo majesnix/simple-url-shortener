@@ -33,8 +33,8 @@ app.prepare()
 		// Routes which should handle requests
 		server.use('/api/users/', userRoutes);
 		server.use('/api/v1/users/', userRoutes);
-		server.use('/api/', urlRoutes);
-		server.use('/api/v1/', urlRoutes);
+		server.use('/api/urls/', urlRoutes);
+		server.use('/api/v1/urls/', urlRoutes);
 
 		server.get('*', (req, res) => {
 			return handle(req, res);
