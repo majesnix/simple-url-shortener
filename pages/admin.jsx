@@ -28,7 +28,7 @@ class Admin extends Component {
 			});
 			const {
 				data: { urls: links },
-			} = await Axios.get(`${this.base}/api/`, {
+			} = await Axios.get(`${this.base}/api/urls`, {
 				headers: {
 					Authorization: `Bearer ${localStorage.getItem('token')}`,
 				},

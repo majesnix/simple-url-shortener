@@ -9,7 +9,6 @@ const shortid = require('shortid');
 exports.create_url = async (req, res) => {
 	const { url: urlFromBody } = req.body;
 	const { url: urlFromQuery } = req.query;
-	console.log(req);
 
 	let url = urlFromBody ? urlFromBody : urlFromQuery;
 
