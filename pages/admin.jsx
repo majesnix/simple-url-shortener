@@ -37,7 +37,7 @@ class Admin extends Component {
 				links,
 			});
 		} catch (error) {
-			window.location.href = this.base + '/';
+			window.location.href = this.base;
 		}
 	};
 
@@ -53,7 +53,7 @@ class Admin extends Component {
 			});
 			this.setState({
 				links,
-			})
+			});
 		} catch (error) {
 			console.log(error);
 		}
