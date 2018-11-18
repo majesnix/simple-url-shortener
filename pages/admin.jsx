@@ -56,7 +56,7 @@ class Admin extends Component {
 		try {
 			const {
 				data: { urls: links },
-			} = await Axios.delete(`${this.base}/api/${id}`, {
+			} = await Axios.delete(`${this.base}/api/urls/${id}`, {
 				headers: {
 					Authorization: `Bearer ${localStorage.getItem('token')}`,
 				},
