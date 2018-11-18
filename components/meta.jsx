@@ -109,10 +109,7 @@ export default () => (
 				href="/static/safari-pinned-tab.svg?v=XBreOJMe24"
 				color="#5bbad5"
 			/>
-			<link
-				rel="shortcut icon"
-				href="/static/favicon.ico?v=XBreOJMe24"
-			/>
+			<link rel="shortcut icon" href="/static/favicon.ico?v=XBreOJMe24" />
 			<meta name="apple-mobile-web-app-title" content="dcl.re" />
 			<meta name="application-name" content="dcl.re" />
 			<meta
@@ -123,34 +120,19 @@ export default () => (
 
 			<meta property="og:url" content="https://dcl.re" />
 			<meta property="og:type" content="website" />
-			<meta
-				property="og:title"
-				content="dcl.re | makes links short."
-			/>
+			<meta property="og:title" content="dcl.re | makes links short." />
 			<meta property="og:description" content="simple linkshortener" />
-			<meta
-				property="og:image"
-				content="/static/logo_square.png"
-			/>
+			<meta property="og:image" content="/static/logo_square.png" />
 			<meta
 				property="og:image:secure_url"
-				content="/static/logo_square.png"
+				content="https://dcl.re/static/logo_square.png"
 			/>
 
 			<meta name="twitter:card" content="summary" />
-			<meta
-				name="twitter:title"
-				content="dcl.re | makes links short."
-			/>
+			<meta name="twitter:title" content="dcl.re | makes links short." />
 			<meta name="twitter:description" content="simple linkshortener" />
-			<meta
-				name="twitter:image"
-				content="/static/logo_square.png"
-			/>
-			<meta
-				name="twitter:image:src"
-				content="/static/logo_square.png"
-			/>
+			<meta name="twitter:image" content="/static/logo_square.png" />
+			<meta name="twitter:image:src" content="/static/logo_square.png" />
 		</Head>
 		<style jsx global>{`
 			body {
