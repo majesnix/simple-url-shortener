@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'next/router';
 import axios from 'axios';
 
 class Login extends Component {
@@ -13,6 +14,9 @@ class Login extends Component {
 			process.env.NODE_ENV !== 'production'
 				? `http://${process.env.BASE_URL}:${process.env.PORT}`
 				: `https://${process.env.BASE_URL}`;
+		if (localStorage.getItem('token')) {
+			window.location.href = `${this.base}/admin`;
+		}
 	}
 
 	_handleSubmit = async evt => {
@@ -69,4 +73,4 @@ class Login extends Component {
 	}
 }
 
-export default Login;
+export default withRouter(Login);
