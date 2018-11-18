@@ -127,6 +127,8 @@ export default () => (
 				property="og:image:secure_url"
 				content="https://dcl.re/static/logo_square.png"
 			/>
+			<meta property="og:site_name" content="dclre"/>
+			<meta property="og:locale" content="en_US"/>
 
 			<meta name="twitter:card" content="summary" />
 			<meta name="twitter:title" content="dcl.re | makes links short." />
