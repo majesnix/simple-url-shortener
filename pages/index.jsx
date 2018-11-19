@@ -10,6 +10,7 @@ class Index extends Component {
 			url: 'https://',
 			shortURL: null,
 			err: false,
+			ratelimit: false,
 		};
 		this.base =
 			process.env.NODE_ENV !== 'production'
@@ -32,8 +33,15 @@ class Index extends Component {
 				shortURL: short,
 			});	
 		} catch (error) {
+			if (error.response.status === 429) {
+				this.setState({
+					ratelimit: true,
+					shortURL: null,
+				});
+			}
 			this.setState({
 				err: true,
+				shortURL: null,
 			})
 		}
 	};
@@ -83,7 +91,8 @@ class Index extends Component {
 							{this.state.shortURL}
 						</div>
 					) : null}
-					{this.state.err ? <div>Something went wrong</div> : null}
+					{this.state.ratelimit && <div>You send to many requests, please wait 60 minutes</div>}
+					{this.state.err && <div>Something went wrong</div>}
 				</div>
 			</div>
 		);

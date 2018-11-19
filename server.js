@@ -28,6 +28,8 @@ app.prepare()
 		// enable all CORS requests
 		server.use(cors());
 
+		if (!dev) server.enable('trust proxy');
+
 		server.use(addLogger);
 
 		// Routes which should handle requests
