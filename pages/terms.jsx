@@ -17,7 +17,7 @@ const Terms = () => (
 			}}
 		>
 			<Link href={{ pathname: '/login' }}><div style={{ position: 'absolute', right: '0', top: '0', margin: '1.5rem 1.5rem 0 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Admin</div></Link>
-			<Link href={{ pathname: '/' }}><div style={{ position: 'absolute', right: '50px', bottom: '0', margin: '0 1.5rem 1.5rem 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Home</div></Link>
+			<Link href={{ pathname: '/' }}><div style={{ position: 'absolute', right: '7.5rem', bottom: '0', margin: '0 1.5rem 1.5rem 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Home</div></Link>
 			<Link href={{ pathname: '/apidocs' }}><div style={{ position: 'absolute', right: '0', bottom: '0', margin: '0 1.5rem 1.5rem 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Api</div></Link>
 
 			<h1>Terms of Service</h1>

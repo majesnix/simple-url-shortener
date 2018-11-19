@@ -112,9 +112,9 @@ class Admin extends Component {
 							: null}
 					</tbody>
 				</table>
-				<h1 style={{ margin: '50px 0 25px 0' }}>Links</h1>
-				{this.state.err ? <div style={{ backgroundColor: 'red', padding: 15, borderRadius: 25}}>Something went wrong, take a look at the console</div> : null}
-				<table style={{ marginTop: '25px'}}>
+				<h1 style={{ margin: '5rem 0 2.5rem 0' }}>Links</h1>
+				{this.state.err ? <div className='messageFailed'>Something went wrong, take a look at the console</div> : null}
+				<table style={{ marginTop: '2.5rem'}}>
 					<thead>
 						<tr>
 							<th>
