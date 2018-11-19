@@ -82,8 +82,7 @@ class Admin extends Component {
 				}}
 			>
 				<Meta />
-				<h1 style={{ marginTop: 15 }}>ADMIN</h1>
-				<h3 style={{ marginTop: 15 }}>Users</h3>
+				<h1 style={{ margin: '15px 0' }}>Users</h1>
 				<table>
 					<thead>
 						<tr>
@@ -112,7 +111,7 @@ class Admin extends Component {
 							: null}
 					</tbody>
 				</table>
-				<h3 style={{ margin: '50px 0 25px 0' }}>LINKS</h3>
+				<h1 style={{ margin: '50px 0 25px 0' }}>Links</h1>
 				{this.state.err ? <div style={{ backgroundColor: 'red', padding: 15, borderRadius: 25}}>Something went wrong, take a look at the console</div> : null}
 				<table style={{ marginTop: '25px'}}>
 					<thead>
