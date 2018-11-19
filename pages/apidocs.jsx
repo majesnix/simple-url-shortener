@@ -47,7 +47,7 @@ const Api = () => (
 					</tbody>
 				</table>
 				<br/><br/>
-				Both return a JSON Object with two parameters:
+				Both return a JSON Object with two properties:
 				<br/><br/>
 				<strong>base:</strong> the url you send to us
 				<br/>
