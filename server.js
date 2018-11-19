@@ -42,17 +42,6 @@ app.prepare()
 			return handle(req, res);
 		});
 
-		server.use((req, res, next) => {
-			const error = new Error('Not found');
-			error.status = 404;
-			next(error);
-		});
-
-		server.use((error, req, res) => {
-			res.status(error.status || 500);
-			res.json({ error: { message: error.message } });
-		});
-
 		server.listen(port);
 
 	})
