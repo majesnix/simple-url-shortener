@@ -35,12 +35,23 @@ class Error extends Component {
 		return (
 			<div>
 				<Meta />
-				{this.state.err 
-				? <div>
+				{this.state.err ? (
+					<div
+						style={{
+							display: 'flex',
+							flexDirection: 'column',
+							justifyContent: 'center',
+							alignItems: 'center',
+							height: '100vh',
+						}}
+					>
 						<h1>404</h1>
-						<p>No Shortlink with this ID exists or something went wrong</p>
+						<p>
+							No Shortlink with this ID exists or something went
+							wrong
+						</p>
 					</div>
-				: null}
+				) : null}
 			</div>
 		);
 	}

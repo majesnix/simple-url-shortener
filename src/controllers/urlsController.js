@@ -65,6 +65,8 @@ exports.get_url = async (req, res) => {
 			return res.status(200).json({
 				url: urlObj.long_url,
 			});
+		} else {
+			return res.status(404).end();
 		}
 	} catch (err) {
 		req.log.error(err);
