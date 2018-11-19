@@ -65,7 +65,9 @@ class Admin extends Component {
 				links,
 			});
 		} catch (error) {
-			console.log(error);
+			this.setState({
+				err: true
+			});
 		}
 	};
 
@@ -110,8 +112,9 @@ class Admin extends Component {
 							: null}
 					</tbody>
 				</table>
-				<h3 style={{ marginTop: '50px' }}>LINKS</h3>
-				<table>
+				<h3 style={{ margin: '50px 0 25px 0' }}>LINKS</h3>
+				{this.state.err ? <div style={{ backgroundColor: 'red', padding: 15, borderRadius: 25}}>Something went wrong, take a look at the console</div> : null}
+				<table style={{ marginTop: '25px'}}>
 					<thead>
 						<tr>
 							<th>
@@ -140,7 +143,7 @@ class Admin extends Component {
 												this.handleClick(evt, link.id)
 											}
 										>
-											Click
+											<div className="button">Click</div>
 										</td>
 									</tr>
 							  ))
@@ -160,21 +163,6 @@ class Admin extends Component {
 						}}
 					>
 						Home
-					</div>
-				</Link>
-				<Link href={{ pathname: '/terms' }}>
-					<div
-						style={{
-							position: 'absolute',
-							right: '0',
-							bottom: '0',
-							margin: '0 15px 15px 0',
-							color: '#FBFBFB',
-							textDecoration: 'none',
-							cursor: 'pointer',
-						}}
-					>
-						Terms
 					</div>
 				</Link>
 			</div>
