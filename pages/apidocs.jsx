@@ -3,21 +3,21 @@ import Link from 'next/link';
 import Meta from '../components/meta.jsx';
 
 const Api = () => (
-	<div>
+	<div style={{ height: '100vh'}}>
 		<Meta />
 		<div
 			style={{
 				display: 'flex',
 				flexDirection: 'column',
-				justifyContent: 'center',
 				alignItems: 'center',
 				height: '100%',
-				marginTop: '15px',
+				paddingTop: '1.5rem',
+				fontSize: '1.5rem'
 			}}
 		>
-			<Link href={{ pathname: '/login' }}><div style={{ position: 'absolute', right: '0', top: '0', margin: '15px 15px 0 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Admin</div></Link>
-			<Link href={{ pathname: '/' }}><div style={{ position: 'absolute', right: '50px', bottom: '0', margin: '0 15px 15px 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Home</div></Link>
-			<Link href={{ pathname: '/terms' }}><div style={{ position: 'absolute', right: '0', bottom: '0', margin: '0 15px 15px 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Terms</div></Link>
+			<Link href={{ pathname: '/login' }}><div style={{ position: 'absolute', right: '0', top: '0', margin: '1.5rem 1.5rem 0 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Admin</div></Link>
+			<Link href={{ pathname: '/' }}><div style={{ position: 'absolute', right: '50px', bottom: '0', margin: '0 1.5rem 1.5rem 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Home</div></Link>
+			<Link href={{ pathname: '/terms' }}><div style={{ position: 'absolute', right: '0', bottom: '0', margin: '0 1.5rem 1.5rem 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Terms</div></Link>
 
 			<h1>API Documentation</h1>
 			<div style={{ width: '50%', fontSize: '1.5rem', marginTop: 20 }}>

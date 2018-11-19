@@ -43,6 +43,7 @@ class Error extends Component {
 							justifyContent: 'center',
 							alignItems: 'center',
 							height: '100vh',
+							fontSize: '1.8rem',
 						}}
 					>
 						<h1>404</h1>

@@ -12,15 +12,16 @@ const Terms = () => (
 				justifyContent: 'center',
 				alignItems: 'center',
 				height: '100%',
-				marginTop: '15px'
+				marginTop: '1.5rem',
+				fontSize: '1.5rem'
 			}}
 		>
-			<Link href={{ pathname: '/login' }}><div style={{ position: 'absolute', right: '0', top: '0', margin: '15px 15px 0 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Admin</div></Link>
-			<Link href={{ pathname: '/' }}><div style={{ position: 'absolute', right: '50px', bottom: '0', margin: '0 15px 15px 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Home</div></Link>
-			<Link href={{ pathname: '/apidocs' }}><div style={{ position: 'absolute', right: '0', bottom: '0', margin: '0 15px 15px 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Api</div></Link>
+			<Link href={{ pathname: '/login' }}><div style={{ position: 'absolute', right: '0', top: '0', margin: '1.5rem 1.5rem 0 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Admin</div></Link>
+			<Link href={{ pathname: '/' }}><div style={{ position: 'absolute', right: '50px', bottom: '0', margin: '0 1.5rem 1.5rem 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Home</div></Link>
+			<Link href={{ pathname: '/apidocs' }}><div style={{ position: 'absolute', right: '0', bottom: '0', margin: '0 1.5rem 1.5rem 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Api</div></Link>
 
 			<h1>Terms of Service</h1>
-			<div style={{ width: '50%', fontSize: 20, marginTop: 20 }}>
+			<div style={{ width: '50%', fontSize: '2rem', marginTop: '2rem' }}>
 				By accessing the website at
 				https://dcl.re, you are agreeing to be bound by these terms of
 				service, all applicable laws and regulations, and agree that you

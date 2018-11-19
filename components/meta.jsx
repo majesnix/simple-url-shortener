@@ -136,18 +136,5 @@ export default () => (
 			<meta name="twitter:image" content="/static/logo_square.png" />
 			<meta name="twitter:image:src" content="/static/logo_square.png" />
 		</Head>
-		<style jsx global>{`
-			body {
-				background: #121212;
-				font: 10px menlo;
-				color: #fbfbfb;
-			}
-			* {
-				box-sizing: border-box;
-				position: relative;
-				margin: 0;
-				padding: 0;
-			}
-		`}</style>
 	</Fragment>
 );

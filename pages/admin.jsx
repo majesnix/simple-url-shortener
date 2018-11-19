@@ -79,10 +79,11 @@ class Admin extends Component {
 					flexDirection: 'column',
 					alignItems: 'center',
 					height: '100vh',
+					fontSize: '1.5rem'
 				}}
 			>
 				<Meta />
-				<h1 style={{ margin: '15px 0' }}>Users</h1>
+				<h1 style={{ margin: '1.5rem 0' }}>Users</h1>
 				<table>
 					<thead>
 						<tr>
@@ -142,7 +143,7 @@ class Admin extends Component {
 												this.handleClick(evt, link.id)
 											}
 										>
-											<div className="button">Click</div>
+											<div className="button">Burn it!</div>
 										</td>
 									</tr>
 							  ))
@@ -155,7 +156,7 @@ class Admin extends Component {
 							position: 'absolute',
 							right: '0',
 							top: '0',
-							margin: '15px 15px 0 0',
+							margin: '1.5rem 1.5rem 0 0',
 							color: '#FBFBFB',
 							textDecoration: 'none',
 							cursor: 'pointer',

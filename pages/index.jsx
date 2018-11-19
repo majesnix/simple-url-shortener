@@ -63,11 +63,12 @@ class Index extends Component {
 						justifyContent: 'center',
 						alignItems: 'center',
 						height: '100%',
+						fontSize: '1.5rem'
 					}}
 				>
 					<Link href={{ pathname: '/login' }}><div style={{ position: 'absolute', right: '0', top: '0', margin: '15px 15px 0 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Admin</div></Link>
-					<Link href={{ pathname: '/apidocs' }}><div style={{ position: 'absolute', right: '50px', bottom: '0', margin: '0 15px 15px 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer'  }}>Api</div></Link>
-					<Link href={{ pathname: '/terms' }}><div style={{ position: 'absolute', right: '0', bottom: '0', margin: '0 15px 15px 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer'  }}>Terms</div></Link>
+					<Link href={{ pathname: '/apidocs' }}><div style={{ position: 'absolute', right: '75px', bottom: '0', margin: '0 15px 15px 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Api</div></Link>
+					<Link href={{ pathname: '/terms' }}><div style={{ position: 'absolute', right: '0', bottom: '0', margin: '0 15px 15px 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Terms</div></Link>
 					<h1>{process.env.BASE_URL}</h1>
 					<form style={{ marginLeft: '15px', marginTop: '15px' }}>
 						<input
@@ -76,7 +77,7 @@ class Index extends Component {
 							placeholder="Enter URL here..."
 							value={this.state.url}
 							onChange={evt => this.handleChange(evt)}
-							style={{ marginRight: '15px' }}
+							style={{ marginRight: '15px', height: '4rem', fontSize: '1.8rem', width: '25rem' }}
 						/>
 						<div
 							className="button"
