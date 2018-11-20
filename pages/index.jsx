@@ -77,7 +77,7 @@ class Index extends Component {
 							placeholder="Enter URL here..."
 							value={this.state.url}
 							onChange={evt => this.handleChange(evt)}
-							style={{ marginRight: '1.5rem', height: '4rem', fontSize: '1.8rem', width: '25rem' }}
+							style={{ marginRight: '1.5rem', fontSize: '1.8rem', width: '25rem' }}
 						/>
 						<div
 							className="button"
