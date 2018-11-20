@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Meta from '../components/meta.jsx';
 
 const Api = () => (
-	<div style={{ height: '100vh'}}>
+	<div style={{ height: '100vh' }}>
 		<Meta />
 		<div
 			style={{
@@ -12,12 +12,54 @@ const Api = () => (
 				alignItems: 'center',
 				height: '100%',
 				paddingTop: '1.5rem',
-				fontSize: '1.5rem'
+				fontSize: '1.5rem',
 			}}
 		>
-			<Link href={{ pathname: '/login' }}><div style={{ position: 'absolute', right: '0', top: '0', margin: '1.5rem 1.5rem 0 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Admin</div></Link>
-			<Link href={{ pathname: '/' }}><div style={{ position: 'absolute', right: '7.5rem', bottom: '0', margin: '0 1.5rem 1.5rem 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Home</div></Link>
-			<Link href={{ pathname: '/terms' }}><div style={{ position: 'absolute', right: '0', bottom: '0', margin: '0 1.5rem 1.5rem 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Terms</div></Link>
+			<Link href={{ pathname: '/login' }}>
+				<div
+					style={{
+						position: 'absolute',
+						right: '0',
+						top: '0',
+						margin: '1.5rem 1.5rem 0 0',
+						color: '#FBFBFB',
+						textDecoration: 'none',
+						cursor: 'pointer',
+					}}
+				>
+					Admin
+				</div>
+			</Link>
+			<Link href={{ pathname: '/' }}>
+				<div
+					style={{
+						position: 'absolute',
+						right: '7.5rem',
+						bottom: '0',
+						margin: '0 1.5rem 1.5rem 0',
+						color: '#FBFBFB',
+						textDecoration: 'none',
+						cursor: 'pointer',
+					}}
+				>
+					Home
+				</div>
+			</Link>
+			<Link href={{ pathname: '/terms' }}>
+				<div
+					style={{
+						position: 'absolute',
+						right: '0',
+						bottom: '0',
+						margin: '0 1.5rem 1.5rem 0',
+						color: '#FBFBFB',
+						textDecoration: 'none',
+						cursor: 'pointer',
+					}}
+				>
+					Terms
+				</div>
+			</Link>
 
 			<h1>API Documentation</h1>
 			<div style={{ width: '50%', fontSize: '1.5rem', marginTop: 20 }}>
@@ -36,21 +78,23 @@ const Api = () => (
 							<td>GET</td>
 							<td>/api/</td>
 							<td>url: url to shorten</td>
-							<td />
+							<td>—</td>
 						</tr>
 						<tr>
 							<td>POST</td>
 							<td>/api/</td>
-							<td></td>
+							<td>—</td>
 							<td>url: url to shorten</td>
 						</tr>
 					</tbody>
 				</table>
-				<br/><br/>
+				<br />
+				<br />
 				Both return a JSON Object with two properties:
-				<br/><br/>
+				<br />
+				<br />
 				<strong>base:</strong> the url you send to us
-				<br/>
+				<br />
 				<strong>short:</strong> your generated short-url
 			</div>
 		</div>

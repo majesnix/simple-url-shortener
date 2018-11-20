@@ -23,15 +23,12 @@ class Index extends Component {
 		try {
 			const {
 				data: { short },
-			} = await Axios.post(
-				`${this.base}/api/urls`,
-				{
-					url: this.state.url,
-				}
-			);
+			} = await Axios.post(`${this.base}/api/urls`, {
+				url: this.state.url,
+			});
 			this.setState({
 				shortURL: short,
-			});	
+			});
 		} catch (error) {
 			if (error.response.status === 429) {
 				this.setState({
@@ -42,7 +39,7 @@ class Index extends Component {
 			this.setState({
 				err: true,
 				shortURL: null,
-			})
+			});
 		}
 	};
 
@@ -63,12 +60,54 @@ class Index extends Component {
 						justifyContent: 'center',
 						alignItems: 'center',
 						height: '100%',
-						fontSize: '1.5rem'
+						fontSize: '1.5rem',
 					}}
 				>
-					<Link href={{ pathname: '/login' }}><div style={{ position: 'absolute', right: '0', top: '0', margin: '1.5rem 1.5rem 0 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Admin</div></Link>
-					<Link href={{ pathname: '/apidocs' }}><div style={{ position: 'absolute', right: '7.5rem', bottom: '0', margin: '0 1.5rem 1.5rem 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Api</div></Link>
-					<Link href={{ pathname: '/terms' }}><div style={{ position: 'absolute', right: '0', bottom: '0', margin: '0 1.5rem 1.5rem 0', color: '#FBFBFB', textDecoration: 'none', cursor: 'pointer' }}>Terms</div></Link>
+					<Link href={{ pathname: '/login' }}>
+						<div
+							style={{
+								position: 'absolute',
+								right: '0',
+								top: '0',
+								margin: '1.5rem 1.5rem 0 0',
+								color: '#FBFBFB',
+								textDecoration: 'none',
+								cursor: 'pointer',
+							}}
+						>
+							Admin
+						</div>
+					</Link>
+					<Link href={{ pathname: '/apidocs' }}>
+						<div
+							style={{
+								position: 'absolute',
+								right: '7.5rem',
+								bottom: '0',
+								margin: '0 1.5rem 1.5rem 0',
+								color: '#FBFBFB',
+								textDecoration: 'none',
+								cursor: 'pointer',
+							}}
+						>
+							Api
+						</div>
+					</Link>
+					<Link href={{ pathname: '/terms' }}>
+						<div
+							style={{
+								position: 'absolute',
+								right: '0',
+								bottom: '0',
+								margin: '0 1.5rem 1.5rem 0',
+								color: '#FBFBFB',
+								textDecoration: 'none',
+								cursor: 'pointer',
+							}}
+						>
+							Terms
+						</div>
+					</Link>
 					<h1>{process.env.BASE_URL}</h1>
 					<form style={{ marginLeft: '1.5rem', marginTop: '1.5rem' }}>
 						<input
@@ -77,7 +116,11 @@ class Index extends Component {
 							placeholder="Enter URL here..."
 							value={this.state.url}
 							onChange={evt => this.handleChange(evt)}
-							style={{ marginRight: '1.5rem', fontSize: '1.8rem', width: '25rem' }}
+							style={{
+								marginRight: '1.5rem',
+								fontSize: '1.8rem',
+								width: '25rem',
+							}}
 						/>
 						<div
 							className="button"
@@ -92,7 +135,11 @@ class Index extends Component {
 							{this.state.shortURL}
 						</div>
 					) : null}
-					{this.state.ratelimit && <div>You send to many requests, please wait 60 minutes</div>}
+					{this.state.ratelimit && (
+						<div>
+							You send to many requests, please wait 60 minutes
+						</div>
+					)}
 					{this.state.err && <div>Something went wrong</div>}
 				</div>
 			</div>
