@@ -63,21 +63,6 @@ class Index extends Component {
 						fontSize: '1.5rem',
 					}}
 				>
-					<Link href={{ pathname: '/login' }}>
-						<div
-							style={{
-								position: 'absolute',
-								right: '0',
-								top: '0',
-								margin: '1.5rem 1.5rem 0 0',
-								color: '#FBFBFB',
-								textDecoration: 'none',
-								cursor: 'pointer',
-							}}
-						>
-							Admin
-						</div>
-					</Link>
 					<Link href={{ pathname: '/apidocs' }}>
 						<div
 							style={{
