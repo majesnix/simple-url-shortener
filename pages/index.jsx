@@ -31,7 +31,7 @@ class Index extends Component {
 			});
 		} catch (error) {
 			if (error.response.status === 429) {
-				this.setState({
+				return this.setState({
 					ratelimit: true,
 					shortURL: null,
 				});
