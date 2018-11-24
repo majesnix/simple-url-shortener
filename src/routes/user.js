@@ -1,6 +1,14 @@
 const express = require('express');
 const router = express.Router();
 
+const rateLimit = require('express-rate-limit');
+const loginLimiter = rateLimit({
+	windowMs: 15 * 60 * 1000,
+	max: 5,
+	message:
+		'Too many requests, please try again after an hour',
+});
+
 const {
 	create_user,
 	get_user,
@@ -17,6 +25,6 @@ router.post('/create', checkAuth, create_user);
 router.put('/:id', checkAuth, update_user);
 router.delete('/:id', checkAuth, delete_user);
 
-router.post('/login', login_user);
+router.post('/login', loginLimiter, login_user);
 
 module.exports = router;
