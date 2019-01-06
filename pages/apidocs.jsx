@@ -61,13 +61,13 @@ const Api = () => (
 					<tbody>
 						<tr>
 							<td>GET</td>
-							<td>/api/</td>
+							<td>/api/urls/</td>
 							<td>url: url to shorten</td>
 							<td>—</td>
 						</tr>
 						<tr>
 							<td>POST</td>
-							<td>/api/</td>
+							<td>/api/urls/</td>
 							<td>—</td>
 							<td>url: url to shorten</td>
 						</tr>
