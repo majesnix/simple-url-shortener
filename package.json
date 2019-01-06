@@ -16,7 +16,7 @@
 		"axios": "^0.18.0",
 		"babel-eslint": "^10.0.1",
 		"babel-plugin-module-resolver": "^3.1.1",
-		"bcrypt": "^3.0.2",
+		"bcrypt": "^3.0.3",
 		"body-parser": "^1.18.3",
 		"cors": "^2.8.4",
 		"dotenv": "^6.1.0",
@@ -29,7 +29,7 @@
 		"node-sass": "^4.10.0",
 		"pg": "^7.6.0",
 		"pg-hstore": "^2.3.2",
-		"pino": "^5.8.0",
+		"pino": "^5.10.6",
 		"pino-pretty": "^2.2.3",
 		"react": "^16.6.1",
 		"react-dom": "^16.6.1",
@@ -39,12 +39,12 @@
 		"valid-url": "^1.0.9"
 	},
 	"devDependencies": {
-		"eslint": "^5.9.0",
-		"eslint-config-react-app": "^3.0.5",
+		"eslint": "^5.12.0",
+		"eslint-config-react-app": "^3.0.6",
 		"eslint-plugin-flowtype": "^3.2.0",
 		"eslint-plugin-import": "^2.14.0",
 		"eslint-plugin-jsx-a11y": "^6.1.2",
-		"eslint-plugin-react": "^7.11.1",
+		"eslint-plugin-react": "^7.12.3",
 		"nodemon": "^1.18.5"
 	},
 	"eslintConfig": {
