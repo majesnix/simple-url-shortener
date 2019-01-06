@@ -20,9 +20,9 @@ sequelize
 		await Urls.sync();
 		await Users.sync();
 
-		if (process.env.INIT) {
-			const salt = bcrypt.genSaltSync(10);
-			const hashedPassword = bcrypt.hashSync(ADMIN_PASS, salt);
+		if (!await Users.findOne({ where: { email: ADMIN_EMAIL } })) {
+			const salt = await bcrypt.genSalt(10);
+			const hashedPassword = await bcrypt.hash(ADMIN_PASS, salt);
 
 			await Users.create({
 				email: ADMIN_EMAIL,
