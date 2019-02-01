@@ -1,45 +1,45 @@
-import React from 'react';
-import Link from 'next/link';
-import Meta from '../components/meta.jsx';
+import React from "react";
+import Link from "next/link";
+import Meta from "../components/meta";
 
 const Api = () => (
-	<div style={{ height: '100vh' }}>
+	<div style={{ height: "100vh" }}>
 		<Meta />
 		<div
 			style={{
-				display: 'flex',
-				flexDirection: 'column',
-				alignItems: 'center',
-				height: '100%',
-				paddingTop: '1.5rem',
-				fontSize: '1.5rem',
+				display: "flex",
+				flexDirection: "column",
+				alignItems: "center",
+				height: "100%",
+				paddingTop: "1.5rem",
+				fontSize: "1.5rem",
 			}}
 		>
-			<Link href={{ pathname: '/' }}>
+			<Link href={{ pathname: "/" }}>
 				<div
 					style={{
-						position: 'absolute',
-						right: '7.5rem',
-						bottom: '0',
-						margin: '0 1.5rem 1.5rem 0',
-						color: '#FBFBFB',
-						textDecoration: 'none',
-						cursor: 'pointer',
+						position: "absolute",
+						right: "7.5rem",
+						bottom: "0",
+						margin: "0 1.5rem 1.5rem 0",
+						color: "#FBFBFB",
+						textDecoration: "none",
+						cursor: "pointer",
 					}}
 				>
 					Home
 				</div>
 			</Link>
-			<Link href={{ pathname: '/terms' }}>
+			<Link href={{ pathname: "/terms" }}>
 				<div
 					style={{
-						position: 'absolute',
-						right: '0',
-						bottom: '0',
-						margin: '0 1.5rem 1.5rem 0',
-						color: '#FBFBFB',
-						textDecoration: 'none',
-						cursor: 'pointer',
+						position: "absolute",
+						right: "0",
+						bottom: "0",
+						margin: "0 1.5rem 1.5rem 0",
+						color: "#FBFBFB",
+						textDecoration: "none",
+						cursor: "pointer",
 					}}
 				>
 					Terms
@@ -47,7 +47,7 @@ const Api = () => (
 			</Link>
 
 			<h1>API Documentation</h1>
-			<div style={{ width: '50%', fontSize: '1.5rem', marginTop: 20 }}>
+			<div style={{ width: "50%", fontSize: "1.5rem", marginTop: 20 }}>
 				Yes, you can use our service with an API.
 				<br />
 				<br />
