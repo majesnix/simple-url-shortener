@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import axios from 'axios';
-import Meta from '../components/meta.jsx';
-import { IState } from 'typings/index.js';
+import React, { Component } from "react";
+import axios from "axios";
+import Meta from "../components/meta";
+import { IState } from "typings";
 
 class Error extends Component<any, IState> {
 	private base: string;
@@ -12,7 +12,7 @@ class Error extends Component<any, IState> {
 			err: false,
 		};
 		this.base =
-			process.env.NODE_ENV !== 'production'
+			process.env.NODE_ENV !== "production"
 				? `http://${process.env.BASE_URL}:${process.env.PORT}`
 				: `https://${process.env.BASE_URL}`;
 	}
@@ -41,19 +41,16 @@ class Error extends Component<any, IState> {
 				{this.state.err ? (
 					<div
 						style={{
-							display: 'flex',
-							flexDirection: 'column',
-							justifyContent: 'center',
-							alignItems: 'center',
-							height: '100vh',
-							fontSize: '1.8rem',
+							display: "flex",
+							flexDirection: "column",
+							justifyContent: "center",
+							alignItems: "center",
+							height: "100vh",
+							fontSize: "1.8rem",
 						}}
 					>
 						<h1>404</h1>
-						<p>
-							No Shortlink with this ID exists or something went
-							wrong
-						</p>
+						<p>No Shortlink with this ID exists or something went wrong</p>
 					</div>
 				) : null}
 			</div>

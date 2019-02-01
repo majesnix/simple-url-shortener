@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import Axios from 'axios';
-import Link from 'next/link';
-import Meta from '../components/meta.jsx';
-import { IState } from 'typings/index.js';
+import React, { Component } from "react";
+import Axios from "axios";
+import Link from "next/link";
+import Meta from "../components/meta";
+import { IState } from "typings";
 
 class Index extends Component<any, IState> {
 	private base: string;
@@ -10,13 +10,13 @@ class Index extends Component<any, IState> {
 	constructor(props: any) {
 		super(props);
 		this.state = {
-			url: 'https://',
+			url: "https://",
 			shortURL: null,
 			err: false,
 			ratelimit: false,
 		};
 		this.base =
-			process.env.NODE_ENV !== 'production'
+			process.env.NODE_ENV !== "production"
 				? `http://${process.env.BASE_URL}:${process.env.PORT}`
 				: `https://${process.env.BASE_URL}`;
 	}
@@ -55,65 +55,65 @@ class Index extends Component<any, IState> {
 
 	render() {
 		return (
-			<div style={{ height: '100vh' }}>
+			<div style={{ height: "100vh" }}>
 				<Meta />
 				<div
 					style={{
-						display: 'flex',
-						flexDirection: 'column',
-						justifyContent: 'center',
-						alignItems: 'center',
-						height: '100%',
-						fontSize: '1.5rem',
+						display: "flex",
+						flexDirection: "column",
+						justifyContent: "center",
+						alignItems: "center",
+						height: "100%",
+						fontSize: "1.5rem",
 					}}
 				>
-					<Link href={{ pathname: '/login' }}>
+					<Link href={{ pathname: "/login" }}>
 						<div
 							style={{
-								position: 'absolute',
-								right: '0',
-								top: '0',
-								margin: '1.5rem 1.5rem 0 0',
-								color: '#FBFBFB',
-								textDecoration: 'none',
-								cursor: 'pointer',
+								position: "absolute",
+								right: "0",
+								top: "0",
+								margin: "1.5rem 1.5rem 0 0",
+								color: "#FBFBFB",
+								textDecoration: "none",
+								cursor: "pointer",
 							}}
 						>
 							Admin
 						</div>
 					</Link>
-					<Link href={{ pathname: '/apidocs' }}>
+					<Link href={{ pathname: "/apidocs" }}>
 						<div
 							style={{
-								position: 'absolute',
-								right: '7.5rem',
-								bottom: '0',
-								margin: '0 1.5rem 1.5rem 0',
-								color: '#FBFBFB',
-								textDecoration: 'none',
-								cursor: 'pointer',
+								position: "absolute",
+								right: "7.5rem",
+								bottom: "0",
+								margin: "0 1.5rem 1.5rem 0",
+								color: "#FBFBFB",
+								textDecoration: "none",
+								cursor: "pointer",
 							}}
 						>
 							Api
 						</div>
 					</Link>
-					<Link href={{ pathname: '/terms' }}>
+					<Link href={{ pathname: "/terms" }}>
 						<div
 							style={{
-								position: 'absolute',
-								right: '0',
-								bottom: '0',
-								margin: '0 1.5rem 1.5rem 0',
-								color: '#FBFBFB',
-								textDecoration: 'none',
-								cursor: 'pointer',
+								position: "absolute",
+								right: "0",
+								bottom: "0",
+								margin: "0 1.5rem 1.5rem 0",
+								color: "#FBFBFB",
+								textDecoration: "none",
+								cursor: "pointer",
 							}}
 						>
 							Terms
 						</div>
 					</Link>
 					<h1>{process.env.BASE_URL}</h1>
-					<form style={{ marginLeft: '1.5rem', marginTop: '1.5rem' }}>
+					<form style={{ marginLeft: "1.5rem", marginTop: "1.5rem" }}>
 						<input
 							type="text"
 							id="url"
@@ -121,9 +121,9 @@ class Index extends Component<any, IState> {
 							value={this.state.url}
 							onChange={evt => this.handleChange(evt)}
 							style={{
-								marginRight: '1.5rem',
-								fontSize: '1.8rem',
-								width: '25rem',
+								marginRight: "1.5rem",
+								fontSize: "1.8rem",
+								width: "25rem",
 							}}
 						/>
 						<button
@@ -135,14 +135,10 @@ class Index extends Component<any, IState> {
 						</button>
 					</form>
 					{this.state.shortURL ? (
-						<div style={{ marginTop: '1.5rem' }}>
-							{this.state.shortURL}
-						</div>
+						<div style={{ marginTop: "1.5rem" }}>{this.state.shortURL}</div>
 					) : null}
 					{this.state.ratelimit && (
-						<div>
-							You send to many requests, please wait 60 minutes
-						</div>
+						<div>You send to many requests, please wait 60 minutes</div>
 					)}
 					{this.state.err && <div>Something went wrong</div>}
 				</div>
