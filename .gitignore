@@ -1,6 +1,7 @@
 # Dependency directories
 node_modules/
 ormconfig.json
+.env
 
 # next.js build output
 .next
