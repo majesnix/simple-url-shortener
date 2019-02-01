@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Meta from '../components/meta.jsx';
+import { IState } from 'typings/index.js';
 
-class Error extends Component {
-	constructor(props) {
+class Error extends Component<any, IState> {
+	private base: string;
+
+	constructor(props: any) {
 		super(props);
 		this.state = {
 			err: false,

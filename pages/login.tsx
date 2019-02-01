@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 import { withRouter } from 'next/router';
 import axios from 'axios';
+import { IState } from 'typings';
 
-class Login extends Component {
-	constructor(props) {
+class Login extends Component<any, IState> {
+	private email: any;
+	private password: any;
+	private base: string;
+
+	constructor(props: any) {
 		super(props);
 		this.email = React.createRef();
 		this.password = React.createRef();
@@ -19,7 +24,7 @@ class Login extends Component {
 		}
 	}
 
-	_handleSubmit = async evt => {
+	_handleSubmit = async (evt: any) => {
 		evt.preventDefault();
 		try {
 			const {

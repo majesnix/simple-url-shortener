@@ -2,9 +2,12 @@ import React, { Component } from 'react';
 import Axios from 'axios';
 import Link from 'next/link';
 import Meta from '../components/meta.jsx';
+import { IState } from 'typings/index.js';
 
-class Index extends Component {
-	constructor(props) {
+class Index extends Component<any, IState> {
+	private base: string;
+
+	constructor(props: any) {
 		super(props);
 		this.state = {
 			url: 'https://',
@@ -18,7 +21,7 @@ class Index extends Component {
 				: `https://${process.env.BASE_URL}`;
 	}
 
-	handleSubmit = async evt => {
+	handleSubmit = async (evt: any) => {
 		evt.preventDefault();
 		try {
 			const {
@@ -30,6 +33,7 @@ class Index extends Component {
 				shortURL: short,
 			});
 		} catch (error) {
+			console.log(error);
 			if (error.response.status === 429) {
 				return this.setState({
 					ratelimit: true,
@@ -43,7 +47,7 @@ class Index extends Component {
 		}
 	};
 
-	handleChange = evt => {
+	handleChange = (evt: any) => {
 		this.setState({
 			url: evt.target.value,
 		});
@@ -122,13 +126,13 @@ class Index extends Component {
 								width: '25rem',
 							}}
 						/>
-						<div
+						<button
 							className="button"
 							type="submit"
 							onClick={evt => this.handleSubmit(evt)}
 						>
 							Shorten
-						</div>
+						</button>
 					</form>
 					{this.state.shortURL ? (
 						<div style={{ marginTop: '1.5rem' }}>

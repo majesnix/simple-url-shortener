@@ -2,9 +2,12 @@ import React, { Component } from 'react';
 import Meta from '../components/meta';
 import Link from 'next/link';
 import Axios from 'axios';
+import { IState } from 'typings';
 
-class Admin extends Component {
-	constructor(props) {
+class Admin extends Component<any, IState> {
+	private base: string;
+
+	constructor(props: any) {
 		super(props);
 		this.state = {
 			err: false,
@@ -51,7 +54,7 @@ class Admin extends Component {
 		}
 	};
 
-	handleClick = async (evt, id) => {
+	handleClick = async (evt: any, id: number) => {
 		evt.preventDefault();
 		try {
 			const {
@@ -128,15 +131,15 @@ class Admin extends Component {
 					<tbody>
 						{this.state.links
 							? this.state.links.map(link => (
-									<tr key={`link-${link.short_url}`}>
+									<tr key={`link-${link.shortUrl}`}>
 										<td>
 											<strong>{link.id}</strong>
 										</td>
 										<td>
-											{link.long_url}
+											{link.longUrl}
 										</td>
 										<td>
-											{link.short_url}
+											{link.shortUrl}
 										</td>
 										<td
 											onClick={evt =>
