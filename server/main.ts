@@ -20,32 +20,30 @@ import userRoutes from "./routes/users";
 // Middleware
 import addLogger from "./middleware/addLogger";
 
-database
-  .get("majesurl")
-  .connect()
-  .then(() => {
-    app.prepare().then(() => {
-      const server = express();
+(async () => {
+	await database.get("majesurl").connect();
+	await app.prepare();
+	
+	const server = express();
 
-      server.use(bodyParser.urlencoded({ extended: true }));
-      server.use(bodyParser.json());
-      server.use(cors());
-      server.use(helmet());
+	server.use(bodyParser.urlencoded({ extended: true }));
+	server.use(bodyParser.json());
+	server.use(cors());
+	server.use(helmet());
 
-      server.use(addLogger);
+	server.use(addLogger);
 
-      server.use("/api/urls", urlRoutes);
-      server.use("/api/users", userRoutes);
-      server.use("/api/v1/urls", urlRoutes);
-      server.use("/api/v1/users", userRoutes);
+	server.use("/api/urls", urlRoutes);
+	server.use("/api/users", userRoutes);
+	server.use("/api/v1/urls", urlRoutes);
+	server.use("/api/v1/users", userRoutes);
 
-      server.get("*", (req, res) => {
-        return handle(req, res);
-      });
+	server.get("*", (req, res) => {
+		return handle(req, res);
+	});
 
-      server.listen(port, (err: Error) => {
-        if (err) throw err;
-        console.log(`> Ready on http://localhost:${port}`);
-      });
-    });
-  });
+	server.listen(port, (err: Error) => {
+		if (err) throw err;
+		console.log(`> Ready on http://localhost:${port}`);
+	});
+})();
