@@ -181,6 +181,6 @@ export const loginUser = async (req: exReq, res: Response) => {
 	}
 };
 
-export const userIsAuthenticated = (req: exReq, res: Response) => {
+export const userIsAuthenticated = (_req: exReq, res: Response) => {
 	return res.status(200);
 };

@@ -3,7 +3,7 @@ import Meta from "../components/meta";
 import Link from "next/link";
 import Axios from "axios";
 import { IState } from "typings";
-import protected from "../components/protected";
+import protect from "../components/protect";
 
 class Admin extends Component<any, IState> {
 	private base: string;
@@ -160,4 +160,4 @@ class Admin extends Component<any, IState> {
 	}
 }
 
-export default protected(Admin);
+export default protect(Admin);
