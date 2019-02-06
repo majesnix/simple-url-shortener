@@ -49,6 +49,7 @@ class Error extends Component<any, IState> {
 							fontSize: "1.8rem",
 						}}
 					>
+						<img src="/static/error.png"></img>
 						<h1>404</h1>
 						<p>No Shortlink with this ID exists or something went wrong</p>
 					</div>
