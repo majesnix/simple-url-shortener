@@ -181,7 +181,7 @@ export const loginUser = async (req: exReq, res: Response) => {
 	}
 };
 
-export const userIsAuthenticated = (_req: exReq, res: Response) => {
+export const userIsAuthenticated = (req: exReq, res: Response) => {
 	try {
 		const token = req.headers.authorization.split(" ")[1];
 		jwt.verify(token, process.env.JWT_KEY);
