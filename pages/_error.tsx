@@ -38,7 +38,7 @@ class Error extends Component<any, IState> {
 		return (
 			<div>
 				<Meta />
-				{this.state.err ? (
+				{this.state.err && (
 					<div
 						style={{
 							display: "flex",
@@ -53,7 +53,7 @@ class Error extends Component<any, IState> {
 						<h1>404</h1>
 						<p>No Shortlink with this ID exists or something went wrong</p>
 					</div>
-				) : null}
+				)}
 			</div>
 		);
 	}
