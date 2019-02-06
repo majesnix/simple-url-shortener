@@ -2,6 +2,7 @@
 node_modules/
 ormconfig.json
 .env
+.DS_Store
 
 # next.js build output
 .next
