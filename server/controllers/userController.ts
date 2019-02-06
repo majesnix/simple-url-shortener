@@ -182,5 +182,12 @@ export const loginUser = async (req: exReq, res: Response) => {
 };
 
 export const userIsAuthenticated = (_req: exReq, res: Response) => {
-	return res.status(200);
+	try {
+		const token = req.headers.authorization.split(" ")[1];
+		jwt.verify(token, process.env.JWT_KEY);
+
+		return res.status(200);
+	} catch (err) {
+		return res.status(401);
+	}
 };
