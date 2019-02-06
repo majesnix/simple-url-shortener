@@ -3,6 +3,7 @@ import Meta from "../components/meta";
 import Link from "next/link";
 import Axios from "axios";
 import { IState } from "typings";
+import protected from "../components/protected";
 
 class Admin extends Component<any, IState> {
 	private base: string;
@@ -44,7 +45,7 @@ class Admin extends Component<any, IState> {
 				links,
 			});
 		} catch (error) {
-			window.location.href = this.base;
+			console.log(error);
 		}
 	};
 
@@ -159,4 +160,4 @@ class Admin extends Component<any, IState> {
 	}
 }
 
-export default Admin;
+export default protected(Admin);
