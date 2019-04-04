@@ -15,7 +15,6 @@ class Index extends Component<any, IState> {
 			shortURL: null,
 			err: false,
 			ratelimit: false,
-			value: "",
 			copied: false
 		};
 		this.base =
@@ -138,7 +137,7 @@ class Index extends Component<any, IState> {
 						</button>
 					</form>
 					{this.state.shortURL ? (
-						<CopyToClipboard style={{ marginTop: "1.5rem"}} text={this.state.value} onCopy={() => {
+						<CopyToClipboard style={{ marginTop: "1.5rem"}} text={this.state.shortURL} onCopy={() => {
 							console.log("copied url!");
 							this.setState({ copied: true })
 							}}>
