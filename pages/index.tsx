@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Axios from "axios";
 import Link from "next/link";
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Meta from "../components/meta";
 import { IState } from "typings";
 
@@ -14,6 +15,8 @@ class Index extends Component<any, IState> {
 			shortURL: null,
 			err: false,
 			ratelimit: false,
+			value: "",
+			copied: false
 		};
 		this.base =
 			process.env.NODE_ENV !== "production"
@@ -135,7 +138,11 @@ class Index extends Component<any, IState> {
 						</button>
 					</form>
 					{this.state.shortURL ? (
-						<div style={{ marginTop: "1.5rem" }}>{this.state.shortURL}</div>
+						<div style={{ marginTop: "1.5rem"}}>
+							<CopyToClipboard text={this.state.value} onCopy={() => this.setState({ copied: true })}>
+									<span style={{ marginTop: "1.5rem" }}>{this.state.shortURL}</span>
+							</CopyToClipboard>
+						</div>
 					) : null}
 					{this.state.ratelimit && (
 						<div>You send to many requests, please wait 60 minutes</div>
