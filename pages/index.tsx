@@ -138,11 +138,12 @@ class Index extends Component<any, IState> {
 						</button>
 					</form>
 					{this.state.shortURL ? (
-						<div style={{ marginTop: "1.5rem"}}>
-							<CopyToClipboard text={this.state.value} onCopy={() => this.setState({ copied: true })}>
-									<span style={{ marginTop: "1.5rem" }}>{this.state.shortURL}</span>
-							</CopyToClipboard>
-						</div>
+						<CopyToClipboard style={{ marginTop: "1.5rem"}} text={this.state.value} onCopy={() => {
+							console.log("copied url!");
+							this.setState({ copied: true })
+							}}>
+								<span>{this.state.shortURL}</span>
+						</CopyToClipboard>
 					) : null}
 					{this.state.ratelimit && (
 						<div>You send to many requests, please wait 60 minutes</div>
