@@ -44,6 +44,6 @@ import addLogger from "./middleware/addLogger";
 
 	server.listen(port, (err: Error) => {
 		if (err) throw err;
-		console.log(`> Ready on http://localhost:${port}`);
+		console.log(`> Ready on http://${process.env.BASE_URL}:${port}`);
 	});
 })();
