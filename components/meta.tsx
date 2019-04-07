@@ -1,9 +1,8 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Head from 'next/head';
 import '../styles/main.scss';
 
 export default () => (
-	<Fragment>
 		<Head>
 			<title>{process.env.BASE_URL}</title>
 			<meta
@@ -136,5 +135,4 @@ export default () => (
 			<meta name="twitter:image" content="/static/logo_square.png" />
 			<meta name="twitter:image:src" content="/static/logo_square.png" />
 		</Head>
-	</Fragment>
 );
