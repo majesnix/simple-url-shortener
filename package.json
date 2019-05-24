@@ -33,7 +33,7 @@
         "pino-pretty": "^2.5.0",
         "react": "^16.7.0",
         "react-copy-to-clipboard": "^5.0.1",
-        "react-dom": "^16.7.0",
+        "react-dom": "^16.8.6",
         "shortid": "^2.2.14",
         "typeorm": "^0.2.12"
     },
