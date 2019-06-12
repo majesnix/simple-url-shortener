@@ -3,6 +3,7 @@ node_modules/
 ormconfig.json
 .env
 .DS_Store
+package-lock.json
 
 # next.js build output
 .next
