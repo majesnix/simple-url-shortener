@@ -6767,6 +6767,10 @@ tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
   integrity sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
 
+"tslint-config-fire@github:majesnix/tslint-config-fire":
+  version "1.0.1"
+  resolved "https://codeload.github.com/majesnix/tslint-config-fire/tar.gz/d4b34b134eebcbc3ba151ba51e8e335a8feced76"
+
 tslint@^5.17.0:
   version "5.17.0"
   resolved "https://registry.yarnpkg.com/tslint/-/tslint-5.17.0.tgz#f9f0ce2011d8e90debaa6e9b4975f24cd16852b8"
