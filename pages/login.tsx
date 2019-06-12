@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import { withRouter } from "next/router";
 import axios from "axios";
+// tslint:disable-next-line: no-implicit-dependencies
 import { IState } from "typings";
 
 class Login extends Component<any, IState> {
-	private email: any;
-	private password: any;
-	private base: string;
+	private readonly email: any;
+	private readonly password: any;
+	private readonly base: string;
 
 	constructor(props: any) {
 		super(props);
@@ -16,7 +17,7 @@ class Login extends Component<any, IState> {
 			errResponse: null,
 		};
 		this.base =
-			process.env.NODE_ENV !== "production"
+			process.env.REACT_APP_ENV !== "production"
 				? `http://${process.env.BASE_URL}:${process.env.PORT}`
 				: `https://${process.env.BASE_URL}`;
 		if (localStorage.getItem("token")) {
@@ -24,7 +25,7 @@ class Login extends Component<any, IState> {
 		}
 	}
 
-	_handleSubmit = async (evt: any) => {
+	private readonly handleSubmit = async (evt: any) => {
 		evt.preventDefault();
 		try {
 			const {
@@ -40,13 +41,13 @@ class Login extends Component<any, IState> {
 				errResponse: err.response.data.message,
 			});
 		}
-	};
+	}
 
-	render() {
+	public render() {
 		return (
 			<div className="hero">
 				<div className="login__wrapper">
-					<form className="login__box" onSubmit={this._handleSubmit}>
+					<form className="login__box" onSubmit={this.handleSubmit}>
 						{this.state.errResponse && (
 							<div className="login__authfailed">{this.state.errResponse}</div>
 						)}

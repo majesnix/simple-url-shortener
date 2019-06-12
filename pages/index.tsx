@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import Axios from "axios";
 import Link from "next/link";
-import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { CopyToClipboard } from "react-copy-to-clipboard";
 import Meta from "../components/meta";
+// tslint:disable-next-line: no-implicit-dependencies
 import { IState } from "typings";
 
 class Index extends Component<any, IState> {
-	private base: string;
+	private readonly base: string;
 
 	constructor(props: any) {
 		super(props);
@@ -15,15 +16,15 @@ class Index extends Component<any, IState> {
 			shortURL: null,
 			err: false,
 			ratelimit: false,
-			copied: false
+			copied: false,
 		};
 		this.base =
-			process.env.NODE_ENV !== "production"
+			process.env.REACT_APP_ENV !== "production"
 				? `http://${process.env.BASE_URL}:${process.env.PORT}`
 				: `https://${process.env.BASE_URL}`;
 	}
 
-	handleSubmit = async (evt: any) => {
+	public handleSubmit = async (evt: any) => {
 		evt.preventDefault();
 		try {
 			const {
@@ -33,6 +34,8 @@ class Index extends Component<any, IState> {
 			});
 			this.setState({
 				shortURL: short,
+				ratelimit: false,
+				err: false
 			});
 		} catch (error) {
 			console.log(error);
@@ -47,15 +50,15 @@ class Index extends Component<any, IState> {
 				shortURL: null,
 			});
 		}
-	};
+	}
 
-	handleChange = (evt: any) => {
+	public handleChange = (evt: any) => {
 		this.setState({
 			url: evt.target.value,
 		});
-	};
+	}
 
-	render() {
+	public render() {
 		return (
 			<div style={{ height: "100vh" }}>
 				<Meta />
@@ -137,11 +140,14 @@ class Index extends Component<any, IState> {
 						</button>
 					</form>
 					{this.state.shortURL ? (
-						<CopyToClipboard style={{ marginTop: "1.5rem"}} text={this.state.shortURL} onCopy={() => {
-							console.log("copied url!");
-							this.setState({ copied: true })
-							}}>
-								<span>{this.state.shortURL}</span>
+						<CopyToClipboard
+							style={{ marginTop: "1.5rem", cursor: "pointer" }}
+							text={this.state.shortURL}
+							onCopy={() => {
+								this.setState({ copied: true });
+							}}
+						>
+							<span>{this.state.shortURL}</span>
 						</CopyToClipboard>
 					) : null}
 					{this.state.ratelimit && (

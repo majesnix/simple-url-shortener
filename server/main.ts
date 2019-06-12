@@ -2,7 +2,7 @@ require("reflect-metadata"); // tslint:disable-line
 require("dotenv").config(); // tslint:disable-line
 
 import * as next from "next";
-//const dev = process.env.NODE_ENV !== "production";
+// const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev: false });
 const handle = app.getRequestHandler();
 import * as express from "express";
@@ -23,7 +23,7 @@ import addLogger from "./middleware/addLogger";
 (async () => {
 	await database.get("majesurl").connect();
 	await app.prepare();
-	
+
 	const server = express();
 
 	server.use(bodyParser.urlencoded({ extended: true }));
@@ -38,7 +38,7 @@ import addLogger from "./middleware/addLogger";
 	server.use("/api/v1/urls", urlRoutes);
 	server.use("/api/v1/users", userRoutes);
 
-	server.get("*", (req, res) => {
+	server.get("*", async (req, res) => {
 		return handle(req, res);
 	});
 

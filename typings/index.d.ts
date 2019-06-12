@@ -24,5 +24,6 @@ export type IState = {
 	url?: string | null,
 	shortURL?: string | null,
 	ratelimit?: boolean,
-	errResponse?: string | null
+	errResponse?: string | null,
+	copied?: boolean
 }

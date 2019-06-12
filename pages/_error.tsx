@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Meta from "../components/meta";
+// tslint:disable-next-line: no-implicit-dependencies
 import { IState } from "typings";
 
 class Error extends Component<any, IState> {
-	private base: string;
+	private readonly base: string;
 
 	constructor(props: any) {
 		super(props);
@@ -12,16 +13,16 @@ class Error extends Component<any, IState> {
 			err: false,
 		};
 		this.base =
-			process.env.NODE_ENV !== "production"
+			process.env.REACT_APP_ENV !== "production"
 				? `http://${process.env.BASE_URL}:${process.env.PORT}`
 				: `https://${process.env.BASE_URL}`;
 	}
 
-	static async getInitialProps({ asPath }) {
+	public static async getInitialProps({ asPath }) {
 		return { asPath };
 	}
 
-	componentDidMount = async () => {
+	public componentDidMount = async () => {
 		try {
 			const { data } = await axios.get(
 				`${this.base}/api/urls${this.props.asPath}`
@@ -32,9 +33,9 @@ class Error extends Component<any, IState> {
 				err: true,
 			});
 		}
-	};
+	}
 
-	render() {
+	public render() {
 		return (
 			<div>
 				<Meta />

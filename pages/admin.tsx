@@ -2,11 +2,12 @@ import React, { Component } from "react";
 import Meta from "../components/meta";
 import Link from "next/link";
 import Axios from "axios";
+// tslint:disable-next-line: no-implicit-dependencies
 import { IState } from "typings";
 import protect from "../components/protect";
 
 class Admin extends Component<any, IState> {
-	private base: string;
+	private readonly base: string;
 
 	constructor(props: any) {
 		super(props);
@@ -16,12 +17,12 @@ class Admin extends Component<any, IState> {
 			links: null,
 		};
 		this.base =
-			process.env.NODE_ENV !== "production"
+			process.env.REACT_APP_ENV !== "production"
 				? `http://${process.env.BASE_URL}:${process.env.PORT}`
 				: `https://${process.env.BASE_URL}`;
 	}
 
-	componentDidMount = async () => {
+	public componentDidMount = async () => {
 		try {
 			const {
 				data: { users },
@@ -47,9 +48,9 @@ class Admin extends Component<any, IState> {
 		} catch (error) {
 			console.log(error);
 		}
-	};
+	}
 
-	handleClick = async (evt: any, id: number) => {
+	public handleClick = async (evt: any, id: number) => {
 		evt.preventDefault();
 		try {
 			const {
@@ -67,9 +68,9 @@ class Admin extends Component<any, IState> {
 				err: true,
 			});
 		}
-	};
+	}
 
-	render() {
+	public render() {
 		return (
 			<div
 				style={{
@@ -102,7 +103,7 @@ class Admin extends Component<any, IState> {
 										<td>{user.username}</td>
 										<td>{user.email}</td>
 									</tr>
-							  ))
+							))
 							: null}
 					</tbody>
 				</table>
@@ -136,7 +137,7 @@ class Admin extends Component<any, IState> {
 											<div className="button">Burn it!</div>
 										</td>
 									</tr>
-							  ))
+							))
 							: null}
 					</tbody>
 				</table>
