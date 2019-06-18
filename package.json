@@ -50,7 +50,7 @@
         "@types/shortid": "0.0.29",
         "cross-env": "^5.2.0",
         "nodemon": "^1.19.1",
-        "ts-node": "^8.2.0",
+        "ts-node": "^8.3.0",
         "tslint": "^5.17.0",
         "tslint-config-fire": "github:majesnix/tslint-config-fire",
         "typescript": "^3.5.2"
