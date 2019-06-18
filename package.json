@@ -53,6 +53,6 @@
         "ts-node": "^8.2.0",
         "tslint": "^5.17.0",
         "tslint-config-fire": "github:majesnix/tslint-config-fire",
-        "typescript": "^3.5.1"
+        "typescript": "^3.5.2"
     }
 }
