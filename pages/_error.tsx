@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Meta from "../components/meta";
-// tslint:disable-next-line: no-implicit-dependencies
-import { IState } from "typings";
+import { IState } from "../typings";
 
 class Error extends Component<any, IState> {
 	private readonly base: string;

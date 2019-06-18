@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import Meta from "../components/meta";
 import Link from "next/link";
 import Axios from "axios";
-// tslint:disable-next-line: no-implicit-dependencies
-import { IState } from "typings";
+import { IState } from "../typings";
 import protect from "../components/protect";
 
 class Admin extends Component<any, IState> {

@@ -3,8 +3,7 @@ import Axios from "axios";
 import Link from "next/link";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import Meta from "../components/meta";
-// tslint:disable-next-line: no-implicit-dependencies
-import { IState } from "typings";
+import { IState } from "../typings";
 
 class Index extends Component<any, IState> {
 	private readonly base: string;
