@@ -46,7 +46,7 @@
         "@types/jsonwebtoken": "^8.3.2",
         "@types/next": "^8.0.6",
         "@types/pino": "^5.8.8",
-        "@types/react": "^16.8.23",
+        "@types/react": "^16.8.24",
         "@types/shortid": "0.0.29",
         "cross-env": "^5.2.0",
         "nodemon": "^1.19.1",
