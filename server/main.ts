@@ -25,18 +25,22 @@ import bcrypt from "bcrypt";
 
 const createInitalUser = async () => {
 	if (process.env.INIT!) {
-		const Users = database.get("majesurl").getRepository(User);
+		try {
+			const Users = database.get("majesurl").getRepository(User);
 
-		const salt = bcrypt.genSaltSync(10);
-		const hashedPassword = bcrypt.hashSync(process.env.ADMIN_PASS!, salt);
+			const salt = bcrypt.genSaltSync(10);
+			const hashedPassword = bcrypt.hashSync(process.env.ADMIN_PASS!, salt);
 
-		const user = new User();
-		user.email = "majesnix@majesnix.org";
-		user.password = hashedPassword;
-		user.username = process.env.ADMIN_USER!;
+			const user = new User();
+			user.email = "majesnix@majesnix.org";
+			user.password = hashedPassword;
+			user.username = process.env.ADMIN_USER!;
 
-		await Users.save(user);
-		console.log("CREATED INITAL USER");
+			await Users.save(user);
+			console.log("CREATED INITAL USER");
+		} catch (error) {
+			console.log("ERROR creating inital user", error);
+		}
 	}
 };
 
