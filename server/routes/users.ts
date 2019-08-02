@@ -19,9 +19,9 @@ import {
 } from "../controllers/userController";
 import checkAuth from "../middleware/check-auth";
 
+router.get("/isAdmin", userIsAuthenticated);
 router.get("/:id", checkAuth, getUser);
 router.get("/", checkAuth, getAllUser);
-router.get("/isAdmin", userIsAuthenticated);
 router.post("/create", checkAuth, createUser);
 router.put("/:id", checkAuth, updateUser);
 router.delete("/:id", checkAuth, deleteUser);

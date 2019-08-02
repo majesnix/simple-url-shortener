@@ -24,7 +24,7 @@ const withAuthorization = (WrappedComponent: any) => {
 			} catch (err) {
 				console.log("[ERROR]", err);
 			}
-		};
+		}
 
 		public render = () => {
 			return this.state.isAuthorized ? (
@@ -32,7 +32,7 @@ const withAuthorization = (WrappedComponent: any) => {
 			) : (
 				<Login />
 			);
-		};
+		}
 	};
 };
 
