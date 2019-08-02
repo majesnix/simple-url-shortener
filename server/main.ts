@@ -24,7 +24,7 @@ import { User } from "./models";
 import bcrypt from "bcrypt";
 
 const createInitalUser = async () => {
-	if (process.env.INIT!) {
+	if (process.env.INIT! === "true") {
 		try {
 			const Users = database.get("majesurl").getRepository(User);
 
