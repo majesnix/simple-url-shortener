@@ -4,6 +4,5 @@ const logger = pino({ prettyPrint: { colorize: true } });
 
 export default (req: any, _res: Response, next: NextFunction) => {
 	req.log = logger;
-	console.log("REQ", req);
 	next();
 };

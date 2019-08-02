@@ -48,6 +48,7 @@ const createInitalUser = async () => {
 (async () => {
 	await database.get("majesurl").connect();
 	await app.prepare();
+	createInitalUser();
 
 	const server = express();
 
@@ -66,8 +67,6 @@ const createInitalUser = async () => {
 	server.get("*", async (req, res) => {
 		return handle(req, res);
 	});
-
-	createInitalUser();
 
 	server.listen(port, (err: Error) => {
 		if (err) throw err;
