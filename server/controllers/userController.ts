@@ -188,9 +188,8 @@ export const userIsAuthenticated = (req: any, res: Response) => {
 		jwt.verify(token, process.env.JWT_KEY!);
 		req.log.info("TOKEN OK", token);
 		req.log.info("TOKEN DEC", jwt.decode(token));
-		req.log.info("RES", res);
 
-		return res.status(204);
+		return res.status(204).end();
 	} catch (err) {
 		req.log.error("BAD TOKEN");
 		return res.status(401);
