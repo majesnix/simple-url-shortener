@@ -183,7 +183,7 @@ export const loginUser = async (req: any, res: Response) => {
 export const userIsAuthenticated = (req: any, res: Response) => {
 	try {
 		req.log.info("CHECKING USER AUTH");
-		if (!req.headers.authorization) return res.status(401);
+		if (!req.headers.authorization) return res.sendStatus(401);
 		const token = req.headers.authorization.split(" ")[1];
 		jwt.verify(token, process.env.JWT_KEY!);
 		req.log.info("TOKEN OK", token);
@@ -192,6 +192,6 @@ export const userIsAuthenticated = (req: any, res: Response) => {
 		return res.sendStatus(204);
 	} catch (err) {
 		req.log.error("BAD TOKEN");
-		return res.status(401);
+		return res.sendStatus(401);
 	}
 };

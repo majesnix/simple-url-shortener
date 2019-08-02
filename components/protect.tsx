@@ -17,9 +17,8 @@ const withAuthorization = (WrappedComponent: any) => {
 					},
 					timeout: 5000,
 				});
-				console.log("CLIENT RESPONSE", res);
 
-				if (res.status === 204) {
+				if (res.status === 204 || res.status === 304) {
 					this.setState({
 						...this.state,
 						isAuthorized: true,
