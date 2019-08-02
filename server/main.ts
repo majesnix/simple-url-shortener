@@ -35,6 +35,7 @@ const createInitalUser = async () => {
 			user.email = "majesnix@majesnix.org";
 			user.password = hashedPassword;
 			user.username = process.env.ADMIN_USER!;
+			user.active = true;
 
 			await Users.save(user);
 			console.log("CREATED INITAL USER");
