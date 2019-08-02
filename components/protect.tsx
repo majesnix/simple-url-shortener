@@ -19,7 +19,7 @@ const withAuthorization = (WrappedComponent: any) => {
 				});
 				console.log("CLIENT RESPONSE", res);
 
-				if (res.status === 200) {
+				if (res.status === 204) {
 					this.setState({
 						...this.state,
 						isAuthorized: true,
