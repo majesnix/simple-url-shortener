@@ -3,7 +3,7 @@ import axios from "axios";
 
 import Login from "../pages/login";
 
-const withAuthorization = (wrappedComponent) => {
+const withAuthorization = (WrappedComponent) => {
 	return class extends React.Component {
 		public state = {
 			isAuthorized: false
@@ -11,7 +11,7 @@ const withAuthorization = (wrappedComponent) => {
 
 		public componentDidMount = async () => {
 			try {
-				await axios.get(process.env.BASE_URL + "/api/users/isAdmin");
+				await axios.get(`${process.env.BASE_URL}/api/users/isAdmin`);
 				this.setState({
 					...this.state,
 					isAuthorized: true
@@ -21,7 +21,7 @@ const withAuthorization = (wrappedComponent) => {
 			}
 		}
 
-		public render = () => (this.state.isAuthorized ? <wrappedComponent {...this.props} /> : <Login />);
+		public render = () => (this.state.isAuthorized ? <WrappedComponent {...this.props} /> : <Login />);
 	};
 }
 
