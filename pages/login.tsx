@@ -1,4 +1,3 @@
-/* global localStorage */
 import React, { Component } from "react";
 import { withRouter } from "next/router";
 import axios from "axios";

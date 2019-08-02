@@ -3,7 +3,7 @@ import axios from "axios";
 
 import Login from "../pages/login";
 
-const withAuthorization = (WrappedComponent) => {
+const withAuthorization = (WrappedComponent: any) => {
 	return class extends React.Component {
 		public state = {
 			isAuthorized: false

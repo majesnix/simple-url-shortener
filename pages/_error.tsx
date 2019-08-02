@@ -17,7 +17,7 @@ class Error extends Component<any, IState> {
 				: `https://${process.env.BASE_URL}`;
 	}
 
-	public static async getInitialProps({ asPath }) {
+	public static async getInitialProps({ asPath }: { asPath: any }) {
 		return { asPath };
 	}
 

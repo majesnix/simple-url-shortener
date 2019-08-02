@@ -1,11 +1,15 @@
 import jwt from "jsonwebtoken";
 import { Response, NextFunction } from "express";
-import { exReq } from "typings";
 
-export default (req: exReq, res: Response, next: NextFunction) => {
+export default (req: any, res: Response, next: NextFunction) => {
 	try {
+		if (!req.headers.authorization) {
+			return res.status(401).json({
+				message: "Authentication failed",
+			});
+		}
 		const token = req.headers.authorization.split(" ")[1];
-		jwt.verify(token, process.env.JWT_KEY);
+		jwt.verify(token, process.env.JWT_KEY!);
 
 		next();
 	} catch (err) {

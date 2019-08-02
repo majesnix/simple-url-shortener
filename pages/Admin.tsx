@@ -14,6 +14,7 @@ class Admin extends Component<any, IState> {
 			err: false,
 			users: null,
 			links: null,
+			token: null
 		};
 		this.base =
 			process.env.REACT_APP_ENV !== "production"

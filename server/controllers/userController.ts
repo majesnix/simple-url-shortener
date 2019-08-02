@@ -15,7 +15,6 @@ import { User } from "../models";
 import database from "../structures/database";
 
 import { Response } from "express";
-import { exReq } from "typings";
 
 const { JWT_KEY } = process.env;
 
@@ -23,7 +22,7 @@ const getRepo = () => {
 	return database.get("majesurl").getRepository(User);
 };
 
-export const createUser = async (req: exReq, res: Response) => {
+export const createUser = async (req: any, res: Response) => {
 	const { email, username, password, password2 } = req.body;
 
 	let hashedPassword: string;
@@ -53,7 +52,7 @@ export const createUser = async (req: exReq, res: Response) => {
 	}
 };
 
-export const getUser = async (req: exReq, res: Response) => {
+export const getUser = async (req: any, res: Response) => {
 	const { id } = req.params;
 	try {
 		const Users = getRepo();
@@ -68,7 +67,7 @@ export const getUser = async (req: exReq, res: Response) => {
 	}
 };
 
-export const getAllUser = async (req: exReq, res: Response) => {
+export const getAllUser = async (req: any, res: Response) => {
 	try {
 		const Users = getRepo();
 		const users = await Users.find({
@@ -83,7 +82,7 @@ export const getAllUser = async (req: exReq, res: Response) => {
 	}
 };
 
-export const updateUser = async (req: exReq, res: Response) => {
+export const updateUser = async (req: any, res: Response) => {
 	const { id } = req.params;
 	const { password, email } = req.body;
 
@@ -111,7 +110,7 @@ export const updateUser = async (req: exReq, res: Response) => {
 	}
 };
 
-export const deleteUser = async (req: exReq, res: Response) => {
+export const deleteUser = async (req: any, res: Response) => {
 	const { id } = req.body;
 
 	try {
@@ -128,13 +127,13 @@ export const deleteUser = async (req: exReq, res: Response) => {
 	}
 };
 
-export const loginUser = async (req: exReq, res: Response) => {
+export const loginUser = async (req: any, res: Response) => {
 	const { username, email, password } = req.body;
 
 	try {
 		const Users = getRepo();
 
-		let user: User;
+		let user: User | undefined;
 		if (username) {
 			user = await Users.findOne({ where: { username } });
 		} else if (email) {
@@ -152,7 +151,7 @@ export const loginUser = async (req: exReq, res: Response) => {
 					{
 						id: user.id,
 					},
-					JWT_KEY,
+					JWT_KEY!,
 					{
 						expiresIn: "24h",
 					}
@@ -181,10 +180,11 @@ export const loginUser = async (req: exReq, res: Response) => {
 	}
 };
 
-export const userIsAuthenticated = (req: exReq, res: Response) => {
+export const userIsAuthenticated = (req: any, res: Response) => {
 	try {
+		if (!req.headers.authorization) return res.status(401);
 		const token = req.headers.authorization.split(" ")[1];
-		jwt.verify(token, process.env.JWT_KEY);
+		jwt.verify(token, process.env.JWT_KEY!);
 
 		return res.status(200);
 	} catch (err) {

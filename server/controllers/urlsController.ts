@@ -9,13 +9,12 @@ import { Url } from "../models";
 import database from "../structures/database";
 
 import { Response } from "express";
-import { exReq } from "typings";
 
 const getRepo = () => {
 	return database.get("majesurl").getRepository(Url);
 };
 
-export const createUrl = async (req: exReq, res: Response) => {
+export const createUrl = async (req: any, res: Response) => {
 	const { url: urlFromBody } = req.body;
 	const { url: urlFromQuery } = req.query;
 
@@ -56,7 +55,7 @@ export const createUrl = async (req: exReq, res: Response) => {
 	}
 };
 
-export const deleteUrl = async (req: exReq, res: Response) => {
+export const deleteUrl = async (req: any, res: Response) => {
 	const Urls = getRepo();
 	const { id } = req.params;
 
@@ -75,7 +74,7 @@ export const deleteUrl = async (req: exReq, res: Response) => {
 	}
 };
 
-export const getUrl = async (req: exReq, res: Response) => {
+export const getUrl = async (req: any, res: Response) => {
 	const { shortUrl } = req.params;
 
 	try {
@@ -95,7 +94,7 @@ export const getUrl = async (req: exReq, res: Response) => {
 	}
 };
 
-export const getAllUrl = async (_req: exReq, res: Response) => {
+export const getAllUrl = async (_req: any, res: Response) => {
 	try {
 		const Urls = getRepo();
 		const urls = await Urls.find();

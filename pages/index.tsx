@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Axios from "axios";
 import Link from "next/link";
-import { CopyToClipboard } from "react-copy-to-clipboard";
+import CopyToClipboard from "react-copy-to-clipboard";
 import Meta from "../components/meta";
 import { IState } from "../typings";
 
@@ -34,7 +34,7 @@ class Index extends Component<any, IState> {
 			this.setState({
 				shortURL: short,
 				ratelimit: false,
-				err: false
+				err: false,
 			});
 		} catch (error) {
 			console.log(error);
@@ -49,13 +49,13 @@ class Index extends Component<any, IState> {
 				shortURL: null,
 			});
 		}
-	}
+	};
 
 	public handleChange = (evt: any) => {
 		this.setState({
 			url: evt.target.value,
 		});
-	}
+	};
 
 	public render() {
 		return (
@@ -122,7 +122,7 @@ class Index extends Component<any, IState> {
 							type="text"
 							id="url"
 							placeholder="Enter URL here..."
-							value={this.state.url}
+							value={this.state.url ? this.state.url : undefined}
 							onChange={evt => this.handleChange(evt)}
 							style={{
 								marginRight: "1.5rem",
@@ -139,15 +139,21 @@ class Index extends Component<any, IState> {
 						</button>
 					</form>
 					{this.state.shortURL ? (
-						<CopyToClipboard
-							style={{ marginTop: "1.5rem", cursor: "pointer" }}
-							text={this.state.shortURL}
-							onCopy={() => {
-								this.setState({ copied: true });
+						<div
+							style={{
+								marginTop: "1.5rem",
+								cursor: "pointer",
 							}}
 						>
-							<span>{this.state.shortURL}</span>
-						</CopyToClipboard>
+							<CopyToClipboard
+								text={this.state.shortURL}
+								onCopy={() => {
+									this.setState({ copied: true });
+								}}
+							>
+								<span>{this.state.shortURL}</span>
+							</CopyToClipboard>
+						</div>
 					) : null}
 					{this.state.ratelimit && (
 						<div>You send to many requests, please wait 60 minutes</div>

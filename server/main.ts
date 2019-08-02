@@ -1,17 +1,17 @@
 require("reflect-metadata"); // tslint:disable-line
 require("dotenv").config(); // tslint:disable-line
 
-import * as next from "next";
+import next from "next";
 // const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev: false });
 const handle = app.getRequestHandler();
-import * as express from "express";
-import * as bodyParser from "body-parser";
-import * as cors from "cors";
-import * as helmet from "helmet";
+import express from "express";
+import bodyParser from "body-parser";
+import cors from "cors";
+import helmet from "helmet";
 import database from "./structures/database";
 
-const port = parseInt(process.env.PORT, 10) || 3000;
+const port = parseInt(process.env.PORT!, 10) || 3000;
 
 // Routes
 import urlRoutes from "./routes/urls";
