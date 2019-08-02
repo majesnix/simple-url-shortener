@@ -6,16 +6,19 @@ import Login from "../pages/login";
 const withAuthorization = (WrappedComponent: any) => {
 	return class extends React.Component {
 		public state = {
-			isAuthorized: false
+			isAuthorized: false,
 		};
 
 		public componentDidMount = async () => {
+			console.log("PROTECTED DID MOUNT");
 			try {
-				await axios.get(`${process.env.BASE_URL}/api/users/userIsAuthenticated`);
+				await axios.get(
+					`${process.env.BASE_URL}/api/users/userIsAuthenticated`
+				);
 				console.log("USER IS AUTHENTICATED", "STATE PRE: ", this.state);
 				this.setState({
 					...this.state,
-					isAuthorized: true
+					isAuthorized: true,
 				});
 				console.log("STATE AFTER", this.state);
 			} catch (err) {
@@ -23,8 +26,15 @@ const withAuthorization = (WrappedComponent: any) => {
 			}
 		}
 
-		public render = () => (this.state.isAuthorized ? <WrappedComponent {...this.props} /> : <Login />);
+		public render = () => {
+			console.log("RENDERING", this.state.isAuthorized);
+			return this.state.isAuthorized ? (
+				<WrappedComponent {...this.props} />
+			) : (
+				<Login />
+			);
+		}
 	};
-}
+};
 
 export default withAuthorization;
