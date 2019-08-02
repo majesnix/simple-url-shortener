@@ -1,3 +1,4 @@
+/* global localStorage */
 import React, { Component } from "react";
 import Meta from "../components/meta";
 import Link from "next/link";
