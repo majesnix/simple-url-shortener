@@ -11,16 +11,20 @@ const withAuthorization = (WrappedComponent: any) => {
 
 		public componentDidMount = async () => {
 			try {
-				await axios.get("/api/users/isAdmin", {
+				const res = await axios.get("/api/users/isAdmin", {
 					headers: {
 						Authorization: `Bearer ${localStorage.getItem("token")}`,
 					},
 					timeout: 5000,
 				});
-				this.setState({
-					...this.state,
-					isAuthorized: true,
-				});
+				console.log("CLIENT RESPONSE", res);
+
+				if (res.status === 200) {
+					this.setState({
+						...this.state,
+						isAuthorized: true,
+					});
+				}
 			} catch (err) {
 				console.log("[ERROR]", err);
 			}

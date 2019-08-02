@@ -182,6 +182,7 @@ export const loginUser = async (req: any, res: Response) => {
 
 export const userIsAuthenticated = (req: any, res: Response) => {
 	try {
+		console.log("CHECKING USER AUTH");
 		if (!req.headers.authorization) return res.status(401);
 		const token = req.headers.authorization.split(" ")[1];
 		jwt.verify(token, process.env.JWT_KEY!);
