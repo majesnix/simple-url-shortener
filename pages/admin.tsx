@@ -28,7 +28,7 @@ class Admin extends Component<any, IState> {
 				data: { users },
 			} = await Axios.get(`${this.base}/api/users/`, {
 				headers: {
-					Authorization: `Bearer ${this.state.isBrowser && localStorage.getItem("token")}`,
+					Authorization: `Bearer ${localStorage.getItem("token")}`,
 				},
 				timeout: 5000,
 			});
@@ -36,7 +36,7 @@ class Admin extends Component<any, IState> {
 				data: { urls: links },
 			} = await Axios.get(`${this.base}/api/urls/getAll`, {
 				headers: {
-					Authorization: `Bearer ${this.state.isBrowser && localStorage.getItem("token")}`,
+					Authorization: `Bearer ${localStorage.getItem("token")}`,
 				},
 				timeout: 5000,
 			});

@@ -49,13 +49,13 @@ class Index extends Component<any, IState> {
 				shortURL: null,
 			});
 		}
-	};
+	}
 
 	public handleChange = (evt: any) => {
 		this.setState({
 			url: evt.target.value,
 		});
-	};
+	}
 
 	public render() {
 		return (

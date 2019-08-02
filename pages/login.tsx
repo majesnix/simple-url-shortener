@@ -34,7 +34,7 @@ class Login extends Component<any, IState> {
 				username: this.email.current.value,
 				password: this.password.current.value,
 			});
-			this.state.isBrowser && localStorage.setItem("token", token);
+			localStorage.setItem("token", token);
 			window.location.href = `${this.base}/admin`;
 		} catch (err) {
 			this.setState({
