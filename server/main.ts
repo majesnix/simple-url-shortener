@@ -36,6 +36,7 @@ const createInitalUser = async () => {
 		user.username = process.env.ADMIN_USER!;
 
 		await Users.save(user);
+		console.log("CREATED INITAL USER");
 	}
 };
 
