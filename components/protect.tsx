@@ -12,7 +12,7 @@ const withAuthorization = (WrappedComponent: any) => {
 		public componentDidMount = async () => {
 			try {
 				await axios.get(
-					`${process.env.BASE_URL}/api/users/isAdmin`
+					"/api/users/isAdmin"
 				);
 				this.setState({
 					...this.state,
