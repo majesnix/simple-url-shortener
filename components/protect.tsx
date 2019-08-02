@@ -11,9 +11,12 @@ const withAuthorization = (WrappedComponent: any) => {
 
 		public componentDidMount = async () => {
 			try {
-				await axios.get(
-					"/api/users/isAdmin"
-				);
+				await axios.get("/api/users/isAdmin", {
+					headers: {
+						Authorization: `Bearer ${localStorage.getItem("token")}`,
+					},
+					timeout: 5000,
+				});
 				this.setState({
 					...this.state,
 					isAuthorized: true,
@@ -21,7 +24,7 @@ const withAuthorization = (WrappedComponent: any) => {
 			} catch (err) {
 				console.log("[ERROR]", err);
 			}
-		}
+		};
 
 		public render = () => {
 			return this.state.isAuthorized ? (
@@ -29,7 +32,7 @@ const withAuthorization = (WrappedComponent: any) => {
 			) : (
 				<Login />
 			);
-		}
+		};
 	};
 };
 
