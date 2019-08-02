@@ -21,7 +21,7 @@ import checkAuth from "../middleware/check-auth";
 
 router.get("/:id", checkAuth, getUser);
 router.get("/", checkAuth, getAllUser);
-router.get("/isAdmin", checkAuth, userIsAuthenticated);
+router.get("/isAdmin", userIsAuthenticated);
 router.post("/create", checkAuth, createUser);
 router.put("/:id", checkAuth, updateUser);
 router.delete("/:id", checkAuth, deleteUser);
