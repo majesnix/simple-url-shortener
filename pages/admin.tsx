@@ -14,6 +14,7 @@ class Admin extends Component<any, IState> {
 			err: false,
 			users: null,
 			links: null,
+			isBrowser: typeof window !== "undefined"
 		};
 		this.base =
 			process.env.REACT_APP_ENV !== "production"
@@ -27,7 +28,7 @@ class Admin extends Component<any, IState> {
 				data: { users },
 			} = await Axios.get(`${this.base}/api/users/`, {
 				headers: {
-					Authorization: `Bearer ${localStorage.getItem("token")}`,
+					Authorization: `Bearer ${this.state.isBrowser && localStorage.getItem("token")}`,
 				},
 				timeout: 5000,
 			});
@@ -35,7 +36,7 @@ class Admin extends Component<any, IState> {
 				data: { urls: links },
 			} = await Axios.get(`${this.base}/api/urls/getAll`, {
 				headers: {
-					Authorization: `Bearer ${localStorage.getItem("token")}`,
+					Authorization: `Bearer ${this.state.isBrowser && localStorage.getItem("token")}`,
 				},
 				timeout: 5000,
 			});
@@ -56,7 +57,7 @@ class Admin extends Component<any, IState> {
 				data: { urls: links },
 			} = await Axios.delete(`${this.base}/api/urls/${id}`, {
 				headers: {
-					Authorization: `Bearer ${localStorage.getItem("token")}`,
+					Authorization: `Bearer ${this.state.isBrowser && localStorage.getItem("token")}`,
 				},
 			});
 			this.setState({

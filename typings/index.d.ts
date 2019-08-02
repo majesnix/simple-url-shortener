@@ -26,5 +26,6 @@ export type IState = {
 	ratelimit?: boolean;
 	errResponse?: string | null;
 	copied?: boolean;
-	token?: string | null
+	token?: string | null,
+	isBrowser?: any
 }

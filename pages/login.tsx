@@ -14,12 +14,13 @@ class Login extends Component<any, IState> {
 		this.password = React.createRef();
 		this.state = {
 			errResponse: null,
+			isBrowser: typeof window !== "undefined"
 		};
 		this.base =
 			process.env.REACT_APP_ENV !== "production"
 				? `http://${process.env.BASE_URL}:${process.env.PORT}`
 				: `https://${process.env.BASE_URL}`;
-		if (localStorage.getItem("token")) {
+		if (this.state.isBrowser && localStorage.getItem("token")) {
 			window.location.href = `${this.base}/admin`;
 		}
 	}
@@ -33,7 +34,7 @@ class Login extends Component<any, IState> {
 				username: this.email.current.value,
 				password: this.password.current.value,
 			});
-			localStorage.setItem("token", token);
+			this.state.isBrowser && localStorage.setItem("token", token);
 			window.location.href = `${this.base}/admin`;
 		} catch (err) {
 			this.setState({
