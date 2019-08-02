@@ -11,8 +11,7 @@ const Terms = () => (
 				flexDirection: "column",
 				justifyContent: "center",
 				alignItems: "center",
-				height: "100%",
-				marginTop: "1.5rem",
+				height: "100vh",
 				fontSize: "1.5rem",
 			}}
 		>
@@ -48,7 +47,7 @@ const Terms = () => (
 			</Link>
 
 			<h1>Terms of Service</h1>
-			<div style={{ width: "50%", fontSize: "2rem", marginTop: "2rem" }}>
+			<div style={{ width: "50%", fontSize: "2rem", paddingTop: "2rem" }}>
 				By accessing the website at https://dcl.re, you are agreeing to be bound
 				by these terms of service, all applicable laws and regulations, and
 				agree that you are responsible for compliance with any applicable local
