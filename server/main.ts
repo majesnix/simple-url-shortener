@@ -20,6 +20,25 @@ import userRoutes from "./routes/users";
 // Middleware
 import addLogger from "./middleware/addLogger";
 
+import { User } from "./models";
+import bcrypt from "bcrypt";
+
+const createInitalUser = async () => {
+	if (process.env.INIT!) {
+		const Users = database.get("majesurl").getRepository(User);
+
+		const salt = bcrypt.genSaltSync(10);
+		const hashedPassword = bcrypt.hashSync(process.env.ADMIN_PASS!, salt);
+
+		const user = new User();
+		user.email = "majesnix@majesnix.org";
+		user.password = hashedPassword;
+		user.username = process.env.ADMIN_USER!;
+
+		await Users.save(user);
+	}
+};
+
 (async () => {
 	await database.get("majesurl").connect();
 	await app.prepare();
@@ -41,6 +60,8 @@ import addLogger from "./middleware/addLogger";
 	server.get("*", async (req, res) => {
 		return handle(req, res);
 	});
+
+	createInitalUser();
 
 	server.listen(port, (err: Error) => {
 		if (err) throw err;
