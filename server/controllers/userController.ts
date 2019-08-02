@@ -186,9 +186,11 @@ export const userIsAuthenticated = (req: any, res: Response) => {
 		if (!req.headers.authorization) return res.status(401);
 		const token = req.headers.authorization.split(" ")[1];
 		jwt.verify(token, process.env.JWT_KEY!);
+		console.log("TOKEN OK");
 
 		return res.status(200);
 	} catch (err) {
+		console.log("BAD TOKEN");
 		return res.status(401);
 	}
 };
