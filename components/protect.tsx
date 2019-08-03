@@ -6,7 +6,7 @@ import Login from "../pages/login";
 const withAuthorization = (WrappedComponent: any) => {
 	return class extends React.Component {
 		public state = {
-			isAuthorized: false,
+			isAuthorized: true,
 		};
 
 		public componentDidMount = async () => {
