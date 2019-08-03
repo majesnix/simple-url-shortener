@@ -12,7 +12,6 @@ const withAuthorization = (WrappedComponent: any) => {
 
 		public componentDidMount() {
 			try {
-				console.log("COMP DID MOUNT");
 				axios
 					.get("/api/users/isAdmin", {
 						headers: {
@@ -21,9 +20,6 @@ const withAuthorization = (WrappedComponent: any) => {
 						timeout: 5000,
 					})
 					.then(res => {
-						console.log("RESPONSE STATUS", res.status);
-						console.log("TOKEN", localStorage.getItem("token"));
-
 						if (res.status === 204 || res.status === 304) {
 							this.setState({
 								...this.state,
@@ -43,7 +39,7 @@ const withAuthorization = (WrappedComponent: any) => {
 			) : (
 				<Login />
 			);
-		};
+		}
 	};
 };
 

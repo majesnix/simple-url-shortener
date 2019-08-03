@@ -71,7 +71,7 @@ class Index extends Component<any, IState> {
 						fontSize: "1.5rem",
 					}}
 				>
-					<Link href={{ pathname: "/login" }}>
+					{/*<Link href={{ pathname: "/login" }}>
 						<div
 							style={{
 								position: "absolute",
@@ -85,7 +85,7 @@ class Index extends Component<any, IState> {
 						>
 							Admin
 						</div>
-					</Link>
+					</Link>*/}
 					<Link href={{ pathname: "/apidocs" }}>
 						<div
 							style={{

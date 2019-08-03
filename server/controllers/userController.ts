@@ -182,12 +182,9 @@ export const loginUser = async (req: any, res: Response) => {
 
 export const userIsAuthenticated = (req: any, res: Response) => {
 	try {
-		req.log.info("CHECKING USER AUTH");
 		if (!req.headers.authorization) return res.sendStatus(401);
 		const token = req.headers.authorization.split(" ")[1];
 		jwt.verify(token, process.env.JWT_KEY!);
-		req.log.info("TOKEN OK", token);
-		req.log.info("TOKEN DEC", jwt.decode(token));
 
 		return res.sendStatus(204);
 	} catch (err) {
