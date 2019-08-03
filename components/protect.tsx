@@ -12,21 +12,23 @@ const withAuthorization = (WrappedComponent: any) => {
 
 		public render = async () => {
 			try {
-				const res = await axios.get("/api/users/isAdmin", {
-					headers: {
-						Authorization: `Bearer ${localStorage.getItem("token")}`,
-					},
-					timeout: 5000,
-				});
-
-				console.log("RESPONSE STATUS", res.status);
-				console.log("TOKEN", localStorage.getItem("token"));
-
-				if (res.status === 204 || res.status === 304) {
-					this.setState({
-						...this.state,
-						isAuthorized: true,
+				if (typeof window !== "undefined") {
+					const res = await axios.get("/api/users/isAdmin", {
+						headers: {
+							Authorization: `Bearer ${localStorage.getItem("token")}`,
+						},
+						timeout: 5000,
 					});
+
+					console.log("RESPONSE STATUS", res.status);
+					console.log("TOKEN", localStorage.getItem("token"));
+
+					if (res.status === 204 || res.status === 304) {
+						this.setState({
+							...this.state,
+							isAuthorized: true,
+						});
+					}
 				}
 			} catch (err) {
 				console.log("[ERROR]", err);
