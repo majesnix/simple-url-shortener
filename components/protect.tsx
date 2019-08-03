@@ -37,6 +37,7 @@ const withAuthorization = (WrappedComponent: any) => {
 		}
 
 		public render = () => {
+			console.log("state", this.state);
 			return this.state.isBrowser && this.state.isAuthorized ? (
 				<WrappedComponent {...this.props} />
 			) : (
