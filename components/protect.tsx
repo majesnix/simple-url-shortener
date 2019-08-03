@@ -7,45 +7,40 @@ const withAuthorization = (WrappedComponent: any) => {
 	return class extends React.Component {
 		public state = {
 			isAuthorized: false,
-			isBrowser: typeof window !== "undefined",
+			isBrowser: typeof window !== "undefined"
 		};
 
-		public render = async () => {
+		public async componentDidMount() {
 			try {
-				if (typeof window !== "undefined") {
-					const res = await axios.get("/api/users/isAdmin", {
-						headers: {
-							Authorization: `Bearer ${localStorage.getItem("token")}`,
-						},
-						timeout: 5000,
+				console.log("COMP DID MOUNT");
+				const res = await axios.get("/api/users/isAdmin", {
+					headers: {
+						Authorization: `Bearer ${localStorage.getItem("token")}`,
+					},
+					timeout: 5000,
+				});
+
+				console.log("RESPONSE STATUS", res.status);
+				console.log("TOKEN", localStorage.getItem("token"));
+
+				if (res.status === 204 || res.status === 304) {
+					this.setState({
+						...this.state,
+						isAuthorized: true,
 					});
-
-					console.log("RESPONSE STATUS", res.status);
-					console.log("TOKEN", localStorage.getItem("token"));
-
-					if (res.status === 204 || res.status === 304) {
-						this.setState({
-							...this.state,
-							isAuthorized: true,
-						});
-					}
 				}
 			} catch (err) {
 				console.log("[ERROR]", err);
 			}
+		}
 
-			console.log(
-				"isBrowser",
-				this.state.isBrowser,
-				"is auth",
-				this.state.isAuthorized
-			);
+		public render = () => {
 			return this.state.isBrowser && this.state.isAuthorized ? (
 				<WrappedComponent {...this.props} />
 			) : (
 				<Login />
 			);
-		};
+		}
 	};
 };
 
