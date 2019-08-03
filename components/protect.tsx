@@ -7,6 +7,7 @@ const withAuthorization = (WrappedComponent: any) => {
 	return class extends React.Component {
 		public state = {
 			isAuthorized: false,
+			isBrowser: typeof window !== "undefined"
 		};
 
 		public async componentDidMount() {
@@ -33,7 +34,8 @@ const withAuthorization = (WrappedComponent: any) => {
 		}
 
 		public render = () => {
-			return this.state.isAuthorized ? (
+			console.log("isBrowser", this.state.isBrowser, "is auth", this.state.isAuthorized);
+			return this.state.isBrowser && this.state.isAuthorized ? (
 				<WrappedComponent {...this.props} />
 			) : (
 				<Login />
