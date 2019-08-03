@@ -7,28 +7,30 @@ const withAuthorization = (WrappedComponent: any) => {
 	return class extends React.Component {
 		public state = {
 			isAuthorized: false,
-			isBrowser: typeof window !== "undefined"
+			isBrowser: typeof window !== "undefined",
 		};
 
 		public async componentDidMount() {
 			try {
 				console.log("COMP DID MOUNT");
-				const res = await axios.get("/api/users/isAdmin", {
-					headers: {
-						Authorization: `Bearer ${localStorage.getItem("token")}`,
-					},
-					timeout: 5000,
-				});
+				axios
+					.get("/api/users/isAdmin", {
+						headers: {
+							Authorization: `Bearer ${localStorage.getItem("token")}`,
+						},
+						timeout: 5000,
+					})
+					.then(res => {
+						console.log("RESPONSE STATUS", res.status);
+						console.log("TOKEN", localStorage.getItem("token"));
 
-				console.log("RESPONSE STATUS", res.status);
-				console.log("TOKEN", localStorage.getItem("token"));
-
-				if (res.status === 204 || res.status === 304) {
-					this.setState({
-						...this.state,
-						isAuthorized: true,
+						if (res.status === 204 || res.status === 304) {
+							this.setState({
+								...this.state,
+								isAuthorized: true,
+							});
+						}
 					});
-				}
 			} catch (err) {
 				console.log("[ERROR]", err);
 			}
@@ -40,7 +42,7 @@ const withAuthorization = (WrappedComponent: any) => {
 			) : (
 				<Login />
 			);
-		}
+		};
 	};
 };
 
