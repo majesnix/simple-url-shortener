@@ -7,10 +7,10 @@ const withAuthorization = (WrappedComponent: any) => {
 	return class extends React.Component {
 		public state = {
 			isAuthorized: false,
-			isBrowser: typeof window !== "undefined"
+			isBrowser: typeof window !== "undefined",
 		};
 
-		public async componentDidMount() {
+		public render = async () => {
 			try {
 				const res = await axios.get("/api/users/isAdmin", {
 					headers: {
@@ -31,16 +31,19 @@ const withAuthorization = (WrappedComponent: any) => {
 			} catch (err) {
 				console.log("[ERROR]", err);
 			}
-		}
 
-		public render = () => {
-			console.log("isBrowser", this.state.isBrowser, "is auth", this.state.isAuthorized);
+			console.log(
+				"isBrowser",
+				this.state.isBrowser,
+				"is auth",
+				this.state.isAuthorized
+			);
 			return this.state.isBrowser && this.state.isAuthorized ? (
 				<WrappedComponent {...this.props} />
 			) : (
 				<Login />
 			);
-		}
+		};
 	};
 };
 
