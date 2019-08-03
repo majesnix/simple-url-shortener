@@ -10,7 +10,7 @@ const withAuthorization = (WrappedComponent: any) => {
 			isBrowser: typeof window !== "undefined",
 		};
 
-		public async componentDidMount() {
+		public componentDidMount() {
 			try {
 				console.log("COMP DID MOUNT");
 				axios
