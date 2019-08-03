@@ -71,7 +71,7 @@ export const getAllUser = async (req: any, res: Response) => {
 	try {
 		const Users = getRepo();
 		const users = await Users.find({
-			select: ["email", "username", "active"],
+			select: ["id", "email", "username", "active"],
 		});
 
 		return res.status(200).json({ users });

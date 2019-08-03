@@ -9,7 +9,7 @@ const withAuthorization = (WrappedComponent: any) => {
 			isAuthorized: true,
 		};
 
-		public componentDidMount = async () => {
+		public async componentDidMount() {
 			try {
 				const res = await axios.get("/api/users/isAdmin", {
 					headers: {
