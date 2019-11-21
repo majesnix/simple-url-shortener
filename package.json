@@ -40,7 +40,7 @@
 		"@types/react-copy-to-clipboard": "^4.2.6",
 		"@types/shortid": "0.0.29",
 		"cross-env": "^5.2.0",
-		"nodemon": "^1.19.1",
+		"nodemon": "^2.0.0",
 		"ts-node": "^8.3.0",
 		"tslint": "^5.18.0",
 		"tslint-config-fire": "github:majesnix/tslint-config-fire",
