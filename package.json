@@ -34,7 +34,7 @@
 		"@types/express-rate-limit": "^3.3.3",
 		"@types/helmet": "0.0.43",
 		"@types/jsonwebtoken": "^8.3.5",
-		"@types/next": "^8.0.6",
+		"@types/next": "^9.0.0",
 		"@types/pino": "^5.8.13",
 		"@types/react": "^16.9.11",
 		"@types/react-copy-to-clipboard": "^4.2.6",
