@@ -21,7 +21,7 @@
 		"next": "latest",
 		"node-sass": "^4.13.0",
 		"pg": "^7.12.1",
-		"pino": "^5.13.6",
+		"pino": "^5.14.0",
 		"pino-pretty": "^3.3.0",
 		"react": "^16.12.0",
 		"react-copy-to-clipboard": "^5.0.2",
