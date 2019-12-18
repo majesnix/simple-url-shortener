@@ -49,13 +49,13 @@ class Index extends Component<any, IState> {
 				shortURL: null,
 			});
 		}
-	}
+	};
 
 	public handleChange = (evt: any) => {
 		this.setState({
 			url: evt.target.value,
 		});
-	}
+	};
 
 	public render() {
 		return (
@@ -117,7 +117,13 @@ class Index extends Component<any, IState> {
 						</div>
 					</Link>
 					<h1>{process.env.BASE_URL}</h1>
-					<form style={{ marginLeft: "1.5rem", marginTop: "1.5rem" }}>
+					<form
+						style={{
+							marginLeft: "1.5rem",
+							marginTop: "1.5rem",
+							display: "flex",
+						}}
+					>
 						<input
 							type="text"
 							id="url"
@@ -128,7 +134,6 @@ class Index extends Component<any, IState> {
 								marginRight: "1.5rem",
 								fontSize: "1.8rem",
 								width: "25rem",
-								display: "flex"
 							}}
 						/>
 						<button
