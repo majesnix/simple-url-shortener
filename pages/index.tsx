@@ -128,6 +128,7 @@ class Index extends Component<any, IState> {
 								marginRight: "1.5rem",
 								fontSize: "1.8rem",
 								width: "25rem",
+								display: "flex"
 							}}
 						/>
 						<button
