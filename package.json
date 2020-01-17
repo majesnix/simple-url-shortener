@@ -19,7 +19,7 @@
 		"helmet": "^3.21.2",
 		"jsonwebtoken": "^8.5.1",
 		"next": "latest",
-		"node-sass": "^4.13.0",
+		"node-sass": "^4.13.1",
 		"pg": "^7.17.1",
 		"pino": "^5.16.0",
 		"pino-pretty": "^3.5.0",
