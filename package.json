@@ -44,7 +44,7 @@
 		"cross-env": "^6.0.3",
 		"nodemon": "^2.0.2",
 		"ts-node": "^8.6.2",
-		"tslint": "^5.20.1",
+		"tslint": "^6.1.1",
 		"tslint-config-fire": "github:majesnix/tslint-config-fire",
 		"typescript": "^3.7.5"
 	}
