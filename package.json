@@ -20,7 +20,7 @@
 		"jsonwebtoken": "^8.5.1",
 		"next": "latest",
 		"node-sass": "^4.13.1",
-		"pg": "^7.17.1",
+		"pg": "^8.0.3",
 		"pino": "^5.16.0",
 		"pino-pretty": "^3.5.0",
 		"react": "^16.12.0",
