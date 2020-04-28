@@ -70,7 +70,7 @@ export const deleteUrl = async (req: any, res: Response) => {
 			urls,
 		});
 	} catch (error) {
-		req.log.error("Error deleting URL ", error);
+		req.log.error(error);
 		const urls = await Urls.find();
 
 		return res.status(200).json({ urls });
