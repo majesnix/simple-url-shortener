@@ -27,27 +27,26 @@ const Admin: React.FunctionComponent = () => {
 			: `https://${process.env.BASE_URL}`;
 
 	const getData = async () => {
-		setUsers(
-			await ky
-				.get(`${base}/api/users/`, {
-					headers: {
-						Authorization: `Bearer ${localStorage.getItem("token")}`,
-					},
-					timeout: 5000,
-				})
-				.json()
-		);
+		const users = await ky
+			.get(`${base}/api/users/`, {
+				headers: {
+					Authorization: `Bearer ${localStorage.getItem("token")}`,
+				},
+				timeout: 5000,
+			})
+			.json();
+		setUsers([...users]);
 		console.log("ADMIN USERS", users);
-		setLinks(
-			await ky
-				.get(`${base}/api/urls/getAll`, {
-					headers: {
-						Authorization: `Bearer ${localStorage.getItem("token")}`,
-					},
-					timeout: 5000,
-				})
-				.json()
-		);
+		const links = await ky
+			.get(`${base}/api/urls/getAll`, {
+				headers: {
+					Authorization: `Bearer ${localStorage.getItem("token")}`,
+				},
+				timeout: 5000,
+			})
+			.json();
+		setLinks([...links]);
+		console.log("ALL LINKS", links);
 	};
 
 	useEffect(() => {
