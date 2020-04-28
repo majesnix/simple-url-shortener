@@ -43,7 +43,7 @@ const Admin: React.FunctionComponent = () => {
 	});
 
 	const getData = async () => {
-		const users = await ky
+		const { users } = await ky
 			.get(`${base}/api/users/`, {
 				headers: {
 					Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -53,7 +53,7 @@ const Admin: React.FunctionComponent = () => {
 			.json();
 		console.log("ADMIN USERS", users);
 		setUsers(users);
-		const links = await ky
+		const { urls: links } = await ky
 			.get(`${base}/api/urls/getAll`, {
 				headers: {
 					Authorization: `Bearer ${localStorage.getItem("token")}`,
