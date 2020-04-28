@@ -39,7 +39,7 @@ const Admin: React.FunctionComponent = () => {
 			.catch(() => {
 				window.location.href = base;
 			});
-	});
+	}, []);
 
 	const getData = async () => {
 		const { users } = await ky
@@ -72,6 +72,7 @@ const Admin: React.FunctionComponent = () => {
 
 	const handleClick = async (id: number) => {
 		try {
+			console.log("deleting link");
 			const { urls: links } = await ky
 				.delete(`${base}/api/urls/${id}`, {
 					headers: {
@@ -79,6 +80,7 @@ const Admin: React.FunctionComponent = () => {
 					},
 				})
 				.json();
+			console.log("deleted got new links", links);
 			setLinks(links);
 		} catch (error) {
 			setError(true);
