@@ -51,8 +51,8 @@ const Admin: React.FunctionComponent = () => {
 				timeout: 5000,
 			})
 			.json();
-		setUsers([...users]);
 		console.log("ADMIN USERS", users);
+		setUsers(users);
 		const links = await ky
 			.get(`${base}/api/urls/getAll`, {
 				headers: {
@@ -61,8 +61,8 @@ const Admin: React.FunctionComponent = () => {
 				timeout: 5000,
 			})
 			.json();
-		setLinks([...links]);
 		console.log("ALL LINKS", links);
+		setLinks(links);
 	};
 
 	useEffect(() => {

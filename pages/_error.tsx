@@ -26,7 +26,6 @@ class Error extends Component<any, IState> {
 			const data = await ky
 				.get(`${this.base}/api/urls${this.props.asPath}`)
 				.json();
-			console.log("DATA ERROR", data);
 			window.location.href = data.url;
 		} catch (err) {
 			console.error("ERROR IN ERROR", err);
