@@ -9,7 +9,7 @@ const withAuthorization = (WrappedComponent: any) => {
 			isBrowser: typeof window !== "undefined",
 		};
 
-		public componentDidMount() {
+		public componentWillMount() {
 			try {
 				ky.get("/api/users/isAdmin", {
 					headers: {
