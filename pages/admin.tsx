@@ -4,7 +4,7 @@ import Meta from "../components/meta";
 const ky = require("ky/umd");
 
 interface IUser {
-	id: string;
+	id: number;
 	username: string;
 	email: string;
 }
@@ -87,6 +87,24 @@ const Admin: React.FunctionComponent = () => {
 		}
 	};
 
+	const deleteUser = async (user: IUser) => {
+		try {
+			console.log("deleting link");
+			await ky.delete(`${base}/api/users/${user.id}`, {
+				headers: {
+					Authorization: `Bearer ${localStorage.getItem("token")}`,
+				},
+			});
+			const idx = users!.indexOf(user);
+			if (idx) {
+				users!.splice(idx, 1);
+				setLinks(links);
+			}
+		} catch (error) {
+			setError(true);
+		}
+	};
+
 	return (
 		<div
 			style={{
@@ -118,6 +136,14 @@ const Admin: React.FunctionComponent = () => {
 									</td>
 									<td>{user.username}</td>
 									<td>{user.email}</td>
+									<td>
+										<div
+											style={{ color: "red" }}
+											onClick={() => deleteUser(user)}
+										>
+											🗑
+										</div>
+									</td>
 								</tr>
 						  ))
 						: null}
