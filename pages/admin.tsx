@@ -72,14 +72,11 @@ const Admin: React.FunctionComponent = () => {
 	}, []);
 
 	const handleClick = async (evt: any, id: number) => {
-		evt.preventDefault();
 		try {
 			const { urls: links } = await ky
 				.delete(`${base}/api/urls/${id}`, {
 					headers: {
-						Authorization: `Bearer ${
-							isBrowser && localStorage.getItem("token")
-						}`,
+						Authorization: `Bearer ${localStorage.getItem("token")}`,
 					},
 				})
 				.json();
@@ -151,8 +148,13 @@ const Admin: React.FunctionComponent = () => {
 									</td>
 									<td>{link.longUrl}</td>
 									<td>{link.shortUrl}</td>
-									<td onClick={(evt) => handleClick(evt, link.id)}>
-										<div className="button">Burn it!</div>
+									<td>
+										<div
+											className="button"
+											onClick={(evt) => handleClick(evt, link.id)}
+										>
+											Burn it!
+										</div>
 									</td>
 								</tr>
 						  ))
