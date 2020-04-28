@@ -1,8 +1,8 @@
-import React, { Component, useEffect } from "react";
-import Meta from "../components/meta";
 import Link from "next/link";
-const ky = require("ky/umd");
+import React, { useEffect } from "react";
+import Meta from "../components/meta";
 import protect from "../components/protect";
+const ky = require("ky/umd");
 
 interface IUser {
 	id: string;
