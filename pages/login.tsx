@@ -36,7 +36,6 @@ class Login extends Component<any, IState> {
 					},
 				})
 				.json();
-			console.log("TOKEN", token);
 			localStorage.setItem("token", token);
 			window.location.href = `${this.base}/admin`;
 		} catch (err) {

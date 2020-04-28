@@ -72,7 +72,6 @@ const Admin: React.FunctionComponent = () => {
 
 	const handleClick = async (id: number) => {
 		try {
-			console.log("deleting link");
 			const { urls: links } = await ky
 				.delete(`${base}/api/urls/${id}`, {
 					headers: {
@@ -80,7 +79,6 @@ const Admin: React.FunctionComponent = () => {
 					},
 				})
 				.json();
-			console.log("deleted got new links", links);
 			setLinks(links);
 		} catch (error) {
 			setError(true);
@@ -89,7 +87,6 @@ const Admin: React.FunctionComponent = () => {
 
 	const deleteUser = async (user: IUser) => {
 		try {
-			console.log("TRYING TO DELETE USER", user);
 			await ky.delete(`${base}/api/users/${user.id}`, {
 				headers: {
 					Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -99,7 +96,7 @@ const Admin: React.FunctionComponent = () => {
 			if (idx) {
 				const copy = users;
 				copy!.splice(idx, 1);
-				setUsers(copy);
+				setUsers([...copy!]);
 			}
 		} catch (error) {
 			setError(true);
