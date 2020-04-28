@@ -32,6 +32,7 @@ class Admin extends Component<any, IState> {
 					timeout: 5000,
 				})
 				.json();
+			console.log("ADMIN USERS", users);
 			const links = await ky
 				.get(`${this.base}/api/urls/getAll`, {
 					headers: {
@@ -40,6 +41,7 @@ class Admin extends Component<any, IState> {
 					timeout: 5000,
 				})
 				.json();
+			console.log("LINKS ADMIN", links);
 
 			this.setState({
 				users,
@@ -62,6 +64,7 @@ class Admin extends Component<any, IState> {
 					},
 				})
 				.json();
+			console.log("NEW LINKS", links);
 			this.setState({
 				links,
 			});

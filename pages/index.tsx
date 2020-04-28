@@ -29,6 +29,7 @@ class Index extends Component<any, IState> {
 			const short = await ky.post(`${this.base}/api/urls`, {
 				json: { url: this.state.url },
 			}).json();
+			console.log("SHORT", short);
 			this.setState({
 				shortURL: short,
 				ratelimit: false,

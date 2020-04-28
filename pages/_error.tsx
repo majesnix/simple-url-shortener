@@ -23,9 +23,10 @@ class Error extends Component<any, IState> {
 
 	public componentDidMount = async () => {
 		try {
-			const { data } = await ky
+			const data = await ky
 				.get(`${this.base}/api/urls${this.props.asPath}`)
 				.json();
+				console.log("DATA ERROR", data);
 			window.location.href = data.url;
 		} catch (err) {
 			this.setState({
