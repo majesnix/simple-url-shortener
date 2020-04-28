@@ -111,7 +111,7 @@ export const updateUser = async (req: any, res: Response) => {
 };
 
 export const deleteUser = async (req: any, res: Response) => {
-	const { id } = req.body;
+	const { id } = req.params;
 
 	try {
 		const Users = getRepo();
