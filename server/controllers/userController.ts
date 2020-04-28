@@ -162,7 +162,7 @@ export const loginUser = async (req: any, res: Response) => {
 					token,
 				});
 			} else {
-				req.log.error("WRON PASSWORD");
+				req.log.error("WRONG PASSWORD");
 
 				return res.status(403).json({ message: "Wrong password" });
 			}
