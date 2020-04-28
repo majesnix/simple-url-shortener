@@ -29,6 +29,7 @@ class Error extends Component<any, IState> {
 				console.log("DATA ERROR", data);
 			window.location.href = data.url;
 		} catch (err) {
+			console.error("ERROR IN ERROR", err);
 			this.setState({
 				err: true,
 			});
