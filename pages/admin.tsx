@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React, { useEffect } from "react";
 import Meta from "../components/meta";
-import protect from "../components/protect";
 const ky = require("ky/umd");
 
 interface IUser {
@@ -25,6 +24,23 @@ const Admin: React.FunctionComponent = () => {
 		process.env.REACT_APP_ENV !== "production"
 			? `http://${process.env.BASE_URL}:${process.env.PORT}`
 			: `https://${process.env.BASE_URL}`;
+
+	const checkAdmin = async () => {
+		await ky.get("/api/users/isAdmin", {
+			headers: {
+				Authorization: `Bearer ${localStorage.getItem("token")}`,
+			},
+			timeout: 5000,
+		});
+	};
+
+	useEffect(() => {
+		checkAdmin()
+			.then(() => console.log("Admin check passed"))
+			.catch(() => {
+				window.location.href = base;
+			});
+	});
 
 	const getData = async () => {
 		const users = await ky
@@ -165,4 +181,4 @@ const Admin: React.FunctionComponent = () => {
 	);
 };
 
-export default protect(Admin);
+export default Admin;
