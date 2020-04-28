@@ -26,10 +26,11 @@ class Index extends Component<any, IState> {
 	public handleSubmit = async (evt: any) => {
 		evt.preventDefault();
 		try {
-			const short = await ky.post(`${this.base}/api/urls`, {
-				json: { url: this.state.url },
-			}).json();
-			console.log("SHORT", short);
+			const { short } = await ky
+				.post(`${this.base}/api/urls`, {
+					json: { url: this.state.url },
+				})
+				.json();
 			this.setState({
 				shortURL: short,
 				ratelimit: false,
