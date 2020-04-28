@@ -20,9 +20,7 @@ const Admin: React.FunctionComponent = () => {
 	const [err, setError] = React.useState(false);
 	const [users, setUsers] = React.useState<IUser[] | null>(null);
 	const [links, setLinks] = React.useState<ILink[] | null>(null);
-	const [isBrowser, setIsBrowser] = React.useState(
-		typeof window !== "undefined"
-	);
+	const isBrowser = typeof window !== "undefined";
 	const base =
 		process.env.REACT_APP_ENV !== "production"
 			? `http://${process.env.BASE_URL}:${process.env.PORT}`
