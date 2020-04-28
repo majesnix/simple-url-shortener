@@ -89,7 +89,7 @@ const Admin: React.FunctionComponent = () => {
 
 	const deleteUser = async (user: IUser) => {
 		try {
-			console.log("deleting link");
+			console.log("TRYING TO DELETE USER", user);
 			await ky.delete(`${base}/api/users/${user.id}`, {
 				headers: {
 					Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -97,8 +97,9 @@ const Admin: React.FunctionComponent = () => {
 			});
 			const idx = users!.indexOf(user);
 			if (idx) {
-				users!.splice(idx, 1);
-				setLinks(links);
+				const copy = users;
+				copy!.splice(idx, 1);
+				setUsers(copy);
 			}
 		} catch (error) {
 			setError(true);
