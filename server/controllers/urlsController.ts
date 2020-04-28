@@ -61,7 +61,7 @@ export const deleteUrl = async (req: any, res: Response) => {
 	console.log("ID TO DELETE", id);
 
 	try {
-		await Urls.delete(id);
+		await Urls.delete({ id });
 
 		const urls = await Urls.find();
 
