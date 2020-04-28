@@ -58,16 +58,19 @@ export const createUrl = async (req: any, res: Response) => {
 export const deleteUrl = async (req: any, res: Response) => {
 	const Urls = getRepo();
 	const { id } = req.params;
+	console.log("ID TO DELETE", id);
 
 	try {
 		await Urls.delete(id);
 
 		const urls = await Urls.find();
 
+		console.log("DELETED", urls);
 		return res.status(200).json({
 			urls,
 		});
 	} catch (error) {
+		req.log.error("Error deleting URL ", error);
 		const urls = await Urls.find();
 
 		return res.status(200).json({ urls });
