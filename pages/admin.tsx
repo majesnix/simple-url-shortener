@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Meta from "../components/meta";
 import Link from "next/link";
-import Axios from "axios";
+const ky = require("ky/umd");
 import { IState } from "../typings";
 import protect from "../components/protect";
 
@@ -14,7 +14,7 @@ class Admin extends Component<any, IState> {
 			err: false,
 			users: null,
 			links: null,
-			isBrowser: typeof window !== "undefined"
+			isBrowser: typeof window !== "undefined",
 		};
 		this.base =
 			process.env.REACT_APP_ENV !== "production"
@@ -26,20 +26,24 @@ class Admin extends Component<any, IState> {
 		try {
 			const {
 				data: { users },
-			} = await Axios.get(`${this.base}/api/users/`, {
-				headers: {
-					Authorization: `Bearer ${localStorage.getItem("token")}`,
-				},
-				timeout: 5000,
-			});
+			} = await ky
+				.get(`${this.base}/api/users/`, {
+					headers: {
+						Authorization: `Bearer ${localStorage.getItem("token")}`,
+					},
+					timeout: 5000,
+				})
+				.json();
 			const {
 				data: { urls: links },
-			} = await Axios.get(`${this.base}/api/urls/getAll`, {
-				headers: {
-					Authorization: `Bearer ${localStorage.getItem("token")}`,
-				},
-				timeout: 5000,
-			});
+			} = await ky
+				.get(`${this.base}/api/urls/getAll`, {
+					headers: {
+						Authorization: `Bearer ${localStorage.getItem("token")}`,
+					},
+					timeout: 5000,
+				})
+				.json();
 
 			this.setState({
 				users,
@@ -48,18 +52,22 @@ class Admin extends Component<any, IState> {
 		} catch (error) {
 			console.log(error);
 		}
-	}
+	};
 
 	public handleClick = async (evt: any, id: number) => {
 		evt.preventDefault();
 		try {
 			const {
 				data: { urls: links },
-			} = await Axios.delete(`${this.base}/api/urls/${id}`, {
-				headers: {
-					Authorization: `Bearer ${this.state.isBrowser && localStorage.getItem("token")}`,
-				},
-			});
+			} = await ky
+				.delete(`${this.base}/api/urls/${id}`, {
+					headers: {
+						Authorization: `Bearer ${
+							this.state.isBrowser && localStorage.getItem("token")
+						}`,
+					},
+				})
+				.json();
 			this.setState({
 				links,
 			});
@@ -68,7 +76,7 @@ class Admin extends Component<any, IState> {
 				err: true,
 			});
 		}
-	}
+	};
 
 	public render() {
 		return (
@@ -95,7 +103,7 @@ class Admin extends Component<any, IState> {
 					</thead>
 					<tbody>
 						{this.state.users
-							? this.state.users.map(user => (
+							? this.state.users.map((user) => (
 									<tr key={`user-${user.id}`}>
 										<td>
 											<strong>{user.id}</strong>
@@ -103,7 +111,7 @@ class Admin extends Component<any, IState> {
 										<td>{user.username}</td>
 										<td>{user.email}</td>
 									</tr>
-							))
+							  ))
 							: null}
 					</tbody>
 				</table>
@@ -126,18 +134,18 @@ class Admin extends Component<any, IState> {
 					</thead>
 					<tbody>
 						{this.state.links
-							? this.state.links.map(link => (
+							? this.state.links.map((link) => (
 									<tr key={`link-${link.shortUrl}`}>
 										<td>
 											<strong>{link.id}</strong>
 										</td>
 										<td>{link.longUrl}</td>
 										<td>{link.shortUrl}</td>
-										<td onClick={evt => this.handleClick(evt, link.id)}>
+										<td onClick={(evt) => this.handleClick(evt, link.id)}>
 											<div className="button">Burn it!</div>
 										</td>
 									</tr>
-							))
+							  ))
 							: null}
 					</tbody>
 				</table>

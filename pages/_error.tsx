@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import axios from "axios";
+const ky = require("ky/umd");
 import Meta from "../components/meta";
 import { IState } from "../typings";
 
@@ -23,16 +23,16 @@ class Error extends Component<any, IState> {
 
 	public componentDidMount = async () => {
 		try {
-			const { data } = await axios.get(
-				`${this.base}/api/urls${this.props.asPath}`
-			);
+			const { data } = await ky
+				.get(`${this.base}/api/urls${this.props.asPath}`)
+				.json();
 			window.location.href = data.url;
 		} catch (err) {
 			this.setState({
 				err: true,
 			});
 		}
-	}
+	};
 
 	public render() {
 		return (

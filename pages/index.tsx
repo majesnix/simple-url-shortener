@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Axios from "axios";
+const ky = require("ky/umd");
 import Link from "next/link";
 import CopyToClipboard from "react-copy-to-clipboard";
 import Meta from "../components/meta";
@@ -28,9 +28,9 @@ class Index extends Component<any, IState> {
 		try {
 			const {
 				data: { short },
-			} = await Axios.post(`${this.base}/api/urls`, {
-				url: this.state.url,
-			});
+			} = await ky.post(`${this.base}/api/urls`, {
+				json: { url: this.state.url },
+			}).json();
 			this.setState({
 				shortURL: short,
 				ratelimit: false,
@@ -129,7 +129,7 @@ class Index extends Component<any, IState> {
 							id="url"
 							placeholder="Enter URL here..."
 							value={this.state.url ? this.state.url : undefined}
-							onChange={evt => this.handleChange(evt)}
+							onChange={(evt) => this.handleChange(evt)}
 							style={{
 								marginRight: "1.5rem",
 								fontSize: "1.8rem",
@@ -139,7 +139,7 @@ class Index extends Component<any, IState> {
 						<button
 							className="button"
 							type="submit"
-							onClick={evt => this.handleSubmit(evt)}
+							onClick={(evt) => this.handleSubmit(evt)}
 						>
 							Shorten
 						</button>

@@ -2,7 +2,7 @@ import { Router } from "express";
 const router: Router = Router();
 
 import rateLimit from "express-rate-limit";
-const loginLimiter = new rateLimit({
+const loginLimiter = rateLimit({
 	max: 5,
 	message: "Too many requests, please try again after an hour",
 	windowMs: 15 * 60 * 1000,

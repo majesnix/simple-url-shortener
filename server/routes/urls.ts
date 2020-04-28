@@ -2,7 +2,7 @@ import { Router } from "express";
 const router: Router = Router();
 
 import rateLimit from "express-rate-limit";
-const apiLimiter = new rateLimit({
+const apiLimiter = rateLimit({
 	windowMs: 15 * 60 * 1000,
 	max: 15,
 });

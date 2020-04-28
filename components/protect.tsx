@@ -1,6 +1,5 @@
 import React from "react";
-import axios from "axios";
-
+const ky = require("ky/umd");
 import Login from "../pages/login";
 
 const withAuthorization = (WrappedComponent: any) => {
@@ -12,21 +11,19 @@ const withAuthorization = (WrappedComponent: any) => {
 
 		public componentDidMount() {
 			try {
-				axios
-					.get("/api/users/isAdmin", {
-						headers: {
-							Authorization: `Bearer ${localStorage.getItem("token")}`,
-						},
-						timeout: 5000,
-					})
-					.then(res => {
-						if (res.status === 204 || res.status === 304) {
-							this.setState({
-								...this.state,
-								isAuthorized: true,
-							});
-						}
-					});
+				ky.get("/api/users/isAdmin", {
+					headers: {
+						Authorization: `Bearer ${localStorage.getItem("token")}`,
+					},
+					timeout: 5000,
+				}).then((res: any) => {
+					if (res.status === 204 || res.status === 304) {
+						this.setState({
+							...this.state,
+							isAuthorized: true,
+						});
+					}
+				});
 			} catch (err) {
 				console.log("[ERROR]", err);
 			}
@@ -39,7 +36,7 @@ const withAuthorization = (WrappedComponent: any) => {
 			) : (
 				<Login />
 			);
-		}
+		};
 	};
 };
 
