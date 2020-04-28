@@ -23,13 +23,11 @@ class Error extends Component<any, IState> {
 
 	public componentDidMount = async () => {
 		try {
-			if (this.props.asPath !== "/admin") {
-				const data = await ky
-					.get(`${this.base}/api/urls${this.props.asPath}`)
-					.json();
-				console.log("DATA ERROR", data);
-				window.location.href = data.url;
-			}
+			const data = await ky
+				.get(`${this.base}/api/urls${this.props.asPath}`)
+				.json();
+			console.log("DATA ERROR", data);
+			window.location.href = data.url;
 		} catch (err) {
 			console.error("ERROR IN ERROR", err);
 			this.setState({
