@@ -70,7 +70,7 @@ const Admin: React.FunctionComponent = () => {
 		}
 	}, []);
 
-	const handleClick = async (evt: any, id: number) => {
+	const handleClick = async (id: number) => {
 		try {
 			const { urls: links } = await ky
 				.delete(`${base}/api/urls/${id}`, {
@@ -150,7 +150,7 @@ const Admin: React.FunctionComponent = () => {
 									<td>
 										<div
 											className="button"
-											onClick={(evt) => handleClick(evt, link.id)}
+											onClick={() => handleClick(link.id)}
 										>
 											Burn it!
 										</div>
