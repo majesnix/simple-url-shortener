@@ -51,7 +51,6 @@ const Admin: React.FunctionComponent = () => {
 				timeout: 5000,
 			})
 			.json();
-		console.log("ADMIN USERS", users);
 		setUsers(users);
 		const { urls: links } = await ky
 			.get(`${base}/api/urls/getAll`, {
@@ -61,7 +60,6 @@ const Admin: React.FunctionComponent = () => {
 				timeout: 5000,
 			})
 			.json();
-		console.log("ALL LINKS", links);
 		setLinks(links);
 	};
 
@@ -76,7 +74,7 @@ const Admin: React.FunctionComponent = () => {
 	const handleClick = async (evt: any, id: number) => {
 		evt.preventDefault();
 		try {
-			const links = await ky
+			const { urls: links } = await ky
 				.delete(`${base}/api/urls/${id}`, {
 					headers: {
 						Authorization: `Bearer ${
@@ -85,7 +83,6 @@ const Admin: React.FunctionComponent = () => {
 					},
 				})
 				.json();
-			console.log("NEW LINKS", links);
 			setLinks(links);
 		} catch (error) {
 			setError(true);
