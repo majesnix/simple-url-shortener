@@ -24,9 +24,7 @@ class Admin extends Component<any, IState> {
 
 	public componentDidMount = async () => {
 		try {
-			const {
-				data: { users },
-			} = await ky
+			const users = await ky
 				.get(`${this.base}/api/users/`, {
 					headers: {
 						Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -34,9 +32,7 @@ class Admin extends Component<any, IState> {
 					timeout: 5000,
 				})
 				.json();
-			const {
-				data: { urls: links },
-			} = await ky
+			const links = await ky
 				.get(`${this.base}/api/urls/getAll`, {
 					headers: {
 						Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -57,9 +53,7 @@ class Admin extends Component<any, IState> {
 	public handleClick = async (evt: any, id: number) => {
 		evt.preventDefault();
 		try {
-			const {
-				data: { urls: links },
-			} = await ky
+			const links = await ky
 				.delete(`${this.base}/api/urls/${id}`, {
 					headers: {
 						Authorization: `Bearer ${

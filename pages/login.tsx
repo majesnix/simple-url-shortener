@@ -28,9 +28,7 @@ class Login extends Component<any, IState> {
 	private readonly handleSubmit = async (evt: any) => {
 		evt.preventDefault();
 		try {
-			const {
-				data: { token },
-			} = await ky
+			const token = await ky
 				.post(`${this.base}/api/users/login`, {
 					json: {
 						username: this.email.current.value,
