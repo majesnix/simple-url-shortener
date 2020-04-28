@@ -16,7 +16,8 @@ const withAuthorization = (WrappedComponent: any) => {
 						Authorization: `Bearer ${localStorage.getItem("token")}`,
 					},
 					timeout: 5000,
-				}).then((res: any) => {
+				}).then((res: Response) => {
+					console.log("RESPONSE", res);
 					if (res.status === 204 || res.status === 304) {
 						this.setState({
 							...this.state,
