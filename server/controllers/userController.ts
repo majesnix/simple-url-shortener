@@ -115,7 +115,7 @@ export const deleteUser = async (req: any, res: Response) => {
 
 	try {
 		const Users = getRepo();
-		await Users.delete(id);
+		await Users.delete({ id });
 
 		return res.status(200).json({
 			message: "User deleted",
