@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { withRouter } from "next/router";
-import axios from "axios";
+const ky = require("ky/umd");
 import { IState } from "../typings";
 
 class Login extends Component<any, IState> {
@@ -14,7 +14,7 @@ class Login extends Component<any, IState> {
 		this.password = React.createRef();
 		this.state = {
 			errResponse: null,
-			isBrowser: typeof window !== "undefined"
+			isBrowser: typeof window !== "undefined",
 		};
 		this.base =
 			process.env.REACT_APP_ENV !== "production"
@@ -30,10 +30,14 @@ class Login extends Component<any, IState> {
 		try {
 			const {
 				data: { token },
-			} = await axios.post(`${this.base}/api/users/login`, {
-				username: this.email.current.value,
-				password: this.password.current.value,
-			});
+			} = await ky
+				.post(`${this.base}/api/users/login`, {
+					json: {
+						username: this.email.current.value,
+						password: this.password.current.value,
+					},
+				})
+				.json();
 			localStorage.setItem("token", token);
 			window.location.href = `${this.base}/admin`;
 		} catch (err) {
@@ -41,7 +45,7 @@ class Login extends Component<any, IState> {
 				errResponse: err.response.data.message,
 			});
 		}
-	}
+	};
 
 	public render() {
 		return (
