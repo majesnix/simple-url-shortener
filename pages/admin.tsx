@@ -47,6 +47,7 @@ class Admin extends Component<any, IState> {
 				users,
 				links,
 			});
+			console.log("STATE", this.state);
 		} catch (error) {
 			console.log(error);
 		}

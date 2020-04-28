@@ -9,26 +9,26 @@ const withAuthorization = (WrappedComponent: any) => {
 			isBrowser: typeof window !== "undefined",
 		};
 
-		public componentWillMount() {
+		public componentDidMount = async () => {
 			try {
-				ky.get("/api/users/isAdmin", {
+				const res = await ky.get("/api/users/isAdmin", {
 					headers: {
 						Authorization: `Bearer ${localStorage.getItem("token")}`,
 					},
 					timeout: 5000,
-				}).then((res: Response) => {
-					console.log("RESPONSE", res);
-					if (res.status === 204 || res.status === 304) {
-						this.setState({
-							...this.state,
-							isAuthorized: true,
-						});
-					}
 				});
+
+				console.log("RESPONSE", res);
+				if (res.status === 204 || res.status === 304) {
+					this.setState({
+						...this.state,
+						isAuthorized: true,
+					});
+				}
 			} catch (err) {
 				console.log("[ERROR]", err);
 			}
-		}
+		};
 
 		public render = () => {
 			console.log("state", this.state);
