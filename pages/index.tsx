@@ -45,7 +45,7 @@ class Index extends Component<any, IState> {
 			toast.notify(({ onClose }) => (
 				<div
 					style={{
-						width: "200px",
+						width: "300px",
 						height: "42px",
 						backgroundColor: "#2e7d32",
 						fontSize: 24,
