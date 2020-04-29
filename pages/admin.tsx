@@ -159,7 +159,7 @@ const Admin: React.FunctionComponent = () => {
 					Something went wrong, take a look at the console
 				</div>
 			) : null}
-			<table style={{ marginTop: "2.5rem" }}>
+			<table style={{ marginTop: "2.5rem", backgroundColor: "#121212" }}>
 				<thead>
 					<tr>
 						<th>
