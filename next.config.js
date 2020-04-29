@@ -2,11 +2,14 @@
 const { parsed: localEnv } = require("dotenv").config();
 const webpack = require("webpack");
 const withSass = require("@zeit/next-sass");
+const withCSS = require("@zeit/next-css");
 
-module.exports = withSass({
-	webpack: config => {
-		config.plugins.push(new webpack.EnvironmentPlugin(localEnv));
+module.exports = withCSS(
+	withSass({
+		webpack: (config) => {
+			config.plugins.push(new webpack.EnvironmentPlugin(localEnv));
 
-		return config;
-	},
-});
+			return config;
+		},
+	})
+);

@@ -4,7 +4,9 @@ import Link from "next/link";
 import CopyToClipboard from "react-copy-to-clipboard";
 import Meta from "../components/meta";
 import { IState } from "../typings";
-import "../styles/main.scss"
+import toast from "toasted-notes";
+import "toasted-notes/src/styles.css";
+import "../styles/main.scss";
 
 class Index extends Component<any, IState> {
 	private readonly base: string;
@@ -33,12 +35,14 @@ class Index extends Component<any, IState> {
 				})
 				.json();
 			this.setState({
+				url: "",
 				shortURL: short,
 				ratelimit: false,
 				err: false,
 			});
 			// write short url to clipboard
 			navigator.clipboard.writeText(short);
+			toast.notify("Url copied to clipboard!");
 		} catch (error) {
 			console.log(error);
 			if (error.response.status === 429) {
