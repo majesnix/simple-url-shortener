@@ -44,7 +44,7 @@ class Index extends Component<any, IState> {
 			navigator.clipboard.writeText(short);
 			toast.notify(({ onClose }) => (
 				<div
-					style={{ width: "250px", height: "50px", backgroundColor: "#2e7d32" }}
+					style={{ width: "150px", height: "42px", backgroundColor: "#2e7d32", fontSize: 24 }}
 					onClick={onClose}
 				>
 					Url copied to clipboard!
