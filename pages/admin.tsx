@@ -2,7 +2,7 @@ import Link from "next/link";
 import React, { useEffect } from "react";
 import Meta from "../components/meta";
 const ky = require("ky/umd");
-import "../styles/main.scss"
+import "../styles/main.scss";
 
 interface IUser {
 	id: number;
@@ -121,7 +121,7 @@ const Admin: React.FunctionComponent = () => {
 		>
 			<Meta />
 			<h1 style={{ margin: "1.5rem 0" }}>Users</h1>
-			<table>
+			<table style={{ backgroundColor: "#121212" }}>
 				<thead>
 					<tr>
 						<th>
