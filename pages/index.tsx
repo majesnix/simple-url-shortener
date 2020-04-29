@@ -80,10 +80,12 @@ class Index extends Component<any, IState> {
 		});
 	};
 
-	public setStartUrl = () => {
+	public setStartUrl = (evt: any) => {
 		this.setState({
 			url: "https://",
 		});
+		evt.target.value = "";
+		evt.target.value = "https://";
 	};
 
 	public render() {
@@ -165,7 +167,7 @@ class Index extends Component<any, IState> {
 								width: "25rem",
 							}}
 							autoFocus
-							onFocus={this.setStartUrl}
+							onFocus={(evt) => this.setStartUrl(evt)}
 						/>
 						<button
 							className="button"
