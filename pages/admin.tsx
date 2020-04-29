@@ -210,7 +210,7 @@ const Admin: React.FunctionComponent = () => {
 			<div
 				style={{
 					position: "absolute",
-					right: "32px",
+					right: "64px",
 					top: "0",
 					margin: "1.5rem 1.5rem 0 0",
 					color: "#FBFBFB",
