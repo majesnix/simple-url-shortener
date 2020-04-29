@@ -103,6 +103,11 @@ const Admin: React.FunctionComponent = () => {
 		}
 	};
 
+	const _handleLogoutClick = () => {
+		localStorage.removeItem("token");
+		window.location.href = base;
+	};
+
 	return (
 		<div
 			style={{
@@ -201,6 +206,20 @@ const Admin: React.FunctionComponent = () => {
 					Home
 				</div>
 			</Link>
+			<div
+				style={{
+					position: "absolute",
+					right: "32px",
+					top: "0",
+					margin: "1.5rem 1.5rem 0 0",
+					color: "#FBFBFB",
+					textDecoration: "none",
+					cursor: "pointer",
+				}}
+				onClick={() => _handleLogoutClick()}
+			>
+				Logout
+			</div>
 		</div>
 	);
 };
