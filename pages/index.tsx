@@ -165,7 +165,7 @@ class Index extends Component<any, IState> {
 								width: "25rem",
 							}}
 							autoFocus
-							onFocus={(evt) => this.setStartUrl(evt)}
+							onFocus={this.setStartUrl}
 						/>
 						<button
 							className="button"
