@@ -81,9 +81,7 @@ class Index extends Component<any, IState> {
 	};
 
 	public setStartUrl = (evt: any) => {
-		this.setState({
-			url: "https://",
-		});
+		console.log("FOCUSSING; SETTING VAL");
 		evt.target.value = "";
 		evt.target.value = "https://";
 	};
