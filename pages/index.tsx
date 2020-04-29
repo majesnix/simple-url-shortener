@@ -14,7 +14,7 @@ class Index extends Component<any, IState> {
 	constructor(props: any) {
 		super(props);
 		this.state = {
-			url: undefined,
+			url: "",
 			shortURL: null,
 			err: false,
 			ratelimit: false,
@@ -78,12 +78,6 @@ class Index extends Component<any, IState> {
 		this.setState({
 			url: evt.target.value,
 		});
-	};
-
-	public setStartUrl = (evt: any) => {
-		console.log("FOCUSSING; SETTING VAL");
-		evt.target.value = "";
-		evt.target.value = "https://";
 	};
 
 	public render() {
@@ -165,7 +159,6 @@ class Index extends Component<any, IState> {
 								width: "25rem",
 							}}
 							autoFocus
-							onFocus={this.setStartUrl}
 						/>
 						<button
 							className="button"
