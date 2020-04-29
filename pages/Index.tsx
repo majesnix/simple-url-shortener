@@ -4,6 +4,7 @@ import Link from "next/link";
 import CopyToClipboard from "react-copy-to-clipboard";
 import Meta from "../components/meta";
 import { IState } from "../typings";
+import "../styles/main.scss"
 
 class Index extends Component<any, IState> {
 	private readonly base: string;

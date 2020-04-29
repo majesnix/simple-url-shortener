@@ -1,8 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import Meta from "../components/meta";
+import "../styles/main.scss"
 
-const Api = () => (
+const ApiDocs = () => (
 	<div style={{ height: "100vh" }}>
 		<Meta />
 		<div
@@ -86,4 +87,4 @@ const Api = () => (
 	</div>
 );
 
-export default Api;
+export default ApiDocs;

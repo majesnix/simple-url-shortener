@@ -2,6 +2,7 @@ import React, { Component } from "react";
 const ky = require("ky/umd");
 import Meta from "../components/meta";
 import { IState } from "../typings";
+import "../styles/main.scss";
 
 class Error extends Component<any, IState> {
 	private readonly base: string;
