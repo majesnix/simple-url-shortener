@@ -42,7 +42,14 @@ class Index extends Component<any, IState> {
 			});
 			// write short url to clipboard
 			navigator.clipboard.writeText(short);
-			toast.notify("Url copied to clipboard!");
+			toast.notify(({ onClose }) => (
+				<div
+					style={{ width: "250px", height: "50px", backgroundColor: "#2e7d32" }}
+					onClick={onClose}
+				>
+					Url copied to clipboard!
+				</div>
+			));
 		} catch (error) {
 			console.log(error);
 			if (error.response.status === 429) {
