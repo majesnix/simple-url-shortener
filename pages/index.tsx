@@ -37,6 +37,8 @@ class Index extends Component<any, IState> {
 				ratelimit: false,
 				err: false,
 			});
+			// write short url to clipboard
+			navigator.clipboard.writeText(short);
 		} catch (error) {
 			console.log(error);
 			if (error.response.status === 429) {
