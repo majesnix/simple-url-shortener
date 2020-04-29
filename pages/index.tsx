@@ -42,6 +42,9 @@ class Index extends Component<any, IState> {
 			});
 			// write short url to clipboard
 			navigator.clipboard.writeText(short);
+			this.setState({
+				url: "https://",
+			});
 			toast.notify(({ onClose }) => (
 				<div
 					style={{
@@ -155,6 +158,7 @@ class Index extends Component<any, IState> {
 								fontSize: "1.8rem",
 								width: "25rem",
 							}}
+							autoFocus
 						/>
 						<button
 							className="button"
