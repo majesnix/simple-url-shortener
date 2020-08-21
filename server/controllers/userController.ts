@@ -57,7 +57,9 @@ export const getUser = async (req: any, res: Response) => {
 	try {
 		const Users = getRepo();
 		const user = await Users.findOne({ where: { id } });
-		if (user) delete user.password;
+		if (user) {
+			user.password = "";
+		}
 
 		return res.status(200).json({ user });
 	} catch (err) {
