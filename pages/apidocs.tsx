@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import Meta from "../components/meta";
-import "../styles/main.scss"
 
 const ApiDocs = () => (
 	<div style={{ height: "100vh" }}>

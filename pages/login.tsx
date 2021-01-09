@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { withRouter } from "next/router";
 const ky = require("ky/umd");
 import { IState } from "../typings";
-import "../styles/main.scss"
+
 
 class Login extends Component<any, IState> {
 	private readonly email: any;

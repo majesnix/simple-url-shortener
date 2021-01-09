@@ -11,25 +11,25 @@
 		"build:back": "tsc --project tsconfig.server.json"
 	},
 	"dependencies": {
-		"@zeit/next-css": "^1.0.1",
-		"@zeit/next-sass": "^1.0.1",
 		"bcrypt": "^5.0.0",
 		"body-parser": "^1.19.0",
 		"cors": "^2.8.5",
+		"dotenv": "^8.2.0",
 		"express": "^4.17.1",
 		"express-rate-limit": "^5.2.3",
 		"helmet": "^4.3.1",
 		"jsonwebtoken": "^8.5.1",
-		"ky": "^0.25.1",
-		"next": "latest",
+		"ky": "^0.26.0",
+		"next": "^10.0.5",
 		"node-sass": "^5.0.0",
 		"pg": "^8.5.1",
-		"pino": "^6.9.0",
+		"pino": "^6.10.0",
 		"pino-pretty": "^4.3.0",
 		"react": "^17.0.1",
 		"react-copy-to-clipboard": "^5.0.2",
 		"react-dom": "^17.0.1",
 		"react-spring": "^8.0.27",
+		"reflect-metadata": "^0.1.13",
 		"shortid": "^2.2.16",
 		"toasted-notes": "^3.2.0",
 		"typeorm": "^0.2.29"
@@ -38,19 +38,25 @@
 		"@types/bcrypt": "^3.0.0",
 		"@types/body-parser": "^1.19.0",
 		"@types/cors": "^2.8.9",
-		"@types/express-rate-limit": "^5.1.0",
-		"@types/helmet": "^4.0.0",
+		"@types/express-rate-limit": "^5.1.1",
 		"@types/jsonwebtoken": "^8.5.0",
-		"@types/next": "^9.0.0",
-		"@types/pino": "^6.3.4",
+		"@types/pino": "^6.3.5",
 		"@types/react": "^17.0.0",
 		"@types/react-copy-to-clipboard": "^5.0.0",
 		"@types/shortid": "0.0.29",
 		"cross-env": "^7.0.3",
-		"nodemon": "^2.0.6",
+		"@typescript-eslint/eslint-plugin": "^4.12.0",
+		"@typescript-eslint/parser": "^4.12.0",
+		"eslint": "^7.17.0",
+		"eslint-config-majes": "^0.0.2",
+		"nodemon": "^2.0.7",
 		"ts-node": "^9.1.1",
-		"tslint": "^6.1.3",
-		"tslint-config-fire": "github:majesnix/tslint-config-fire",
 		"typescript": "^4.1.3"
+	},
+	"eslintConfig": {
+		"extends": "majes/prettier/react",
+		"globals": {
+			"BigInt": true
+		}
 	}
 }

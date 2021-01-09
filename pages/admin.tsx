@@ -2,7 +2,6 @@ import Link from "next/link";
 import React, { useEffect } from "react";
 import Meta from "../components/meta";
 const ky = require("ky/umd");
-import "../styles/main.scss";
 
 interface IUser {
 	id: number;

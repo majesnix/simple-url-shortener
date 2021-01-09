@@ -2,7 +2,6 @@ import React, { Component } from "react";
 const ky = require("ky/umd");
 import Meta from "../components/meta";
 import { IState } from "../typings";
-import "../styles/main.scss";
 
 class Error extends Component<any, IState> {
 	private readonly base: string;
@@ -27,11 +26,11 @@ class Error extends Component<any, IState> {
 			const data = await ky
 				.get(`${this.base}/api/urls${this.props.asPath}`)
 				.json();
-				if (!data.url.includes("http") || !data.url.includes("https")) {
-					window.location.href = "https://" + data.url;
-				} else {
-					window.location.href = data.url;
-				}
+			if (!data.url.includes("http") || !data.url.includes("https")) {
+				window.location.href = "https://" + data.url;
+			} else {
+				window.location.href = data.url;
+			}
 		} catch (err) {
 			console.error("ERROR IN ERROR", err);
 			this.setState({

@@ -68,8 +68,5 @@ const createInitalUser = async () => {
 		return handle(req, res);
 	});
 
-	server.listen(port, (err: Error) => {
-		if (err) throw err;
-		console.log(`> Ready on http://${process.env.BASE_URL}:${port}`);
-	});
+	server.listen(port);
 })();
