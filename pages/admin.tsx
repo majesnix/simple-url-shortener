@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, { useEffect } from "react";
 import Meta from "../components/meta";
-import ky from "ky";
+const ky = require("ky/umd");
 
 interface IUser {
 	id: number;

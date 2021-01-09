@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { withRouter } from "next/router";
-import ky from "ky";
+const ky = require("ky/umd");
 import { IState } from "../typings";
-
 
 class Login extends Component<any, IState> {
 	private readonly email: any;

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ky from "ky";
+const ky = require("ky/umd");
 import Meta from "../components/meta";
 import { IState } from "../typings";
 
@@ -25,7 +25,7 @@ class Error extends Component<any, IState> {
 		try {
 			const data = await ky
 				.get(`${this.base}/api/urls${this.props.asPath}`)
-				.json<any>();
+				.json();
 			if (!data.url.includes("http") || !data.url.includes("https")) {
 				window.location.href = "https://" + data.url;
 			} else {

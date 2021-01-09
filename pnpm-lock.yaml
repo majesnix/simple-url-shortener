@@ -7,7 +7,7 @@ dependencies:
   express-rate-limit: 5.2.3
   helmet: 4.3.1
   jsonwebtoken: 8.5.1
-  ky: 0.26.0
+  ky: 0.25.1
   next: 10.0.5_26043bd01a12da2cc999854eecb58732
   node-sass: 5.0.0
   pg: 8.5.1
@@ -3720,12 +3720,12 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-ZRbnvdg/NxqzC7L9Uyqzf4psi1OM4Cuc+sJAkQPjO6XkQIJTNbfK2Rsmbw8fx1p2mkZdp2FZYo2+LwXYY/uwIA==
-  /ky/0.26.0:
+  /ky/0.25.1:
     dev: false
     engines:
-      node: '>=12'
+      node: '>=10'
     resolution:
-      integrity: sha512-j2YwAGYuD/XXoyzzUYn1N9NEGoAukkONMea2uLanMPWTqumkwme9eWgf2SjhRKNRb/60FDYStJYL582dbbt9Mw==
+      integrity: sha512-PjpCEWlIU7VpiMVrTwssahkYXX1by6NCT0fhTUX34F3DTinARlgMpriuroolugFPcMgpPWrOW4mTb984Qm1RXA==
   /latest-version/5.1.0:
     dependencies:
       package-json: 6.5.0
@@ -7221,7 +7221,7 @@ specifiers:
   express-rate-limit: ^5.2.3
   helmet: ^4.3.1
   jsonwebtoken: ^8.5.1
-  ky: ^0.26.0
+  ky: 0.25.1
   next: ^10.0.5
   node-sass: ^5.0.0
   nodemon: ^2.0.7
