@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-const ky = require("ky/umd");
+import ky from "ky";
 import Link from "next/link";
 import CopyToClipboard from "react-copy-to-clipboard";
 import Meta from "../components/meta";

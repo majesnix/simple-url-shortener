@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { withRouter } from "next/router";
-const ky = require("ky/umd");
+import ky from "ky";
 import { IState } from "../typings";
 
 
