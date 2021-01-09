@@ -28,6 +28,7 @@ class Index extends Component<any, IState> {
 	public handleSubmit = async (evt: any) => {
 		evt.preventDefault();
 		try {
+			console.log("click");
 			const { short } = await ky
 				.post(`${this.base}/api/urls`, {
 					json: { url: this.state.url },
@@ -162,7 +163,7 @@ class Index extends Component<any, IState> {
 						<button
 							className="button"
 							type="submit"
-							onClick={(evt) => this.handleSubmit(evt)}
+							onClick={this.handleSubmit}
 						>
 							Shorten
 						</button>
@@ -185,7 +186,7 @@ class Index extends Component<any, IState> {
 						</div>
 					) : null}
 					{this.state.ratelimit && (
-						<div>You send to many requests, please wait 60 minutes</div>
+						<div>You sent to many requests, please wait 60 minutes</div>
 					)}
 					{this.state.err && <div>Something went wrong</div>}
 				</div>
