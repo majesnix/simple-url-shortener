@@ -14,5 +14,17 @@ export interface Scalars {
 }
 
 export interface QueryUrl {
-  id: Scalars["String"];
+  short: Scalars["String"];
+}
+
+export interface UrlData {
+  Url: {
+    Id: Scalars["String"];
+    Short: Scalars["String"];
+    Long: Scalars["String"];
+  };
+}
+
+export interface CreateShortUrlInput {
+  url: Scalars["String"];
 }

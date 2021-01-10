@@ -16,13 +16,13 @@ const authMiddleware = new ApolloLink((operation, forward) => {
   return forward(operation);
 });
 
-export const graphQLClientPlaylists = new ApolloClient({
+export const graphQLClient = new ApolloClient({
   cache: new InMemoryCache(),
   connectToDevTools: true,
   link: concat(
     authMiddleware,
     new HttpLink({
-      uri: "https://api.dcl.re/gql",
+      uri: `${process.env.NX_GQL_URL}/gql`,
       fetch,
     })
   ),
@@ -37,28 +37,22 @@ export const graphQLClientPlaylists = new ApolloClient({
 });
 
 export const GRAPHQL = {
-  ENDPOINT: "https://api.dcl.re/gql",
+  ENDPOINT: `${process.env.NX_GQL_URL}/gql`,
 
   QUERY: {
-    PLAYLISTS: gql`
-      query {
-        Playlists {
-          Id
-          Name
-          Duration
-          SongsCount
-          IsReadonly
+    URL: gql`
+      query($short: String!) {
+        Url(urlArgs: { ShortUrl: $short}) {
+          Long
         }
       }
     `,
   },
 
   MUTATION: {
-    CREATE_PLAYLIST: gql`
-      mutation($name: String!) {
-        CreateNewPlaylist(createNewPlaylistArgs: { Name: $name }) {
-          Id
-        }
+    CREATE_SHORT_URL: gql`
+      mutation($url: String!) {
+        CreateUrl(createUrlArgs: { Url: $url })
       }
     `,
   },

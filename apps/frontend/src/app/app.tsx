@@ -1,8 +1,8 @@
-import React from 'react';
-import { HashRouter } from 'react-router-dom';
-import styled from 'styled-components';
-import Routes from './Routes';
-import { Helmet } from 'react-helmet';
+import React from "react";
+import { BrowserRouter, HashRouter } from "react-router-dom";
+import styled from "styled-components";
+import Routes from "./Routes";
+import { Helmet } from "react-helmet";
 
 const Wrapper = styled.div`
   width: 100vw;
@@ -16,9 +16,9 @@ export function App() {
       <Helmet>
         <title>{process.env.NX_BASE_URL}</title>
       </Helmet>
-      <HashRouter>
+      <BrowserRouter>
         <Routes />
-      </HashRouter>
+      </BrowserRouter>
     </Wrapper>
   );
 }

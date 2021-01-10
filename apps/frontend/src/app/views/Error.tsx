@@ -1,10 +1,11 @@
-import ky from 'ky';
-import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router';
+import ky from "ky";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router";
+import ApiClient from "../dataLayer/api/ApiClient";
 
 const Error = () => {
   const base =
-    process.env.REACT_APP_ENV !== 'production'
+    process.env.REACT_APP_ENV !== "production"
       ? `http://${process.env.NX_BASE_URL}:${process.env.NX_PORT}`
       : `https://${process.env.NX_BASE_URL}`;
   const [err, setErr] = useState(false);
@@ -13,16 +14,18 @@ const Error = () => {
   useEffect(() => {
     const lookupShortUrl = async () => {
       try {
-        const data = await ky
-          .get(`${base}/api/urls${location.pathname}`)
-          .json<{ url: string }>();
-        if (!data.url.includes('http') || !data.url.includes('https')) {
-          window.location.href = 'https://' + data.url;
+        console.log("loc", location.pathname.replace("/", ""));
+        const data = await ApiClient.resolveId(
+          location.pathname.replace("/", "")
+        );
+        console.log("data", data);
+        if (!data.includes("http") || !data.includes("https")) {
+          window.location.href = "https://" + data;
         } else {
-          window.location.href = data.url;
+          window.location.href = data;
         }
       } catch (err) {
-        console.error('ERROR IN ERROR', err);
+        console.error("ERROR IN ERROR", err);
         setErr(true);
       }
     };
@@ -35,12 +38,12 @@ const Error = () => {
       {err && (
         <div
           style={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '100vh',
-            fontSize: '1.8rem',
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "100vh",
+            fontSize: "1.8rem",
           }}
         >
           <img src="/assets/error.png" alt="error" />
