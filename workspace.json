@@ -9,7 +9,6 @@
         "docker": {
           "builder": "@nx-tools/nx-docker:build",
           "options": {
-            "push": true,
             "file": "apps/frontend/Dockerfile",
             "tags": ["codingbros/simple-url-shortener-frontend:latest"],
             "platforms": ["linux/amd64", "linux/arm64"]
@@ -120,7 +119,6 @@
         "docker": {
           "builder": "@nx-tools/nx-docker:build",
           "options": {
-            "push": true,
             "file": "apps/backend/Dockerfile",
             "tags": ["codingbros/simple-url-shortener-backend:latest"],
             "platforms": ["linux/amd64", "linux/arm64"]
