@@ -1,7 +1,8 @@
-import { Field, ID } from 'type-graphql';
+import { Field, ID, ObjectType } from 'type-graphql';
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
+@ObjectType()
 export class User {
   @PrimaryGeneratedColumn('uuid')
   @Field((returns) => ID)

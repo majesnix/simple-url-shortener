@@ -1,22 +1,29 @@
 // Importing all Controllers here, otherwise tsoa is not able to find them
 // and is not able to build routes and swagger definitions for us.
-import 'reflect-metadata';
+import "reflect-metadata";
 
-import UrlResolver from './1 - Interface/Resolvers/UrlResolver';
-import UserResolver from './1 - Interface/Resolvers/UserResolver';
-import authChecker from './Modules/authChecker';
-import { buildSchema } from 'type-graphql';
-import cors from 'cors';
-import { createConnection } from 'typeorm';
-import express from 'express';
-import { graphqlHTTP } from 'express-graphql';
-import { iocContainer } from './Modules/ioc-container';
+import UrlResolver from "./1 - Interface/Resolvers/UrlResolver";
+import UserResolver from "./1 - Interface/Resolvers/UserResolver";
+import authChecker from "./Modules/authChecker";
+import { buildSchema } from "type-graphql";
+import cors from "cors";
+import { createConnection } from "typeorm";
+import express from "express";
+import { graphqlHTTP } from "express-graphql";
+import { iocContainer } from "./Modules/ioc-container";
+import { User } from "./3 - Database/Models/User";
+import { Url } from "./3 - Database/Models/Url";
 
 const { APPLICATION_NX_PORT } = process.env;
 
 (async () => {
   // First we make sure we can connect to the database
-  await createConnection();
+  await createConnection({
+    url: process.env.DB,
+    type: "postgres",
+    synchronize: true,
+    entities: [Url, User]
+  });
 
   // Then we can start our express web server
   const app = express();
@@ -32,7 +39,7 @@ const { APPLICATION_NX_PORT } = process.env;
   });
 
   app.use(
-    '/gql',
+    "/gql",
     graphqlHTTP({
       schema,
       graphiql: true,
@@ -50,7 +57,7 @@ const { APPLICATION_NX_PORT } = process.env;
         res.status(400).json(err.message);
       } else {
         // We fucked up - Only return HTTP 500 and log the error
-        console.log('[ERROR]', 'Internal error', err);
+        console.log("[ERROR]", "Internal error", err);
         res.status(500);
         res.end();
       }

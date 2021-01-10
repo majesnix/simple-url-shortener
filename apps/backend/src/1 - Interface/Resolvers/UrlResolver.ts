@@ -1,31 +1,15 @@
-import express from 'express';
 import { inject, injectable } from 'inversify';
-import { Arg, Args, Authorized, Mutation, Query, Resolver } from 'type-graphql';
+import { Arg, Authorized, Mutation, Query, Resolver } from 'type-graphql';
 import { IUrlService } from '../../2 - Domain/Services/UrlService';
 import { Url } from '../../3 - Database/Models/Url';
-
-interface CreateShortUrlArgs {
-  url: string;
-}
-
-interface DeleteUrlArgs {
-  id: string;
-}
-
-interface UrlArgs {
-  shortUrl: string;
-}
+import CreateShortUrlArgs from '../Args/CreateShortUrlArgs';
+import DeleteUrlArgs from '../Args/DeleteUrlArgs';
+import UrlArgs from '../Args/UrlArgs';
 
 export interface IUrlResolver {
-  CreateUrl(
-    createUrlArgs: CreateShortUrlArgs,
-    context: express.Request
-  ): Promise<string>;
-  DeleteUrl(
-    deleteUrlArgs: DeleteUrlArgs,
-    context: express.Request
-  ): Promise<boolean>;
-  Url(urlArgs: UrlArgs, context: express.Request): Promise<Url>;
+  CreateUrl(createUrlArgs: CreateShortUrlArgs): Promise<string>;
+  DeleteUrl(deleteUrlArgs: DeleteUrlArgs): Promise<boolean>;
+  Url(urlArgs: UrlArgs): Promise<Url>;
   Urls(): Promise<Url[]>;
 }
 
@@ -39,8 +23,8 @@ export default class UrlResolver implements IUrlResolver {
   }
 
   @Query((returns) => Url)
-  public async Url(@Args() urlArgs: UrlArgs): Promise<Url> {
-    return await this._urlService.GetUrl(urlArgs.shortUrl);
+  public async Url(@Arg('urlArgs') urlArgs: UrlArgs): Promise<Url> {
+    return await this._urlService.GetUrl(urlArgs.ShortUrl);
   }
 
   @Query((returns) => [Url])
@@ -53,15 +37,16 @@ export default class UrlResolver implements IUrlResolver {
   public async CreateUrl(
     @Arg('createUrlArgs') createUrlArgs: CreateShortUrlArgs
   ): Promise<string> {
-    return (await this._urlService.CreateUrl(createUrlArgs.url)).short;
+    return (await this._urlService.CreateUrl(createUrlArgs.Url)).Short;
   }
 
   @Mutation((returns) => Boolean)
+  @Authorized(['admin'])
   public async DeleteUrl(
     @Arg('deleteUrlArgs') deleteUrlArgs: DeleteUrlArgs
   ): Promise<boolean> {
     try {
-      await this._urlService.DeleteUrl(deleteUrlArgs.id);
+      await this._urlService.DeleteUrl(deleteUrlArgs.Id);
 
       return true;
     } catch (error) {

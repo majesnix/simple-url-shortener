@@ -1,14 +1,33 @@
-import http from "http";
 import express, { Express } from "express";
-import { Connection, getConnection } from "typeorm";
+import http from "http";
 import { Container, decorate, injectable } from "inversify";
 import { Controller } from "tsoa";
-import { SocketManager } from "./SocketManager";
-import { DummySocketManager } from "../1 - REST Interface/Socket/DummySocketManager";
+import { Connection, getConnection } from "typeorm";
+import UrlResolver, {
+  IUrlResolver,
+} from "../1 - Interface/Resolvers/UrlResolver";
+import UserResolver, {
+  IUserResolver,
+} from "../1 - Interface/Resolvers/UserResolver";
+import { IUrlService, UrlService } from "../2 - Domain/Services/UrlService";
+import { IUserService, UserService } from "../2 - Domain/Services/UserService";
 
 decorate(injectable(), Controller);
 
 const iocContainer = new Container();
+
+iocContainer.bind<IUrlResolver>(UrlResolver).to(UrlResolver).inTransientScope();
+
+iocContainer
+  .bind<IUserResolver>(UserResolver)
+  .to(UserResolver)
+  .inTransientScope();
+
+iocContainer.bind<IUrlService>("IUrlService").to(UrlService).inTransientScope();
+iocContainer
+  .bind<IUserService>("IUserService")
+  .to(UserService)
+  .inTransientScope();
 
 iocContainer
   .bind<Connection>("ConnectionProvider")
@@ -25,12 +44,6 @@ iocContainer
   .toDynamicValue(() =>
     http.createServer(iocContainer.get<Express>("ExpressServer"))
   )
-  .inSingletonScope();
-
-// Add your SocketManager implementation here
-iocContainer
-  .bind<SocketManager>("SocketManager")
-  .to(DummySocketManager)
   .inSingletonScope();
 
 export { iocContainer };
