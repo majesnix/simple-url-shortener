@@ -1,4 +1,3 @@
-import ky from "ky";
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router";
 import ApiClient from "../dataLayer/api/ApiClient";
@@ -29,7 +28,7 @@ const Error = () => {
         setErr(true);
       }
     };
-    lookupShortUrl();
+    lookupShortUrl().catch((err) => console.error(err));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

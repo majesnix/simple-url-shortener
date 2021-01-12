@@ -14,7 +14,7 @@ export interface Scalars {
 }
 
 export interface QueryUrl {
-  short: Scalars["String"];
+  Short: Scalars["String"];
 }
 
 export interface UrlData {
@@ -25,6 +25,32 @@ export interface UrlData {
   };
 }
 
+export interface UrlsData {
+  Urls: {
+    Id: Scalars["String"];
+    Short: Scalars["String"];
+    Long: Scalars["String"];
+  }[];
+}
+
 export interface CreateShortUrlInput {
-  url: Scalars["String"];
+  Url: Scalars["String"];
+}
+
+export interface CreateShortUrlResponse {
+  CreateUrl: Scalars["String"];
+}
+
+export interface LoginInput {
+  Username: Scalars["String"];
+  Password: Scalars["String"];
+}
+
+export interface LoginResponse {
+  Login: Scalars["String"];
+}
+
+export interface UrlDeleteInput {
+  Id: Scalars["String"];
+  Short: Scalars["String"];
 }

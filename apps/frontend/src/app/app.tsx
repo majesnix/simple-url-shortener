@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import styled from "styled-components";
 import Routes from "./Routes";
 import { Helmet } from "react-helmet";
@@ -12,14 +12,14 @@ const Wrapper = styled.div`
 
 export function App() {
   return (
-    <Wrapper>
-      <Helmet>
-        <title>{process.env.NX_BASE_URL}</title>
-      </Helmet>
-      <BrowserRouter>
-        <Routes />
-      </BrowserRouter>
-    </Wrapper>
+    <BrowserRouter>
+        <Wrapper>
+          <Helmet>
+            <title>{process.env.NX_BASE_URL}</title>
+          </Helmet>
+          <Routes />
+        </Wrapper>
+    </BrowserRouter>
   );
 }
 

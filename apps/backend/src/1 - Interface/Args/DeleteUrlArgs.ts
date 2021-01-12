@@ -4,4 +4,7 @@ import { Field, InputType } from "type-graphql";
 export default class DeleteUrlArgs {
   @Field()
   public Id: string;
+
+  @Field()
+  public Short: string;
 }

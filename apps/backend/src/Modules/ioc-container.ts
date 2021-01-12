@@ -6,28 +6,14 @@ import { Connection, getConnection } from "typeorm";
 import UrlResolver, {
   IUrlResolver,
 } from "../1 - Interface/Resolvers/UrlResolver";
-import UserResolver, {
-  IUserResolver,
-} from "../1 - Interface/Resolvers/UserResolver";
 import { IUrlService, UrlService } from "../2 - Domain/Services/UrlService";
-import { IUserService, UserService } from "../2 - Domain/Services/UserService";
 
 decorate(injectable(), Controller);
 
 const iocContainer = new Container();
 
 iocContainer.bind<IUrlResolver>(UrlResolver).to(UrlResolver).inTransientScope();
-
-iocContainer
-  .bind<IUserResolver>(UserResolver)
-  .to(UserResolver)
-  .inTransientScope();
-
 iocContainer.bind<IUrlService>("IUrlService").to(UrlService).inTransientScope();
-iocContainer
-  .bind<IUserService>("IUserService")
-  .to(UserService)
-  .inTransientScope();
 
 iocContainer
   .bind<Connection>("ConnectionProvider")

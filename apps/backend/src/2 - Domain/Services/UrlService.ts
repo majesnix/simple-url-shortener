@@ -5,7 +5,7 @@ import { Url } from "../../3 - Database/Models/Url";
 
 export interface IUrlService {
   CreateUrl(urlInput: string): Promise<Url>;
-  DeleteUrl(id: string): Promise<void>;
+  DeleteUrl(id: string, short: string): Promise<void>;
   GetUrl(Short: string): Promise<Url | undefined>;
   GetAllUrls(): Promise<Url[]>;
 }
@@ -39,9 +39,15 @@ export class UrlService implements IUrlService {
     }
   }
 
-  async DeleteUrl(id: string) {
+  async DeleteUrl(id: string, shortid: string) {
+    console.log("id", id, shortid);
     const urlsRepo = this._connectionProvider.getRepository(Url);
-    await urlsRepo.delete(id);
+
+    await urlsRepo
+      .createQueryBuilder()
+      .delete()
+      .where("Id = :id AND Short = :shortid", { id, shortid })
+      .execute();
   }
 
   async GetUrl(Short: string) {

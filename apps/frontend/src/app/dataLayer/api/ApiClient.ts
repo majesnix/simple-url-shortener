@@ -4,7 +4,14 @@
  */
 
 import { GRAPHQL, graphQLClient } from "./graphQL";
-import { CreateShortUrlInput, QueryUrl, UrlData } from "./graphQLTypes";
+import {
+  CreateShortUrlInput,
+  CreateShortUrlResponse,
+  QueryUrl,
+  UrlData,
+  UrlDeleteInput,
+  UrlsData
+} from "./graphQLTypes";
 
 /**
  * Manages all requests to the aye-player backend
@@ -15,13 +22,13 @@ class ApiClient {
    */
   async resolveId(id: string): Promise<string> {
     const {
-      data: { Url: {
-        Long
-      } },
+      data: {
+        Url: { Long },
+      },
     } = await graphQLClient.query<UrlData, QueryUrl>({
       query: GRAPHQL.QUERY.URL,
       variables: {
-        short: id,
+        Short: id,
       },
     });
 
@@ -31,17 +38,43 @@ class ApiClient {
   /**
    * Create a new short url and returns it
    */
-  async createShortUrl(url: string): Promise<string> {
+  async createShortUrl(Url: string): Promise<string> {
     const {
-      data: { CreateUrl: short },
-    } = await graphQLClient.mutate<{ CreateUrl: string }, CreateShortUrlInput>({
-      mutation: GRAPHQL.MUTATION.CREATE_SHORT_URL,
-      variables: {
-        url: url,
-      },
+      data: { CreateUrl: Short },
+    } = await graphQLClient.mutate<CreateShortUrlResponse, CreateShortUrlInput>(
+      {
+        mutation: GRAPHQL.MUTATION.CREATE_SHORT_URL,
+        variables: {
+          Url,
+        },
+      }
+    );
+
+    return Short;
+  }
+
+  /**
+   * Get all Urls
+   */
+  async getAllUrls(): Promise<UrlsData> {
+    const { data } = await graphQLClient.query<UrlsData, void>({
+      query: GRAPHQL.QUERY.URLS,
     });
 
-    return short;
+    return data;
+  }
+
+  /**
+   * Delete Url
+   */
+  async deleteUrl(Id: string, Short: string): Promise<void> {
+    await graphQLClient.mutate<void, UrlDeleteInput>({
+      mutation: GRAPHQL.MUTATION.DELETE_SHORT_URL,
+      variables: {
+        Id,
+        Short
+      }
+    })
   }
 }
 

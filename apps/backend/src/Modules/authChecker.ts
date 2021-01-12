@@ -1,34 +1,40 @@
 import { AuthChecker } from "type-graphql";
-import jwt from "jsonwebtoken";
+import jwt, { Algorithm } from "jsonwebtoken";
+import jwksClient from "jwks-rsa";
+import { Context, Token } from "../types";
 
-export interface ITokenValidResponse {
-  IsValid: boolean;
-  DecodedToken: JWT;
+const client = jwksClient({
+  jwksUri: `${process.env.AUTH0_DOMAIN}.well-known/jwks.json`,
+});
+
+function getKey(header, cb) {
+  client.getSigningKey(header.kid, function (err, key) {
+    cb(null, key.getPublicKey());
+  });
 }
 
-interface JWT {
-  id: string;
-  scopes: string[];
-}
+const options = {
+  audience: process.env.AUTH0_AUDIENCE,
+  issuer: process.env.AUTH0_DOMAIN,
+  algorithms: ["RS256"] as Algorithm[],
+};
 
-const authChecker: AuthChecker = async (
+const authChecker: AuthChecker<Context> = async (
   { context },
   roles
 ): Promise<boolean> => {
-  const {
-    headers: { authorization }
-  } = context as any;
+  const verifiedAndDecoded = new Promise((resolve, reject) => {
+    jwt.verify(context.token, getKey, options, (err, decoded) => {
+      if (err) {
+        return reject(err);
+      }
+      resolve(decoded);
+    });
+  }).catch((err) => console.error(err));
 
-  const token = (authorization as string).replace("Bearer", "").trim();
-
-  const decoded: any = jwt.decode(token);
-
-  if (decoded.scopes.includes("admin")) {
-    return true;
-  }
-
-  // In doubt --> return false
-  return false;
+  return !!verifiedAndDecoded.then((res: Token) => {
+    return res.scope.split(" ").some((s) => roles.includes(s));
+  });
 };
 
 export default authChecker;

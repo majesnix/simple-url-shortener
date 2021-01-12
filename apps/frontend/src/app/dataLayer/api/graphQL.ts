@@ -1,28 +1,55 @@
-import { InMemoryCache } from "apollo-cache-inmemory";
-import { ApolloClient } from "apollo-client";
-import { ApolloLink, concat } from "apollo-link";
-import { HttpLink } from "apollo-link-http";
+import {
+  ApolloClient,
+  ApolloLink,
+  concat,
+  HttpLink,
+  InMemoryCache,
+} from "@apollo/client";
+import { setContext } from "@apollo/client/link/context";
 import gql from "graphql-tag";
+import Auth from "../auth/Auth";
 
+const withToken = setContext(async () => {
+  if (!Auth.isReady) {
+    await Auth.init().then(async () => {
+      const isAuthenticated = await Auth.client.isAuthenticated();
+      if (isAuthenticated) {
+        const token = await Auth.client.getTokenSilently();
+        console.log("tok", token);
+        return { token };
+      }
+    });
+  } else {
+    const isAuthenticated = await Auth.client.isAuthenticated();
+    if (isAuthenticated) {
+      const token = await Auth.client.getTokenSilently();
+      return { token };
+    }
+  }
+});
+
+//add authorization header
 const authMiddleware = new ApolloLink((operation, forward) => {
-  const token = localStorage.getItem("token") || null;
-  //add authorization header
-  operation.setContext({
+  const { token } = operation.getContext();
+  console.log("Token", token);
+  operation.setContext((context) => ({
     headers: {
-      Authorization: token ? `Bearer ${token}` : null,
+      ...context.headers,
+      Authorization: token ? token : "",
     },
-  });
-
+  }));
   return forward(operation);
 });
+
+const link = ApolloLink.from([withToken, authMiddleware]);
 
 export const graphQLClient = new ApolloClient({
   cache: new InMemoryCache(),
   connectToDevTools: true,
   link: concat(
-    authMiddleware,
+    link,
     new HttpLink({
-      uri: `${process.env.NX_GQL_URL}/gql`,
+      uri: `${process.env.NX_GQL_URL}/graphql`,
       fetch,
     })
   ),
@@ -37,12 +64,21 @@ export const graphQLClient = new ApolloClient({
 });
 
 export const GRAPHQL = {
-  ENDPOINT: `${process.env.NX_GQL_URL}/gql`,
+  ENDPOINT: `${process.env.NX_GQL_URL}/graphql`,
 
   QUERY: {
     URL: gql`
-      query($short: String!) {
-        Url(urlArgs: { ShortUrl: $short}) {
+      query($Short: String!) {
+        Url(urlArgs: { ShortUrl: $Short }) {
+          Long
+        }
+      }
+    `,
+    URLS: gql`
+      query {
+        Urls {
+          Id
+          Short
           Long
         }
       }
@@ -51,8 +87,14 @@ export const GRAPHQL = {
 
   MUTATION: {
     CREATE_SHORT_URL: gql`
-      mutation($url: String!) {
-        CreateUrl(createUrlArgs: { Url: $url })
+      mutation($Url: String!) {
+        CreateUrl(createUrlArgs: { Url: $Url })
+      }
+    `,
+
+    DELETE_SHORT_URL: gql`
+      mutation($Id: String!, $Short: String!) {
+        DeleteUrl(deleteUrlArgs: { Id: $Id, Short: $Short })
       }
     `,
   },

@@ -1,18 +1,19 @@
 // Importing all Controllers here, otherwise tsoa is not able to find them
 // and is not able to build routes and swagger definitions for us.
-import "reflect-metadata";
-
-import UrlResolver from "./1 - Interface/Resolvers/UrlResolver";
-import UserResolver from "./1 - Interface/Resolvers/UserResolver";
-import authChecker from "./Modules/authChecker";
-import { buildSchema } from "type-graphql";
+import { ApolloServer } from "apollo-server-express";
 import cors from "cors";
-import { createConnection } from "typeorm";
+import "dotenv";
 import express from "express";
-import { graphqlHTTP } from "express-graphql";
-import { iocContainer } from "./Modules/ioc-container";
-import { User } from "./3 - Database/Models/User";
+import session from "express-session";
+import "reflect-metadata";
+import { buildSchema } from "type-graphql";
+import { createConnection } from "typeorm";
+import { v4 as uuid } from "uuid";
+import UrlResolver from "./1 - Interface/Resolvers/UrlResolver";
 import { Url } from "./3 - Database/Models/Url";
+import { iocContainer } from "./Modules/ioc-container";
+import authChecker from "./Modules/authChecker";
+import rateLimit from "express-rate-limit";
 
 const { APPLICATION_NX_PORT } = process.env;
 
@@ -22,29 +23,58 @@ const { APPLICATION_NX_PORT } = process.env;
     url: process.env.DB,
     type: "postgres",
     synchronize: true,
-    entities: [Url, User]
+    entities: [Url],
   });
 
   // Then we can start our express web server
   const app = express();
 
-  // Standard middleware
-  app.use(cors());
+  // Cors
+  app.use(
+    cors({
+      origin: "http://localhost:4200",
+    })
+  );
+
+  // session
+  app.use(
+    session({
+      genid: (req) => uuid(),
+      secret: process.env.SESSION_SECRET,
+      resave: false,
+      saveUninitialized: false,
+    })
+  );
+
+  if (process.env.NODE_ENV !== "development") {
+    app.use(
+      rateLimit({
+        max: 50,
+        windowMs: parseInt(process.env.RATELIMIT_TIMESPAN) * 60000,
+        message: "Ratelimit reached",
+      })
+    );
+  }
 
   // GraphQL
   const schema = await buildSchema({
-    resolvers: [UrlResolver, UserResolver],
+    resolvers: [UrlResolver],
     container: iocContainer,
     authChecker: authChecker,
   });
 
-  app.use(
-    "/gql",
-    graphqlHTTP({
-      schema,
-      graphiql: true,
-    })
-  );
+  const server = new ApolloServer({
+    schema,
+    // TODO: Check if this is needed
+    context: ({ req }) => {
+      const token = req.headers.authorization;
+      if (!token) return;
+
+      return { token };
+    },
+  });
+
+  server.applyMiddleware({ app });
 
   // Error handling
   app.use(
@@ -65,6 +95,6 @@ const { APPLICATION_NX_PORT } = process.env;
   );
 
   app.listen(APPLICATION_NX_PORT || 4000, () =>
-    console.log(`Service is listening on port ${APPLICATION_NX_PORT || 4000}`)
+    console.log(`🚀 Service is listening on port ${server.graphqlPath}`)
   );
 })();
