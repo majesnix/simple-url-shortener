@@ -6,14 +6,6 @@
       "sourceRoot": "apps/frontend/src",
       "projectType": "application",
       "targets": {
-        "docker": {
-          "builder": "@nx-tools/nx-docker:build",
-          "options": {
-            "file": "apps/frontend/Dockerfile",
-            "tags": ["codingbros/simple-url-shortener-frontend:latest"],
-            "platforms": ["linux/amd64", "linux/arm64"]
-          }
-        },
         "build": {
           "executor": "@nrwl/web:build",
           "outputs": ["{options.outputPath}"],
@@ -116,14 +108,6 @@
       "projectType": "application",
       "prefix": "backend",
       "targets": {
-        "docker": {
-          "builder": "@nx-tools/nx-docker:build",
-          "options": {
-            "file": "apps/backend/Dockerfile",
-            "tags": ["codingbros/simple-url-shortener-backend:latest"],
-            "platforms": ["linux/amd64", "linux/arm64"]
-          }
-        },
         "build": {
           "executor": "@nrwl/node:build",
           "outputs": ["{options.outputPath}"],
@@ -135,7 +119,7 @@
           },
           "configurations": {
             "production": {
-              "optimization": true,
+              "optimization": false,
               "extractLicenses": true,
               "inspect": false,
               "fileReplacements": [

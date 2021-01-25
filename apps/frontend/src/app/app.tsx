@@ -3,6 +3,8 @@ import { BrowserRouter } from "react-router-dom";
 import styled from "styled-components";
 import Routes from "./Routes";
 import { Helmet } from "react-helmet";
+import createStore from "./dataLayer/stores/createStore";
+import { StoreProvider } from "./components/StoreProvider";
 
 const Wrapper = styled.div`
   width: 100vw;
@@ -10,17 +12,21 @@ const Wrapper = styled.div`
   overflow: hidden;
 `;
 
-export function App() {
+export const rootStore = createStore();
+
+const App = () => {
   return (
-    <BrowserRouter>
+    <StoreProvider value={rootStore}>
+      <BrowserRouter>
         <Wrapper>
           <Helmet>
             <title>{process.env.NX_BASE_URL}</title>
           </Helmet>
           <Routes />
         </Wrapper>
-    </BrowserRouter>
+      </BrowserRouter>
+    </StoreProvider>
   );
-}
+};
 
 export default App;

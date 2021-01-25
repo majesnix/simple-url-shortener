@@ -1,16 +1,15 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { inject, injectable } from "inversify";
 import { Arg, Authorized, Mutation, Query, Resolver } from "type-graphql";
 import { IUrlService } from "../../2 - Domain/Services/UrlService";
 import { Url } from "../../3 - Database/Models/Url";
 import CreateShortUrlArgs from "../Args/CreateShortUrlArgs";
-import DeleteUrlArgs from "../Args/DeleteUrlArgs";
-import UrlArgs from "../Args/UrlArgs";
+import DeleteUrlArgs from "../Args/DeleteUrlsArgs";
+import UrlInputType from "../Args/UrlInputType";
 
 export interface IUrlResolver {
   CreateUrl(createUrlArgs: CreateShortUrlArgs): Promise<string>;
-  DeleteUrl(deleteUrlArgs: DeleteUrlArgs): Promise<boolean>;
-  Url(urlArgs: UrlArgs): Promise<Url>;
+  DeleteUrls(deleteUrlArgs: DeleteUrlArgs): Promise<boolean>;
+  Url(urlArgs: UrlInputType): Promise<Url>;
   Urls(): Promise<Url[]>;
 }
 
@@ -24,8 +23,8 @@ export default class UrlResolver implements IUrlResolver {
   }
 
   @Query((returns) => Url)
-  public async Url(@Arg("urlArgs") { ShortUrl }: UrlArgs): Promise<Url> {
-    return await this._urlService.GetUrl(ShortUrl);
+  public async Url(@Arg("urlArgs") { Short }: UrlInputType): Promise<Url> {
+    return await this._urlService.GetUrl(Short);
   }
 
   @Authorized("read:urls")
@@ -43,11 +42,11 @@ export default class UrlResolver implements IUrlResolver {
 
   @Authorized("delete:urls")
   @Mutation((returns) => Boolean)
-  public async DeleteUrl(
-    @Arg("deleteUrlArgs") { Id, Short }: DeleteUrlArgs
+  public async DeleteUrls(
+    @Arg("deleteUrlsArgs") { Urls }: DeleteUrlArgs
   ): Promise<boolean> {
     try {
-      await this._urlService.DeleteUrl(Id, Short);
+      await this._urlService.DeleteUrls(Urls);
 
       return true;
     } catch (error) {

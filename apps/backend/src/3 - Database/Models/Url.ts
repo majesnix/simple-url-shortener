@@ -1,13 +1,9 @@
-import { Field, ID, ObjectType } from "type-graphql";
-import { Column, Entity, PrimaryColumn, PrimaryGeneratedColumn } from "typeorm";
+import { Field, ObjectType } from "type-graphql";
+import { Column, Entity, PrimaryColumn } from "typeorm";
 
 @Entity()
 @ObjectType()
 export class Url {
-  @PrimaryGeneratedColumn("uuid")
-  @Field((returns) => ID)
-  Id: number;
-
   @PrimaryColumn()
   @Field()
   Short: string;

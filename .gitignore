@@ -37,4 +37,10 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-.env
+*.env
+
+# Sonarqube
+.scannerwork
+sonar-project.properties
+
+/db

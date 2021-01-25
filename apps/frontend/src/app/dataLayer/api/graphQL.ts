@@ -7,22 +7,22 @@ import {
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
 import gql from "graphql-tag";
-import Auth from "../auth/Auth";
+import { rootStore } from "../../app";
 
 const withToken = setContext(async () => {
-  if (!Auth.isReady) {
-    await Auth.init().then(async () => {
-      const isAuthenticated = await Auth.client.isAuthenticated();
+  const { app } = rootStore;
+  if (!app.auth0Initiated) {
+    await app.onInit().then(async () => {
+      const isAuthenticated = await app.auth.isAuthenticated();
       if (isAuthenticated) {
-        const token = await Auth.client.getTokenSilently();
-        console.log("tok", token);
+        const token = await app.auth.getTokenSilently();
         return { token };
       }
     });
   } else {
-    const isAuthenticated = await Auth.client.isAuthenticated();
+    const isAuthenticated = await app.auth.isAuthenticated();
     if (isAuthenticated) {
-      const token = await Auth.client.getTokenSilently();
+      const token = await app.auth.getTokenSilently();
       return { token };
     }
   }
@@ -31,7 +31,6 @@ const withToken = setContext(async () => {
 //add authorization header
 const authMiddleware = new ApolloLink((operation, forward) => {
   const { token } = operation.getContext();
-  console.log("Token", token);
   operation.setContext((context) => ({
     headers: {
       ...context.headers,
@@ -69,7 +68,7 @@ export const GRAPHQL = {
   QUERY: {
     URL: gql`
       query($Short: String!) {
-        Url(urlArgs: { ShortUrl: $Short }) {
+        Url(urlArgs: { Short: $Short }) {
           Long
         }
       }
@@ -77,7 +76,6 @@ export const GRAPHQL = {
     URLS: gql`
       query {
         Urls {
-          Id
           Short
           Long
         }
@@ -92,9 +90,9 @@ export const GRAPHQL = {
       }
     `,
 
-    DELETE_SHORT_URL: gql`
-      mutation($Id: String!, $Short: String!) {
-        DeleteUrl(deleteUrlArgs: { Id: $Id, Short: $Short })
+    DELETE_SHORT_URLS: gql`
+      mutation($Urls: [UrlInputType!]!) {
+        DeleteUrls(deleteUrlsArgs: { Urls: $Urls })
       }
     `,
   },

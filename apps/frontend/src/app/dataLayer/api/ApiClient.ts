@@ -10,7 +10,8 @@ import {
   QueryUrl,
   UrlData,
   UrlDeleteInput,
-  UrlsData
+  UrlInputType,
+  UrlsData,
 } from "./graphQLTypes";
 
 /**
@@ -67,14 +68,13 @@ class ApiClient {
   /**
    * Delete Url
    */
-  async deleteUrl(Id: string, Short: string): Promise<void> {
+  async deleteUrls(urls: UrlInputType[]): Promise<void> {
     await graphQLClient.mutate<void, UrlDeleteInput>({
-      mutation: GRAPHQL.MUTATION.DELETE_SHORT_URL,
+      mutation: GRAPHQL.MUTATION.DELETE_SHORT_URLS,
       variables: {
-        Id,
-        Short
-      }
-    })
+        Urls: urls,
+      },
+    });
   }
 }
 

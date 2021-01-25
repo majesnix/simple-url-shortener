@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import CopyToClipboard from "react-copy-to-clipboard";
 import ApiClient from "../dataLayer/api/ApiClient";
 import toast from "toasted-notes";
@@ -7,7 +7,7 @@ import Links from "../components/Links";
 
 const Index = () => {
   const base =
-    process.env.REACT_APP_ENV !== "production"
+    process.env.NX_APP_ENV !== "production"
       ? `http://${process.env.NX_BASE_URL}:${process.env.NX_PORT}`
       : `https://${process.env.NX_BASE_URL}`;
 
@@ -15,11 +15,25 @@ const Index = () => {
   const [shortUrl, setShortUrl] = useState<string | null>(null);
   const [err, setErr] = useState(false);
   const [ratelimit, setRatelimit] = useState(false);
-  const [copied, setCopied] = useState(false);
 
-  const handleSubmit = async (
-    evt: React.MouseEvent<HTMLButtonElement, MouseEvent>
-  ) => {
+  // add "enter" press listener
+  useEffect(() => {
+    document.addEventListener("keyup", (event) => {
+      if (event.key === "Enter") {
+        handleSubmit(event);
+      }
+    });
+
+    return () => {
+      document.removeEventListener("keyup", (event) => {
+        if (event.key === "Enter") {
+          handleSubmit(event);
+        }
+      });
+    };
+  }, []);
+
+  const handleSubmit = async (evt: any) => {
     evt.preventDefault();
     try {
       const short = await ApiClient.createShortUrl(url);
@@ -30,7 +44,7 @@ const Index = () => {
       setErr(false);
 
       // write short url to clipboard
-      navigator.clipboard.writeText(`${base}/${short}`);
+      await navigator.clipboard.writeText(`${base}/${short}`);
       toast.notify(({ onClose }) => (
         <div
           style={{
@@ -95,7 +109,7 @@ const Index = () => {
             autoFocus
           />
           <button
-            className="button"
+            className="btn draw-border"
             type="submit"
             onClick={(evt) => handleSubmit(evt)}
           >
@@ -109,12 +123,7 @@ const Index = () => {
               cursor: "pointer",
             }}
           >
-            <CopyToClipboard
-              text={`${base}/${shortUrl}`}
-              onCopy={() => {
-                setCopied(true);
-              }}
-            >
+            <CopyToClipboard text={`${base}/${shortUrl}`}>
               <span>{`${base}/${shortUrl}`}</span>
             </CopyToClipboard>
           </div>

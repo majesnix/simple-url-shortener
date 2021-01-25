@@ -1,11 +1,12 @@
 import { inject, injectable } from "inversify";
-import shortid from "shortid";
+import { nanoid } from "nanoid";
 import { Connection } from "typeorm";
 import { Url } from "../../3 - Database/Models/Url";
+import { UrlDo } from "../DomainObjects/UrlDo";
 
 export interface IUrlService {
   CreateUrl(urlInput: string): Promise<Url>;
-  DeleteUrl(id: string, short: string): Promise<void>;
+  DeleteUrls(urls: UrlDo[]): Promise<void>;
   GetUrl(Short: string): Promise<Url | undefined>;
   GetAllUrls(): Promise<Url[]>;
 }
@@ -19,13 +20,12 @@ export class UrlService implements IUrlService {
   }
 
   async CreateUrl(urlInput: string): Promise<Url> {
-    // tslint:disable-next-line:max-line-length
-    const expression = /^(?:(?:(?:https?|ftp):)?\/\/)?(?:\S+(?::\S*)?@)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z0-9\u00a1-\uffff][a-z0-9\u00a1-\uffff_-]{0,62})?[a-z0-9\u00a1-\uffff]\.)+(?:[a-z\u00a1-\uffff]{2,}\.?))(?::\d{2,5})?(?:[/?#]\S*)?$/i;
+    const expression = /^(ftp|http|https):\/\/[^ "]+$/;
     const regex = new RegExp(expression);
 
     try {
       if (urlInput.match(regex)) {
-        const id = shortid.generate();
+        const id = nanoid(10);
 
         const urlsRepo = this._connectionProvider.getRepository(Url);
 
@@ -39,15 +39,16 @@ export class UrlService implements IUrlService {
     }
   }
 
-  async DeleteUrl(id: string, shortid: string) {
-    console.log("id", id, shortid);
+  async DeleteUrls(urls: UrlDo[]) {
     const urlsRepo = this._connectionProvider.getRepository(Url);
 
-    await urlsRepo
-      .createQueryBuilder()
-      .delete()
-      .where("Id = :id AND Short = :shortid", { id, shortid })
-      .execute();
+    for (const { Short } of urls) {
+      await urlsRepo
+        .createQueryBuilder()
+        .delete()
+        .where("Short = :Short", { Short })
+        .execute();
+    }
   }
 
   async GetUrl(Short: string) {

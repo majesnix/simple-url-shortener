@@ -4,11 +4,9 @@ import { ApolloServer } from "apollo-server-express";
 import cors from "cors";
 import "dotenv";
 import express from "express";
-import session from "express-session";
 import "reflect-metadata";
 import { buildSchema } from "type-graphql";
 import { createConnection } from "typeorm";
-import { v4 as uuid } from "uuid";
 import UrlResolver from "./1 - Interface/Resolvers/UrlResolver";
 import { Url } from "./3 - Database/Models/Url";
 import { iocContainer } from "./Modules/ioc-container";
@@ -26,23 +24,13 @@ const { APPLICATION_NX_PORT } = process.env;
     entities: [Url],
   });
 
-  // Then we can start our express web server
+  // Then we can create our express web server
   const app = express();
 
   // Cors
   app.use(
     cors({
-      origin: "http://localhost:4200",
-    })
-  );
-
-  // session
-  app.use(
-    session({
-      genid: (req) => uuid(),
-      secret: process.env.SESSION_SECRET,
-      resave: false,
-      saveUninitialized: false,
+      origin: process.env.AUTH0_BASE_URL,
     })
   );
 
@@ -50,8 +38,8 @@ const { APPLICATION_NX_PORT } = process.env;
     app.use(
       rateLimit({
         max: 50,
-        windowMs: parseInt(process.env.RATELIMIT_TIMESPAN) * 60000,
-        message: "Ratelimit reached",
+        windowMs: parseInt(process.env.RATELIMIT_TIMESPAN_IN_MINUTES) * 60000,
+        message: "Rate Limit reached",
       })
     );
   }
@@ -95,6 +83,6 @@ const { APPLICATION_NX_PORT } = process.env;
   );
 
   app.listen(APPLICATION_NX_PORT || 4000, () =>
-    console.log(`🚀 Service is listening on port ${server.graphqlPath}`)
+    console.log(`🚀 Service is listening on ${server.graphqlPath} [Port: ${APPLICATION_NX_PORT || 4000}]`)
   );
 })();
