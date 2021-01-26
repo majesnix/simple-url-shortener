@@ -2,6 +2,7 @@ import { AuthChecker } from "type-graphql";
 import jwt, { Algorithm } from "jsonwebtoken";
 import jwksClient from "jwks-rsa";
 import { Context, Token } from "../types";
+import { AuthenticationError } from "apollo-server-express";
 
 // init jwks client
 const client = jwksClient({
@@ -36,10 +37,14 @@ const authChecker: AuthChecker<Context> = async (
     });
   }).catch((err) => console.error(err));
 
+  const token = (await verifiedAndDecoded) as Token;
+
   // finally check for includes scopes
-  return !!verifiedAndDecoded.then((res: Token) =>
-    res.scope.split(" ").some((s) => roles.includes(s))
-  );
+  if (token?.scope.split(" ").some((s) => roles.includes(s))) {
+    return true;
+  } else {
+    throw new AuthenticationError("UNAUTHENTICATED");
+  }
 };
 
 export default authChecker;
