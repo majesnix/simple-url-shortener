@@ -1,5 +1,8 @@
 # Packages
 node_modules/
+dist/
+.scannerwork
+.idea
 
 # Log files
 logs/
@@ -20,9 +23,8 @@ deploy/
 Dockerfile
 .dockerignore
 
-# Authentication
+# Env file
 .env
-.env.example
 
 # Test files
 
@@ -40,3 +42,6 @@ LICENSE
 .git
 .gitattributes
 .gitignore
+
+# local db folder
+db/

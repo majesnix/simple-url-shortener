@@ -1,45 +1,20 @@
-# Custom server with TypeScript + Nodemon example
+# SimpleUrlShortener
 
-## How to use
+This project was generated using [Nx](https://nx.dev).
 
-### Using `create-next-app`
+To use this application, an Auth0 instance needs to be setup.
 
-Execute [`create-next-app`](https://github.com/segmentio/create-next-app) with [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) or [npx](https://github.com/zkat/npx#readme) to bootstrap the example:
+This includes the following steps:
 
-```bash
-npx create-next-app --example custom-server-typescript custom-server-typescript-app
-# or
-yarn create next-app --example custom-server-typescript custom-server-typescript-app
-```
+- Create a Custom API
+- Create a Single Page App
+- Activate the Auth0 Authorization Extensions
 
-### Download manually
+You also need to create 2 permissions in the Authorization settings, as well as in the User settings.
 
-Download the example:
+- delete:urls
+- read:urls
 
-```bash
-curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/custom-server-typescript
-cd custom-server-typescript
-```
+These are admin permissions.
 
-Install it and run:
-
-```bash
-npm install
-npm run dev
-# or
-yarn
-yarn dev
-```
-
-Deploy it to the cloud with [now](https://zeit.co/now) ([download](https://zeit.co/download))
-
-```bash
-now
-```
-
-## The idea behind the example
-
-The example shows how you can use [TypeScript](https://typescriptlang.com) on both the server and the client while using [Nodemon](https://nodemon.io/) to live reload the server code without affecting the Next.js universal code.
-
-Server entry point is `server/index.ts` in development and `dist/index.js` in production.
-The second directory should be added to `.gitignore`.
+The frontend needs some further cleanup (especially component wise), right now it is a mixture of scss and styled-components with css, which is not the cleanest. I will probably clean this up in soon™

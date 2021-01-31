@@ -1,0 +1,28 @@
+version: "3.7"
+services:
+  sus-frontend:
+    image: "codingbros/sus-frontend"
+    restart: always
+    env_file:
+      - ./.compose.env
+    depends_on:
+      - "db"
+      - "sus-backend"
+    ports:
+      - "4200:80"
+  sus-backend:
+    image: "codingbros/sus-backend"
+    restart: always
+    env_file:
+      - ./.compose.env
+    ports:
+      - "4000:4000"
+    depends_on:
+      - "db"
+  db:
+    image: "postgres:11-alpine"
+    restart: always
+    env_file:
+      - ./.compose.env
+    volumes:
+      - ./db:/var/lib/postgresql/data
