@@ -18,3 +18,5 @@ You also need to create 2 permissions in the Authorization settings, as well as 
 These are admin permissions.
 
 The frontend needs some further cleanup (especially component wise), right now it is a mixture of scss and styled-components with css, which is not the cleanest. I will probably clean this up in soon™
+
+Also some things need to be added to the env vars, since this also for a more dynamic deployment.
