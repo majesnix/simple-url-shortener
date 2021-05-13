@@ -20,8 +20,10 @@ RUN nx build backend --prod
 # stage 2 - build final image
 FROM node:alpine
 
+ARG VERSION
+
 LABEL name="sus-backend"
-LABEL version="1.0.1"
+LABEL version=${VERSION}
 LABEL maintainer="majesnix <majesnix@majesnix.org>"
 
 WORKDIR /backend

@@ -32,8 +32,8 @@ jobs:
 
       - name: build images
         run: |
-          docker build -f Frontend.Dockerfile -t ${{ secrets.DOCKER_USERNAME }}/sus-frontend -t ${{ secrets.DOCKER_USERNAME }}/sus-frontend:${{ steps.tag_version.outputs.SOURCE_TAG }} .
-          docker build -f Backend.Dockerfile -t ${{ secrets.DOCKER_USERNAME }}/sus-backend -t ${{ secrets.DOCKER_USERNAME }}/sus-backend:${{ steps.tag_version.outputs.SOURCE_TAG }} .
+          docker build -f Frontend.Dockerfile --build-arg VERSION=${{ steps.tag_version.outputs.SOURCE_TAG }} -t ${{ secrets.DOCKER_USERNAME }}/sus-frontend -t ${{ secrets.DOCKER_USERNAME }}/sus-frontend:${{ steps.tag_version.outputs.SOURCE_TAG }} .
+          docker build -f Backend.Dockerfile --build-arg VERSION=${{ steps.tag_version.outputs.SOURCE_TAG }} -t ${{ secrets.DOCKER_USERNAME }}/sus-backend -t ${{ secrets.DOCKER_USERNAME }}/sus-backend:${{ steps.tag_version.outputs.SOURCE_TAG }} .
 
       - name: publish images
         run: |
