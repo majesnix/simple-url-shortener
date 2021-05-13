@@ -25,19 +25,19 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_TOKEN }}
 
-      - name: Branch name
-        id: branch_name
+      - name: Get Tag Version
+        id: tag_version
         run: |
           echo ::set-output name=SOURCE_TAG::${GITHUB_REF#refs/tags/}
 
       - name: build images
         run: |
-          docker build -f Frontend.Dockerfile -t ${{ secrets.DOCKER_USERNAME }}/sus-frontend -t ${{ secrets.DOCKER_USERNAME }}/sus-frontend:${{ steps.branch_name.outputs.SOURCE_TAG }} .
-          docker build -f Backend.Dockerfile -t ${{ secrets.DOCKER_USERNAME }}/sus-backend -t ${{ secrets.DOCKER_USERNAME }}/sus-backend:${{ steps.branch_name.outputs.SOURCE_TAG }} .
+          docker build -f Frontend.Dockerfile -t ${{ secrets.DOCKER_USERNAME }}/sus-frontend -t ${{ secrets.DOCKER_USERNAME }}/sus-frontend:${{ steps.tag_version.outputs.SOURCE_TAG }} .
+          docker build -f Backend.Dockerfile -t ${{ secrets.DOCKER_USERNAME }}/sus-backend -t ${{ secrets.DOCKER_USERNAME }}/sus-backend:${{ steps.tag_version.outputs.SOURCE_TAG }} .
 
       - name: publish images
         run: |
           docker push ${{ secrets.DOCKER_USERNAME }}/sus-frontend
-          docker push ${{ secrets.DOCKER_USERNAME }}/sus-frontend:${{ steps.branch_name.outputs.SOURCE_TAG }}
+          docker push ${{ secrets.DOCKER_USERNAME }}/sus-frontend:${{ steps.tag_version.outputs.SOURCE_TAG }}
           docker push ${{ secrets.DOCKER_USERNAME }}/sus-backend
-          docker push ${{ secrets.DOCKER_USERNAME }}/sus-backend:${{ steps.branch_name.outputs.SOURCE_TAG }}
+          docker push ${{ secrets.DOCKER_USERNAME }}/sus-backend:${{ steps.tag_version.outputs.SOURCE_TAG }}
