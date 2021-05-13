@@ -21,7 +21,7 @@ RUN nx build frontend --prod
 FROM nginx:alpine
 
 LABEL name="sus-frontend"
-LABEL version="0.0.1"
+LABEL version="1.0.1"
 LABEL maintainer="majesnix <majesnix@majesnix.org>"
 
 COPY --from=builder /app/dist/apps/frontend /usr/share/nginx/html

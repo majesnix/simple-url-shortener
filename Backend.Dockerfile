@@ -21,7 +21,7 @@ RUN nx build backend --prod
 FROM node:alpine
 
 LABEL name="sus-backend"
-LABEL version="0.0.1"
+LABEL version="1.0.1"
 LABEL maintainer="majesnix <majesnix@majesnix.org>"
 
 WORKDIR /backend
