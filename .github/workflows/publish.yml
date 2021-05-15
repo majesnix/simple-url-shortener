@@ -50,6 +50,7 @@ jobs:
             NX_AUTH0_CALLBACK_URL=${{ secrets.NX_AUTH0_CALLBACK_URL }}
             NX_AUTH0_SCOPES=${{ secrets.NX_AUTH0_SCOPES }}
             NX_AUTH0_AUDIENCE=${{ secrets.NX_AUTH0_AUDIENCE }}
+            NX_APP_ENV=production
           tags: ${{ secrets.DOCKER_USERNAME }}/sus-frontend,${{ secrets.DOCKER_USERNAME }}/sus-frontend:${{ steps.tag_version.outputs.SOURCE_TAG }}
 
       - name: Build backend
@@ -59,4 +60,6 @@ jobs:
           platforms: linux/amd64,linux/arm64
           file: Backend.Dockerfile
           push: true
+          build-args: |
+            VERSION=${{ steps.tag_version.outputs.SOURCE_TAG }}
           tags: ${{ secrets.DOCKER_USERNAME }}/sus-backend,${{ secrets.DOCKER_USERNAME }}/sus-backend:${{ steps.tag_version.outputs.SOURCE_TAG }}
