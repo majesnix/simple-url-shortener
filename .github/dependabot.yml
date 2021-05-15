@@ -124,3 +124,8 @@ updates:
   - dependency-name: ts-jest
     versions:
     - 26.5.0
+# Maintain dependencies for GitHub Actions
+- package-ecosystem: "github-actions"
+  directory: "/"
+  schedule:
+    interval: "daily"
