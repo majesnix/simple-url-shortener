@@ -16,14 +16,13 @@ ARG NX_APP_ENV
 
 WORKDIR /app
 
-COPY package.json pnpm-lock.yaml ./
+COPY package.json yarn.lock ./
 
 RUN apk add --update \
   && apk add --no-cache ca-certificates \
   && apk add --no-cache --virtual .build-deps curl \
-  && curl -L https://unpkg.com/@pnpm/self-installer | node \
-  && pnpm i \
-  && pnpm i -g nx \
+  && yarn --frozen-lockfile \
+  && yarn global add nx \
   && apk del .build-deps
 
 COPY . .
