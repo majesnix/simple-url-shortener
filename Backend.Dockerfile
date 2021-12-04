@@ -33,7 +33,7 @@ COPY --from=builder /app/yarn.lock /backend
 
 RUN apk add --update \
   && apk add --no-cache ca-certificates \
-  && apk add --no-cache --virtual .build-deps curl \
+  && apk add --no-cache --virtual .build-deps curl make gcc g++ python3 \
   && yarn --frozen-lockfile \
   && apk del .build-deps
 
