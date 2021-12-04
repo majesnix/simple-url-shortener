@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useStore } from "../components/StoreProvider";
-import { RouteComponentProps } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { faCircleNotch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { observer } from "mobx-react-lite";
@@ -30,12 +30,13 @@ const LoadingDiv = styled.div`
   width: 150px;
 `;
 
-const Login = (props: RouteComponentProps) => {
+const Login = () => {
+  const navigate = useNavigate();
   const { app } = useStore();
 
   const checkAuth = async () => {
     if (await app.checkAuth()) {
-      props.history.push("/admin");
+      navigate("/admin");
     } else {
       await app.auth.loginWithRedirect();
     }

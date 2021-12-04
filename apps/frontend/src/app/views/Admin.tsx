@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { observer } from "mobx-react-lite";
 import { useStore } from "../components/StoreProvider";
 import ApiClient from "../dataLayer/api/ApiClient";
-import { Link, RouteComponentProps } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FixedSizeList as List } from "react-window";
 import ResizeObserver from "resize-observer-polyfill";
 import toast from "toasted-notes";
@@ -60,7 +60,8 @@ const LogoutButton = styled.div`
   cursor: pointer;
 `;
 
-const Admin = (props: RouteComponentProps) => {
+const Admin = () => {
+  const navigate = useNavigate();
   const { app } = useStore();
   const [err, setError] = useState(false);
   const [urls, setUrls] = useState<IDbUrl[] | null>(null);
@@ -74,7 +75,7 @@ const Admin = (props: RouteComponentProps) => {
   // check auth and get data
   useEffect(() => {
     app.checkAuth().then((authenticated) => {
-      if (!authenticated) props.history.push("/login");
+      if (!authenticated) navigate("/login");
 
       if (app.auth0Initiated && app.authenticated) {
         getData().catch((err) => console.error("Error getting data", err));
