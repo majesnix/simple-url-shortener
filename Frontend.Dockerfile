@@ -20,7 +20,7 @@ COPY package.json yarn.lock ./
 
 RUN apk add --update \
   && apk add --no-cache ca-certificates \
-  && apk add --no-cache --virtual .build-deps curl python3 \
+  && apk add --no-cache --virtual .build-deps curl make gcc g++ python3 \
   && yarn --frozen-lockfile \
   && yarn global add nx \
   && apk del .build-deps
