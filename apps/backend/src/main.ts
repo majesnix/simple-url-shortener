@@ -62,6 +62,7 @@ const { APPLICATION_NX_PORT } = process.env;
     },
   });
 
+  await server.start();
   server.applyMiddleware({ app });
 
   // Error handling
@@ -83,6 +84,10 @@ const { APPLICATION_NX_PORT } = process.env;
   );
 
   app.listen(APPLICATION_NX_PORT || 4000, () =>
-    console.log(`🚀 Service is listening on ${server.graphqlPath} [Port: ${APPLICATION_NX_PORT || 4000}]`)
+    console.log(
+      `🚀 Service is listening on ${server.graphqlPath} [Port: ${
+        APPLICATION_NX_PORT || 4000
+      }]`
+    )
   );
 })();
