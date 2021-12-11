@@ -12,6 +12,6 @@ export default () => (
     <Route path="/admin" element={<Admin />} />
     <Route path="/login" element={<Login />} />
     <Route path="/terms" element={<Terms />} />
-    <Route element={<Error />} />
+    <Route path="*" element={<Error />} />
   </Routes>
 );
