@@ -8,20 +8,10 @@ import Index from "./views/Index";
 
 export default () => (
   <Routes>
-    <Route path="/">
-      <Index />
-    </Route>
-    <Route path="/admin">
-      <Admin/>
-    </Route>
-    <Route path="/login">
-      <Login/>
-    </Route>
-    <Route path="/terms">
-      <Terms/>
-    </Route>
-    <Route>
-      <Error/>
-    </Route>
+    <Route path="/" element={<Index />} />
+    <Route path="/admin" element={<Admin />} />
+    <Route path="/login" element={<Login />} />
+    <Route path="/terms" element={<Terms />} />
+    <Route element={<Error />} />
   </Routes>
 );
