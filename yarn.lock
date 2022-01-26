@@ -2420,18 +2420,6 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@nrwl/cli@*", "@nrwl/cli@^13.2.3":
-  version "13.2.3"
-  resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-13.2.3.tgz#a0cf0d0d8f7e3c5475b4bed6c6d4c4c16d889b84"
-  integrity sha512-4hrOYQ9MqhWOdjQTwuQqHTfPu8lYgdFCE39PVWAcePtoi67mUeba54HkyT6nkTHI1TbO7q8Kf+R73dRhhxDlpA==
-  dependencies:
-    "@nrwl/tao" "13.2.3"
-    chalk "4.1.0"
-    enquirer "~2.3.6"
-    v8-compile-cache "2.3.0"
-    yargs "15.4.1"
-    yargs-parser "20.0.0"
-
 "@nrwl/cli@13.3.11":
   version "13.3.11"
   resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-13.3.11.tgz#4937824bea177227ef6ad96ed0e4e1aeda7ba477"
@@ -2444,7 +2432,7 @@
     yargs "15.4.1"
     yargs-parser "20.0.0"
 
-"@nrwl/cli@13.5.3":
+"@nrwl/cli@13.5.3", "@nrwl/cli@^13.5.3":
   version "13.5.3"
   resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-13.5.3.tgz#3b32247e9f9703f95f6e066f6000da2f32ad4e9a"
   integrity sha512-TMh8FfF6PPnjuxoSIU0wFVtE6xcf5UfxmX0pSy+ztEDU66RBSPwUxbHUFZGMKrT7jNZLutqmziwi89leTngvfw==
@@ -2673,24 +2661,7 @@
     ts-loader "^9.2.6"
     tsconfig-paths-webpack-plugin "3.4.1"
 
-"@nrwl/tao@13.2.3":
-  version "13.2.3"
-  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-13.2.3.tgz#f0ca4b08258bbc280d67dae039a2d4fda5830557"
-  integrity sha512-vn+GqvFVinqAXzvbHznPBtCg9OCfirh3hF68sZgY2C6jZ3m47XwST3mLTRSDTtSDy9QfUrSZ6p4uAk2Iht0yBQ==
-  dependencies:
-    chalk "4.1.0"
-    enquirer "~2.3.6"
-    fs-extra "^9.1.0"
-    jsonc-parser "3.0.0"
-    nx "13.2.3"
-    rxjs "^6.5.4"
-    rxjs-for-await "0.0.2"
-    semver "7.3.4"
-    tmp "~0.2.1"
-    tslib "^2.3.0"
-    yargs-parser "20.0.0"
-
-"@nrwl/tao@13.3.11", "@nrwl/tao@^13.3.11":
+"@nrwl/tao@13.3.11":
   version "13.3.11"
   resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-13.3.11.tgz#99685412e70dd810169160bd9fa66b1c35cc2214"
   integrity sha512-kqORs5pfZyCbP7PWxxOrOA4HMKpt4Wl4hNz+ZHWAEwNjzXRHtf1Bpi8wJceeS0uNakGS40TSesIcX4a2JppPcA==
@@ -2709,7 +2680,7 @@
     tslib "^2.3.0"
     yargs-parser "20.0.0"
 
-"@nrwl/tao@13.5.3":
+"@nrwl/tao@13.5.3", "@nrwl/tao@^13.3.11":
   version "13.5.3"
   resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-13.5.3.tgz#5112120395968916080216d530d62b0928513820"
   integrity sha512-YAHW4yGROt+a8yDrgG9UxrmSyi62S0Pi6EhLluk5e9s/sNJM1k2NfoVCzZMZYsCbv4tKYv4RSlqf3EQMe28uJw==
@@ -9746,13 +9717,6 @@ nwsapi@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/nwsapi/-/nwsapi-2.2.0.tgz#204879a9e3d068ff2a55139c2c772780681a38b7"
   integrity sha512-h2AatdwYH+JHiZpv7pt/gSX1XoRGb7L/qSIeuqA6GwYoF9w1vP1cw42TO0aI2pNyshRK5893hNSl+1//vHK7hQ==
-
-nx@13.2.3:
-  version "13.2.3"
-  resolved "https://registry.yarnpkg.com/nx/-/nx-13.2.3.tgz#d571206b0ad5f8d34aa1aec644d75cbf15b6c097"
-  integrity sha512-aNRbPjArROZazOKAiUhG5uZAZmL1uXdsGoA3p5mDt5fCLSj/CX1V/myuRx+Js0qsAV78W6dSf2z6TiQeIgieXg==
-  dependencies:
-    "@nrwl/cli" "*"
 
 nx@13.3.11:
   version "13.3.11"
