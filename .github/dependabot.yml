@@ -1,131 +1,16 @@
 version: 2
 updates:
-- package-ecosystem: npm
-  directory: "/"
-  schedule:
-    interval: daily
-    time: "10:00"
-    timezone: Europe/Berlin
-  open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: react
-    versions:
-    - ">= 16.14.a, < 16.15"
-  - dependency-name: "@types/node"
-    versions:
-    - "> 12.19.16"
-  - dependency-name: mobx-keystone
-    versions:
-    - 0.49.0
-    - 0.50.0
-    - 0.53.0
-    - 0.55.0
-    - 0.55.2
-    - 0.56.0
-    - 0.57.0
-  - dependency-name: "@nrwl/cypress"
-    versions:
-    - 11.2.7
-    - 12.0.0
-    - 12.0.1
-    - 12.0.2
-    - 12.0.4
-    - 12.0.6
-    - 12.0.7
-  - dependency-name: "@nrwl/react"
-    versions:
-    - 12.0.0
-    - 12.0.1
-    - 12.0.2
-    - 12.0.4
-    - 12.0.6
-    - 12.0.7
-  - dependency-name: "@nrwl/workspace"
-    versions:
-    - 12.0.1
-    - 12.0.2
-    - 12.0.4
-    - 12.0.6
-    - 12.0.7
-  - dependency-name: "@nrwl/express"
-    versions:
-    - 12.0.1
-    - 12.0.2
-    - 12.0.4
-    - 12.0.6
-    - 12.0.7
-  - dependency-name: "@nrwl/jest"
-    versions:
-    - 11.2.7
-    - 12.0.0
-    - 12.0.1
-    - 12.0.2
-    - 12.0.4
-    - 12.0.6
-    - 12.0.7
-  - dependency-name: "@nrwl/eslint-plugin-nx"
-    versions:
-    - 12.0.0
-    - 12.0.1
-    - 12.0.2
-    - 12.0.4
-    - 12.0.6
-    - 12.0.7
-  - dependency-name: "@nrwl/cli"
-    versions:
-    - 11.2.7
-    - 12.0.1
-    - 12.0.2
-    - 12.0.4
-    - 12.0.6
-    - 12.0.7
-  - dependency-name: cypress
-    versions:
-    - 7.0.0
-    - 7.0.1
-    - 7.1.0
-  - dependency-name: react-spring
-    versions:
-    - 9.0.0
-    - 9.1.0
-  - dependency-name: jwks-rsa
-    versions:
-    - 2.0.0
-  - dependency-name: eslint
-    versions:
-    - 7.21.0
-  - dependency-name: typescript
-    versions:
-    - 4.2.2
-  - dependency-name: eslint-config-prettier
-    versions:
-    - 7.2.0
-    - 8.0.0
-  - dependency-name: class-validator
-    versions:
-    - 0.13.1
-  - dependency-name: "@testing-library/react"
-    versions:
-    - 11.2.4
-  - dependency-name: "@nrwl/web"
-    versions:
-    - 11.2.6
-    - 11.2.7
-  - dependency-name: prettier
-    versions:
-    - 2.2.1
-  - dependency-name: "@nrwl/node"
-    versions:
-    - 11.2.6
-    - 11.2.7
-  - dependency-name: "@types/react"
-    versions:
-    - 17.0.0
-  - dependency-name: ts-jest
-    versions:
-    - 26.5.0
-# Maintain dependencies for GitHub Actions
-- package-ecosystem: "github-actions"
-  directory: "/"
-  schedule:
-    interval: "daily"
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: daily
+      time: "10:00"
+      timezone: Europe/Berlin
+    open-pull-requests-limit: 10
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "10:00"
+    open-pull-requests-limit: 10
