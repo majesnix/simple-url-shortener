@@ -102,7 +102,7 @@
     "@types/react-window": "^1.8.5",
     "@types/styled-components": "^5.1.18",
     "@types/uuid": "^8.3.4",
-    "@typescript-eslint/eslint-plugin": "^5.8.0",
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
     "@typescript-eslint/parser": "^5.10.1",
     "babel-jest": "^27.4.6",
     "cypress": "^9.3.1",
