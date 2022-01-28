@@ -1762,12 +1762,23 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@nrwl/cli@13.5.3", "@nrwl/cli@^13.5.3":
+"@nrwl/cli@13.5.3":
   version "13.5.3"
   resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-13.5.3.tgz#3b32247e9f9703f95f6e066f6000da2f32ad4e9a"
   integrity sha512-TMh8FfF6PPnjuxoSIU0wFVtE6xcf5UfxmX0pSy+ztEDU66RBSPwUxbHUFZGMKrT7jNZLutqmziwi89leTngvfw==
   dependencies:
     "@nrwl/tao" "13.5.3"
+    chalk "4.1.0"
+    enquirer "~2.3.6"
+    v8-compile-cache "2.3.0"
+    yargs-parser "20.0.0"
+
+"@nrwl/cli@13.6.1", "@nrwl/cli@^13.5.3":
+  version "13.6.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-13.6.1.tgz#25bba4e1e8fd516ba239c2cab8677d86a6d109c9"
+  integrity sha512-e6iEM5CKbwm67MK3daAEYuxX9kXeUBtbV4mEPU0mX6q7cqSMd0PdVVHpdZMkJtbUG+c2CD+IayoVOdJryAh4Vw==
+  dependencies:
+    "@nrwl/tao" "13.6.1"
     chalk "4.1.0"
     enquirer "~2.3.6"
     v8-compile-cache "2.3.0"
@@ -1804,6 +1815,18 @@
     semver "7.3.4"
     tslib "^2.3.0"
 
+"@nrwl/devkit@13.6.1":
+  version "13.6.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-13.6.1.tgz#2fc99552aed7692d247b70dbc21c8a12d3e15c9e"
+  integrity sha512-Y3rfzmBqOVLPEiC7BUqckNLfg0dTgPfRmO1bFmSYclALxzs+mMoZGH/3RjIIrYAG6WLYgO298RIzMJsz2vU4sA==
+  dependencies:
+    "@nrwl/tao" "13.6.1"
+    ejs "^3.1.5"
+    ignore "^5.0.4"
+    rxjs "^6.5.4"
+    semver "7.3.4"
+    tslib "^2.3.0"
+
 "@nrwl/eslint-plugin-nx@^13.5.3":
   version "13.5.3"
   resolved "https://registry.yarnpkg.com/@nrwl/eslint-plugin-nx/-/eslint-plugin-nx-13.5.3.tgz#487f6cd34982c84429b54a505b1270ddf49d95e1"
@@ -1827,7 +1850,7 @@
     "@nrwl/node" "13.5.3"
     "@nrwl/workspace" "13.5.3"
 
-"@nrwl/jest@13.5.3", "@nrwl/jest@^13.2.3":
+"@nrwl/jest@13.5.3":
   version "13.5.3"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-13.5.3.tgz#487d9d010ff9511a04ef45f9305a44443cc145c8"
   integrity sha512-PCBX/4LxKKWxrsgqj0ejAWwT64Iv6fejntZsyQNr2yzDSZY/sQL4XJ8EbVH4yivzxqn3F1+blmpDrDLlAhDy6g==
@@ -1835,6 +1858,23 @@
     "@jest/reporters" "27.2.2"
     "@jest/test-result" "27.2.2"
     "@nrwl/devkit" "13.5.3"
+    chalk "4.1.0"
+    identity-obj-proxy "3.0.0"
+    jest-config "27.2.2"
+    jest-resolve "27.2.2"
+    jest-util "27.2.0"
+    resolve.exports "1.1.0"
+    rxjs "^6.5.4"
+    tslib "^2.3.0"
+
+"@nrwl/jest@13.6.1", "@nrwl/jest@^13.2.3":
+  version "13.6.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-13.6.1.tgz#140bd19874ae9a7172747ddb2ec2a7a63b614f94"
+  integrity sha512-54qgcKfKdMpafdUmpsgSR9gacO7zvJJWPUFlQ2QHxqg6tm88U05Hb1LWK/21u5hgifpe/BHOklHJwPaHdUnKtw==
+  dependencies:
+    "@jest/reporters" "27.2.2"
+    "@jest/test-result" "27.2.2"
+    "@nrwl/devkit" "13.6.1"
     chalk "4.1.0"
     identity-obj-proxy "3.0.0"
     jest-config "27.2.2"
@@ -1872,6 +1912,17 @@
   dependencies:
     "@nrwl/devkit" "13.5.3"
     "@nrwl/jest" "13.5.3"
+    "@phenomnomnominal/tsquery" "4.1.1"
+    tmp "~0.2.1"
+    tslib "^2.3.0"
+
+"@nrwl/linter@13.6.1":
+  version "13.6.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/linter/-/linter-13.6.1.tgz#ba5ce6d57dd41e9380fb243ea46cf5a13a1d1203"
+  integrity sha512-UDojjrleA/9FwM8zzG/ClAJnenit12l2bNI3xnHGDjazOp3iQg2paOdshq8TzQA9qwvGae0EXwyQfOfkZzBb/A==
+  dependencies:
+    "@nrwl/devkit" "13.6.1"
+    "@nrwl/jest" "13.6.1"
     "@phenomnomnominal/tsquery" "4.1.1"
     tmp "~0.2.1"
     tslib "^2.3.0"
@@ -1968,6 +2019,25 @@
     tslib "^2.3.0"
     yargs-parser "20.0.0"
 
+"@nrwl/tao@13.6.1":
+  version "13.6.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-13.6.1.tgz#6862b22ba1255435263f291a7db9c3f903b8e08e"
+  integrity sha512-F+ldBZjm8CspTs/n6lBcHFGmRumRV5zTeSCD2p8z6kdAzpDQjuIAPU2O5kRSe0/S1WZ74zNA4SjqprA21zDBGg==
+  dependencies:
+    chalk "4.1.0"
+    enquirer "~2.3.6"
+    fast-glob "3.2.7"
+    fs-extra "^9.1.0"
+    ignore "^5.0.4"
+    jsonc-parser "3.0.0"
+    nx "13.6.1"
+    rxjs "^6.5.4"
+    rxjs-for-await "0.0.2"
+    semver "7.3.4"
+    tmp "~0.2.1"
+    tslib "^2.3.0"
+    yargs-parser "20.0.0"
+
 "@nrwl/web@13.5.3", "@nrwl/web@^13.2.3":
   version "13.5.3"
   resolved "https://registry.yarnpkg.com/@nrwl/web/-/web-13.5.3.tgz#0df723902d18e621461b06aee3d9ddda4d3711e7"
@@ -2057,7 +2127,7 @@
     webpack-sources "^3.0.2"
     webpack-subresource-integrity "^1.5.2"
 
-"@nrwl/workspace@13.5.3", "@nrwl/workspace@^13.2.3":
+"@nrwl/workspace@13.5.3":
   version "13.5.3"
   resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-13.5.3.tgz#2dc369a0c6bc9b483edcc48375a6c9547719bb98"
   integrity sha512-ZY7HGPhs0w0neXLXJgbIYd36+FZuc8LHgaxhExsK9vdusuaXhNVyMkR+TmbtN9sXAB0ZN0+hzcty+V7ncn4sHQ==
@@ -2066,6 +2136,37 @@
     "@nrwl/devkit" "13.5.3"
     "@nrwl/jest" "13.5.3"
     "@nrwl/linter" "13.5.3"
+    "@parcel/watcher" "2.0.4"
+    chalk "4.1.0"
+    chokidar "^3.5.1"
+    cli-cursor "3.1.0"
+    cli-spinners "2.6.1"
+    dotenv "~10.0.0"
+    enquirer "~2.3.6"
+    figures "3.2.0"
+    flat "^5.0.2"
+    fs-extra "^9.1.0"
+    glob "7.1.4"
+    ignore "^5.0.4"
+    minimatch "3.0.4"
+    npm-run-path "^4.0.1"
+    open "^7.4.2"
+    rxjs "^6.5.4"
+    semver "7.3.4"
+    tmp "~0.2.1"
+    tslib "^2.3.0"
+    yargs "15.4.1"
+    yargs-parser "20.0.0"
+
+"@nrwl/workspace@^13.6.1":
+  version "13.6.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-13.6.1.tgz#a8693ec69d13cdc83954fe14c2c7c6531f439657"
+  integrity sha512-pmMRoYDgfSn0xN+yHYqBt/ltXFU/xCn7RQHa7mo3ThU2+gfAb/IhDHug5yRp2UqMKHmmMWQ6DbGuusXLlVix6A==
+  dependencies:
+    "@nrwl/cli" "13.6.1"
+    "@nrwl/devkit" "13.6.1"
+    "@nrwl/jest" "13.6.1"
+    "@nrwl/linter" "13.6.1"
     "@parcel/watcher" "2.0.4"
     chalk "4.1.0"
     chokidar "^3.5.1"
@@ -8717,6 +8818,13 @@ nx@13.5.3:
   integrity sha512-OqYNq+RL+nk8IAbxOl9CnfHnURA68tYlQojUdtdAiKnmcOouSzWnt1zRZb2nUWiMUiWEVojExMvCqXLwgRwQ6Q==
   dependencies:
     "@nrwl/cli" "13.5.3"
+
+nx@13.6.1:
+  version "13.6.1"
+  resolved "https://registry.yarnpkg.com/nx/-/nx-13.6.1.tgz#4672b463f4c9a6b4a855a9d98b08efcd861f5ac5"
+  integrity sha512-155nM2WJR9TGKXhOdWE07/1nKa4QCSjyoeLPh641U6Bs/6uVtXkJoNJdIeaGDHPIpwQQdhM/1SoZFbVmj5//wQ==
+  dependencies:
+    "@nrwl/cli" "13.6.1"
 
 object-assign@^4, object-assign@^4.0.1, object-assign@^4.1.0, object-assign@^4.1.1:
   version "4.1.1"
