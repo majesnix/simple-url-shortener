@@ -1784,7 +1784,7 @@
     v8-compile-cache "2.3.0"
     yargs-parser "20.0.0"
 
-"@nrwl/cypress@13.6.1", "@nrwl/cypress@^13.2.3":
+"@nrwl/cypress@13.6.1":
   version "13.6.1"
   resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-13.6.1.tgz#71f4d9d052e0f30668f174481fcbaa627a486875"
   integrity sha512-luz36D3dal2x5367WK/oURGzObzIwFuGwjlp+L8dq5KzYtRhbzutfHhWCk/JEOsCrLBlI5jKH37x7kbpkH8OKQ==
@@ -1793,6 +1793,25 @@
     "@nrwl/devkit" "13.6.1"
     "@nrwl/linter" "13.6.1"
     "@nrwl/workspace" "13.6.1"
+    chalk "4.1.0"
+    enhanced-resolve "^5.8.3"
+    fork-ts-checker-webpack-plugin "6.2.10"
+    rxjs "^6.5.4"
+    ts-loader "^9.2.6"
+    tsconfig-paths "^3.9.0"
+    tsconfig-paths-webpack-plugin "3.5.2"
+    tslib "^2.3.0"
+    webpack-node-externals "^3.0.0"
+
+"@nrwl/cypress@^13.7.1":
+  version "13.7.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-13.7.1.tgz#a5bf3b935a1c31fcea26b27c183977f7e037f9da"
+  integrity sha512-xt27D8q9sciH+T1WVlqGf2MR6FZcCkCd9i1KGVlpW3WyyhOVtAetkeYBf9vu7xNbQkppNCi2IkdJWiiPWWVfIw==
+  dependencies:
+    "@cypress/webpack-preprocessor" "^5.9.1"
+    "@nrwl/devkit" "13.7.1"
+    "@nrwl/linter" "13.7.1"
+    "@nrwl/workspace" "13.7.1"
     chalk "4.1.0"
     enhanced-resolve "^5.8.3"
     fork-ts-checker-webpack-plugin "6.2.10"
