@@ -1717,7 +1717,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@nrwl/cli@13.7.1", "@nrwl/cli@^13.7.1":
+"@nrwl/cli@13.7.1":
   version "13.7.1"
   resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-13.7.1.tgz#da23bade4c8cf2dec0d122d0979302dd2e5d4330"
   integrity sha512-UfupcHb0P2/yvNs/TjPM6uQyH9nZYNySPqTL1tV9ItO8vPm4YnO3jd+NrO3WWzrBCZVfwX8LHZ2PTtBGkCA01w==
@@ -1728,7 +1728,7 @@
     v8-compile-cache "2.3.0"
     yargs-parser "20.0.0"
 
-"@nrwl/cli@13.7.2":
+"@nrwl/cli@13.7.2", "@nrwl/cli@^13.7.2":
   version "13.7.2"
   resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-13.7.2.tgz#8929cc4202f364bd460b2944d3f5467d2b2d16f2"
   integrity sha512-EvuY1aqPkGc1pavI2ANVGLotDpQ2xIhJfmRr/lY19zbEedN19azqniKmX7BAkKg2kEnbqf1D6vsZx53qcEaM4g==
@@ -1986,7 +1986,7 @@
     ts-loader "^9.2.6"
     tsconfig-paths-webpack-plugin "3.5.2"
 
-"@nrwl/tao@13.7.1", "@nrwl/tao@^13.3.11":
+"@nrwl/tao@13.7.1":
   version "13.7.1"
   resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-13.7.1.tgz#1f257232c38324521cd7c1478896f4c0e948216a"
   integrity sha512-Ho7OHIu82aT/6hCSAZ1nxgmFAmTVt6TM6oxeg+/J4JTizCbevjrEFxS7RQ7GYsW/a8NxOTTMq6rTMln3W2OPzg==
@@ -2005,7 +2005,7 @@
     tslib "^2.3.0"
     yargs-parser "20.0.0"
 
-"@nrwl/tao@13.7.2":
+"@nrwl/tao@13.7.2", "@nrwl/tao@^13.3.11":
   version "13.7.2"
   resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-13.7.2.tgz#3c25d0acfd4c200d88cbc59558e340ad3141617a"
   integrity sha512-Dsh01wHJGsZfNI4GAqm4lJArho6qmTvOIRXlKrYjjERWD80EmpWV+JpMwZseKI/ZWKg8gda8iYIDD4FSXTQjrw==
