@@ -1782,18 +1782,20 @@
     semver "7.3.4"
     tslib "^2.3.0"
 
-"@nrwl/eslint-plugin-nx@^13.7.1":
-  version "13.7.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/eslint-plugin-nx/-/eslint-plugin-nx-13.7.1.tgz#4433c1de21ddc6b39fe723b1780bfcca6e12d9b5"
-  integrity sha512-lJKMDU9UvKOL7Ei+guEAvAXV134/UYpQ5N5BzCd1++jy/TmVeHLAzEIXhF3mvq0hXecfLPrAcsgVyxnY4OW3eg==
+"@nrwl/eslint-plugin-nx@^13.7.2":
+  version "13.7.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/eslint-plugin-nx/-/eslint-plugin-nx-13.7.2.tgz#62505b635a31edded87fd7a2a1934ef872057265"
+  integrity sha512-D3/E4gfieCOGSmeFT7EfRz7EaaqsNk57rzs4Q9AqgN5dGQJwP1RAar0HlncjKe1iSMSu5s/r1hrn1vLv+z4Qsw==
   dependencies:
-    "@nrwl/devkit" "13.7.1"
-    "@nrwl/workspace" "13.7.1"
+    "@nrwl/devkit" "13.7.2"
+    "@nrwl/workspace" "13.7.2"
     "@swc-node/register" "^1.4.2"
     "@typescript-eslint/experimental-utils" "~5.10.0"
     chalk "4.1.0"
     confusing-browser-globals "^1.0.9"
     tsconfig-paths "^3.9.0"
+  optionalDependencies:
+    "@swc/core-linux-musl" "^1.2.42"
 
 "@nrwl/express@^13.7.1":
   version "13.7.1"
@@ -2763,6 +2765,11 @@
   version "1.2.135"
   resolved "https://registry.yarnpkg.com/@swc/core-linux-arm64-musl/-/core-linux-arm64-musl-1.2.135.tgz#e41cad8df03b5f8b9eeb124a2d723992061d4026"
   integrity sha512-hPGetFUhez77OUgig1XmNHZbUmpKGt72u9cN0AX5NtmFdfYYu4p6l+6YB6jg6/TrPmyJlJD5vroVz8JR/pZS+w==
+
+"@swc/core-linux-musl@^1.2.42":
+  version "1.2.42"
+  resolved "https://registry.yarnpkg.com/@swc/core-linux-musl/-/core-linux-musl-1.2.42.tgz#3cd5f565bce5763a92cf3f7b55b9906df2dcc3eb"
+  integrity sha512-pXl7+nPYFbYI31Uj9U2GNZkrJGcHobGncF8mGEAfDFUAulLlWf98HnS1+GfxgP05cxbAn4RwetlaneQqeGxBaA==
 
 "@swc/core-linux-x64-gnu@1.2.135":
   version "1.2.135"
