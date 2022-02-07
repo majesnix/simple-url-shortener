@@ -1801,20 +1801,23 @@
     semver "7.3.4"
     tslib "^2.3.0"
 
-"@nrwl/eslint-plugin-nx@^13.7.2":
-  version "13.7.2"
-  resolved "https://registry.yarnpkg.com/@nrwl/eslint-plugin-nx/-/eslint-plugin-nx-13.7.2.tgz#62505b635a31edded87fd7a2a1934ef872057265"
-  integrity sha512-D3/E4gfieCOGSmeFT7EfRz7EaaqsNk57rzs4Q9AqgN5dGQJwP1RAar0HlncjKe1iSMSu5s/r1hrn1vLv+z4Qsw==
+"@nrwl/eslint-plugin-nx@^13.7.3":
+  version "13.7.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/eslint-plugin-nx/-/eslint-plugin-nx-13.7.3.tgz#797b088ba0b0729ef0ed1e8576109637f9e3242b"
+  integrity sha512-lkqCEGSmUogjcljMbxL79wSBwAAYST17FrzvVSnbgn9m12uNHnq/053wVP9s+ZVUsrn+yhHZ2z/8zGqd2cUzvA==
   dependencies:
-    "@nrwl/devkit" "13.7.2"
-    "@nrwl/workspace" "13.7.2"
+    "@nrwl/devkit" "13.7.3"
+    "@nrwl/workspace" "13.7.3"
     "@swc-node/register" "^1.4.2"
     "@typescript-eslint/experimental-utils" "~5.10.0"
     chalk "4.1.0"
     confusing-browser-globals "^1.0.9"
     tsconfig-paths "^3.9.0"
   optionalDependencies:
-    "@swc/core-linux-musl" "^1.2.42"
+    "@swc/core-linux-arm64-gnu" "^1.2.136"
+    "@swc/core-linux-arm64-musl" "^1.2.136"
+    "@swc/core-linux-x64-gnu" "^1.2.136"
+    "@swc/core-linux-x64-musl" "^1.2.136"
 
 "@nrwl/express@^13.7.2":
   version "13.7.2"
@@ -2858,25 +2861,40 @@
   resolved "https://registry.yarnpkg.com/@swc/core-linux-arm64-gnu/-/core-linux-arm64-gnu-1.2.135.tgz#0ec99ccdda78aa7e0d018a6928691632eb84bff8"
   integrity sha512-inu6jZCHiHw+3kSvmBRGUIDLMi/XFsIyMOue3QJReOuL5BTIQJ/I1oYhLsaSGcmEZM2Mo7QJ2jDBB3SjM5YzeA==
 
+"@swc/core-linux-arm64-gnu@^1.2.136":
+  version "1.2.136"
+  resolved "https://registry.yarnpkg.com/@swc/core-linux-arm64-gnu/-/core-linux-arm64-gnu-1.2.136.tgz#111a008e54d1e38b33a0d3d3134309a002f6a3b7"
+  integrity sha512-B9vuahX64AYMID6MY6B2OpYiEUytcXIJCrdJwviQxF+29+xQippygrzkqq+lw2O8K0EsSXf7UvfZrz2M1DHcmA==
+
 "@swc/core-linux-arm64-musl@1.2.135":
   version "1.2.135"
   resolved "https://registry.yarnpkg.com/@swc/core-linux-arm64-musl/-/core-linux-arm64-musl-1.2.135.tgz#e41cad8df03b5f8b9eeb124a2d723992061d4026"
   integrity sha512-hPGetFUhez77OUgig1XmNHZbUmpKGt72u9cN0AX5NtmFdfYYu4p6l+6YB6jg6/TrPmyJlJD5vroVz8JR/pZS+w==
 
-"@swc/core-linux-musl@^1.2.42":
-  version "1.2.42"
-  resolved "https://registry.yarnpkg.com/@swc/core-linux-musl/-/core-linux-musl-1.2.42.tgz#3cd5f565bce5763a92cf3f7b55b9906df2dcc3eb"
-  integrity sha512-pXl7+nPYFbYI31Uj9U2GNZkrJGcHobGncF8mGEAfDFUAulLlWf98HnS1+GfxgP05cxbAn4RwetlaneQqeGxBaA==
+"@swc/core-linux-arm64-musl@^1.2.136":
+  version "1.2.136"
+  resolved "https://registry.yarnpkg.com/@swc/core-linux-arm64-musl/-/core-linux-arm64-musl-1.2.136.tgz#86d3a207ba519ce38410bb0f896baa6279de4051"
+  integrity sha512-XxRIa3kMXlekFGQ5VDqJ4CsBmk4v61kt2rgPLjposxehuXBXXO80OiIgd/iRbEmbhwLveE8Ar+zGAMYjUp1YjQ==
 
 "@swc/core-linux-x64-gnu@1.2.135":
   version "1.2.135"
   resolved "https://registry.yarnpkg.com/@swc/core-linux-x64-gnu/-/core-linux-x64-gnu-1.2.135.tgz#c2fd5206b0a40760f4f878f367a21033473c2d12"
   integrity sha512-PTEzzMWvUaXI/sInu8oPo7yYj2WPgfl4QL3wo2OEEKwE27xFjUmKv80pXGIFD9/Xn33Xz8cA0d8yGTWYD+tOIg==
 
+"@swc/core-linux-x64-gnu@^1.2.136":
+  version "1.2.136"
+  resolved "https://registry.yarnpkg.com/@swc/core-linux-x64-gnu/-/core-linux-x64-gnu-1.2.136.tgz#91a44b439743e59b1e1d649a87032db44d2214d3"
+  integrity sha512-lTyh8d7xGcReOnA7R/hj8jtkLs67U9ut1d9sc/ogyD6FXcGuYoHcLsBn2A4cp2Q5fMtRfTZQyZznpYz9RrLoIw==
+
 "@swc/core-linux-x64-musl@1.2.135":
   version "1.2.135"
   resolved "https://registry.yarnpkg.com/@swc/core-linux-x64-musl/-/core-linux-x64-musl-1.2.135.tgz#fc12e424921dbffee0ef9d025dd162f8aaa45b74"
   integrity sha512-6zqf/1x1QYIhYFIPRRo5ArHIvWVWfH8fuRE6AwL1nQz/Y19SAJx3PXgwlAjtu4CZfciuUqY99PeFtTOu1Dnjhg==
+
+"@swc/core-linux-x64-musl@^1.2.136":
+  version "1.2.136"
+  resolved "https://registry.yarnpkg.com/@swc/core-linux-x64-musl/-/core-linux-x64-musl-1.2.136.tgz#0bdde1359245642f6126d6f62e8abe0a1c791f0a"
+  integrity sha512-mzX8eqsjEUr7rRZx2QWIqyBcd3/OEcDn/R7xO7HBM7OyzzdF+lbDYimZDiyvuw+uxTbHEUcBV975vSkcEEUNQw==
 
 "@swc/core-win32-arm64-msvc@1.2.135":
   version "1.2.135"
