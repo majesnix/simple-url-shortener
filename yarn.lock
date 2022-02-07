@@ -8593,13 +8593,13 @@ mkdirp@^1.0.4, mkdirp@~1.0.4:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
-mobx-keystone@^0.64.1:
-  version "0.64.1"
-  resolved "https://registry.yarnpkg.com/mobx-keystone/-/mobx-keystone-0.64.1.tgz#30dfd1d8cefcbe8774cfbc9c2643417940fffd72"
-  integrity sha512-8z79fkPmFp8PLPJAIR+7KK32NvO7r9wT8sg13wcNRhnLqHgJMcS9OOkR57Mi8j9eWIj8yKWQJQR7O+1Jee3MYw==
+mobx-keystone@^0.65.0:
+  version "0.65.0"
+  resolved "https://registry.yarnpkg.com/mobx-keystone/-/mobx-keystone-0.65.0.tgz#af91d14ec345bf134ae7497c155fd77ecfe36829"
+  integrity sha512-ARC5lVrMzex1Goj6HXO9sMYvIODkziuTZtehQEFpTMLyw4ELzZeXCQJpAscR1w2u8+kY12nh3/iMxYNzUTaWRw==
   dependencies:
     fast-deep-equal "^3.1.3"
-    nanoid "^3.1.30"
+    nanoid "^3.2.0"
     ts-toolbelt "^9.6.0"
     tslib "^2.3.1"
 
