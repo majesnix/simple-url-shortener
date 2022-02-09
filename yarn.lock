@@ -1791,13 +1791,13 @@
     semver "7.3.4"
     tslib "^2.3.0"
 
-"@nrwl/eslint-plugin-nx@^13.7.3":
-  version "13.7.3"
-  resolved "https://registry.yarnpkg.com/@nrwl/eslint-plugin-nx/-/eslint-plugin-nx-13.7.3.tgz#797b088ba0b0729ef0ed1e8576109637f9e3242b"
-  integrity sha512-lkqCEGSmUogjcljMbxL79wSBwAAYST17FrzvVSnbgn9m12uNHnq/053wVP9s+ZVUsrn+yhHZ2z/8zGqd2cUzvA==
+"@nrwl/eslint-plugin-nx@^13.8.0":
+  version "13.8.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/eslint-plugin-nx/-/eslint-plugin-nx-13.8.0.tgz#2147a2ab6caa444ef1fad4ff0190a18634169285"
+  integrity sha512-yzO4uShxqO77Tta6WjfIG9qHCK47GLj7jIQdwqFFdJqtBFRdgcHx8o6hyqyXuF5UHkXfoQcjSTAM16JFIocxaw==
   dependencies:
-    "@nrwl/devkit" "13.7.3"
-    "@nrwl/workspace" "13.7.3"
+    "@nrwl/devkit" "13.8.0"
+    "@nrwl/workspace" "13.8.0"
     "@swc-node/register" "^1.4.2"
     "@typescript-eslint/experimental-utils" "~5.10.0"
     chalk "4.1.0"
