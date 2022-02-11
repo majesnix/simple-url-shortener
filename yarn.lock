@@ -1615,17 +1615,7 @@
     "@types/istanbul-lib-coverage" "^2.0.0"
     collect-v8-coverage "^1.0.0"
 
-"@jest/test-result@^27.2.2", "@jest/test-result@^27.4.2":
-  version "27.4.2"
-  resolved "https://registry.yarnpkg.com/@jest/test-result/-/test-result-27.4.2.tgz#05fd4a5466ec502f3eae0b39dff2b93ea4d5d9ec"
-  integrity sha512-kr+bCrra9jfTgxHXHa2UwoQjxvQk3Am6QbpAiJ5x/50LW8llOYrxILkqY0lZRW/hu8FXesnudbql263+EW9iNA==
-  dependencies:
-    "@jest/console" "^27.4.2"
-    "@jest/types" "^27.4.2"
-    "@types/istanbul-lib-coverage" "^2.0.0"
-    collect-v8-coverage "^1.0.0"
-
-"@jest/test-result@^27.5.1":
+"@jest/test-result@^27.2.2", "@jest/test-result@^27.4.2", "@jest/test-result@^27.5.1":
   version "27.5.1"
   resolved "https://registry.yarnpkg.com/@jest/test-result/-/test-result-27.5.1.tgz#56a6585fa80f7cdab72b8c5fc2e871d03832f5bb"
   integrity sha512-EW35l2RYFUcUQxFJz5Cv5MTOxlJIQs4I7gxzi2zVU7PJhOwfYq1MdC5nhSmYjX1gmMmLPvB3sIaC+BkcHRBfag==
@@ -1737,6 +1727,17 @@
     v8-compile-cache "2.3.0"
     yargs-parser "20.0.0"
 
+"@nrwl/cli@13.8.1":
+  version "13.8.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-13.8.1.tgz#31af91b27f4c19e736dd9793b0f36f69ef482256"
+  integrity sha512-oQtu0rkpEm3QdzqB/BCDsOl0OJ5P2afSfzu3Lxcrz6fHjmUf9aby0sd1JCrRNRrZkxK8GAdxRKZdPHkdWvr23A==
+  dependencies:
+    "@nrwl/tao" "13.8.1"
+    chalk "4.1.0"
+    enquirer "~2.3.6"
+    v8-compile-cache "2.3.0"
+    yargs-parser "20.0.0"
+
 "@nrwl/cypress@13.8.0", "@nrwl/cypress@^13.2.3":
   version "13.8.0"
   resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-13.8.0.tgz#9c80ccf626bfee20f29269864a754a21efd5a7af"
@@ -1762,6 +1763,18 @@
   integrity sha512-agiund/d2IJA0g+6QfruvTy1thxvHDlKALMkJgSSA2pDdh2fwMG+gX4arsu7kSa53CvPMddIsC5Nc+5vEiQSTw==
   dependencies:
     "@nrwl/tao" "13.8.0"
+    ejs "^3.1.5"
+    ignore "^5.0.4"
+    rxjs "^6.5.4"
+    semver "7.3.4"
+    tslib "^2.3.0"
+
+"@nrwl/devkit@13.8.1":
+  version "13.8.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-13.8.1.tgz#03184e057b04b2a451dd7856e0e8008b8def1685"
+  integrity sha512-zznDaYf6yTBbr8xOb8l4Dn7L0QhCS7BMUoCq/PMCBLwRnRBDpbd801tD06qIVvhh3XkwEJVS2v7EEF3TOypIyw==
+  dependencies:
+    "@nrwl/tao" "13.8.1"
     ejs "^3.1.5"
     ignore "^5.0.4"
     rxjs "^6.5.4"
@@ -1795,7 +1808,7 @@
     "@nrwl/node" "13.8.0"
     "@nrwl/workspace" "13.8.0"
 
-"@nrwl/jest@13.8.0", "@nrwl/jest@^13.2.3":
+"@nrwl/jest@13.8.0":
   version "13.8.0"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-13.8.0.tgz#c4e2163e135b8021bdfef50ed7db441c0a247d40"
   integrity sha512-s79x084ZudZltjjf54lYh7NB5WUPBvPD9GkifcgANeiii03ezz32zcRlQRwkgUf9oQxvwt9h+ZjlHjEtQW26pg==
@@ -1803,6 +1816,23 @@
     "@jest/reporters" "27.2.2"
     "@jest/test-result" "27.2.2"
     "@nrwl/devkit" "13.8.0"
+    chalk "4.1.0"
+    identity-obj-proxy "3.0.0"
+    jest-config "27.2.2"
+    jest-resolve "27.2.2"
+    jest-util "27.2.0"
+    resolve.exports "1.1.0"
+    rxjs "^6.5.4"
+    tslib "^2.3.0"
+
+"@nrwl/jest@^13.8.1":
+  version "13.8.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-13.8.1.tgz#32f2c9c28ae03e0f4a5bdd8fc6688c4bbca8ab09"
+  integrity sha512-kY6/Fg3aFODVk250qWcJPJWO+pDUN6VFOAUEz03sxkmkfZEA8MRG0xgQrYl9dXcLDK1apoEGJ4sGZ2r8QpA7AA==
+  dependencies:
+    "@jest/reporters" "27.2.2"
+    "@jest/test-result" "27.2.2"
+    "@nrwl/devkit" "13.8.1"
     chalk "4.1.0"
     identity-obj-proxy "3.0.0"
     jest-config "27.2.2"
@@ -1929,6 +1959,25 @@
     ignore "^5.0.4"
     jsonc-parser "3.0.0"
     nx "13.8.0"
+    rxjs "^6.5.4"
+    rxjs-for-await "0.0.2"
+    semver "7.3.4"
+    tmp "~0.2.1"
+    tslib "^2.3.0"
+    yargs-parser "20.0.0"
+
+"@nrwl/tao@13.8.1":
+  version "13.8.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-13.8.1.tgz#6d8168d5cb81ffc1e3e74352db4f5eef7e5ba3f0"
+  integrity sha512-eY05o0napek5b99DH+dir32q2pCemWmwF4ooimU4BnuY90lXC6FUXuB4+w8/tTGTI5TqjfXOnBokTqr3DPDRpQ==
+  dependencies:
+    chalk "4.1.0"
+    enquirer "~2.3.6"
+    fast-glob "3.2.7"
+    fs-extra "^9.1.0"
+    ignore "^5.0.4"
+    jsonc-parser "3.0.0"
+    nx "13.8.1"
     rxjs "^6.5.4"
     rxjs-for-await "0.0.2"
     semver "7.3.4"
@@ -7692,23 +7741,7 @@ jest-resolve@27.2.2:
     resolve "^1.20.0"
     slash "^3.0.0"
 
-jest-resolve@^27.2.2, jest-resolve@^27.4.2:
-  version "27.4.2"
-  resolved "https://registry.yarnpkg.com/jest-resolve/-/jest-resolve-27.4.2.tgz#d3e4cbee7acb4a4f8c8bfc270767bec34d2aefaf"
-  integrity sha512-d/zqPjxCzMqHlOdRTg8cTpO9jY+1/T74KazT8Ws/LwmwxV5sRMWOkiLjmzUCDj/5IqA5XHNK4Hkmlq9Kdpb9Sg==
-  dependencies:
-    "@jest/types" "^27.4.2"
-    chalk "^4.0.0"
-    graceful-fs "^4.2.4"
-    jest-haste-map "^27.4.2"
-    jest-pnp-resolver "^1.2.2"
-    jest-util "^27.4.2"
-    jest-validate "^27.4.2"
-    resolve "^1.20.0"
-    resolve.exports "^1.1.0"
-    slash "^3.0.0"
-
-jest-resolve@^27.5.1:
+jest-resolve@^27.2.2, jest-resolve@^27.4.2, jest-resolve@^27.5.1:
   version "27.5.1"
   resolved "https://registry.yarnpkg.com/jest-resolve/-/jest-resolve-27.5.1.tgz#a2f1c5a0796ec18fe9eb1536ac3814c23617b384"
   integrity sha512-FFDy8/9E6CV83IMbDpcjOhumAQPDyETnU2KZ1O98DwTnz8AOBsW/Xv3GySr1mOZdItLR+zDZ7I/UdTFbgSOVCw==
@@ -7925,19 +7958,7 @@ jest-util@27.2.0:
     is-ci "^3.0.0"
     picomatch "^2.2.3"
 
-jest-util@^27.0.0, jest-util@^27.2.0, jest-util@^27.4.2:
-  version "27.4.2"
-  resolved "https://registry.yarnpkg.com/jest-util/-/jest-util-27.4.2.tgz#ed95b05b1adfd761e2cda47e0144c6a58e05a621"
-  integrity sha512-YuxxpXU6nlMan9qyLuxHaMMOzXAl5aGZWCSzben5DhLHemYQxCc4YK+4L3ZrCutT8GPQ+ui9k5D8rUJoDioMnA==
-  dependencies:
-    "@jest/types" "^27.4.2"
-    "@types/node" "*"
-    chalk "^4.0.0"
-    ci-info "^3.2.0"
-    graceful-fs "^4.2.4"
-    picomatch "^2.2.3"
-
-jest-util@^27.5.1:
+jest-util@^27.0.0, jest-util@^27.2.0, jest-util@^27.4.2, jest-util@^27.5.1:
   version "27.5.1"
   resolved "https://registry.yarnpkg.com/jest-util/-/jest-util-27.5.1.tgz#3ba9771e8e31a0b85da48fe0b0891fb86c01c2f9"
   integrity sha512-Kv2o/8jNvX1MQ0KGtw480E/w4fBCDOnH6+6DmeKi6LZUIlKA5kwY0YNdlzaWTiVgxqAqik11QyxDOKk543aKXw==
@@ -8876,6 +8897,13 @@ nx@13.8.0:
   integrity sha512-ABn9aVg64RwYbgkx72rpu4il2qmzp3EujGv7bjsAKDxF6fJyN0vgpHySKZKrGlbjeUF34kamz3OX96QfmHk7Rg==
   dependencies:
     "@nrwl/cli" "13.8.0"
+
+nx@13.8.1:
+  version "13.8.1"
+  resolved "https://registry.yarnpkg.com/nx/-/nx-13.8.1.tgz#10e17dace55eb38f762ed212ded02e24797c8ac7"
+  integrity sha512-8oHkh/Hli/OGGkumH8C9NArFjvFoNEgSfVkzCB7zoGddnIJlGAx+sSpHp0zJbXJV55Lk7iXbpKyeOJNnQDsEyQ==
+  dependencies:
+    "@nrwl/cli" "13.8.1"
 
 object-assign@^4, object-assign@^4.0.1, object-assign@^4.1.0, object-assign@^4.1.1:
   version "4.1.1"
