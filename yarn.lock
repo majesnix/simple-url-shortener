@@ -1791,13 +1791,13 @@
     semver "7.3.4"
     tslib "^2.3.0"
 
-"@nrwl/eslint-plugin-nx@^13.8.0":
-  version "13.8.0"
-  resolved "https://registry.yarnpkg.com/@nrwl/eslint-plugin-nx/-/eslint-plugin-nx-13.8.0.tgz#2147a2ab6caa444ef1fad4ff0190a18634169285"
-  integrity sha512-yzO4uShxqO77Tta6WjfIG9qHCK47GLj7jIQdwqFFdJqtBFRdgcHx8o6hyqyXuF5UHkXfoQcjSTAM16JFIocxaw==
+"@nrwl/eslint-plugin-nx@^13.8.1":
+  version "13.8.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/eslint-plugin-nx/-/eslint-plugin-nx-13.8.1.tgz#6a5c045d0b95f63a2adbd07cfbdaa62045e7c9bd"
+  integrity sha512-kFuimLFKJXhaJU447fn6UTldfdQy5trjkvxVqNx8lc8Ole25E+ERb+eU239HijTR3YakfzyHN9ffdDguyp1f7w==
   dependencies:
-    "@nrwl/devkit" "13.8.0"
-    "@nrwl/workspace" "13.8.0"
+    "@nrwl/devkit" "13.8.1"
+    "@nrwl/workspace" "13.8.1"
     "@swc-node/register" "^1.4.2"
     "@typescript-eslint/experimental-utils" "~5.10.0"
     chalk "4.1.0"
@@ -2124,7 +2124,7 @@
     yargs "15.4.1"
     yargs-parser "20.0.0"
 
-"@nrwl/workspace@^13.8.1":
+"@nrwl/workspace@13.8.1", "@nrwl/workspace@^13.8.1":
   version "13.8.1"
   resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-13.8.1.tgz#4b27bdd752fdbfd8ca7718a23e204b9129884ac5"
   integrity sha512-veemewkJtK3UwOGJDcrVw5h+cpjFh3JnmwSnTFHqxKpsN/hkCQk3CgOmBJ4w50qI/gmyuEm+HeGC5/ZNq3kRDA==
