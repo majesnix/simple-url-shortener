@@ -2019,7 +2019,7 @@
     ts-loader "^9.2.6"
     tsconfig-paths-webpack-plugin "3.5.2"
 
-"@nrwl/tao@13.8.2", "@nrwl/tao@^13.8.1":
+"@nrwl/tao@13.8.2":
   version "13.8.2"
   resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-13.8.2.tgz#871ddad20de93ca68efb11721c1a9f7cabaa138f"
   integrity sha512-68GsErwpOQDZPunJrpXDpauQo40dP66dO7uHQUu1Jf+css0uu1dfXtIR4CrAikvLJ57fZZw09l1xFrI9+OfXjA==
@@ -2038,7 +2038,7 @@
     tslib "^2.3.0"
     yargs-parser "20.0.0"
 
-"@nrwl/tao@13.8.3":
+"@nrwl/tao@13.8.3", "@nrwl/tao@^13.8.3":
   version "13.8.3"
   resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-13.8.3.tgz#386e847af28a87850724092f7df75c7dcb53a9e8"
   integrity sha512-zLM2uP398iLkpuTODfAaA1K7NeTGLrkVCdE7GkasrIg9dzd82Fx6k7kZnGhfVAVgfZpbXo8twKg0vdhxlJNWyA==
