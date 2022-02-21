@@ -8845,13 +8845,13 @@ mkdirp@^1.0.4, mkdirp@~1.0.4:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
-mobx-keystone@^0.66.0:
-  version "0.66.0"
-  resolved "https://registry.yarnpkg.com/mobx-keystone/-/mobx-keystone-0.66.0.tgz#bf090ac214027af282fd718a44c58983c8011bf1"
-  integrity sha512-cSsBcV83+dD9mYGvUhmDSTfhRJHBaQsLwHylcStIELJPIIX3lzRh+YLos0MV0VlIF/UAWQISxzofgP/3z606OA==
+mobx-keystone@^0.66.1:
+  version "0.66.1"
+  resolved "https://registry.yarnpkg.com/mobx-keystone/-/mobx-keystone-0.66.1.tgz#b1ec36ecd295266cbb4c71ef3c14e08179e7ccef"
+  integrity sha512-HDYRSMf56DiLrQkpmQlVfeTIh3v5A4E3MH+WRLmbXp7fKIgyQAwD8sam8IZcPRj70BjrW0LgBcV5IViw5jHsTg==
   dependencies:
     fast-deep-equal "^3.1.3"
-    nanoid "^3.2.0"
+    nanoid "^3.3.1"
     ts-toolbelt "^9.6.0"
     tslib "^2.3.1"
 
@@ -8907,7 +8907,7 @@ mz@^2.4.0:
     object-assign "^4.0.1"
     thenify-all "^1.0.0"
 
-nanoid@^3.1.30, nanoid@^3.2.0, nanoid@^3.3.1:
+nanoid@^3.1.30, nanoid@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.1.tgz#6347a18cac88af88f58af0b3594b723d5e99bb35"
   integrity sha512-n6Vs/3KGyxPQd6uO0eH4Bv0ojGSUvuLlIHtC3Y0kEO23YRge8H9x1GCzLn28YX0H66pMkxuaeESFq4tKISKwdw==
