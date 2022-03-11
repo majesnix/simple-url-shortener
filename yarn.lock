@@ -1742,15 +1742,15 @@
     v8-compile-cache "2.3.0"
     yargs-parser "20.0.0"
 
-"@nrwl/cypress@13.8.5", "@nrwl/cypress@^13.8.3":
-  version "13.8.5"
-  resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-13.8.5.tgz#ced128ede06ce1496aef1b0a2fbcf795606e18fd"
-  integrity sha512-D57S5EeUzW6ZmW+LSaRj47+uyKOwC0PQAYL5CP1SXkUDgUu+jh1o3glASPXbtfqFMXjlWk1Mo9eDEPxw9p814g==
+"@nrwl/cypress@13.8.7", "@nrwl/cypress@^13.8.3":
+  version "13.8.7"
+  resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-13.8.7.tgz#1250c94df5d7a62af20ab32a3c92169886f99a36"
+  integrity sha512-AAxynT5Jxgph78D42KnEEXFbPLDHiVz2e6RyCzThMkb2OcZT0TOemJMTayUaK2oxgywgX5ioMAtpJp4EdIWLhw==
   dependencies:
     "@cypress/webpack-preprocessor" "^5.9.1"
-    "@nrwl/devkit" "13.8.5"
-    "@nrwl/linter" "13.8.5"
-    "@nrwl/workspace" "13.8.5"
+    "@nrwl/devkit" "13.8.7"
+    "@nrwl/linter" "13.8.7"
+    "@nrwl/workspace" "13.8.7"
     chalk "4.1.0"
     enhanced-resolve "^5.8.3"
     fork-ts-checker-webpack-plugin "6.2.10"
@@ -1961,21 +1961,21 @@
     webpack-merge "^5.8.0"
     webpack-node-externals "^3.0.0"
 
-"@nrwl/react@^13.8.5":
-  version "13.8.5"
-  resolved "https://registry.yarnpkg.com/@nrwl/react/-/react-13.8.5.tgz#29b9f6d78ec56fb3dce375dad5c69f3476bbc0c0"
-  integrity sha512-cP82kQ9DcqPPrropneM0nvScvdX4ViIp0CYg5yHKwzaMaPuP1+LOJMVK8KYCUinZBUXcxc8Ua8XgWIQg449nlA==
+"@nrwl/react@^13.8.7":
+  version "13.8.7"
+  resolved "https://registry.yarnpkg.com/@nrwl/react/-/react-13.8.7.tgz#209ba1f6b19cbd389c5e0276e9769c06e15ad1d8"
+  integrity sha512-7diN+2Fo7l6TEFxku/ZE1f+Wa15F1LNSm4aefJHNQrcLxnPDfvLM2rOOlDIIQDpPaoSFn8oTjJtlUMpSsSIRyQ==
   dependencies:
     "@babel/core" "^7.15.0"
     "@babel/preset-react" "^7.14.5"
-    "@nrwl/cypress" "13.8.5"
-    "@nrwl/devkit" "13.8.5"
-    "@nrwl/jest" "13.8.5"
-    "@nrwl/js" "13.8.5"
-    "@nrwl/linter" "13.8.5"
-    "@nrwl/storybook" "13.8.5"
-    "@nrwl/web" "13.8.5"
-    "@nrwl/workspace" "13.8.5"
+    "@nrwl/cypress" "13.8.7"
+    "@nrwl/devkit" "13.8.7"
+    "@nrwl/jest" "13.8.7"
+    "@nrwl/js" "13.8.7"
+    "@nrwl/linter" "13.8.7"
+    "@nrwl/storybook" "13.8.7"
+    "@nrwl/web" "13.8.7"
+    "@nrwl/workspace" "13.8.7"
     "@pmmmwh/react-refresh-webpack-plugin" "^0.5.1"
     "@storybook/node-logger" "6.1.20"
     "@svgr/webpack" "^6.1.2"
@@ -1990,15 +1990,15 @@
     webpack "^5.58.1"
     webpack-merge "^5.8.0"
 
-"@nrwl/storybook@13.8.5":
-  version "13.8.5"
-  resolved "https://registry.yarnpkg.com/@nrwl/storybook/-/storybook-13.8.5.tgz#81915a707619b9eab36d17fe29f922a209d25a74"
-  integrity sha512-XAiNSxaRo7ZDM6sZx5wD0eBxWD7oikMxGUqLTC6sEhTdYoWOouepRDbVgOf5qHHZD7TSV9rdIU0vYVIhEbW66g==
+"@nrwl/storybook@13.8.7":
+  version "13.8.7"
+  resolved "https://registry.yarnpkg.com/@nrwl/storybook/-/storybook-13.8.7.tgz#885250cd8f12612a5227ebccfb44de7db95758c5"
+  integrity sha512-v/HUQyCkoKaKpKN1+/RFxPhpXULcrHHaDGY395qr7cS9ikhk7KIY7ihyhGgHrn6PR4TJYv11GzZX/w7k+hMxIg==
   dependencies:
-    "@nrwl/cypress" "13.8.5"
-    "@nrwl/devkit" "13.8.5"
-    "@nrwl/linter" "13.8.5"
-    "@nrwl/workspace" "13.8.5"
+    "@nrwl/cypress" "13.8.7"
+    "@nrwl/devkit" "13.8.7"
+    "@nrwl/linter" "13.8.7"
+    "@nrwl/workspace" "13.8.7"
     core-js "^3.6.5"
     semver "7.3.4"
     ts-loader "^9.2.6"
@@ -2048,10 +2048,10 @@
     tslib "^2.3.0"
     yargs-parser "20.0.0"
 
-"@nrwl/web@13.8.5", "@nrwl/web@^13.8.5":
-  version "13.8.5"
-  resolved "https://registry.yarnpkg.com/@nrwl/web/-/web-13.8.5.tgz#7dd4e42196ea92e406947897f3ff8bc6a0629c53"
-  integrity sha512-MUQY3KDPCycWLxpEvQzkMBx2QNRVEwCz9p8qlF/h2gaLGBlMTR+6/cAHZvayl1VkGGTlG9SsroYxbCXa4dal3g==
+"@nrwl/web@13.8.7", "@nrwl/web@^13.8.5":
+  version "13.8.7"
+  resolved "https://registry.yarnpkg.com/@nrwl/web/-/web-13.8.7.tgz#5154cbb92c422821ab4c8e5e26efc86d82de4766"
+  integrity sha512-wPAWc/qMfLATTO27MTK/c1Hpi9BEEvBrSa0Ej+6Nmj8rv0ELcK7tRDjwY8C9WJwtV5nDFPbtYGRheDZ48oGeCg==
   dependencies:
     "@babel/core" "^7.15.0"
     "@babel/plugin-proposal-class-properties" "^7.14.5"
@@ -2061,12 +2061,12 @@
     "@babel/preset-env" "^7.15.0"
     "@babel/preset-typescript" "^7.15.0"
     "@babel/runtime" "^7.14.8"
-    "@nrwl/cypress" "13.8.5"
-    "@nrwl/devkit" "13.8.5"
-    "@nrwl/jest" "13.8.5"
-    "@nrwl/js" "13.8.5"
-    "@nrwl/linter" "13.8.5"
-    "@nrwl/workspace" "13.8.5"
+    "@nrwl/cypress" "13.8.7"
+    "@nrwl/devkit" "13.8.7"
+    "@nrwl/jest" "13.8.7"
+    "@nrwl/js" "13.8.7"
+    "@nrwl/linter" "13.8.7"
+    "@nrwl/workspace" "13.8.7"
     "@pmmmwh/react-refresh-webpack-plugin" "^0.5.1"
     "@rollup/plugin-babel" "^5.3.0"
     "@rollup/plugin-commonjs" "^20.0.0"
@@ -2097,7 +2097,7 @@
     ignore "^5.0.4"
     less "3.12.2"
     less-loader "^10.1.0"
-    license-webpack-plugin "4.0.0"
+    license-webpack-plugin "^4.0.2"
     loader-utils "1.2.3"
     mini-css-extract-plugin "~2.4.7"
     parse5 "4.0.0"
