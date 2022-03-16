@@ -1737,7 +1737,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@nrwl/cli@13.8.8", "@nrwl/cli@^13.8.8":
+"@nrwl/cli@13.8.8":
   version "13.8.8"
   resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-13.8.8.tgz#0c9ac4ae16f9e1f45f59db6670e2841ad7a4920c"
   integrity sha512-PeC9n9gDE/KLA1jqhMF8bU8Q+VyPzS1t1Yk7K6yq5NvCdyupv2JQO49JMqgUtZ/00mY6buP5/Dpy0LHoNEceuw==
@@ -1748,7 +1748,7 @@
     v8-compile-cache "2.3.0"
     yargs-parser "20.0.0"
 
-"@nrwl/cli@13.9.0":
+"@nrwl/cli@13.9.0", "@nrwl/cli@^13.9.0":
   version "13.9.0"
   resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-13.9.0.tgz#12303a2c5eb0e85abdcfe4e4b5ed718d7873f123"
   integrity sha512-jYpVpkxtO/cImcMtwbpDtkQ0P2mgxc7CrjoAzzbfflYJGjCvv5GgJGGlOmwDgevcIZv16OLmMzk2jebMcGbnHw==
