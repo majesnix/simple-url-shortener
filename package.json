@@ -79,7 +79,7 @@
     "@nrwl/eslint-plugin-nx": "^13.8.8",
     "@nrwl/express": "^13.8.8",
     "@nrwl/jest": "^13.8.7",
-    "@nrwl/node": "^13.8.7",
+    "@nrwl/node": "^13.9.0",
     "@nrwl/react": "^13.9.0",
     "@nrwl/tao": "^13.9.0",
     "@nrwl/web": "^13.8.8",
