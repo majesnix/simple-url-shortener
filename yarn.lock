@@ -1739,6 +1739,13 @@
   dependencies:
     nx "13.9.0"
 
+"@nrwl/cli@13.9.2":
+  version "13.9.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-13.9.2.tgz#a93f8b30c9610d02eda171a9453e9163dc641e88"
+  integrity sha512-pVfH/Rqlp9KcAbU6hsOPyjC2NAcFANllTstcBbLbW/AeV449etBZdciy3ocaFyYi5ipB7Nr+NATGYjthkxdNnw==
+  dependencies:
+    nx "13.9.2"
+
 "@nrwl/cypress@13.9.0", "@nrwl/cypress@^13.8.3":
   version "13.9.0"
   resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-13.9.0.tgz#c636e6c60814e9d3a9fb785d775818781008b116"
@@ -1911,12 +1918,19 @@
     ts-loader "^9.2.6"
     tsconfig-paths-webpack-plugin "3.5.2"
 
-"@nrwl/tao@13.9.0", "@nrwl/tao@^13.9.0":
+"@nrwl/tao@13.9.0":
   version "13.9.0"
   resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-13.9.0.tgz#a00aba2a93333af371d29db4f35e7f1d23f527d5"
   integrity sha512-U6qhpoIZDhYdMLmSuvWm1jmHT/us32yMf68hrHBolR2OQtDLv9eDaKFEs7symiLQFG3jswfQBNSVaKSvoUW6HQ==
   dependencies:
     nx "13.9.0"
+
+"@nrwl/tao@13.9.2", "@nrwl/tao@^13.9.2":
+  version "13.9.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-13.9.2.tgz#583c473ae14bc9dd54d11c538ac8e4d5e1d6db90"
+  integrity sha512-1lypsbQ1rJZ41si0vPMx8nKn5nP4ZZqw8U+mA727yP4Rz2ejM8jZl6rqpFjz5G/HAe7ZK8GoLGb77wKRv5hx9g==
+  dependencies:
+    nx "13.9.2"
 
 "@nrwl/web@13.9.0", "@nrwl/web@^13.8.8":
   version "13.9.0"
@@ -8828,6 +8842,30 @@ nx@13.9.0:
   dependencies:
     "@nrwl/cli" "13.9.0"
     "@nrwl/tao" "13.9.0"
+    "@swc-node/register" "^1.4.2"
+    "@swc/core" "^1.2.146"
+    chalk "4.1.0"
+    enquirer "~2.3.6"
+    fast-glob "3.2.7"
+    fs-extra "^9.1.0"
+    ignore "^5.0.4"
+    jsonc-parser "3.0.0"
+    rxjs "^6.5.4"
+    rxjs-for-await "0.0.2"
+    semver "7.3.4"
+    tmp "~0.2.1"
+    tsconfig-paths "^3.9.0"
+    tslib "^2.3.0"
+    v8-compile-cache "2.3.0"
+    yargs-parser "20.0.0"
+
+nx@13.9.2:
+  version "13.9.2"
+  resolved "https://registry.yarnpkg.com/nx/-/nx-13.9.2.tgz#7be0b2df6fdf09907e6bf6d673df710c7a49b584"
+  integrity sha512-Mqng5JVOliDT1J+OUoSouxbBr6Yvq0r4LMakqWF96F33URTFdm9VmGGk/5Bz7ctckGfAgS8DCbWjnByyGUYv0w==
+  dependencies:
+    "@nrwl/cli" "13.9.2"
+    "@nrwl/tao" "13.9.2"
     "@swc-node/register" "^1.4.2"
     "@swc/core" "^1.2.146"
     chalk "4.1.0"
