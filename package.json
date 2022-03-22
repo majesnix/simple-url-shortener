@@ -32,7 +32,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.1.0",
     "@fortawesome/free-solid-svg-icons": "^6.1.0",
     "@fortawesome/react-fontawesome": "^0.1.18",
-    "apollo-server-express": "^3.6.4",
+    "apollo-server-express": "^3.6.5",
     "class-validator": "^0.13.2",
     "core-js": "^3.21.1",
     "cors": "^2.8.5",
