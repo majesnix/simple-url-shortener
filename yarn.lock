@@ -87,10 +87,10 @@
   dependencies:
     xss "^1.0.8"
 
-"@auth0/auth0-spa-js@^1.20.1":
-  version "1.20.1"
-  resolved "https://registry.yarnpkg.com/@auth0/auth0-spa-js/-/auth0-spa-js-1.20.1.tgz#8e49e76f0a8f5153595489a1399c980738609a65"
-  integrity sha512-hJyZ1n/7K0srArsnR9RKViGKh550SBE7nNB4g0F0X9H3VWCbETlCDWgnRckrhy045Bmb10VVcDBes3uImWTnjw==
+"@auth0/auth0-spa-js@^1.21.0":
+  version "1.21.0"
+  resolved "https://registry.yarnpkg.com/@auth0/auth0-spa-js/-/auth0-spa-js-1.21.0.tgz#9c6df09e8af817fbb890f9773ff478c5ca581aaa"
+  integrity sha512-a+8+onJdOIUSEEjdIzP/BGd731DZjBn2Q0tH+v7H+bN9ldeuBOifnjPbFwQAriL+94SwkaqhoFx3L6uGDk3+vg==
   dependencies:
     abortcontroller-polyfill "^1.7.3"
     browser-tabs-lock "^1.2.15"
