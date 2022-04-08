@@ -1829,7 +1829,7 @@
     "@nrwl/node" "13.9.7"
     "@nrwl/workspace" "13.9.7"
 
-"@nrwl/jest@13.10.0":
+"@nrwl/jest@13.10.0", "@nrwl/jest@^13.10.0":
   version "13.10.0"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-13.10.0.tgz#eeb820c516fcefce9cbb3e95c49a8f0dc503fd3d"
   integrity sha512-dRRLM80UuT+G4LxkPRguht+YAA5ZWMXNTADU/7q4dQzi3xr0y0Hhr6IzHn+2HJhUr/NJMojZ4eSKl6Sdk7sXZg==
@@ -1846,7 +1846,7 @@
     rxjs "^6.5.4"
     tslib "^2.3.0"
 
-"@nrwl/jest@13.9.7", "@nrwl/jest@^13.9.3":
+"@nrwl/jest@13.9.7":
   version "13.9.7"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-13.9.7.tgz#ec00b9da16ed52feeddd6a5db14a950a01f3a9bc"
   integrity sha512-bEmT8CJmReUnU6mBz/0xKW3HsR+YCFqrJm5Vsb7WWZIRZ8CmEjMIfuQuSSZ4R9KFBYwfNK/vwCsI8codu8+RsQ==
