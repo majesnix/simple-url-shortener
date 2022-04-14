@@ -1820,14 +1820,14 @@
     chalk "4.1.0"
     confusing-browser-globals "^1.0.9"
 
-"@nrwl/express@^13.10.1":
-  version "13.10.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/express/-/express-13.10.1.tgz#64aea583f493342f23a9aa87e176e7be4dc70963"
-  integrity sha512-y84c9DIR8e9SB0hyzeAi5Hg8cHpvPHrhxKHMbOu2Ff40vbfWh12vEPFHmpmPAiSnNauFRnt+xn6FozNOVXqO1Q==
+"@nrwl/express@^13.10.2":
+  version "13.10.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/express/-/express-13.10.2.tgz#18a3423bf3d203cfbfa17783e2a1519a01072371"
+  integrity sha512-eId+rlZDWUEhg1/J7uAkwGWsMNb7GozijQzcN3ewS6xU6OlMyTFG9O/mLL+UT2n3lphm37Wr0AxF87yB6i6yLA==
   dependencies:
-    "@nrwl/devkit" "13.10.1"
-    "@nrwl/node" "13.10.1"
-    "@nrwl/workspace" "13.10.1"
+    "@nrwl/devkit" "13.10.2"
+    "@nrwl/node" "13.10.2"
+    "@nrwl/workspace" "13.10.2"
 
 "@nrwl/jest@13.10.1":
   version "13.10.1"
@@ -1951,38 +1951,7 @@
     tmp "~0.2.1"
     tslib "^2.3.0"
 
-"@nrwl/node@13.10.1":
-  version "13.10.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-13.10.1.tgz#8e98844c65c5f0511e797613f3ae9cf7624bcc34"
-  integrity sha512-NYNrm1LmAxWIh2GI0wpZlE4TZ36nc9LuOmziaBMUUyyxzMFGWCMg9jdeBZSmpnXxgHVOpLFsYuPbduTlIySSrA==
-  dependencies:
-    "@nrwl/devkit" "13.10.1"
-    "@nrwl/jest" "13.10.1"
-    "@nrwl/js" "13.10.1"
-    "@nrwl/linter" "13.10.1"
-    "@nrwl/workspace" "13.10.1"
-    chalk "4.1.0"
-    copy-webpack-plugin "^9.0.1"
-    enhanced-resolve "^5.8.3"
-    fork-ts-checker-webpack-plugin "6.2.10"
-    fs-extra "^9.1.0"
-    glob "7.1.4"
-    license-webpack-plugin "^4.0.2"
-    rxjs "^6.5.4"
-    rxjs-for-await "0.0.2"
-    source-map-support "0.5.19"
-    terser-webpack-plugin "^5.3.0"
-    tree-kill "1.2.2"
-    ts-loader "^9.2.6"
-    ts-node "~9.1.1"
-    tsconfig-paths "^3.9.0"
-    tsconfig-paths-webpack-plugin "3.5.2"
-    tslib "^2.3.0"
-    webpack "^5.58.1"
-    webpack-merge "^5.8.0"
-    webpack-node-externals "^3.0.0"
-
-"@nrwl/node@^13.10.2":
+"@nrwl/node@13.10.2", "@nrwl/node@^13.10.2":
   version "13.10.2"
   resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-13.10.2.tgz#a923fdf0decde53283de54cac411631bbcdccbc7"
   integrity sha512-ipGLjTDd0CZv7pSnqt+U65p8z3oaVwsh2zQF8ePczxfiePgwML3SQyIYMSFbgP4pjd3K56u6D/gSG3SkAg+gmQ==
