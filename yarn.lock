@@ -1899,6 +1899,23 @@
     rxjs "^6.5.4"
     tslib "^2.3.0"
 
+"@nrwl/jest@^13.10.2":
+  version "13.10.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-13.10.2.tgz#53da00ad22705ec69676756a9e38346e0ca8369e"
+  integrity sha512-Zgila3j9z8RqivYUXJRqMKY3EhHgTRxG0Qq6s9a8yMQFvTi1ilQ7NiZe7qL6sTSlB02wavlP0IreT41pth7SZw==
+  dependencies:
+    "@jest/reporters" "27.2.2"
+    "@jest/test-result" "27.2.2"
+    "@nrwl/devkit" "13.10.2"
+    chalk "4.1.0"
+    identity-obj-proxy "3.0.0"
+    jest-config "27.2.2"
+    jest-resolve "27.2.2"
+    jest-util "27.2.0"
+    resolve.exports "1.1.0"
+    rxjs "^6.5.4"
+    tslib "^2.3.0"
+
 "@nrwl/js@13.10.1":
   version "13.10.1"
   resolved "https://registry.yarnpkg.com/@nrwl/js/-/js-13.10.1.tgz#f4fc3b228465101831833b8bf9c3906866828271"
