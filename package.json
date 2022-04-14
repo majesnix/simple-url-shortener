@@ -75,7 +75,7 @@
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
     "@nrwl/cli": "^13.10.1",
-    "@nrwl/cypress": "^13.10.1",
+    "@nrwl/cypress": "^13.10.2",
     "@nrwl/eslint-plugin-nx": "^13.9.7",
     "@nrwl/express": "^13.10.1",
     "@nrwl/jest": "^13.10.1",
