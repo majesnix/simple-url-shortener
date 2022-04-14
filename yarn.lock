@@ -2025,14 +2025,14 @@
     ts-loader "^9.2.6"
     tsconfig-paths-webpack-plugin "3.5.2"
 
-"@nrwl/tao@13.10.1", "@nrwl/tao@^13.10.1":
+"@nrwl/tao@13.10.1":
   version "13.10.1"
   resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-13.10.1.tgz#c13e7f98743839ed9b520a798aab3a1186ccd87d"
   integrity sha512-QYtMISnJPYyA9ADfBTXiEWvwzjgMICGIrM6sWc018dI2pQ8rWiTRRGOKq5YOsyHGhVd+MSEQYJlElGl3Y4gDIA==
   dependencies:
     nx "13.10.1"
 
-"@nrwl/tao@13.10.2":
+"@nrwl/tao@13.10.2", "@nrwl/tao@^13.10.2":
   version "13.10.2"
   resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-13.10.2.tgz#76dad0d2fd4eae95b867014fe842a56529159ec4"
   integrity sha512-Eq/u4tRRRtrMYBormdeTrRFj/rpcP5fsa3QrwcHjUSNnQDM/FZ9kt7fRgbnh+2QzdTJnU4QmaX6t4Kt+qYtsTQ==
