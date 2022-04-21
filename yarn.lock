@@ -1733,14 +1733,14 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@nrwl/cli@13.10.2", "@nrwl/cli@^13.10.2":
+"@nrwl/cli@13.10.2":
   version "13.10.2"
   resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-13.10.2.tgz#dea96a771fd1809b9fc6e5ecf64ada119d8cb60b"
   integrity sha512-e9TK7CBaOb2jvnnuypPTox+l3vr1Lubjrq7rvyVrUDfSFsRe33Em1FTEdT7RCwjzF1ypvGkF0Fm2Cxi9/ljxVg==
   dependencies:
     nx "13.10.2"
 
-"@nrwl/cli@13.10.3":
+"@nrwl/cli@13.10.3", "@nrwl/cli@^13.10.3":
   version "13.10.3"
   resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-13.10.3.tgz#bb884bacfd6b22107e5b7078bf27b89b1d5371f5"
   integrity sha512-E5vBW3pSg0fW6F8VS2hTd5nf2UulJQcXGNK5jKVV9AwIfWUT1Sm91GmngU/OmS0uAaqzcikTPP19BUUn8hR05Q==
