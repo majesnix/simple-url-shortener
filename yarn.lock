@@ -2268,7 +2268,7 @@
     webpack-sources "^3.0.2"
     webpack-subresource-integrity "^5.1.0"
 
-"@nrwl/workspace@13.10.3", "@nrwl/workspace@^13.9.5":
+"@nrwl/workspace@13.10.3":
   version "13.10.3"
   resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-13.10.3.tgz#4e2c68e7c58b0e15b465e2ca38fda298ba687d54"
   integrity sha512-GQ9mMWmtJqgwBMadXjFPYiNRXdkaTk/Hoi9UC3s40sWih5Ks8J1z5j6wud+pM4GmQIzZbMBsLelWaTS/sUWeAg==
@@ -2330,7 +2330,7 @@
     yargs "15.4.1"
     yargs-parser "20.0.0"
 
-"@nrwl/workspace@14.0.1":
+"@nrwl/workspace@14.0.1", "@nrwl/workspace@^14.0.1":
   version "14.0.1"
   resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-14.0.1.tgz#1c9e5fdb9d39c5a1230589edfb5a2682deed9105"
   integrity sha512-d60vTl33/5yC7AJjU2j1UL+ToKZ36MuwgVXZJuRtXAQG0yoC7jAmAl6ySjV/UsYWIRdGQk7Q23dVyknpBnn1cw==
@@ -12433,7 +12433,7 @@ yargs-parser@20.x, yargs-parser@^20.2.2:
   resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-20.2.9.tgz#2eb7dc3b0289718fc295f362753845c41a0c94ee"
   integrity sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==
 
-yargs-parser@21.0.1:
+yargs-parser@21.0.1, yargs-parser@^21.0.0:
   version "21.0.1"
   resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-21.0.1.tgz#0267f286c877a4f0f728fceb6f8a3e4cb95c6e35"
   integrity sha512-9BK1jFpLzJROCI5TzwZL/TU4gqjK5xiHV/RfWLOahrjAko/e4DJkRDZQXfvqAsiZzzYhgAzbgz6lg48jcm4GLg==
@@ -12453,11 +12453,6 @@ yargs-parser@^18.1.2:
   dependencies:
     camelcase "^5.0.0"
     decamelize "^1.2.0"
-
-yargs-parser@^21.0.0:
-  version "21.0.0"
-  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-21.0.0.tgz#a485d3966be4317426dd56bdb6a30131b281dc55"
-  integrity sha512-z9kApYUOCwoeZ78rfRYYWdiU/iNL6mwwYlkkZfJoyMR1xps+NEBX5X7XmRpxkZHhXJ6+Ey00IwKxBBSW9FIjyA==
 
 yargs@15.4.1:
   version "15.4.1"
