@@ -1819,14 +1819,14 @@
   dependencies:
     nx "13.9.7"
 
-"@nrwl/cli@14.1.6", "@nrwl/cli@^14.1.6":
+"@nrwl/cli@14.1.6":
   version "14.1.6"
   resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-14.1.6.tgz#c0e7c67d132bf8bda2b8ee74247f357d604f0352"
   integrity sha512-1XHfj1GTpzotYf1b2Ljx4xCT2RJ2CM4/YygxGaM285AU4972eIf+DS/Pe4Bukqf83+EpC0dyQ4ruZmaHw/BkBw==
   dependencies:
     nx "14.1.6"
 
-"@nrwl/cli@14.1.7":
+"@nrwl/cli@14.1.7", "@nrwl/cli@^14.1.7":
   version "14.1.7"
   resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-14.1.7.tgz#bc67b6471510c3335e2b217f3ad68a33f5dc4947"
   integrity sha512-HVvqYwefizcoVc4xrTgfIC8nfMA9cx5NiaIbZFDIZv12NsdalpA6a2BmmV8Zck+QQSGEHrhTZyt1AqDhA1t+6A==
