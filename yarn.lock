@@ -2046,6 +2046,25 @@
     source-map-support "0.5.19"
     tree-kill "1.2.2"
 
+"@nrwl/js@14.2.4":
+  version "14.2.4"
+  resolved "https://registry.yarnpkg.com/@nrwl/js/-/js-14.2.4.tgz#eba5ff9538f3f4dba666dc97251ff510e91bfc70"
+  integrity sha512-jRujiDCTuXXu3t4zjusA3pSMffdStbK5j8E8YVJw06nyntMyzFLyIuNh52sJJrGWpT6R79TmGhOvWG9sNnYWIA==
+  dependencies:
+    "@nrwl/devkit" "14.2.4"
+    "@nrwl/jest" "14.2.4"
+    "@nrwl/linter" "14.2.4"
+    "@nrwl/workspace" "14.2.4"
+    "@parcel/watcher" "2.0.4"
+    chalk "4.1.0"
+    fast-glob "3.2.7"
+    fs-extra "^10.1.0"
+    ignore "^5.0.4"
+    js-tokens "^4.0.0"
+    minimatch "3.0.5"
+    source-map-support "0.5.19"
+    tree-kill "1.2.2"
+
 "@nrwl/linter@13.9.7":
   version "13.9.7"
   resolved "https://registry.yarnpkg.com/@nrwl/linter/-/linter-13.9.7.tgz#1f877da490630ad337cdfaa525e38845578edf6e"
@@ -2081,7 +2100,7 @@
     tmp "~0.2.1"
     tslib "^2.3.0"
 
-"@nrwl/node@14.2.1", "@nrwl/node@^14.1.7":
+"@nrwl/node@14.2.1":
   version "14.2.1"
   resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-14.2.1.tgz#572c0769cb2aa08f8afd397dde9624b467e26105"
   integrity sha512-Z3tCDHfbHn8dd2SPIxEtlZolW1MAsWPuSYXKIZA1QaCRzr3xfcvxuw9yqqLchkIPP7n0Mex9iSTcOArhCOmqDw==
@@ -2091,6 +2110,37 @@
     "@nrwl/js" "14.2.1"
     "@nrwl/linter" "14.2.1"
     "@nrwl/workspace" "14.2.1"
+    chalk "4.1.0"
+    copy-webpack-plugin "^9.0.1"
+    enhanced-resolve "^5.8.3"
+    fork-ts-checker-webpack-plugin "6.2.10"
+    fs-extra "^10.1.0"
+    glob "7.1.4"
+    license-webpack-plugin "^4.0.2"
+    rxjs "^6.5.4"
+    rxjs-for-await "0.0.2"
+    source-map-support "0.5.19"
+    terser-webpack-plugin "^5.3.0"
+    tree-kill "1.2.2"
+    ts-loader "^9.2.6"
+    ts-node "~10.8.0"
+    tsconfig-paths "^3.9.0"
+    tsconfig-paths-webpack-plugin "3.5.2"
+    tslib "^2.3.0"
+    webpack "^5.58.1"
+    webpack-merge "^5.8.0"
+    webpack-node-externals "^3.0.0"
+
+"@nrwl/node@^14.2.4":
+  version "14.2.4"
+  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-14.2.4.tgz#83f72329ccf74ffef9ed836a65db070271955c98"
+  integrity sha512-rhpKpPRkzeTbiRLIwlgW6fC8BS8uaCqgtZ9ienaq4Ia0Hh0cuYksqXv7Mt9rTy+SxyA0errqo2LWEw36RNetDw==
+  dependencies:
+    "@nrwl/devkit" "14.2.4"
+    "@nrwl/jest" "14.2.4"
+    "@nrwl/js" "14.2.4"
+    "@nrwl/linter" "14.2.4"
+    "@nrwl/workspace" "14.2.4"
     chalk "4.1.0"
     copy-webpack-plugin "^9.0.1"
     enhanced-resolve "^5.8.3"
@@ -2324,7 +2374,7 @@
     yargs "^17.4.0"
     yargs-parser "21.0.1"
 
-"@nrwl/workspace@^14.2.4":
+"@nrwl/workspace@14.2.4", "@nrwl/workspace@^14.2.4":
   version "14.2.4"
   resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-14.2.4.tgz#446e27ce390ba9a7278c61a5baa8d2c0f6af2ce6"
   integrity sha512-R1ZY/r1LTgg/goqRsfHr9RaSywlTv3t4JH+uGmOA7k8oCJDHwWb72HgJiGi1+75PQrld9VcNBbHwAKvWWNjS/A==
