@@ -2013,7 +2013,7 @@
     rxjs "^6.5.4"
     tslib "^2.3.0"
 
-"@nrwl/jest@^14.3.2":
+"@nrwl/jest@14.3.2", "@nrwl/jest@^14.3.2":
   version "14.3.2"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-14.3.2.tgz#8440e68224008898d643cb29bb4d772237b6d3aa"
   integrity sha512-OY7N3Mxqb4vVHG79we6QfnchKYlcdfNpFvI2rfwHXy4Gusqf46oaJDVxGelbpV3Y2O9/0WvhhTnVUv6+D2FJSA==
@@ -2070,6 +2070,18 @@
     "@nrwl/jest" "14.3.1"
     "@phenomnomnominal/tsquery" "4.1.1"
     nx "14.3.1"
+    tmp "~0.2.1"
+    tslib "^2.3.0"
+
+"@nrwl/linter@14.3.2":
+  version "14.3.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/linter/-/linter-14.3.2.tgz#d63ccda1c0b7716e2bdc5b5f6e238302e437dfad"
+  integrity sha512-zzlR5tUMu/egJQ0+X5g2jHp3lgIKg/I/QoZr4PwrFwh//j6H2RCGjVt78+cFjrTjyR91Cer3jV4BdKKpmJ0K+A==
+  dependencies:
+    "@nrwl/devkit" "14.3.2"
+    "@nrwl/jest" "14.3.2"
+    "@phenomnomnominal/tsquery" "4.1.1"
+    nx "14.3.2"
     tmp "~0.2.1"
     tslib "^2.3.0"
 
@@ -2285,7 +2297,7 @@
     yargs "15.4.1"
     yargs-parser "20.0.0"
 
-"@nrwl/workspace@14.3.1", "@nrwl/workspace@^14.2.4":
+"@nrwl/workspace@14.3.1":
   version "14.3.1"
   resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-14.3.1.tgz#3753214c2da7d4246018f37838d698eb77d392de"
   integrity sha512-ROjV859WSAJRPJoT0ZTFfWSROvCW3HSpr8yFRhXZJEyjMZ6/pfRB+A5E0GQmm9HT7nrmahHUspvM5mQPsoRc4g==
@@ -2308,6 +2320,37 @@
     minimatch "3.0.5"
     npm-run-path "^4.0.1"
     nx "14.3.1"
+    open "^8.4.0"
+    rxjs "^6.5.4"
+    semver "7.3.4"
+    tmp "~0.2.1"
+    tslib "^2.3.0"
+    yargs "^17.4.0"
+    yargs-parser "21.0.1"
+
+"@nrwl/workspace@^14.3.2":
+  version "14.3.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-14.3.2.tgz#8df325c9249e3bada67529b95ad6d00944e400bb"
+  integrity sha512-Rl+b4OTwTXOq560DD+Gi9kU2bfmwHY4KCE5Jb+UzYRX8KhUhLy+U1e++Vh+d+d6IWHJo217S7Rf08QiWKDa9fw==
+  dependencies:
+    "@nrwl/devkit" "14.3.2"
+    "@nrwl/jest" "14.3.2"
+    "@nrwl/linter" "14.3.2"
+    "@parcel/watcher" "2.0.4"
+    chalk "4.1.0"
+    chokidar "^3.5.1"
+    cli-cursor "3.1.0"
+    cli-spinners "2.6.1"
+    dotenv "~10.0.0"
+    enquirer "~2.3.6"
+    figures "3.2.0"
+    flat "^5.0.2"
+    fs-extra "^10.1.0"
+    glob "7.1.4"
+    ignore "^5.0.4"
+    minimatch "3.0.5"
+    npm-run-path "^4.0.1"
+    nx "14.3.2"
     open "^8.4.0"
     rxjs "^6.5.4"
     semver "7.3.4"
