@@ -2018,7 +2018,7 @@
     rxjs "^6.5.4"
     tslib "^2.3.0"
 
-"@nrwl/jest@14.3.2", "@nrwl/jest@^14.3.2":
+"@nrwl/jest@14.3.2":
   version "14.3.2"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-14.3.2.tgz#8440e68224008898d643cb29bb4d772237b6d3aa"
   integrity sha512-OY7N3Mxqb4vVHG79we6QfnchKYlcdfNpFvI2rfwHXy4Gusqf46oaJDVxGelbpV3Y2O9/0WvhhTnVUv6+D2FJSA==
@@ -2036,7 +2036,7 @@
     rxjs "^6.5.4"
     tslib "^2.3.0"
 
-"@nrwl/jest@14.3.5":
+"@nrwl/jest@14.3.5", "@nrwl/jest@^14.3.5":
   version "14.3.5"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-14.3.5.tgz#787844c16fd5e51f8541d3c6e43ccc71f0cacc90"
   integrity sha512-N3Cvf2bBgId/Ef7xsk1k99mS1gHVZbE73qEo4svlTjC7LBIl+EnSrd3G398mEQjr2JxFLYqqjqx2JEA2BmloJQ==
