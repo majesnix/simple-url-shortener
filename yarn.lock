@@ -2175,14 +2175,14 @@
   dependencies:
     nx "13.9.7"
 
-"@nrwl/tao@14.4.1", "@nrwl/tao@^14.4.1":
+"@nrwl/tao@14.4.1":
   version "14.4.1"
   resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-14.4.1.tgz#068ccb1c1eb16e8b6335d5b7b51505805c1ac9c0"
   integrity sha512-BLao0kpWFkP38V3Fli2cYmM3Vbjkfu01EKrKULIukPh7VlT8nX0vgUND7LcPg46d+HTlaQG12SGLqiMroB+qwQ==
   dependencies:
     nx "14.4.1"
 
-"@nrwl/tao@14.4.2":
+"@nrwl/tao@14.4.2", "@nrwl/tao@^14.4.2":
   version "14.4.2"
   resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-14.4.2.tgz#36b4d133740abdaf5c222b4e732d0d7020c9def5"
   integrity sha512-Ygw3skKZfFhi4MBHZKQ8A67pDQxeyDdY78tFWViMN0SEn9ExL41Q8V9aSMfir8VZYGca6ZOXX5MRhbeHdcgMLQ==
