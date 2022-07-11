@@ -2264,13 +2264,14 @@
     "@swc/helpers" "^0.3.17"
     ci-info "^3.3.1"
 
-"@nx-tools/core@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@nx-tools/core/-/core-3.0.0.tgz#103e94abba2e681dd5cf85b7fc375198e427a492"
-  integrity sha512-LjpBlqQg92NyQj1jnJBengK0xPJK845dLXPjVODyv8Gr6i68r8pPMrHnwMqM57+qYT/tNnFgOFk+yOyGcSJ6Gw==
+"@nx-tools/core@^3.0.0", "@nx-tools/core@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@nx-tools/core/-/core-3.0.1.tgz#116ad90c49435cb761bc006353665b5769bc76ce"
+  integrity sha512-eFDmVSMZtqQCwCkkU49ZfbUewy8VCWfylp9GgCfbtMfbHDRCkgZXoX+iDrMH1rgQhSdv7KW83W2kT3XeFFj2fg==
   dependencies:
     "@actions/exec" "^1.1.1"
-    "@swc/helpers" "^0.3.17"
+    "@swc/helpers" "^0.4.3"
+    colorette "^2.0.19"
 
 "@nx-tools/docker-metadata@^3.0.0":
   version "3.0.0"
@@ -2286,13 +2287,13 @@
     moment "^2.29.3"
     semver "^7.3.7"
 
-"@nx-tools/nx-docker@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@nx-tools/nx-docker/-/nx-docker-3.0.0.tgz#f43b527ceebbb1d334c078976c7037998dbb6a43"
-  integrity sha512-TfOt9XNvobOdl7bn1hmthhMnkPdiWLHvAUFrpLhKjtLTOnb5J4Ir4nWf9yAOLMfdfj9mpiLJ//102sMm7HkTXg==
+"@nx-tools/nx-docker@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@nx-tools/nx-docker/-/nx-docker-3.0.1.tgz#25f0b3cb7c30c863041a1793e20ea39c8a9cb342"
+  integrity sha512-xk0GcY9j4hZl2cgeRXjbCHjTWD3/p2NBvgJK/wBKwIOjYxmQ9vAC3YHly9WWYmZXGx5Z0FD0j2T/KWQCwqW5Pg==
   dependencies:
-    "@nx-tools/core" "^3.0.0"
-    "@swc/helpers" "^0.3.17"
+    "@nx-tools/core" "^3.0.1"
+    "@swc/helpers" "^0.4.3"
     csv-parse "^4.16.3"
     semver "^7.3.7"
     tmp "^0.2.1"
@@ -2915,6 +2916,13 @@
   version "0.3.17"
   resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.3.17.tgz#7c1b91f43c77e2bba99492162a498d465ef253d5"
   integrity sha512-tb7Iu+oZ+zWJZ3HJqwx8oNwSDIU440hmVMDPhpACWQWnrZHK99Bxs70gT1L2dnr5Hg50ZRWEFkQCAnOVVV0z1Q==
+  dependencies:
+    tslib "^2.4.0"
+
+"@swc/helpers@^0.4.3":
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.4.3.tgz#16593dfc248c53b699d4b5026040f88ddb497012"
+  integrity sha512-6JrF+fdUK2zbGpJIlN7G3v966PQjyx/dPt1T9km2wj+EUBqgrxCk3uX4Kct16MIm9gGxfKRcfax2hVf5jvlTzA==
   dependencies:
     tslib "^2.4.0"
 
@@ -4910,6 +4918,11 @@ colorette@^2.0.10, colorette@^2.0.16:
   version "2.0.16"
   resolved "https://registry.yarnpkg.com/colorette/-/colorette-2.0.16.tgz#713b9af84fdb000139f04546bd4a93f62a5085da"
   integrity sha512-hUewv7oMjCp+wkBv5Rm0v87eJhq4woh5rSR+42YSQJKecCqgIqNkZ6lAlQms/BwHPJA5NKMRlpxPRv0n8HQW6g==
+
+colorette@^2.0.19:
+  version "2.0.19"
+  resolved "https://registry.yarnpkg.com/colorette/-/colorette-2.0.19.tgz#cdf044f47ad41a0f4b56b3a0d5b4e6e1a2d5a798"
+  integrity sha512-3tlv/dIP7FWvj3BsbHrGLJ6l/oKh1O3TcgBqMn+yyCagOxc23fyzDS6HypQbgxWbkpDnf52p1LuR4eWDQ/K9WQ==
 
 colors@1.4.0:
   version "1.4.0"
