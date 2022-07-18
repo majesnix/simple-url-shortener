@@ -1979,14 +1979,14 @@
     chalk "4.1.0"
     confusing-browser-globals "^1.0.9"
 
-"@nrwl/express@^14.4.2":
-  version "14.4.2"
-  resolved "https://registry.yarnpkg.com/@nrwl/express/-/express-14.4.2.tgz#ad7a3ec52dd5e899ba6ee18d973551f8d20d826a"
-  integrity sha512-dhbjvvG8639/VchX/f1LYIU+Up8rkn05xsPZP4vbaPVa54hfndvBzdqOTeTJbKaNKI7CqFsiOUwx+mLU9vSrjg==
+"@nrwl/express@^14.4.3":
+  version "14.4.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/express/-/express-14.4.3.tgz#e41655f24efa08d49128cd6fcc5caf2b7c308a1d"
+  integrity sha512-RIShqocc3BoS1YktogTthWo0KQIZ0eHL/Yy0r9VdmCwejzx9GfT2bVL0bHs7L9v/4EdSlZynX8HyCp3JKvmVCw==
   dependencies:
-    "@nrwl/devkit" "14.4.2"
-    "@nrwl/node" "14.4.2"
-    "@nrwl/workspace" "14.4.2"
+    "@nrwl/devkit" "14.4.3"
+    "@nrwl/node" "14.4.3"
+    "@nrwl/workspace" "14.4.3"
 
 "@nrwl/jest@13.9.7":
   version "13.9.7"
@@ -2115,38 +2115,7 @@
     tmp "~0.2.1"
     tslib "^2.3.0"
 
-"@nrwl/node@14.4.2":
-  version "14.4.2"
-  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-14.4.2.tgz#7b322b3ed7310215ff38534c351e0ab7efdf776b"
-  integrity sha512-YMolQH3R/DTyPap3fQFWXvBaKJQG6l+msAUqzHp5OML3lPDg+zBYGW2kD1IsXpYq/ccpaot1ePS5K0JDpbZ8zQ==
-  dependencies:
-    "@nrwl/devkit" "14.4.2"
-    "@nrwl/jest" "14.4.2"
-    "@nrwl/js" "14.4.2"
-    "@nrwl/linter" "14.4.2"
-    "@nrwl/workspace" "14.4.2"
-    chalk "4.1.0"
-    copy-webpack-plugin "^9.0.1"
-    enhanced-resolve "^5.8.3"
-    fork-ts-checker-webpack-plugin "6.2.10"
-    fs-extra "^10.1.0"
-    glob "7.1.4"
-    license-webpack-plugin "^4.0.2"
-    rxjs "^6.5.4"
-    rxjs-for-await "0.0.2"
-    source-map-support "0.5.19"
-    terser-webpack-plugin "^5.3.0"
-    tree-kill "1.2.2"
-    ts-loader "^9.2.6"
-    ts-node "~10.8.0"
-    tsconfig-paths "^3.9.0"
-    tsconfig-paths-webpack-plugin "3.5.2"
-    tslib "^2.3.0"
-    webpack "^5.58.1"
-    webpack-merge "^5.8.0"
-    webpack-node-externals "^3.0.0"
-
-"@nrwl/node@^14.4.3":
+"@nrwl/node@14.4.3", "@nrwl/node@^14.4.3":
   version "14.4.3"
   resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-14.4.3.tgz#33e2744dd9de690ad3f2c2600bcc098fff88de71"
   integrity sha512-nqapfqM0ZUbYLWYGC+VwOqMsIgx3HSSh4LHUsoPaRPJFF29JmHvVFTvjgJkzyX3xu4/y7Au6u40q/UO6Sj1Nig==
