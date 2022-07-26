@@ -29,7 +29,7 @@
   "dependencies": {
     "@apollo/client": "^3.6.9",
     "@auth0/auth0-spa-js": "^1.22.2",
-    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/fontawesome-svg-core": "^6.1.2",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "apollo-server-express": "^3.10.0",
