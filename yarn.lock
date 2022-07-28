@@ -2327,10 +2327,10 @@
     moment "^2.29.3"
     semver "^7.3.7"
 
-"@nx-tools/nx-docker@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@nx-tools/nx-docker/-/nx-docker-3.0.1.tgz#25f0b3cb7c30c863041a1793e20ea39c8a9cb342"
-  integrity sha512-xk0GcY9j4hZl2cgeRXjbCHjTWD3/p2NBvgJK/wBKwIOjYxmQ9vAC3YHly9WWYmZXGx5Z0FD0j2T/KWQCwqW5Pg==
+"@nx-tools/nx-docker@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@nx-tools/nx-docker/-/nx-docker-3.0.2.tgz#77af353bad6e2acf73a662a7aebebebd4fee1b29"
+  integrity sha512-mbTKPQnARK8ftc+whGFkglN2zxLqEXAbzRyFei0uUTandgE82DKSd/ipzdgSIqvYm6CRtQQGVxTNSpbAdmgUlQ==
   dependencies:
     "@nx-tools/core" "^3.0.1"
     "@swc/helpers" "^0.4.3"
