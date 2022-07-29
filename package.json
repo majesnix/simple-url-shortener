@@ -78,7 +78,7 @@
     "@nrwl/cypress": "^14.3.5",
     "@nrwl/eslint-plugin-nx": "^13.9.7",
     "@nrwl/express": "^14.4.3",
-    "@nrwl/jest": "^14.4.3",
+    "@nrwl/jest": "^14.5.1",
     "@nrwl/node": "^14.4.3",
     "@nrwl/react": "^14.4.3",
     "@nrwl/tao": "^14.5.1",
