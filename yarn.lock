@@ -1992,14 +1992,14 @@
     chalk "4.1.0"
     confusing-browser-globals "^1.0.9"
 
-"@nrwl/express@^14.4.3":
-  version "14.4.3"
-  resolved "https://registry.yarnpkg.com/@nrwl/express/-/express-14.4.3.tgz#e41655f24efa08d49128cd6fcc5caf2b7c308a1d"
-  integrity sha512-RIShqocc3BoS1YktogTthWo0KQIZ0eHL/Yy0r9VdmCwejzx9GfT2bVL0bHs7L9v/4EdSlZynX8HyCp3JKvmVCw==
+"@nrwl/express@^14.5.1":
+  version "14.5.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/express/-/express-14.5.1.tgz#182ebf06eb6b55214720f4733a60cbb79ce8203f"
+  integrity sha512-rzXhgXqtdECWtdtlg+++z2tjfZysMDNK6eFeDwZat+wuQUWFZYRMUaTZa1EDrCxgcs77vXDRp1vvbCGQNpdr+A==
   dependencies:
-    "@nrwl/devkit" "14.4.3"
-    "@nrwl/node" "14.4.3"
-    "@nrwl/workspace" "14.4.3"
+    "@nrwl/devkit" "14.5.1"
+    "@nrwl/node" "14.5.1"
+    "@nrwl/workspace" "14.5.1"
 
 "@nrwl/jest@13.9.7":
   version "13.9.7"
@@ -2129,28 +2129,27 @@
     tmp "~0.2.1"
     tslib "^2.3.0"
 
-"@nrwl/node@14.4.3", "@nrwl/node@^14.4.3":
-  version "14.4.3"
-  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-14.4.3.tgz#33e2744dd9de690ad3f2c2600bcc098fff88de71"
-  integrity sha512-nqapfqM0ZUbYLWYGC+VwOqMsIgx3HSSh4LHUsoPaRPJFF29JmHvVFTvjgJkzyX3xu4/y7Au6u40q/UO6Sj1Nig==
+"@nrwl/node@14.5.1", "@nrwl/node@^14.4.3":
+  version "14.5.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-14.5.1.tgz#59ee5dd466468c737ef78fc9bb659c5046bf70a0"
+  integrity sha512-DT6C3vNbMQwBmC6IDscqJnNotTvSJ9kioup1LLeBfBLSnccCJBAH4gGy/Ts4M91UMNovhxHeAJcPUvtweb9FWg==
   dependencies:
-    "@nrwl/devkit" "14.4.3"
-    "@nrwl/jest" "14.4.3"
-    "@nrwl/js" "14.4.3"
-    "@nrwl/linter" "14.4.3"
-    "@nrwl/workspace" "14.4.3"
+    "@nrwl/devkit" "14.5.1"
+    "@nrwl/jest" "14.5.1"
+    "@nrwl/js" "14.5.1"
+    "@nrwl/linter" "14.5.1"
+    "@nrwl/workspace" "14.5.1"
     chalk "4.1.0"
-    copy-webpack-plugin "^9.0.1"
+    copy-webpack-plugin "^10.2.4"
     dotenv "~10.0.0"
     enhanced-resolve "^5.8.3"
-    fork-ts-checker-webpack-plugin "6.2.10"
+    fork-ts-checker-webpack-plugin "7.2.13"
     fs-extra "^10.1.0"
     glob "7.1.4"
     license-webpack-plugin "^4.0.2"
     rxjs "^6.5.4"
-    rxjs-for-await "0.0.2"
     source-map-support "0.5.19"
-    terser-webpack-plugin "^5.3.0"
+    terser-webpack-plugin "^5.3.3"
     tree-kill "1.2.2"
     ts-loader "^9.2.6"
     ts-node "~10.8.0"
