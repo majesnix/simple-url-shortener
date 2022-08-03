@@ -1966,7 +1966,7 @@
   dependencies:
     nx "14.5.2"
 
-"@nrwl/cypress@14.5.1", "@nrwl/cypress@^14.5.1":
+"@nrwl/cypress@14.5.1":
   version "14.5.1"
   resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-14.5.1.tgz#f706c41b525c821eca52a774bfa90db87c90b5b3"
   integrity sha512-ievF+2OmKEifSifxA0lr18law3jfUpAJgtmTi9b89icGWLXXKd0LIJZoY0Rcg7xdpXy7CL4DLsN51JvgcdyyPg==
@@ -1977,6 +1977,31 @@
     "@nrwl/devkit" "14.5.1"
     "@nrwl/linter" "14.5.1"
     "@nrwl/workspace" "14.5.1"
+    "@phenomnomnominal/tsquery" "4.1.1"
+    babel-loader "^8.0.2"
+    chalk "4.1.0"
+    dotenv "~10.0.0"
+    enhanced-resolve "^5.8.3"
+    fork-ts-checker-webpack-plugin "7.2.13"
+    rxjs "^6.5.4"
+    ts-loader "^9.2.6"
+    tsconfig-paths "^3.9.0"
+    tsconfig-paths-webpack-plugin "3.5.2"
+    tslib "^2.3.0"
+    webpack "^4 || ^5"
+    webpack-node-externals "^3.0.0"
+
+"@nrwl/cypress@^14.5.2":
+  version "14.5.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-14.5.2.tgz#ed2fa20c03104ed019b248e0ff2275082972053b"
+  integrity sha512-ib98Z/vFn91QqQkOoPK+sce7igCZkyxzm7KoCdjmBIHGiDnATG5NWvhdIf23JVxgRAxdf7XmGhimNUsqw2/SCw==
+  dependencies:
+    "@babel/core" "^7.0.1"
+    "@babel/preset-env" "^7.0.0"
+    "@cypress/webpack-preprocessor" "^5.12.0"
+    "@nrwl/devkit" "14.5.2"
+    "@nrwl/linter" "14.5.2"
+    "@nrwl/workspace" "14.5.2"
     "@phenomnomnominal/tsquery" "4.1.1"
     babel-loader "^8.0.2"
     chalk "4.1.0"
