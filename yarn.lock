@@ -2034,14 +2034,14 @@
     chalk "4.1.0"
     confusing-browser-globals "^1.0.9"
 
-"@nrwl/express@^14.5.2":
-  version "14.5.2"
-  resolved "https://registry.yarnpkg.com/@nrwl/express/-/express-14.5.2.tgz#64fd0bdd43a52aea3eea954c25523c7cdd717cdf"
-  integrity sha512-xpj7CKfTMYSgI3X9a84p2CjjVDaziWN7/iDD2mSNgifDQWblIBxQA1sz5scBE+4ZzmZQuLFjx/XWt7EyyXdkkA==
+"@nrwl/express@^14.5.4":
+  version "14.5.4"
+  resolved "https://registry.yarnpkg.com/@nrwl/express/-/express-14.5.4.tgz#d3495112e0da1541e23e7e44ea8d38ea9abe9a53"
+  integrity sha512-O1HjHiYtkC+QNmPtnet2NxI4Xp2r5RgVuQj8B8p6idDcXpnw6u73D88KDdTP6YIXb925j7wOLfrcZL5p0RjDwQ==
   dependencies:
-    "@nrwl/devkit" "14.5.2"
-    "@nrwl/node" "14.5.2"
-    "@nrwl/workspace" "14.5.2"
+    "@nrwl/devkit" "14.5.4"
+    "@nrwl/node" "14.5.4"
+    "@nrwl/workspace" "14.5.4"
 
 "@nrwl/jest@13.9.7":
   version "13.9.7"
@@ -2171,38 +2171,7 @@
     tmp "~0.2.1"
     tslib "^2.3.0"
 
-"@nrwl/node@14.5.2":
-  version "14.5.2"
-  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-14.5.2.tgz#170c507d24432309bed905f41cd7bd3f80ab0efc"
-  integrity sha512-p4NX9kmIUa8xNcv5YKrFHoBvMpdZIMAu8MC52zLtDArsLmUNa5jtRaXU+rv20eTKm3rCL5ZZg5kR0tIQRyyLhw==
-  dependencies:
-    "@nrwl/devkit" "14.5.2"
-    "@nrwl/jest" "14.5.2"
-    "@nrwl/js" "14.5.2"
-    "@nrwl/linter" "14.5.2"
-    "@nrwl/workspace" "14.5.2"
-    chalk "4.1.0"
-    copy-webpack-plugin "^10.2.4"
-    dotenv "~10.0.0"
-    enhanced-resolve "^5.8.3"
-    fork-ts-checker-webpack-plugin "7.2.13"
-    fs-extra "^10.1.0"
-    glob "7.1.4"
-    license-webpack-plugin "^4.0.2"
-    rxjs "^6.5.4"
-    source-map-support "0.5.19"
-    terser-webpack-plugin "^5.3.3"
-    tree-kill "1.2.2"
-    ts-loader "^9.2.6"
-    ts-node "~10.8.0"
-    tsconfig-paths "^3.9.0"
-    tsconfig-paths-webpack-plugin "3.5.2"
-    tslib "^2.3.0"
-    webpack "^5.58.1"
-    webpack-merge "^5.8.0"
-    webpack-node-externals "^3.0.0"
-
-"@nrwl/node@^14.5.4":
+"@nrwl/node@14.5.4", "@nrwl/node@^14.5.4":
   version "14.5.4"
   resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-14.5.4.tgz#f4acb3e086578b8ba81546ea4fac202960e354b9"
   integrity sha512-n++C/kUveM3Rxi5S2hyZaBS7hGk1HomLdQ2G+dLrbGZ/mggaANVT3NnEPxDeYGI9SfS0uKEPh8G7joJKWZXahw==
