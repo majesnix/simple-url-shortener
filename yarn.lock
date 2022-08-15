@@ -1966,7 +1966,7 @@
   dependencies:
     nx "14.5.6"
 
-"@nrwl/cypress@14.5.4", "@nrwl/cypress@^14.5.4":
+"@nrwl/cypress@14.5.4":
   version "14.5.4"
   resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-14.5.4.tgz#52d04f3d3ae05ec1e1751c1c3cbad69ed4a1bd94"
   integrity sha512-gZVgaKkpP+tb3leF3S3B28rEI7fbiQMISx3+bB5hbX/icXu6FOpwZiG46EnbSPFq5baM2oLakW+OQ8h7qRm4gw==
@@ -1985,6 +1985,31 @@
     fork-ts-checker-webpack-plugin "7.2.13"
     rxjs "^6.5.4"
     ts-loader "^9.2.6"
+    tsconfig-paths "^3.9.0"
+    tsconfig-paths-webpack-plugin "3.5.2"
+    tslib "^2.3.0"
+    webpack "^4 || ^5"
+    webpack-node-externals "^3.0.0"
+
+"@nrwl/cypress@14.5.6", "@nrwl/cypress@^14.5.4":
+  version "14.5.6"
+  resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-14.5.6.tgz#28be0768bc91e3e24b7c31483aab23b9f04e6fde"
+  integrity sha512-zxXmxhHLsiYI0LGSZcX19uEz4oefmLaVNvjzZdsAf/EIwhlLMVeHyH0ZnYeL7pXuzNB5XJkYYVIMcZzgngmdsw==
+  dependencies:
+    "@babel/core" "^7.0.1"
+    "@babel/preset-env" "^7.0.0"
+    "@cypress/webpack-preprocessor" "^5.12.0"
+    "@nrwl/devkit" "14.5.6"
+    "@nrwl/linter" "14.5.6"
+    "@nrwl/workspace" "14.5.6"
+    "@phenomnomnominal/tsquery" "4.1.1"
+    babel-loader "^8.0.2"
+    chalk "4.1.0"
+    dotenv "~10.0.0"
+    enhanced-resolve "^5.8.3"
+    fork-ts-checker-webpack-plugin "7.2.13"
+    rxjs "^6.5.4"
+    ts-loader "^9.3.1"
     tsconfig-paths "^3.9.0"
     tsconfig-paths-webpack-plugin "3.5.2"
     tslib "^2.3.0"
@@ -2061,7 +2086,7 @@
     rxjs "^6.5.4"
     tslib "^2.3.0"
 
-"@nrwl/jest@14.5.4", "@nrwl/jest@^14.5.4":
+"@nrwl/jest@14.5.4":
   version "14.5.4"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-14.5.4.tgz#f5bdecc831ab53399fd3536ee20035bf84b6a13f"
   integrity sha512-3C6xag040Ey4CtX9ItbPPNffUbqaYDBUdsKnoGH+s9mH/JmEKDvNZVMhAGOmHxHB5nlSr09E6jfzcqsXbSCHAQ==
@@ -2080,7 +2105,7 @@
     rxjs "^6.5.4"
     tslib "^2.3.0"
 
-"@nrwl/jest@14.5.6":
+"@nrwl/jest@14.5.6", "@nrwl/jest@^14.5.4":
   version "14.5.6"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-14.5.6.tgz#1850b65d05ab0f7ac377d211bc1653fc27d7151c"
   integrity sha512-zPOF+rN/1uwIF1bRzpoBgCo2LiF1ZEdabQ+aHmkBhZHZ9QFWJOdrlbo0doZ/AAZgWx+ddii2mmZccueX3BgZAw==
@@ -2267,7 +2292,7 @@
   dependencies:
     nx "14.5.6"
 
-"@nrwl/web@14.5.4", "@nrwl/web@^14.5.2":
+"@nrwl/web@14.5.4":
   version "14.5.4"
   resolved "https://registry.yarnpkg.com/@nrwl/web/-/web-14.5.4.tgz#7c1f1842070d9a2b665182a1c190201ed2d50254"
   integrity sha512-XokrSi9rF9xaGpeFumGSvP/ItBC5bKH3DZbS2NB4Co7EMMLEh2P1ocHEd9PXLYomjuxNhZdkDV2f17V9p+YXOw==
@@ -2343,6 +2368,91 @@
     terser-webpack-plugin "^5.3.3"
     ts-loader "^9.2.6"
     ts-node "~10.8.0"
+    tsconfig-paths "^3.9.0"
+    tsconfig-paths-webpack-plugin "3.5.2"
+    tslib "^2.3.0"
+    webpack "^5.58.1"
+    webpack-dev-server "^4.9.3"
+    webpack-merge "^5.8.0"
+    webpack-sources "^3.2.3"
+    webpack-subresource-integrity "^5.1.0"
+
+"@nrwl/web@^14.5.6":
+  version "14.5.6"
+  resolved "https://registry.yarnpkg.com/@nrwl/web/-/web-14.5.6.tgz#e7ebd340f02d118a5ccf340c847a192835454586"
+  integrity sha512-wahjptnixyvhWdzJbXMdTtmlvDqPxZPc0ODERVFB/xcCDhy2pdF0R+Z2vrWnhB2drfpxrLFznMRsPJ0u48tkzg==
+  dependencies:
+    "@babel/core" "^7.15.0"
+    "@babel/plugin-proposal-class-properties" "^7.14.5"
+    "@babel/plugin-proposal-decorators" "^7.14.5"
+    "@babel/plugin-transform-regenerator" "^7.14.5"
+    "@babel/plugin-transform-runtime" "^7.15.0"
+    "@babel/preset-env" "^7.15.0"
+    "@babel/preset-typescript" "^7.15.0"
+    "@babel/runtime" "^7.14.8"
+    "@nrwl/cypress" "14.5.6"
+    "@nrwl/devkit" "14.5.6"
+    "@nrwl/jest" "14.5.6"
+    "@nrwl/js" "14.5.6"
+    "@nrwl/linter" "14.5.6"
+    "@nrwl/workspace" "14.5.6"
+    "@pmmmwh/react-refresh-webpack-plugin" "^0.5.7"
+    "@rollup/plugin-babel" "^5.3.0"
+    "@rollup/plugin-commonjs" "^20.0.0"
+    "@rollup/plugin-image" "^2.1.0"
+    "@rollup/plugin-json" "^4.1.0"
+    "@rollup/plugin-node-resolve" "^13.0.4"
+    autoprefixer "^10.4.7"
+    babel-loader "^8.2.2"
+    babel-plugin-const-enum "^1.0.1"
+    babel-plugin-macros "^2.8.0"
+    babel-plugin-transform-async-to-promises "^0.8.15"
+    babel-plugin-transform-typescript-metadata "^0.3.1"
+    browserslist "^4.16.6"
+    bytes "^3.1.0"
+    caniuse-lite "^1.0.30001251"
+    chalk "4.1.0"
+    chokidar "^3.5.1"
+    copy-webpack-plugin "^10.2.4"
+    core-js "^3.6.5"
+    css-loader "^6.4.0"
+    css-minimizer-webpack-plugin "^3.4.1"
+    enhanced-resolve "^5.8.3"
+    file-loader "^6.2.0"
+    fork-ts-checker-webpack-plugin "7.2.13"
+    fs-extra "^10.1.0"
+    http-server "14.1.0"
+    identity-obj-proxy "3.0.0"
+    ignore "^5.0.4"
+    less "3.12.2"
+    less-loader "^10.1.0"
+    license-webpack-plugin "^4.0.2"
+    loader-utils "1.2.3"
+    mini-css-extract-plugin "~2.4.7"
+    parse5 "4.0.0"
+    parse5-html-rewriting-stream "6.0.1"
+    postcss "^8.4.14"
+    postcss-import "~14.1.0"
+    postcss-loader "^6.1.1"
+    raw-loader "^4.0.2"
+    react-refresh "^0.10.0"
+    rollup "^2.56.2"
+    rollup-plugin-copy "^3.4.0"
+    rollup-plugin-peer-deps-external "^2.2.4"
+    rollup-plugin-postcss "^4.0.1"
+    rollup-plugin-typescript2 "^0.31.1"
+    rxjs "^6.5.4"
+    sass "^1.42.1"
+    sass-loader "^12.2.0"
+    semver "7.3.4"
+    source-map "0.7.3"
+    source-map-loader "^3.0.0"
+    style-loader "^3.3.0"
+    stylus "^0.55.0"
+    stylus-loader "^6.2.0"
+    terser-webpack-plugin "^5.3.3"
+    ts-loader "^9.3.1"
+    ts-node "10.9.1"
     tsconfig-paths "^3.9.0"
     tsconfig-paths-webpack-plugin "3.5.2"
     tslib "^2.3.0"
@@ -11681,17 +11791,7 @@ ts-jest@^27.1.4:
     semver "7.x"
     yargs-parser "20.x"
 
-ts-loader@^9.2.6:
-  version "9.2.6"
-  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-9.2.6.tgz#9937c4dd0a1e3dbbb5e433f8102a6601c6615d74"
-  integrity sha512-QMTC4UFzHmu9wU2VHZEmWWE9cUajjfcdcws+Gh7FhiO+Dy0RnR1bNz0YCHqhI0yRowCE9arVnNxYHqELOy9Hjw==
-  dependencies:
-    chalk "^4.1.0"
-    enhanced-resolve "^5.0.0"
-    micromatch "^4.0.0"
-    semver "^7.3.4"
-
-ts-loader@^9.3.1:
+ts-loader@^9.2.6, ts-loader@^9.3.1:
   version "9.3.1"
   resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-9.3.1.tgz#fe25cca56e3e71c1087fe48dc67f4df8c59b22d4"
   integrity sha512-OkyShkcZTsTwyS3Kt7a4rsT/t2qvEVQuKCTg4LJmpj9fhFR7ukGdZwV6Qq3tRUkqcXtfGpPR7+hFKHCG/0d3Lw==
