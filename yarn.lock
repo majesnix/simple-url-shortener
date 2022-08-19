@@ -2061,14 +2061,14 @@
     chalk "4.1.0"
     confusing-browser-globals "^1.0.9"
 
-"@nrwl/express@^14.5.6":
-  version "14.5.6"
-  resolved "https://registry.yarnpkg.com/@nrwl/express/-/express-14.5.6.tgz#5e4ffba666a604b8524d2d46435ad59f99bd3591"
-  integrity sha512-vkNbthk0zK53NikNYgXbi+JOFqh7Homh97t/emRp4f7kNpz7ZbMBl5t/Dg6YdwlEEwn8sV2SRCs+LKIVhyeUsA==
+"@nrwl/express@^14.5.7":
+  version "14.5.7"
+  resolved "https://registry.yarnpkg.com/@nrwl/express/-/express-14.5.7.tgz#7c8ebef4ad9434cb2b787a3124d92f95bb0f4355"
+  integrity sha512-/SgIq7yfoyWMysXRQCL/hZ3SwNP8gc7BNHkUMFfTdbYHWSKNRxyvRc6aJsbk7fEa4Tj6t3pDfbKjBUY3MGAk5Q==
   dependencies:
-    "@nrwl/devkit" "14.5.6"
-    "@nrwl/node" "14.5.6"
-    "@nrwl/workspace" "14.5.6"
+    "@nrwl/devkit" "14.5.7"
+    "@nrwl/node" "14.5.7"
+    "@nrwl/workspace" "14.5.7"
 
 "@nrwl/jest@13.9.7":
   version "13.9.7"
@@ -2144,6 +2144,25 @@
     source-map-support "0.5.19"
     tree-kill "1.2.2"
 
+"@nrwl/js@14.5.7":
+  version "14.5.7"
+  resolved "https://registry.yarnpkg.com/@nrwl/js/-/js-14.5.7.tgz#65e0843be2aea49fc83266c28337aff39ee58760"
+  integrity sha512-z3uAsAEonMGFZnXcl76zPPd0q1LQtkbeF40aFP0iJXZwQumPYolPAU1peaDYq7wzLbk2QVsmt44pBsOy+/wJlA==
+  dependencies:
+    "@nrwl/devkit" "14.5.7"
+    "@nrwl/jest" "14.5.7"
+    "@nrwl/linter" "14.5.7"
+    "@nrwl/workspace" "14.5.7"
+    "@parcel/watcher" "2.0.4"
+    chalk "4.1.0"
+    fast-glob "3.2.7"
+    fs-extra "^10.1.0"
+    ignore "^5.0.4"
+    js-tokens "^4.0.0"
+    minimatch "3.0.5"
+    source-map-support "0.5.19"
+    tree-kill "1.2.2"
+
 "@nrwl/linter@13.9.7":
   version "13.9.7"
   resolved "https://registry.yarnpkg.com/@nrwl/linter/-/linter-13.9.7.tgz#1f877da490630ad337cdfaa525e38845578edf6e"
@@ -2179,16 +2198,16 @@
     tmp "~0.2.1"
     tslib "^2.3.0"
 
-"@nrwl/node@14.5.6", "@nrwl/node@^14.5.4":
-  version "14.5.6"
-  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-14.5.6.tgz#1727a05fa3a53c9fb24d6131071d37f2fdf3c96c"
-  integrity sha512-lVs2P9pfqfbmagjNBRjtuwT0DNLFVfYvOPUyk4w1pt/FjwdSZssNW2VrFYqlCiA4Qz/Obos8yxth085PsGb/TA==
+"@nrwl/node@14.5.7", "@nrwl/node@^14.5.4":
+  version "14.5.7"
+  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-14.5.7.tgz#089c4f74a74c8d281f4949dc506bdfa079cb1ad6"
+  integrity sha512-r1P1LpKYrr3WRodC2Ef+i6mlzAylUviw/6HXS3/5rcpaSU6yo9WkPX1UN8jcYNGol7e4ITshcWr4RP4dm82Iaw==
   dependencies:
-    "@nrwl/devkit" "14.5.6"
-    "@nrwl/jest" "14.5.6"
-    "@nrwl/js" "14.5.6"
-    "@nrwl/linter" "14.5.6"
-    "@nrwl/workspace" "14.5.6"
+    "@nrwl/devkit" "14.5.7"
+    "@nrwl/jest" "14.5.7"
+    "@nrwl/js" "14.5.7"
+    "@nrwl/linter" "14.5.7"
+    "@nrwl/workspace" "14.5.7"
     chalk "4.1.0"
     copy-webpack-plugin "^10.2.4"
     dotenv "~10.0.0"
