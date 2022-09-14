@@ -2371,7 +2371,7 @@
     tmp "~0.2.1"
     tslib "^2.3.0"
 
-"@nrwl/node@14.7.4", "@nrwl/node@^14.7.4":
+"@nrwl/node@14.7.4":
   version "14.7.4"
   resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-14.7.4.tgz#dfab69d4c86075fd45025230e55bb01ef909a35b"
   integrity sha512-QePostOdBE0n1PBKTDor1TI4NpkNvCK/dSTbN7pzpLiz8psUPmEd6GywdjWOY17IDYCIPRzvvpFEue5iJgP/Fw==
@@ -2381,6 +2381,37 @@
     "@nrwl/js" "14.7.4"
     "@nrwl/linter" "14.7.4"
     "@nrwl/workspace" "14.7.4"
+    chalk "4.1.0"
+    copy-webpack-plugin "^10.2.4"
+    dotenv "~10.0.0"
+    enhanced-resolve "^5.8.3"
+    fork-ts-checker-webpack-plugin "7.2.13"
+    fs-extra "^10.1.0"
+    glob "7.1.4"
+    license-webpack-plugin "^4.0.2"
+    rxjs "^6.5.4"
+    source-map-support "0.5.19"
+    terser-webpack-plugin "^5.3.3"
+    tree-kill "1.2.2"
+    ts-loader "^9.3.1"
+    ts-node "10.9.1"
+    tsconfig-paths "^3.9.0"
+    tsconfig-paths-webpack-plugin "3.5.2"
+    tslib "^2.3.0"
+    webpack "^5.58.1"
+    webpack-merge "^5.8.0"
+    webpack-node-externals "^3.0.0"
+
+"@nrwl/node@^14.7.5":
+  version "14.7.5"
+  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-14.7.5.tgz#9ead475dfeaafd9f6e6964f5ca67066075a53afc"
+  integrity sha512-V7NVbw9yQbDkcdMot6hyeq8vgYKSGVCxw/PUIAelKQ7Ur2w2gm/DfI4lhWQAxpSNcfNgqqS5I4uVk37DOWvPLw==
+  dependencies:
+    "@nrwl/devkit" "14.7.5"
+    "@nrwl/jest" "14.7.5"
+    "@nrwl/js" "14.7.5"
+    "@nrwl/linter" "14.7.5"
+    "@nrwl/workspace" "14.7.5"
     chalk "4.1.0"
     copy-webpack-plugin "^10.2.4"
     dotenv "~10.0.0"
