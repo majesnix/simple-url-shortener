@@ -84,7 +84,7 @@
     "@nrwl/tao": "^14.7.5",
     "@nrwl/web": "^14.6.5",
     "@nrwl/workspace": "^14.4.3",
-    "@nx-tools/nx-docker": "^3.0.3",
+    "@nx-tools/nx-docker": "^3.0.4",
     "@testing-library/react": "12.1.5",
     "@types/auth0-js": "^9.14.6",
     "@types/cors": "^2.8.12",
