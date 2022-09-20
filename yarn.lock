@@ -2189,7 +2189,7 @@
     webpack "^4 || ^5"
     webpack-node-externals "^3.0.0"
 
-"@nrwl/cypress@^14.7.6":
+"@nrwl/cypress@14.7.6", "@nrwl/cypress@^14.7.6":
   version "14.7.6"
   resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-14.7.6.tgz#fc6e0c8327d748dbbb8b66a1de9a6cceb0b4cc75"
   integrity sha512-8BZWwVRNd98BqEw9fp0TkDerz9e6grJT1w2/j5PitKWCiO0rm5eMcQ2YBSufBVpOrGkICppIQLGF4Sn8QQVdkA==
@@ -2465,6 +2465,32 @@
     webpack "^5.58.1"
     webpack-merge "^5.8.0"
 
+"@nrwl/rollup@14.7.6":
+  version "14.7.6"
+  resolved "https://registry.yarnpkg.com/@nrwl/rollup/-/rollup-14.7.6.tgz#23aab5869019516383715906dd8c6aad25a3b739"
+  integrity sha512-epZ6/YNQQtE5b9SgP13yqgZrM8g0aDkeA8Mz3PnJYxBST21PlhDB1uciPfKCTbp11guGyqKovtc1KLxj5uldng==
+  dependencies:
+    "@nrwl/devkit" "14.7.6"
+    "@nrwl/js" "14.7.6"
+    "@nrwl/workspace" "14.7.6"
+    "@rollup/plugin-babel" "^5.3.0"
+    "@rollup/plugin-commonjs" "^20.0.0"
+    "@rollup/plugin-image" "^2.1.0"
+    "@rollup/plugin-json" "^4.1.0"
+    "@rollup/plugin-node-resolve" "^13.0.4"
+    autoprefixer "^10.4.9"
+    babel-plugin-transform-async-to-promises "^0.8.15"
+    chalk "4.1.0"
+    fs-extra "^10.1.0"
+    postcss "^8.4.14"
+    rollup "^2.56.2"
+    rollup-plugin-copy "^3.4.0"
+    rollup-plugin-peer-deps-external "^2.2.4"
+    rollup-plugin-postcss "^4.0.1"
+    rollup-plugin-typescript2 "^0.31.1"
+    rxjs "^6.5.4"
+    tslib "^2.3.0"
+
 "@nrwl/storybook@14.7.5":
   version "14.7.5"
   resolved "https://registry.yarnpkg.com/@nrwl/storybook/-/storybook-14.7.5.tgz#0a070159453229af47e191db657cf71921828b5a"
@@ -2501,7 +2527,7 @@
   dependencies:
     nx "14.7.6"
 
-"@nrwl/web@14.7.5", "@nrwl/web@^14.6.5":
+"@nrwl/web@14.7.5":
   version "14.7.5"
   resolved "https://registry.yarnpkg.com/@nrwl/web/-/web-14.7.5.tgz#15e8c1324a5e51ac8e51da883e1bcfe583275ae2"
   integrity sha512-ui4Atazjpiaow+3CJzGrnXmb2UsaMuZcVOiyWdmTHNw8yjj17Tcp9dPkynw+0QqgXDtkuK3TIYKk9vsKVbUphg==
@@ -2585,6 +2611,35 @@
     webpack-merge "^5.8.0"
     webpack-sources "^3.2.3"
     webpack-subresource-integrity "^5.1.0"
+
+"@nrwl/web@^14.7.6":
+  version "14.7.6"
+  resolved "https://registry.yarnpkg.com/@nrwl/web/-/web-14.7.6.tgz#a1aba1e26cfe18edf7b4bf562bac6bd9770c9229"
+  integrity sha512-Aj9OcC287qqJPv4nx6uWP6LtoC2kdpXAm18eiYuBbVtsx1mSz7nOwmKf821qoBBH3JHqHtzy9LgXIT9IKPQsrw==
+  dependencies:
+    "@babel/core" "^7.15.0"
+    "@babel/plugin-proposal-class-properties" "^7.14.5"
+    "@babel/plugin-proposal-decorators" "^7.14.5"
+    "@babel/plugin-transform-runtime" "^7.15.0"
+    "@babel/preset-env" "^7.15.0"
+    "@babel/preset-typescript" "^7.15.0"
+    "@babel/runtime" "^7.14.8"
+    "@nrwl/cypress" "14.7.6"
+    "@nrwl/devkit" "14.7.6"
+    "@nrwl/jest" "14.7.6"
+    "@nrwl/js" "14.7.6"
+    "@nrwl/linter" "14.7.6"
+    "@nrwl/rollup" "14.7.6"
+    "@nrwl/webpack" "14.7.6"
+    "@nrwl/workspace" "14.7.6"
+    babel-plugin-const-enum "^1.0.1"
+    babel-plugin-macros "^2.8.0"
+    babel-plugin-transform-typescript-metadata "^0.3.1"
+    chalk "4.1.0"
+    chokidar "^3.5.1"
+    http-server "14.1.0"
+    ignore "^5.0.4"
+    tslib "^2.3.0"
 
 "@nrwl/webpack@14.7.6":
   version "14.7.6"
@@ -4731,19 +4786,7 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-autoprefixer@^10.4.7:
-  version "10.4.7"
-  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.4.7.tgz#1db8d195f41a52ca5069b7593be167618edbbedf"
-  integrity sha512-ypHju4Y2Oav95SipEcCcI5J7CGPuvz8oat7sUtYj3ClK44bldfvtvcxK6IEK++7rqB7YchDGzweZIBG+SD0ZAA==
-  dependencies:
-    browserslist "^4.20.3"
-    caniuse-lite "^1.0.30001335"
-    fraction.js "^4.2.0"
-    normalize-range "^0.1.2"
-    picocolors "^1.0.0"
-    postcss-value-parser "^4.2.0"
-
-autoprefixer@^10.4.9:
+autoprefixer@^10.4.7, autoprefixer@^10.4.9:
   version "10.4.11"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.4.11.tgz#835136aff1d9cd43640151e0d2dba00f8eac7c1c"
   integrity sha512-5lHp6DgRodxlBLSkzHOTcufWFflH1ewfy2hvFQyjrblBFlP/0Yh4O/Wrg4ow8WRlN3AAUFFLAQwX8hTptzqVHg==
@@ -5134,7 +5177,7 @@ browser-tabs-lock@^1.2.15:
   dependencies:
     lodash ">=4.17.21"
 
-browserslist@^4.0.0, browserslist@^4.14.5, browserslist@^4.16.0, browserslist@^4.16.6, browserslist@^4.20.3, browserslist@^4.21.3:
+browserslist@^4.0.0, browserslist@^4.14.5, browserslist@^4.16.0, browserslist@^4.16.6, browserslist@^4.21.3:
   version "4.21.3"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.21.3.tgz#5df277694eb3c48bc5c4b05af3e8b7e09c5a6d1a"
   integrity sha512-898rgRXLAyRkM1GryrrBHGkqA5hlpkV5MhtZwg9QXeiyLUYs2k00Un05aX5l2/yJIOObYKOpS2JNo8nJDE7fWQ==
@@ -5257,12 +5300,7 @@ caniuse-api@^3.0.0:
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
-caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001251, caniuse-lite@^1.0.30001335, caniuse-lite@^1.0.30001370:
-  version "1.0.30001373"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001373.tgz#2dc3bc3bfcb5d5a929bec11300883040d7b4b4be"
-  integrity sha512-pJYArGHrPp3TUqQzFYRmP/lwJlj8RCbVe3Gd3eJQkAV8SAC6b19XS9BjMvRdvaS8RMkaTN8ZhoHP6S1y8zzwEQ==
-
-caniuse-lite@^1.0.30001394, caniuse-lite@^1.0.30001399:
+caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001251, caniuse-lite@^1.0.30001370, caniuse-lite@^1.0.30001394, caniuse-lite@^1.0.30001399:
   version "1.0.30001407"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001407.tgz#92281a6ee67cb90bfd8a6a1201fcc2dc19b60a15"
   integrity sha512-4ydV+t4P7X3zH83fQWNDX/mQEzYomossfpViCOx9zHBSMV+rIe3LFqglHHtVyvNl1FhTNxPxs3jei82iqOW04w==
