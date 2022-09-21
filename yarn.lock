@@ -2164,7 +2164,7 @@
   dependencies:
     nx "14.7.8"
 
-"@nrwl/cypress@14.7.6", "@nrwl/cypress@^14.7.6":
+"@nrwl/cypress@14.7.6":
   version "14.7.6"
   resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-14.7.6.tgz#fc6e0c8327d748dbbb8b66a1de9a6cceb0b4cc75"
   integrity sha512-8BZWwVRNd98BqEw9fp0TkDerz9e6grJT1w2/j5PitKWCiO0rm5eMcQ2YBSufBVpOrGkICppIQLGF4Sn8QQVdkA==
@@ -2175,6 +2175,28 @@
     "@nrwl/devkit" "14.7.6"
     "@nrwl/linter" "14.7.6"
     "@nrwl/workspace" "14.7.6"
+    "@phenomnomnominal/tsquery" "4.1.1"
+    babel-loader "^8.0.2"
+    chalk "4.1.0"
+    dotenv "~10.0.0"
+    fork-ts-checker-webpack-plugin "7.2.13"
+    ts-loader "^9.3.1"
+    tsconfig-paths-webpack-plugin "3.5.2"
+    tslib "^2.3.0"
+    webpack "^4 || ^5"
+    webpack-node-externals "^3.0.0"
+
+"@nrwl/cypress@14.7.8", "@nrwl/cypress@^14.7.6":
+  version "14.7.8"
+  resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-14.7.8.tgz#6fc5b520014e0dec0dc7a238c95ccb98bc2bfac0"
+  integrity sha512-TnA2Vd+KYNhClMLxdspBxZIWGvxJb7GsXzS+3R/sMZYFXmcyMBKo9m/D8fmUQscYhn1IAAxnwzDT2s2w1bH9Ig==
+  dependencies:
+    "@babel/core" "^7.0.1"
+    "@babel/preset-env" "^7.0.0"
+    "@cypress/webpack-preprocessor" "^5.12.0"
+    "@nrwl/devkit" "14.7.8"
+    "@nrwl/linter" "14.7.8"
+    "@nrwl/workspace" "14.7.8"
     "@phenomnomnominal/tsquery" "4.1.1"
     babel-loader "^8.0.2"
     chalk "4.1.0"
@@ -2432,6 +2454,33 @@
     rxjs "^6.5.4"
     tslib "^2.3.0"
 
+"@nrwl/rollup@14.7.8":
+  version "14.7.8"
+  resolved "https://registry.yarnpkg.com/@nrwl/rollup/-/rollup-14.7.8.tgz#abbd5abcb53c88fa441dcff400bb8c09bc87c22e"
+  integrity sha512-+gTp1Dh9sTBPCmpqLC1p1cNAJOPy36A9IIr2plkjHsT2sHwXvgkJVVy879RQqCtimwdaSicdo+zMkLuiBvRPyw==
+  dependencies:
+    "@nrwl/devkit" "14.7.8"
+    "@nrwl/js" "14.7.8"
+    "@nrwl/workspace" "14.7.8"
+    "@rollup/plugin-babel" "^5.3.0"
+    "@rollup/plugin-commonjs" "^20.0.0"
+    "@rollup/plugin-image" "^2.1.0"
+    "@rollup/plugin-json" "^4.1.0"
+    "@rollup/plugin-node-resolve" "^13.0.4"
+    autoprefixer "^10.4.9"
+    babel-plugin-transform-async-to-promises "^0.8.15"
+    chalk "4.1.0"
+    dotenv "~10.0.0"
+    fs-extra "^10.1.0"
+    postcss "^8.4.14"
+    rollup "^2.56.2"
+    rollup-plugin-copy "^3.4.0"
+    rollup-plugin-peer-deps-external "^2.2.4"
+    rollup-plugin-postcss "^4.0.1"
+    rollup-plugin-typescript2 "^0.31.1"
+    rxjs "^6.5.4"
+    tslib "^2.3.0"
+
 "@nrwl/storybook@14.7.6":
   version "14.7.6"
   resolved "https://registry.yarnpkg.com/@nrwl/storybook/-/storybook-14.7.6.tgz#308029193a95ce92bc198dfbe7d68960db26d03e"
@@ -2465,7 +2514,7 @@
   dependencies:
     nx "14.7.8"
 
-"@nrwl/web@14.7.6", "@nrwl/web@^14.7.6":
+"@nrwl/web@14.7.6":
   version "14.7.6"
   resolved "https://registry.yarnpkg.com/@nrwl/web/-/web-14.7.6.tgz#a1aba1e26cfe18edf7b4bf562bac6bd9770c9229"
   integrity sha512-Aj9OcC287qqJPv4nx6uWP6LtoC2kdpXAm18eiYuBbVtsx1mSz7nOwmKf821qoBBH3JHqHtzy9LgXIT9IKPQsrw==
@@ -2485,6 +2534,35 @@
     "@nrwl/rollup" "14.7.6"
     "@nrwl/webpack" "14.7.6"
     "@nrwl/workspace" "14.7.6"
+    babel-plugin-const-enum "^1.0.1"
+    babel-plugin-macros "^2.8.0"
+    babel-plugin-transform-typescript-metadata "^0.3.1"
+    chalk "4.1.0"
+    chokidar "^3.5.1"
+    http-server "14.1.0"
+    ignore "^5.0.4"
+    tslib "^2.3.0"
+
+"@nrwl/web@^14.7.8":
+  version "14.7.8"
+  resolved "https://registry.yarnpkg.com/@nrwl/web/-/web-14.7.8.tgz#2687481f5cf1729ff103fbd8b1bc3bef11723caf"
+  integrity sha512-dln8EUQpOG5UE1cBEJtgiVbkOorv3SW4LrSqMb34rlkYiPwzzGS3Pz5TLnzy3wwZ/NB7/Qz5RRh6BAybIwkBsQ==
+  dependencies:
+    "@babel/core" "^7.15.0"
+    "@babel/plugin-proposal-class-properties" "^7.14.5"
+    "@babel/plugin-proposal-decorators" "^7.14.5"
+    "@babel/plugin-transform-runtime" "^7.15.0"
+    "@babel/preset-env" "^7.15.0"
+    "@babel/preset-typescript" "^7.15.0"
+    "@babel/runtime" "^7.14.8"
+    "@nrwl/cypress" "14.7.8"
+    "@nrwl/devkit" "14.7.8"
+    "@nrwl/jest" "14.7.8"
+    "@nrwl/js" "14.7.8"
+    "@nrwl/linter" "14.7.8"
+    "@nrwl/rollup" "14.7.8"
+    "@nrwl/webpack" "14.7.8"
+    "@nrwl/workspace" "14.7.8"
     babel-plugin-const-enum "^1.0.1"
     babel-plugin-macros "^2.8.0"
     babel-plugin-transform-typescript-metadata "^0.3.1"
