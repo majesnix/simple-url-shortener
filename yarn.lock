@@ -2249,14 +2249,14 @@
     chalk "4.1.0"
     confusing-browser-globals "^1.0.9"
 
-"@nrwl/express@^14.7.13":
-  version "14.7.13"
-  resolved "https://registry.yarnpkg.com/@nrwl/express/-/express-14.7.13.tgz#23cd89ae73bd5a37dd09b8e0a7824b76db6a8681"
-  integrity sha512-x1sSR1KrwgIGiGcHgXllzh5nbGUynSF4d6MzRnblueO/85ujH9NHgHc0zLHIDL7t4ks/fvRIwQYawkA8GsMetA==
+"@nrwl/express@^14.7.17":
+  version "14.7.17"
+  resolved "https://registry.yarnpkg.com/@nrwl/express/-/express-14.7.17.tgz#2d86ef3b64f78eec33918283138a253827f64e92"
+  integrity sha512-m89TRWqqWkUPo5wlYKrFJIe1yATQ5d3PJTWWbXVyjGMXt3My184QYGwjhv87N8HepHzCXhs8jHaKl319s1eKTw==
   dependencies:
-    "@nrwl/devkit" "14.7.13"
-    "@nrwl/node" "14.7.13"
-    "@nrwl/workspace" "14.7.13"
+    "@nrwl/devkit" "14.7.17"
+    "@nrwl/node" "14.7.17"
+    "@nrwl/workspace" "14.7.17"
 
 "@nrwl/jest@13.9.7":
   version "13.9.7"
@@ -2384,21 +2384,7 @@
     tmp "~0.2.1"
     tslib "^2.3.0"
 
-"@nrwl/node@14.7.13":
-  version "14.7.13"
-  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-14.7.13.tgz#835ffd98252319dd6ab8760b8e0daca64a97a643"
-  integrity sha512-4KLN+UypDPEcjxcTDfqYgz83363G/j89xVrVeeNUI7tXhLUCMBfGy0moDUGbQFMn/RQROgeNhJMvK+zCOjZVAg==
-  dependencies:
-    "@nrwl/devkit" "14.7.13"
-    "@nrwl/jest" "14.7.13"
-    "@nrwl/js" "14.7.13"
-    "@nrwl/linter" "14.7.13"
-    "@nrwl/webpack" "14.7.13"
-    "@nrwl/workspace" "14.7.13"
-    chalk "4.1.0"
-    tslib "^2.3.0"
-
-"@nrwl/node@^14.7.17":
+"@nrwl/node@14.7.17", "@nrwl/node@^14.7.17":
   version "14.7.17"
   resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-14.7.17.tgz#83b37e06a24d0ffa704dcffbaa71b21b57195f29"
   integrity sha512-Lzu9yUh9uSByHQeaocMmELUBXPHGptSD79fK3x2jnvyjEiLp5lLltQO4onPYOp0JP9yox0pxCHkWIUI64G/lkw==
