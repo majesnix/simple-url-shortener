@@ -61,7 +61,7 @@
     "reflect-metadata": "^0.1.13",
     "resize-observer-polyfill": "^1.5.1",
     "source-map-support": "^0.5.21",
-    "styled-components": "^5.3.5",
+    "styled-components": "^5.3.6",
     "toasted-notes": "^3.2.0",
     "tslib": "^2.4.0",
     "tsoa": "^4.1.3",
