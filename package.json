@@ -83,7 +83,7 @@
     "@nrwl/react": "^14.8.4",
     "@nrwl/tao": "^14.8.4",
     "@nrwl/web": "^14.7.17",
-    "@nrwl/workspace": "^14.8.2",
+    "@nrwl/workspace": "^14.8.5",
     "@nx-tools/nx-docker": "^3.0.4",
     "@testing-library/react": "12.1.5",
     "@types/auth0-js": "^9.14.6",
