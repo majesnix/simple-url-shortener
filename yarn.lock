@@ -2664,7 +2664,7 @@
     yargs "15.4.1"
     yargs-parser "20.0.0"
 
-"@nrwl/workspace@14.8.4", "@nrwl/workspace@^14.8.2":
+"@nrwl/workspace@14.8.4":
   version "14.8.4"
   resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-14.8.4.tgz#dd06b7d3d7e0b0757464580e9be4d0c69de2cf63"
   integrity sha512-/Epgr85sYBpA/OkFNIMGE3XPmoW+XdMi9W0zUadCThIkeojwbFgd6VrGG48vpCd0rCMRYirkd2Ar5RYsLJnsPQ==
@@ -2695,7 +2695,7 @@
     yargs "^17.4.0"
     yargs-parser "21.0.1"
 
-"@nrwl/workspace@15.0.0":
+"@nrwl/workspace@15.0.0", "@nrwl/workspace@^15.0.0":
   version "15.0.0"
   resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-15.0.0.tgz#431c7b28322eea7dc38c4c32aca99937cc33058c"
   integrity sha512-VTmqjEiymLYRNPgMp9OrkIgBgX1BjwnDQtmTo+F0rSM5/KTjwmLevqoCApgeV1/YMTUHsjI4tLIOeOPvMARX7Q==
