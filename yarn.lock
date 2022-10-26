@@ -2165,7 +2165,7 @@
   dependencies:
     nx "15.0.3"
 
-"@nrwl/cypress@15.0.2", "@nrwl/cypress@^15.0.0":
+"@nrwl/cypress@15.0.2":
   version "15.0.2"
   resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-15.0.2.tgz#9c811f9b415abfff2f3e563911de4633ce958dc8"
   integrity sha512-3FwZtSf5KZoWRW7kINEosK4wtPo3WzCeqJiMm1urUnPpd4fFr8BawMrhdbQNWcdXcFMqL/fS2q6OPWjZTOUBdQ==
@@ -2176,6 +2176,29 @@
     "@nrwl/devkit" "15.0.2"
     "@nrwl/linter" "15.0.2"
     "@nrwl/workspace" "15.0.2"
+    "@phenomnomnominal/tsquery" "4.1.1"
+    babel-loader "^8.0.2"
+    chalk "4.1.0"
+    dotenv "~10.0.0"
+    fork-ts-checker-webpack-plugin "7.2.13"
+    semver "7.3.4"
+    ts-loader "^9.3.1"
+    tsconfig-paths-webpack-plugin "3.5.2"
+    tslib "^2.3.0"
+    webpack "^4 || ^5"
+    webpack-node-externals "^3.0.0"
+
+"@nrwl/cypress@15.0.3", "@nrwl/cypress@^15.0.0":
+  version "15.0.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-15.0.3.tgz#fb5cba4a68970182fb11fbbe98bf357896833457"
+  integrity sha512-hJhmmsTHMOmenyM1p9hQK9jdBk3EO6fIOkYGBQDDHjf8ewpC+sK3o/J5CFzOKKsjs1EPYOr0TkJM0LyprfoyEQ==
+  dependencies:
+    "@babel/core" "^7.0.1"
+    "@babel/preset-env" "^7.0.0"
+    "@cypress/webpack-preprocessor" "^5.12.0"
+    "@nrwl/devkit" "15.0.3"
+    "@nrwl/linter" "15.0.3"
+    "@nrwl/workspace" "15.0.3"
     "@phenomnomnominal/tsquery" "4.1.1"
     babel-loader "^8.0.2"
     chalk "4.1.0"
@@ -2259,7 +2282,7 @@
     rxjs "^6.5.4"
     tslib "^2.3.0"
 
-"@nrwl/jest@15.0.2", "@nrwl/jest@^15.0.0":
+"@nrwl/jest@15.0.2":
   version "15.0.2"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-15.0.2.tgz#02975b371905d020d2626b2114a2f1632eaaa71d"
   integrity sha512-g+BIahh2et5sBCLrL8K0FlS3InlH9ZjM0LWPDyDsFF/EvVXnln15JRE8+F/NqyQXO6lquYqrUGVKaGWsrbz3mA==
@@ -2277,7 +2300,7 @@
     resolve.exports "1.1.0"
     tslib "^2.3.0"
 
-"@nrwl/jest@15.0.3":
+"@nrwl/jest@15.0.3", "@nrwl/jest@^15.0.0":
   version "15.0.3"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-15.0.3.tgz#f082a7bfc23c2e9641d9880b9f4d3ed8787f98d3"
   integrity sha512-Q3afCPbo/7UyGF7vgRkPfQEj5AsjKqlHMUsHPS7uCCCtI8yYJODp11klxq8N/LfDCH6m9Gk+dPiBCxEqDXgVcw==
@@ -2440,6 +2463,33 @@
     rxjs "^6.5.4"
     tslib "^2.3.0"
 
+"@nrwl/rollup@15.0.3":
+  version "15.0.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/rollup/-/rollup-15.0.3.tgz#5927d37c50d66bb3d050a12663111e00d6b696a1"
+  integrity sha512-0bh13Gys46l82osdQH1ina/IKOFesJYHd5YbyqwfdUea75k0yLMTo/svTLmFz/fH550Wq8/4QF/cXAMzK8+lBA==
+  dependencies:
+    "@nrwl/devkit" "15.0.3"
+    "@nrwl/js" "15.0.3"
+    "@nrwl/workspace" "15.0.3"
+    "@rollup/plugin-babel" "^5.3.0"
+    "@rollup/plugin-commonjs" "^20.0.0"
+    "@rollup/plugin-image" "^2.1.0"
+    "@rollup/plugin-json" "^4.1.0"
+    "@rollup/plugin-node-resolve" "^13.0.4"
+    autoprefixer "^10.4.9"
+    babel-plugin-transform-async-to-promises "^0.8.15"
+    chalk "4.1.0"
+    dotenv "~10.0.0"
+    fs-extra "^10.1.0"
+    postcss "^8.4.14"
+    rollup "^2.56.2"
+    rollup-plugin-copy "^3.4.0"
+    rollup-plugin-peer-deps-external "^2.2.4"
+    rollup-plugin-postcss "^4.0.1"
+    rollup-plugin-typescript2 "^0.31.1"
+    rxjs "^6.5.4"
+    tslib "^2.3.0"
+
 "@nrwl/storybook@15.0.2":
   version "15.0.2"
   resolved "https://registry.yarnpkg.com/@nrwl/storybook/-/storybook-15.0.2.tgz#04e376691de63fd7095185c109d660ec5f4ef5af"
@@ -2473,7 +2523,7 @@
   dependencies:
     nx "15.0.3"
 
-"@nrwl/web@15.0.2", "@nrwl/web@^15.0.2":
+"@nrwl/web@15.0.2":
   version "15.0.2"
   resolved "https://registry.yarnpkg.com/@nrwl/web/-/web-15.0.2.tgz#3d7c05b5b94c9ee1e0d9640f4c16b36850ebd79a"
   integrity sha512-4zh683cKsnrobBFS6AlsLRVr3fNjXPkUoNrYyLkq66uuQTikXgwr9kIw5Zi2YyszaKg4bnMt5vyaqm/fdc2WCA==
@@ -2493,6 +2543,35 @@
     "@nrwl/rollup" "15.0.2"
     "@nrwl/webpack" "15.0.2"
     "@nrwl/workspace" "15.0.2"
+    babel-plugin-const-enum "^1.0.1"
+    babel-plugin-macros "^2.8.0"
+    babel-plugin-transform-typescript-metadata "^0.3.1"
+    chalk "4.1.0"
+    chokidar "^3.5.1"
+    http-server "^14.1.0"
+    ignore "^5.0.4"
+    tslib "^2.3.0"
+
+"@nrwl/web@^15.0.3":
+  version "15.0.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/web/-/web-15.0.3.tgz#52d7f706d1079275f12a55e6e2caebe4ba5621c5"
+  integrity sha512-vT+KYh4Ro5kw+7AUqIhazE9EOWzfF9Iy+PEf5LHbIOLnYWyrr+UjSU/DpFHhJFvnr8lbqblr7KQitsUz8QPrtw==
+  dependencies:
+    "@babel/core" "^7.15.0"
+    "@babel/plugin-proposal-class-properties" "^7.14.5"
+    "@babel/plugin-proposal-decorators" "^7.14.5"
+    "@babel/plugin-transform-runtime" "^7.15.0"
+    "@babel/preset-env" "^7.15.0"
+    "@babel/preset-typescript" "^7.15.0"
+    "@babel/runtime" "^7.14.8"
+    "@nrwl/cypress" "15.0.3"
+    "@nrwl/devkit" "15.0.3"
+    "@nrwl/jest" "15.0.3"
+    "@nrwl/js" "15.0.3"
+    "@nrwl/linter" "15.0.3"
+    "@nrwl/rollup" "15.0.3"
+    "@nrwl/webpack" "15.0.3"
+    "@nrwl/workspace" "15.0.3"
     babel-plugin-const-enum "^1.0.1"
     babel-plugin-macros "^2.8.0"
     babel-plugin-transform-typescript-metadata "^0.3.1"
