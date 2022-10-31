@@ -2534,32 +2534,32 @@
     yargs "^17.4.0"
     yargs-parser "21.0.1"
 
-"@nx-tools/ci-context@^3.0.1":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@nx-tools/ci-context/-/ci-context-3.0.2.tgz#1592d82fca25bcd87247b29377e666e587520d45"
-  integrity sha512-5y4xFVN92FQsO3sHaIJJMgkd9L/7W+iprfYxIHEupJqhGUGm5WbgX5x48a5UiBUKzs1o/tYVYDg5Mb83bMaI2A==
+"@nx-tools/ci-context@^3.0.8":
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/@nx-tools/ci-context/-/ci-context-3.0.8.tgz#e579691a56105afda6b7471a7704eea67a5c3115"
+  integrity sha512-np5fUUxdc8qBCDDZqOciO5Ey3dm58OyLfIeQ46+uUBqNYb4p52rVcwVnYtjH4yloV8Ki8rvfuRL7P6KMdh10Ig==
   dependencies:
     "@actions/github" "^5.0.3"
-    "@nx-tools/core" "^3.0.2"
+    "@nx-tools/core" "^3.0.8"
     "@swc/helpers" "^0.4.3"
     ci-info "^3.3.2"
 
-"@nx-tools/core@^3.0.2":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@nx-tools/core/-/core-3.0.2.tgz#abe47b784ac0ebdfbec23cd85c559360df943eba"
-  integrity sha512-0bPxXn7tg5i5U7heQeukpF2PaF7fPsQbELZQ5mkXB9KCmAvkikxbVwGcSK9GjMfxaUFqeIchYjXCBBISK8eLuw==
+"@nx-tools/core@^3.0.8":
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/@nx-tools/core/-/core-3.0.8.tgz#76e2b3180a7b171f340df6446b1082d0de7267d6"
+  integrity sha512-P4pgPx1sF4CYJJICGf/dSBJ5VnDvfrH1kPAZs4wvPbECFdHj0EVsVN3fdibh3kmXJz4ZAsyJqPUc4ZmsjVbLZw==
   dependencies:
     "@actions/exec" "^1.1.1"
     "@swc/helpers" "^0.4.3"
     colorette "^2.0.19"
 
-"@nx-tools/docker-metadata@^3.0.2":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@nx-tools/docker-metadata/-/docker-metadata-3.0.2.tgz#082bbbff26c37bc1e92a3244f2def5eaae0e5dcc"
-  integrity sha512-OajrguSvOWPIpIimPAnht56CLIQDR4xWZXUN8KC4PFADJfcRDF4rcrfvxsM2MpRohzD4qkU3paCpJrVx/kt4CQ==
+"@nx-tools/docker-metadata@^3.0.8":
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/@nx-tools/docker-metadata/-/docker-metadata-3.0.8.tgz#32b6c00da6f81afdb09c0480670d9f46f07f2576"
+  integrity sha512-gCiEqjnC4cLBSx5hwbDZGiJ9c4i0sKmbUQZPLOcXKFQG/FByWsgbTL8XOsEkSJWD/N94tDQwKUYI0NEe4Y10BQ==
   dependencies:
-    "@nx-tools/ci-context" "^3.0.1"
-    "@nx-tools/core" "^3.0.2"
+    "@nx-tools/ci-context" "^3.0.8"
+    "@nx-tools/core" "^3.0.8"
     "@renovate/pep440" "^1.0.0"
     "@swc/helpers" "^0.4.3"
     csv-parse "^4.16.3"
@@ -2567,18 +2567,18 @@
     moment "^2.29.4"
     semver "^7.3.7"
 
-"@nx-tools/nx-docker@^3.0.5":
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/@nx-tools/nx-docker/-/nx-docker-3.0.5.tgz#5c38b145492f45829e7cecc2cd1041af37386fb0"
-  integrity sha512-4KbSpN3Bs/8ZmU0cU+hrhmHSeZjv6rG2Wyzwp1lw6Brn6v1mTsBv2V6meVpH/pNoPRudk2lOOV1xrjp7i9KdeQ==
+"@nx-tools/nx-docker@^3.0.8":
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/@nx-tools/nx-docker/-/nx-docker-3.0.8.tgz#f91d918e5f59b39896ff68851a8f2eb047a26d3e"
+  integrity sha512-05TDmZ+4fOwIlGPTlyKq7mEu76UTZ2Sq2fSiw1Qyr2+b95ZJcDoelpriRdWzeJUTuvTQjuZ7jva+og2XJzmzlg==
   dependencies:
-    "@nx-tools/core" "^3.0.2"
+    "@nx-tools/core" "^3.0.8"
     "@swc/helpers" "^0.4.3"
     csv-parse "^4.16.3"
     semver "^7.3.7"
     tmp "^0.2.1"
   optionalDependencies:
-    "@nx-tools/docker-metadata" "^3.0.2"
+    "@nx-tools/docker-metadata" "^3.0.8"
 
 "@octokit/auth-token@^2.4.4":
   version "2.5.0"
