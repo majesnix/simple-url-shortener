@@ -2365,7 +2365,7 @@
     tmp "~0.2.1"
     tslib "^2.3.0"
 
-"@nrwl/node@15.0.7", "@nrwl/node@^15.0.7":
+"@nrwl/node@15.0.7":
   version "15.0.7"
   resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-15.0.7.tgz#8dc2eb65e59c44e0b3e631ee36e40108b0f5c887"
   integrity sha512-28V1W63/LzZIMotLc8/PlSpLhWeVbgQEiJ3C8oDA02mBJBNmu/dUhWBQs7rqnGJc0spyQ40q89vUWSnLu9nODg==
@@ -2376,6 +2376,20 @@
     "@nrwl/linter" "15.0.7"
     "@nrwl/webpack" "15.0.7"
     "@nrwl/workspace" "15.0.7"
+    chalk "4.1.0"
+    tslib "^2.3.0"
+
+"@nrwl/node@^15.0.11":
+  version "15.0.11"
+  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-15.0.11.tgz#7ed82369d26515e9a8b5b295bd97ee1b9135975f"
+  integrity sha512-3vLybEryOH83EYaTpg/xCT0eqa3SCDQauWmiUWKJy3M/iclcB0XyXQDcdeIDeDPSeaBaVUucKkJdo74NwPZB/w==
+  dependencies:
+    "@nrwl/devkit" "15.0.11"
+    "@nrwl/jest" "15.0.11"
+    "@nrwl/js" "15.0.11"
+    "@nrwl/linter" "15.0.11"
+    "@nrwl/webpack" "15.0.11"
+    "@nrwl/workspace" "15.0.11"
     chalk "4.1.0"
     tslib "^2.3.0"
 
