@@ -46,7 +46,7 @@
     "jsonwebtoken": "^8.5.1",
     "jwks-rsa": "^3.0.0",
     "mobx": "^6.7.0",
-    "mobx-keystone": "^1.1.1",
+    "mobx-keystone": "^1.2.0",
     "mobx-react-lite": "^3.4.0",
     "nanoid": "^4.0.0",
     "pg": "^8.8.0",
