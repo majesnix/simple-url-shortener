@@ -27,7 +27,7 @@
   },
   "private": true,
   "dependencies": {
-    "@apollo/client": "^3.7.1",
+    "@apollo/client": "^3.7.2",
     "@auth0/auth0-spa-js": "^2.0.0",
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
