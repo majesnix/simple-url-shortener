@@ -2252,7 +2252,7 @@
     resolve.exports "1.1.0"
     tslib "^2.3.0"
 
-"@nrwl/jest@^15.3.3":
+"@nrwl/jest@15.3.3", "@nrwl/jest@^15.3.3":
   version "15.3.3"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-15.3.3.tgz#484d902cabac0c201d08276bc2d1c350d7f33a8e"
   integrity sha512-hPqBSVmZzGh+FUsgOPim2KnPY7lbjgZlsT1W3D+1ac++gvZopcqyXA2mJJH1X/RxRS3RAYDsE14n+Z3HWFXbwg==
@@ -2278,6 +2278,23 @@
     "@nrwl/devkit" "15.3.0"
     "@nrwl/linter" "15.3.0"
     "@nrwl/workspace" "15.3.0"
+    chalk "4.1.0"
+    fast-glob "3.2.7"
+    fs-extra "^10.1.0"
+    ignore "^5.0.4"
+    js-tokens "^4.0.0"
+    minimatch "3.0.5"
+    source-map-support "0.5.19"
+    tree-kill "1.2.2"
+
+"@nrwl/js@15.3.3":
+  version "15.3.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/js/-/js-15.3.3.tgz#df034aa4ff47101f4ad84cb8d05957ee25d98d93"
+  integrity sha512-q/ePt1U9PfhBIsm2DXQmO/MHIUMhIE69caNMuwCJ/W5oC0w5Lm7R6I7BsYuqni1X/CQchVUrVQa1+vYFXOWqUw==
+  dependencies:
+    "@nrwl/devkit" "15.3.3"
+    "@nrwl/linter" "15.3.3"
+    "@nrwl/workspace" "15.3.3"
     chalk "4.1.0"
     fast-glob "3.2.7"
     fs-extra "^10.1.0"
@@ -2318,7 +2335,7 @@
     tmp "~0.2.1"
     tslib "^2.3.0"
 
-"@nrwl/node@15.3.0", "@nrwl/node@^15.3.0":
+"@nrwl/node@15.3.0":
   version "15.3.0"
   resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-15.3.0.tgz#e623fe8f1172a5a0c460058d05d3ccff55747893"
   integrity sha512-4aISc/yhv2D04OdcfdH1aQc1xLZ5THpKTD9mZoIsjCxE1ENJgO1LJdE61Qe7v9vl91dX0iWcPcTJcjMqaUM3nw==
@@ -2329,6 +2346,20 @@
     "@nrwl/linter" "15.3.0"
     "@nrwl/webpack" "15.3.0"
     "@nrwl/workspace" "15.3.0"
+    chalk "4.1.0"
+    tslib "^2.3.0"
+
+"@nrwl/node@^15.3.3":
+  version "15.3.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-15.3.3.tgz#d6e3a10ef3cb03220faafd0d552152a18ef786e5"
+  integrity sha512-0brNfuOHxpbmVzj2aetLXsdkDzy/BG8doMrAoJ/8QDsasLVbvt7LFiSJ98LDHwddo1OahtQLWW/fMAyGRM2HKw==
+  dependencies:
+    "@nrwl/devkit" "15.3.3"
+    "@nrwl/jest" "15.3.3"
+    "@nrwl/js" "15.3.3"
+    "@nrwl/linter" "15.3.3"
+    "@nrwl/webpack" "15.3.3"
+    "@nrwl/workspace" "15.3.3"
     chalk "4.1.0"
     tslib "^2.3.0"
 
@@ -2443,6 +2474,59 @@
     "@nrwl/devkit" "15.3.0"
     "@nrwl/js" "15.3.0"
     "@nrwl/workspace" "15.3.0"
+    autoprefixer "^10.4.9"
+    babel-loader "^8.2.2"
+    browserslist "^4.21.4"
+    caniuse-lite "^1.0.30001394"
+    chalk "4.1.0"
+    chokidar "^3.5.1"
+    copy-webpack-plugin "^10.2.4"
+    css-loader "^6.4.0"
+    css-minimizer-webpack-plugin "^3.4.1"
+    dotenv "~10.0.0"
+    file-loader "^6.2.0"
+    fork-ts-checker-webpack-plugin "7.2.13"
+    fs-extra "^10.1.0"
+    ignore "^5.0.4"
+    less "3.12.2"
+    less-loader "^11.1.0"
+    license-webpack-plugin "^4.0.2"
+    loader-utils "^2.0.3"
+    mini-css-extract-plugin "~2.4.7"
+    parse5 "4.0.0"
+    parse5-html-rewriting-stream "6.0.1"
+    postcss "^8.4.14"
+    postcss-import "~14.1.0"
+    postcss-loader "^6.1.1"
+    raw-loader "^4.0.2"
+    rxjs "^6.5.4"
+    sass "^1.42.1"
+    sass-loader "^12.2.0"
+    source-map-loader "^3.0.0"
+    style-loader "^3.3.0"
+    stylus "^0.55.0"
+    stylus-loader "^7.1.0"
+    terser-webpack-plugin "^5.3.3"
+    ts-loader "^9.3.1"
+    ts-node "10.9.1"
+    tsconfig-paths "^3.9.0"
+    tsconfig-paths-webpack-plugin "3.5.2"
+    tslib "^2.3.0"
+    webpack "^5.75.0"
+    webpack-dev-server "^4.9.3"
+    webpack-merge "^5.8.0"
+    webpack-node-externals "^3.0.0"
+    webpack-sources "^3.2.3"
+    webpack-subresource-integrity "^5.1.0"
+
+"@nrwl/webpack@15.3.3":
+  version "15.3.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/webpack/-/webpack-15.3.3.tgz#dbb16b98085a3bea96fd8605527b30e3304cb4d1"
+  integrity sha512-33JGYqg00NeEe1Lz3UZRweBL5zIWwWJhvaFrRLWcDgaTe5kOzXDHlizRIE3abVReI2OHpWbKBCM7KMK2XI3HRQ==
+  dependencies:
+    "@nrwl/devkit" "15.3.3"
+    "@nrwl/js" "15.3.3"
+    "@nrwl/workspace" "15.3.3"
     autoprefixer "^10.4.9"
     babel-loader "^8.2.2"
     browserslist "^4.21.4"
