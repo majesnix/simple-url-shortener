@@ -2239,7 +2239,7 @@
     resolve.exports "1.1.0"
     tslib "^2.3.0"
 
-"@nrwl/jest@^15.4.1":
+"@nrwl/jest@15.4.1", "@nrwl/jest@^15.4.1":
   version "15.4.1"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-15.4.1.tgz#f6db945b4396371b900d0de2f025aafe735d7db8"
   integrity sha512-mwHFL1BQvDC1mbqSd9se7li5RzwPmDTHx6PQSeMFD86+0WhwgYee4GqFDvhF+HdRhjna3KELipQNKneOwhhhpg==
@@ -2265,6 +2265,23 @@
     "@nrwl/devkit" "15.4.0"
     "@nrwl/linter" "15.4.0"
     "@nrwl/workspace" "15.4.0"
+    chalk "4.1.0"
+    fast-glob "3.2.7"
+    fs-extra "^10.1.0"
+    ignore "^5.0.4"
+    js-tokens "^4.0.0"
+    minimatch "3.0.5"
+    source-map-support "0.5.19"
+    tree-kill "1.2.2"
+
+"@nrwl/js@15.4.1":
+  version "15.4.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/js/-/js-15.4.1.tgz#eecbb79b2d3aa4f03bf6cfe7a85578415c78dc0d"
+  integrity sha512-qsb720YFTnzTqB+lDnlRpHRlf/UrAKiXanRpOMqaOo9x2tMhSSiJcXuirq418SdEpBop/+0FIKBor5cPVFQbqg==
+  dependencies:
+    "@nrwl/devkit" "15.4.1"
+    "@nrwl/linter" "15.4.1"
+    "@nrwl/workspace" "15.4.1"
     chalk "4.1.0"
     fast-glob "3.2.7"
     fs-extra "^10.1.0"
@@ -2305,7 +2322,7 @@
     tmp "~0.2.1"
     tslib "^2.3.0"
 
-"@nrwl/node@15.4.0", "@nrwl/node@^15.4.0":
+"@nrwl/node@15.4.0":
   version "15.4.0"
   resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-15.4.0.tgz#4c53ca9c3229e27b6aca896c397a0df540866e53"
   integrity sha512-puP6XC5fa42Ld+es1VeHNQsCUjLqM+WVseTfUqdUdMDShkppKE1fNjuHLg91QuXbAlDTkV7KpfluXSlNFYMNKQ==
@@ -2316,6 +2333,20 @@
     "@nrwl/linter" "15.4.0"
     "@nrwl/webpack" "15.4.0"
     "@nrwl/workspace" "15.4.0"
+    chalk "4.1.0"
+    tslib "^2.3.0"
+
+"@nrwl/node@^15.4.1":
+  version "15.4.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-15.4.1.tgz#4fae06abdc07fe97835df9749649d9999c4c572f"
+  integrity sha512-6/LdWprGDAd/EAT1lMTxeajN8oGBpjcXWV9fz/8eaipoKM0d1l83UQom2EQ0uHF0neLZsWwANDuTAeOltGWPJw==
+  dependencies:
+    "@nrwl/devkit" "15.4.1"
+    "@nrwl/jest" "15.4.1"
+    "@nrwl/js" "15.4.1"
+    "@nrwl/linter" "15.4.1"
+    "@nrwl/webpack" "15.4.1"
+    "@nrwl/workspace" "15.4.1"
     chalk "4.1.0"
     tslib "^2.3.0"
 
@@ -2478,6 +2509,59 @@
     webpack-sources "^3.2.3"
     webpack-subresource-integrity "^5.1.0"
 
+"@nrwl/webpack@15.4.1":
+  version "15.4.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/webpack/-/webpack-15.4.1.tgz#aff806b3c4b371b35359682179aa85cd7cb94aab"
+  integrity sha512-RmhoszApD0dK7T93GLxT3zirzTzfrgcXbBElSGuN3BHLkNWa1KHOfO8hwskr7TuZONJ3vawyaHWr3JkTk1sqsw==
+  dependencies:
+    "@nrwl/devkit" "15.4.1"
+    "@nrwl/js" "15.4.1"
+    "@nrwl/workspace" "15.4.1"
+    autoprefixer "^10.4.9"
+    babel-loader "^8.2.2"
+    browserslist "^4.21.4"
+    caniuse-lite "^1.0.30001394"
+    chalk "4.1.0"
+    chokidar "^3.5.1"
+    copy-webpack-plugin "^10.2.4"
+    css-loader "^6.4.0"
+    css-minimizer-webpack-plugin "^3.4.1"
+    dotenv "~10.0.0"
+    file-loader "^6.2.0"
+    fork-ts-checker-webpack-plugin "7.2.13"
+    fs-extra "^10.1.0"
+    ignore "^5.0.4"
+    less "3.12.2"
+    less-loader "^11.1.0"
+    license-webpack-plugin "^4.0.2"
+    loader-utils "^2.0.3"
+    mini-css-extract-plugin "~2.4.7"
+    parse5 "4.0.0"
+    parse5-html-rewriting-stream "6.0.1"
+    postcss "^8.4.14"
+    postcss-import "~14.1.0"
+    postcss-loader "^6.1.1"
+    raw-loader "^4.0.2"
+    rxjs "^6.5.4"
+    sass "^1.42.1"
+    sass-loader "^12.2.0"
+    source-map-loader "^3.0.0"
+    style-loader "^3.3.0"
+    stylus "^0.55.0"
+    stylus-loader "^7.1.0"
+    terser-webpack-plugin "^5.3.3"
+    ts-loader "^9.3.1"
+    ts-node "10.9.1"
+    tsconfig-paths "^3.9.0"
+    tsconfig-paths-webpack-plugin "3.5.2"
+    tslib "^2.3.0"
+    webpack "^5.75.0"
+    webpack-dev-server "^4.9.3"
+    webpack-merge "^5.8.0"
+    webpack-node-externals "^3.0.0"
+    webpack-sources "^3.2.3"
+    webpack-subresource-integrity "^5.1.0"
+
 "@nrwl/workspace@13.9.7":
   version "13.9.7"
   resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-13.9.7.tgz#f95825fe50c1f8614836b92373edcc359440a14d"
@@ -2540,7 +2624,7 @@
     yargs "^17.6.2"
     yargs-parser "21.1.1"
 
-"@nrwl/workspace@^15.4.1":
+"@nrwl/workspace@15.4.1", "@nrwl/workspace@^15.4.1":
   version "15.4.1"
   resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-15.4.1.tgz#6d57a6f448d545c9b70d2234326abc0fcbb01d65"
   integrity sha512-OL993pwsMBT5dYOYhuRWeoLIlfzHFsRBEBeNZWJKz5fKQq5wbu4F3MjfGXLuWTG8ybk+g/RsUi7ahzTep/GMbQ==
