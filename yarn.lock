@@ -2336,14 +2336,14 @@
     chalk "4.1.0"
     tslib "^2.3.0"
 
-"@nrwl/react@^15.4.0":
-  version "15.4.0"
-  resolved "https://registry.yarnpkg.com/@nrwl/react/-/react-15.4.0.tgz#d2d946c2e2bae1b1715ab2555533387cc8ead3ad"
-  integrity sha512-hRD+RTq72JUwl25lTmsNN6wMRNGji9ssm5U/LiJXqBikyW4v0nRriO0x89PF22Pt0apHz0aYMDBsP44fQJ06iA==
+"@nrwl/react@^15.4.1":
+  version "15.4.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/react/-/react-15.4.1.tgz#c861936108b80e31ce2dee2000b6fd26c869f663"
+  integrity sha512-QMuySy3PUSUhPaHxk4FaeHryccZrptofgDvQUD+F7nHRQNM+LmNwcI7lhR3dCayCRJn5oigK1cELZfW4mSJMwQ==
   dependencies:
-    "@nrwl/devkit" "15.4.0"
-    "@nrwl/linter" "15.4.0"
-    "@nrwl/workspace" "15.4.0"
+    "@nrwl/devkit" "15.4.1"
+    "@nrwl/linter" "15.4.1"
+    "@nrwl/workspace" "15.4.1"
     "@phenomnomnominal/tsquery" "4.1.1"
     chalk "4.1.0"
     enquirer "~2.3.6"
