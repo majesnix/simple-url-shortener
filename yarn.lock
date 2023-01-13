@@ -2137,7 +2137,7 @@
   dependencies:
     nx "15.5.0"
 
-"@nrwl/cypress@15.4.5", "@nrwl/cypress@^15.4.4":
+"@nrwl/cypress@15.4.5":
   version "15.4.5"
   resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-15.4.5.tgz#8e1939860ab883447e65e368d73824ecb4561f56"
   integrity sha512-w1zO8RRks6fLttOGdVVnxDaC7dYdX4nPZzJWydLeIl7UiCQT7g6OtSxb+kCqwTz4L4c06Nq2hxCMxzkYH1QETw==
@@ -2145,6 +2145,19 @@
     "@nrwl/devkit" "15.4.5"
     "@nrwl/linter" "15.4.5"
     "@nrwl/workspace" "15.4.5"
+    "@phenomnomnominal/tsquery" "4.1.1"
+    chalk "4.1.0"
+    dotenv "~10.0.0"
+    semver "7.3.4"
+
+"@nrwl/cypress@^15.5.0":
+  version "15.5.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-15.5.0.tgz#bc999a5115e2bd2e0de889a5fc6ad163b09ce129"
+  integrity sha512-5l7UkzER0RfM6cAJdHR8zsa8yu06P6IGiEb7KdQe3VipHAOuJCCtsYI0NZkQ+rzQ/4BL7vLzGzfXJHJvLa2Adg==
+  dependencies:
+    "@nrwl/devkit" "15.5.0"
+    "@nrwl/linter" "15.5.0"
+    "@nrwl/workspace" "15.5.0"
     "@phenomnomnominal/tsquery" "4.1.1"
     chalk "4.1.0"
     dotenv "~10.0.0"
@@ -2539,7 +2552,7 @@
     yargs "^17.6.2"
     yargs-parser "21.1.1"
 
-"@nrwl/workspace@^15.5.0":
+"@nrwl/workspace@15.5.0", "@nrwl/workspace@^15.5.0":
   version "15.5.0"
   resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-15.5.0.tgz#ee35d4d72230bcc03ff33779b4b2d2f2f29bc0fb"
   integrity sha512-HGCwr1kFD1dSxJJ1fktN6AOEsGEiLuFntTrfyZ8b7h+u+biXb5qgDwJxT1m1CzCMCn7Wfz91KY0axGJoZU9Ajw==
