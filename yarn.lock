@@ -2123,14 +2123,14 @@
   dependencies:
     nx "13.9.7"
 
-"@nrwl/cli@15.5.0", "@nrwl/cli@^15.5.0":
+"@nrwl/cli@15.5.0":
   version "15.5.0"
   resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-15.5.0.tgz#c6aead1f0e6bb61264029766feb0452414a938bc"
   integrity sha512-bHO0kn3pTARDCSDkNtRtGge2a08yWTW/Kjg1vBXqUUv5+Bwu7XndHi/Mfy87ZCxW78hedtQYSnNc84p5d7kYAg==
   dependencies:
     nx "15.5.0"
 
-"@nrwl/cli@15.5.1":
+"@nrwl/cli@15.5.1", "@nrwl/cli@^15.5.1":
   version "15.5.1"
   resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-15.5.1.tgz#451d45a0098e14e0d9ec594dac6eecb02195c15b"
   integrity sha512-JIypwCrNI7XfouS/9DNNtKPKX5kK6FMPrr8xN7sKfiRPdEwxJXUzFbMQODqudH/mRmUv9EFplA6H/iEeEzd92A==
