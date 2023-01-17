@@ -2123,13 +2123,6 @@
   dependencies:
     nx "13.9.7"
 
-"@nrwl/cli@15.5.0":
-  version "15.5.0"
-  resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-15.5.0.tgz#c6aead1f0e6bb61264029766feb0452414a938bc"
-  integrity sha512-bHO0kn3pTARDCSDkNtRtGge2a08yWTW/Kjg1vBXqUUv5+Bwu7XndHi/Mfy87ZCxW78hedtQYSnNc84p5d7kYAg==
-  dependencies:
-    nx "15.5.0"
-
 "@nrwl/cli@15.5.1", "@nrwl/cli@^15.5.1":
   version "15.5.1"
   resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-15.5.1.tgz#451d45a0098e14e0d9ec594dac6eecb02195c15b"
@@ -2329,13 +2322,6 @@
   integrity sha512-70Y5pmWaQH7b3qPGwqSHUGrCTf8gxsCe2q1cvR8RfOOgjFMTUtCHV2q1eKEzBvVel95U6h6Mj8Clzxj3AhZ6Cg==
   dependencies:
     nx "13.9.7"
-
-"@nrwl/tao@15.5.0":
-  version "15.5.0"
-  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-15.5.0.tgz#efa930157ae0d53e3c262f027c9dcb74a9d01d07"
-  integrity sha512-50blIKmbjkd8JvUNkAe9nPYX1bTrPS1n5vUh5rLJAvShGSKfulORPmght5I6M8JhBtRgYOsqyqsB0s0LZll85A==
-  dependencies:
-    nx "15.5.0"
 
 "@nrwl/tao@15.5.1", "@nrwl/tao@^15.5.1":
   version "15.5.1"
@@ -4332,7 +4318,7 @@ array.prototype.flat@^1.3.1:
     es-abstract "^1.20.4"
     es-shim-unscopables "^1.0.0"
 
-array.prototype.flatmap@^1.3.0, array.prototype.flatmap@^1.3.1:
+array.prototype.flatmap@^1.3.1:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/array.prototype.flatmap/-/array.prototype.flatmap-1.3.1.tgz#1aae7903c2100433cb8261cd4ed310aab5c4a183"
   integrity sha512-8UGn9O1FDVvMNB0UlLv4voxRMze7+FpHyF5mSMRjWHUMlpoDViniy05870VlxhfgTnLbpuwTzvD76MTtWxB/mQ==
@@ -6194,14 +6180,14 @@ eslint-plugin-cypress@^2.12.1:
   dependencies:
     globals "^11.12.0"
 
-eslint-plugin-import@^2.27.4:
-  version "2.27.4"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.27.4.tgz#319c2f6f6580e1678d674a258ee5e981c10cc25b"
-  integrity sha512-Z1jVt1EGKia1X9CnBCkpAOhWy8FgQ7OmJ/IblEkT82yrFU/xJaxwujaTzLWqigewwynRQ9mmHfX9MtAfhxm0sA==
+eslint-plugin-import@^2.27.5:
+  version "2.27.5"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.27.5.tgz#876a6d03f52608a3e5bb439c2550588e51dd6c65"
+  integrity sha512-LmEt3GVofgiGuiE+ORpnvP+kAm3h6MLZJ4Q5HCyHADofsb4VzXFsRiWj3c0OFiV+3DWFh0qg3v9gcPlfc3zRow==
   dependencies:
     array-includes "^3.1.6"
     array.prototype.flat "^1.3.1"
-    array.prototype.flatmap "^1.3.0"
+    array.prototype.flatmap "^1.3.1"
     debug "^3.2.7"
     doctrine "^2.1.0"
     eslint-import-resolver-node "^0.3.7"
@@ -9895,47 +9881,6 @@ nx@13.9.7:
     tslib "^2.3.0"
     v8-compile-cache "2.3.0"
     yargs-parser "20.0.0"
-
-nx@15.5.0:
-  version "15.5.0"
-  resolved "https://registry.yarnpkg.com/nx/-/nx-15.5.0.tgz#6c5da686f78472d2b56177ea24219093bd788527"
-  integrity sha512-N6gp339SS6YaDClY1Vpxad9OsdGyVmkXWEUpUbdm+YZw1GVCAD7MQd5jy9xU/byccTlv32eZ0/tTAfvTf+HQzA==
-  dependencies:
-    "@nrwl/cli" "15.5.0"
-    "@nrwl/tao" "15.5.0"
-    "@parcel/watcher" "2.0.4"
-    "@yarnpkg/lockfile" "^1.1.0"
-    "@yarnpkg/parsers" "^3.0.0-rc.18"
-    "@zkochan/js-yaml" "0.0.6"
-    axios "^1.0.0"
-    chalk "4.1.0"
-    cli-cursor "3.1.0"
-    cli-spinners "2.6.1"
-    cliui "^7.0.2"
-    dotenv "~10.0.0"
-    enquirer "~2.3.6"
-    fast-glob "3.2.7"
-    figures "3.2.0"
-    flat "^5.0.2"
-    fs-extra "^11.1.0"
-    glob "7.1.4"
-    ignore "^5.0.4"
-    js-yaml "4.1.0"
-    jsonc-parser "3.2.0"
-    lines-and-columns "~2.0.3"
-    minimatch "3.0.5"
-    npm-run-path "^4.0.1"
-    open "^8.4.0"
-    semver "7.3.4"
-    string-width "^4.2.3"
-    strong-log-transformer "^2.1.0"
-    tar-stream "~2.2.0"
-    tmp "~0.2.1"
-    tsconfig-paths "^4.1.2"
-    tslib "^2.3.0"
-    v8-compile-cache "2.3.0"
-    yargs "^17.6.2"
-    yargs-parser "21.1.1"
 
 nx@15.5.1:
   version "15.5.1"
