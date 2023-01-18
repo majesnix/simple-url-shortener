@@ -2194,14 +2194,14 @@
     chalk "4.1.0"
     confusing-browser-globals "^1.0.9"
 
-"@nrwl/express@^15.5.1":
-  version "15.5.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/express/-/express-15.5.1.tgz#fe7394914749db00d353359a77fd4702508dcfe2"
-  integrity sha512-Qd+zDXx/qtc3H5XMO2QvvWaegFKRe+qphC4gXPpRm9Hc9H1DmjpKGRNYkkRyduSdmN2+MEoylQViEoNaovrI0w==
+"@nrwl/express@^15.5.2":
+  version "15.5.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/express/-/express-15.5.2.tgz#0e564ba320a5524fd47db924597fd5dacfeb93b9"
+  integrity sha512-ycPXbGgxkou389VyFi0j2bmUiCEPnCwMJnFX/FdQ5Gz7hXkgkiGv3J6Gd/Qypnml678dEB8Gee/trNL9B7N4sw==
   dependencies:
-    "@nrwl/devkit" "15.5.1"
-    "@nrwl/node" "15.5.1"
-    "@nrwl/workspace" "15.5.1"
+    "@nrwl/devkit" "15.5.2"
+    "@nrwl/node" "15.5.2"
+    "@nrwl/workspace" "15.5.2"
 
 "@nrwl/jest@13.9.7":
   version "13.9.7"
@@ -2220,24 +2220,6 @@
     rxjs "^6.5.4"
     tslib "^2.3.0"
 
-"@nrwl/jest@15.5.1":
-  version "15.5.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-15.5.1.tgz#91718ef4918020ce012e59bc485ce3eb91825800"
-  integrity sha512-ys04Tb/8yyKbNptnYWLR7SrSR3TsX6M0fPuu0EOKiayclrMR9Sc4eFe/f7CTHfhf3q07OuYfY1g78qdqJ3nAtg==
-  dependencies:
-    "@jest/reporters" "28.1.1"
-    "@jest/test-result" "28.1.1"
-    "@nrwl/devkit" "15.5.1"
-    "@phenomnomnominal/tsquery" "4.1.1"
-    chalk "4.1.0"
-    dotenv "~10.0.0"
-    identity-obj-proxy "3.0.0"
-    jest-config "28.1.1"
-    jest-resolve "28.1.1"
-    jest-util "28.1.1"
-    resolve.exports "1.1.0"
-    tslib "^2.3.0"
-
 "@nrwl/jest@15.5.2", "@nrwl/jest@^15.5.2":
   version "15.5.2"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-15.5.2.tgz#afef6f061fcc457d798cdfa9856051d512185c0d"
@@ -2254,24 +2236,6 @@
     jest-resolve "28.1.1"
     jest-util "28.1.1"
     resolve.exports "1.1.0"
-    tslib "^2.3.0"
-
-"@nrwl/js@15.5.1":
-  version "15.5.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/js/-/js-15.5.1.tgz#021a1a6bf15dd8da85f5584ed8901760610810ec"
-  integrity sha512-q9h3fQiiKgduxPaGdY1G1gz5dhXqDwLuEn0VE6vnOOAxGD0tO7RcIAy1sXE97mv2pvZG5bLloOzn84fCfG6XLg==
-  dependencies:
-    "@nrwl/devkit" "15.5.1"
-    "@nrwl/linter" "15.5.1"
-    "@nrwl/workspace" "15.5.1"
-    chalk "4.1.0"
-    fast-glob "3.2.7"
-    fs-extra "^11.1.0"
-    ignore "^5.0.4"
-    js-tokens "^4.0.0"
-    minimatch "3.0.5"
-    source-map-support "0.5.19"
-    tree-kill "1.2.2"
     tslib "^2.3.0"
 
 "@nrwl/js@15.5.2":
@@ -2323,18 +2287,17 @@
     tmp "~0.2.1"
     tslib "^2.3.0"
 
-"@nrwl/node@15.5.1", "@nrwl/node@^15.4.4":
-  version "15.5.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-15.5.1.tgz#4c6f335d0a1317a4c1a8ff406dd028775d421fb7"
-  integrity sha512-UXIPG80+rrqJQZFZv5cji3N5scyjquJ04ivPTcb8kxE7G4SfG0gpb5AKuLgF2NKSnJU9OiyIFVVuTXHYUnEcnQ==
+"@nrwl/node@15.5.2", "@nrwl/node@^15.4.4":
+  version "15.5.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-15.5.2.tgz#10970bfeefb24400fa94ffd203d716b3134944e4"
+  integrity sha512-VpWjduZXmYl5G4V2hlXVv9ec/IsasTqa9Pe+w+nz0D00FK6lPu7NqnGShaKmj6xceJ0MaRinxF++c8XFBJaSCA==
   dependencies:
-    "@nrwl/devkit" "15.5.1"
-    "@nrwl/jest" "15.5.1"
-    "@nrwl/js" "15.5.1"
-    "@nrwl/linter" "15.5.1"
-    "@nrwl/webpack" "15.5.1"
-    "@nrwl/workspace" "15.5.1"
-    chalk "4.1.0"
+    "@nrwl/devkit" "15.5.2"
+    "@nrwl/jest" "15.5.2"
+    "@nrwl/js" "15.5.2"
+    "@nrwl/linter" "15.5.2"
+    "@nrwl/webpack" "15.5.2"
+    "@nrwl/workspace" "15.5.2"
     enquirer "~2.3.6"
     tslib "^2.3.0"
 
@@ -2428,17 +2391,17 @@
     ignore "^5.0.4"
     tslib "^2.3.0"
 
-"@nrwl/webpack@15.5.1":
-  version "15.5.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/webpack/-/webpack-15.5.1.tgz#c21eaef9cde7ecf39fbe6a79e9d461a51a5eb7e6"
-  integrity sha512-zSVbTAlvnDCgkxtV1XCLUnGK4wcltXKnL/0Em14LMY1DFp8ldG/n/HqhZXjka0iQB+SX02LtgoYzmqhs0DW/IQ==
+"@nrwl/webpack@15.5.2":
+  version "15.5.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/webpack/-/webpack-15.5.2.tgz#7ea4eff880f8084b17b17ac759e1b6c6b8b44819"
+  integrity sha512-HPLzampVJZ3k3wv21ErghJdwVG665Tyb6N1hJ9ibd+nNJIIyhMHmFtPgxRJgbYcySon2KzT24QI6ko/w+AhfJQ==
   dependencies:
-    "@nrwl/devkit" "15.5.1"
-    "@nrwl/js" "15.5.1"
-    "@nrwl/workspace" "15.5.1"
+    "@nrwl/devkit" "15.5.2"
+    "@nrwl/js" "15.5.2"
+    "@nrwl/workspace" "15.5.2"
     autoprefixer "^10.4.9"
     babel-loader "^8.2.2"
-    chalk "4.1.0"
+    chalk "^4.1.0"
     chokidar "^3.5.1"
     copy-webpack-plugin "^10.2.4"
     css-loader "^6.4.0"
