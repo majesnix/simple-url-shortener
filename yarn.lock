@@ -2295,6 +2295,16 @@
     tmp "~0.2.1"
     tslib "^2.3.0"
 
+"@nrwl/linter@15.5.3":
+  version "15.5.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/linter/-/linter-15.5.3.tgz#de9c10c51d2ec92d51cc89207f642d41493314ba"
+  integrity sha512-ZeUtLOT0olORBL4FpEXmJoaiSKq4VIffW/vmCbosRIuHZqL4Cye5uHyQ6/KJXjD44Z+P6QCkyfr0etcy3lhSkg==
+  dependencies:
+    "@nrwl/devkit" "15.5.3"
+    "@phenomnomnominal/tsquery" "4.1.1"
+    tmp "~0.2.1"
+    tslib "^2.3.0"
+
 "@nrwl/node@15.5.2", "@nrwl/node@^15.4.4":
   version "15.5.2"
   resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-15.5.2.tgz#10970bfeefb24400fa94ffd203d716b3134944e4"
@@ -2479,7 +2489,7 @@
     yargs "15.4.1"
     yargs-parser "20.0.0"
 
-"@nrwl/workspace@15.5.2", "@nrwl/workspace@^15.5.0":
+"@nrwl/workspace@15.5.2":
   version "15.5.2"
   resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-15.5.2.tgz#fb388cbbca405481e85e38ef763ea6c1b7c5dbad"
   integrity sha512-f1ln2dPSrBCY19oIa1aEjRijegaXEWw9tryjef1a8TH6d37IpbOZEH4YNn41jDDmsQvjsVmTVP85D/0zH7xu/Q==
@@ -2502,6 +2512,37 @@
     minimatch "3.0.5"
     npm-run-path "^4.0.1"
     nx "15.5.2"
+    open "^8.4.0"
+    rxjs "^6.5.4"
+    semver "7.3.4"
+    tmp "~0.2.1"
+    tslib "^2.3.0"
+    yargs "^17.6.2"
+    yargs-parser "21.1.1"
+
+"@nrwl/workspace@^15.5.3":
+  version "15.5.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-15.5.3.tgz#3343b0de3a0fb8b0b7176c0c3cb7c19907e1485e"
+  integrity sha512-/Udv+dF4Z/9GZ4QmdCu/6e4QUJYx7zGTcoCOZi+Pt+OPRqOULkBbfKmB+xtiG/D32WnFePsxcssaZGux/aysUQ==
+  dependencies:
+    "@nrwl/devkit" "15.5.3"
+    "@nrwl/linter" "15.5.3"
+    "@parcel/watcher" "2.0.4"
+    chalk "^4.1.0"
+    chokidar "^3.5.1"
+    cli-cursor "3.1.0"
+    cli-spinners "2.6.1"
+    dotenv "~10.0.0"
+    enquirer "~2.3.6"
+    figures "3.2.0"
+    flat "^5.0.2"
+    fs-extra "^11.1.0"
+    glob "7.1.4"
+    ignore "^5.0.4"
+    jsonc-parser "3.2.0"
+    minimatch "3.0.5"
+    npm-run-path "^4.0.1"
+    nx "15.5.3"
     open "^8.4.0"
     rxjs "^6.5.4"
     semver "7.3.4"
