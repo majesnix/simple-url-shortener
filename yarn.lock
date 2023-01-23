@@ -2323,7 +2323,7 @@
     tmp "~0.2.1"
     tslib "^2.3.0"
 
-"@nrwl/node@15.5.2", "@nrwl/node@^15.4.4":
+"@nrwl/node@15.5.2":
   version "15.5.2"
   resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-15.5.2.tgz#10970bfeefb24400fa94ffd203d716b3134944e4"
   integrity sha512-VpWjduZXmYl5G4V2hlXVv9ec/IsasTqa9Pe+w+nz0D00FK6lPu7NqnGShaKmj6xceJ0MaRinxF++c8XFBJaSCA==
@@ -2334,6 +2334,20 @@
     "@nrwl/linter" "15.5.2"
     "@nrwl/webpack" "15.5.2"
     "@nrwl/workspace" "15.5.2"
+    enquirer "~2.3.6"
+    tslib "^2.3.0"
+
+"@nrwl/node@^15.5.3":
+  version "15.5.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-15.5.3.tgz#3f8707b8545beb2553ad665ed369d1e10124051b"
+  integrity sha512-RY0G22Zo+pHhYu47xETbwzHc3mlUqs9C7W96a9EEF9hjVLls95WQ8wqGp5WGAE9ntNwQ5JKhx0Y6ECF4DFgoPQ==
+  dependencies:
+    "@nrwl/devkit" "15.5.3"
+    "@nrwl/jest" "15.5.3"
+    "@nrwl/js" "15.5.3"
+    "@nrwl/linter" "15.5.3"
+    "@nrwl/webpack" "15.5.3"
+    "@nrwl/workspace" "15.5.3"
     enquirer "~2.3.6"
     tslib "^2.3.0"
 
@@ -2436,6 +2450,55 @@
     "@nrwl/workspace" "15.5.2"
     autoprefixer "^10.4.9"
     babel-loader "^8.2.2"
+    chalk "^4.1.0"
+    chokidar "^3.5.1"
+    copy-webpack-plugin "^10.2.4"
+    css-loader "^6.4.0"
+    css-minimizer-webpack-plugin "^3.4.1"
+    dotenv "~10.0.0"
+    file-loader "^6.2.0"
+    fork-ts-checker-webpack-plugin "7.2.13"
+    fs-extra "^11.1.0"
+    ignore "^5.0.4"
+    less "3.12.2"
+    less-loader "^11.1.0"
+    license-webpack-plugin "^4.0.2"
+    loader-utils "^2.0.3"
+    mini-css-extract-plugin "~2.4.7"
+    parse5 "4.0.0"
+    parse5-html-rewriting-stream "6.0.1"
+    postcss "^8.4.14"
+    postcss-import "~14.1.0"
+    postcss-loader "^6.1.1"
+    rxjs "^6.5.4"
+    sass "^1.42.1"
+    sass-loader "^12.2.0"
+    source-map-loader "^3.0.0"
+    style-loader "^3.3.0"
+    stylus "^0.55.0"
+    stylus-loader "^7.1.0"
+    terser-webpack-plugin "^5.3.3"
+    ts-loader "^9.3.1"
+    ts-node "10.9.1"
+    tsconfig-paths "^4.1.2"
+    tsconfig-paths-webpack-plugin "4.0.0"
+    tslib "^2.3.0"
+    webpack "^5.75.0"
+    webpack-dev-server "^4.9.3"
+    webpack-merge "^5.8.0"
+    webpack-node-externals "^3.0.0"
+    webpack-subresource-integrity "^5.1.0"
+
+"@nrwl/webpack@15.5.3":
+  version "15.5.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/webpack/-/webpack-15.5.3.tgz#126dbe0bd3d8606fa4a8f6af13b4d201989b4e42"
+  integrity sha512-B4uvNPvKWNljHVa1JXnLPbpgIgvXfiWDqkC0pJ1/ceppzmtI9QhzzYKFVjytOFTj419HzJtr5TfbsLPEypD97g==
+  dependencies:
+    "@nrwl/devkit" "15.5.3"
+    "@nrwl/js" "15.5.3"
+    "@nrwl/workspace" "15.5.3"
+    autoprefixer "^10.4.9"
+    babel-loader "^9.1.2"
     chalk "^4.1.0"
     chokidar "^3.5.1"
     copy-webpack-plugin "^10.2.4"
@@ -4579,6 +4642,14 @@ babel-loader@^8.2.2:
     loader-utils "^2.0.0"
     make-dir "^3.1.0"
     schema-utils "^2.6.5"
+
+babel-loader@^9.1.2:
+  version "9.1.2"
+  resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-9.1.2.tgz#a16a080de52d08854ee14570469905a5fc00d39c"
+  integrity sha512-mN14niXW43tddohGl8HPu5yfQq70iUThvFL/4QzESA7GcZoC0eVOhvWdQ8+3UlSjaDE9MVtsW9mxDY07W7VpVA==
+  dependencies:
+    find-cache-dir "^3.3.2"
+    schema-utils "^4.0.0"
 
 babel-plugin-const-enum@^1.0.1:
   version "1.2.0"
