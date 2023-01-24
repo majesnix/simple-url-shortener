@@ -2331,18 +2331,17 @@
     enquirer "~2.3.6"
     tslib "^2.3.0"
 
-"@nrwl/react@^15.5.3":
-  version "15.5.3"
-  resolved "https://registry.yarnpkg.com/@nrwl/react/-/react-15.5.3.tgz#edac6706ec2e5fb9bc63b8730b0da165e343aaa1"
-  integrity sha512-BK4wa1fljdaCM4rNLCKyUcnkLdwrRDZli3elo75IEBk78Qo/95yCvosAaowcTZnTjugiXyTOvTeVXTvFV/9vzg==
+"@nrwl/react@^15.6.0":
+  version "15.6.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/react/-/react-15.6.0.tgz#5303437c58affa17a5b3924aa84ebf739eeb458d"
+  integrity sha512-wuVyPOWEAmjbcCRRJ9C2qu9S8v9/yUfh6YdPfh+ghULj7yQj+PlXD2doF3xiu6/KDd87sqqTw8hPQvOAcyoChQ==
   dependencies:
-    "@nrwl/devkit" "15.5.3"
-    "@nrwl/linter" "15.5.3"
-    "@nrwl/workspace" "15.5.3"
+    "@nrwl/devkit" "15.6.0"
+    "@nrwl/linter" "15.6.0"
+    "@nrwl/workspace" "15.6.0"
     "@phenomnomnominal/tsquery" "4.1.1"
     chalk "^4.1.0"
     minimatch "3.0.5"
-    semver "7.3.4"
 
 "@nrwl/rollup@15.5.3":
   version "15.5.3"
