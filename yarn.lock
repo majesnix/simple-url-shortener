@@ -2137,19 +2137,7 @@
   dependencies:
     nx "15.6.2"
 
-"@nrwl/cypress@15.6.0":
-  version "15.6.0"
-  resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-15.6.0.tgz#227ed5864a520b2a2d3aee2e4199f6f43c882d60"
-  integrity sha512-3ntdp2vb//ZCr/LylEqnxcck/XPNE1h6FF5mo+0uSPxdHb5cg+vFNEKVxdwf5fD4tnHFB4ezzHJBnVSQbG2awg==
-  dependencies:
-    "@nrwl/devkit" "15.6.0"
-    "@nrwl/linter" "15.6.0"
-    "@nrwl/workspace" "15.6.0"
-    "@phenomnomnominal/tsquery" "4.1.1"
-    dotenv "~10.0.0"
-    semver "7.3.4"
-
-"@nrwl/cypress@^15.6.2":
+"@nrwl/cypress@15.6.2", "@nrwl/cypress@^15.6.2":
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-15.6.2.tgz#78d7052622a7e67f20e9742fa338574a96078dbe"
   integrity sha512-izdgk+qaHE8De8Qz+eupThbZggj1rZOeUKz3hQtg7907qhtBijNvUxD9yQbtY2IC2RhJiKXXLFa+bnpg2In7nA==
@@ -2250,7 +2238,7 @@
     resolve.exports "1.1.0"
     tslib "^2.3.0"
 
-"@nrwl/jest@^15.6.2":
+"@nrwl/jest@15.6.2", "@nrwl/jest@^15.6.2":
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-15.6.2.tgz#a9ae2dcc906bedf0102e62ef33b5fb992c753543"
   integrity sha512-+0r2i63LzuCosLvWjk7CGFNSJ4qWbf/fmofCFXpY3DnqUgEVbl3jmXtQdTS/Trc4h+ecMzrAvijJezaea76J5Q==
@@ -2283,6 +2271,34 @@
     "@nrwl/devkit" "15.6.0"
     "@nrwl/linter" "15.6.0"
     "@nrwl/workspace" "15.6.0"
+    babel-plugin-const-enum "^1.0.1"
+    babel-plugin-macros "^2.8.0"
+    babel-plugin-transform-typescript-metadata "^0.3.1"
+    chalk "^4.1.0"
+    fast-glob "3.2.7"
+    fs-extra "^11.1.0"
+    ignore "^5.0.4"
+    js-tokens "^4.0.0"
+    minimatch "3.0.5"
+    source-map-support "0.5.19"
+    tree-kill "1.2.2"
+    tslib "^2.3.0"
+
+"@nrwl/js@15.6.2":
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/js/-/js-15.6.2.tgz#6efa4427587c2991d67bd95a6965f36c669c9b1e"
+  integrity sha512-3CoDJOfWVaUpHMOk0O4BT/iCj422r86Bjxf71fLG3rOZyG/kMfcwrf1/gL1DGeVIAI+0HRNINGf0uDxiWiP7GA==
+  dependencies:
+    "@babel/core" "^7.15.0"
+    "@babel/plugin-proposal-class-properties" "^7.14.5"
+    "@babel/plugin-proposal-decorators" "^7.14.5"
+    "@babel/plugin-transform-runtime" "^7.15.0"
+    "@babel/preset-env" "^7.15.0"
+    "@babel/preset-typescript" "^7.15.0"
+    "@babel/runtime" "^7.14.8"
+    "@nrwl/devkit" "15.6.2"
+    "@nrwl/linter" "15.6.2"
+    "@nrwl/workspace" "15.6.2"
     babel-plugin-const-enum "^1.0.1"
     babel-plugin-macros "^2.8.0"
     babel-plugin-transform-typescript-metadata "^0.3.1"
@@ -2352,14 +2368,14 @@
     chalk "^4.1.0"
     minimatch "3.0.5"
 
-"@nrwl/rollup@15.6.0":
-  version "15.6.0"
-  resolved "https://registry.yarnpkg.com/@nrwl/rollup/-/rollup-15.6.0.tgz#9e2eeb71dd5d5b14cb280b4ae25e804d4e47bbbf"
-  integrity sha512-wqSVlWtNpJ5Fb3XG9sJDm3uFelGumbEwGG8/R8yslfAJMMf02zVLXsedqMcO+PyZmbh92guL73jDaHN9zuIoxA==
+"@nrwl/rollup@15.6.2":
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/rollup/-/rollup-15.6.2.tgz#598e27a537bf9bccb75798caff998805a855a416"
+  integrity sha512-HgUfbk2i5ggU19FBWqkrxNkWLhmuS5YpU3msCbI08+dq5YZeCHLia6nzKFNYcZjvOqjfiG31k87n2RTN7wL+kw==
   dependencies:
-    "@nrwl/devkit" "15.6.0"
-    "@nrwl/js" "15.6.0"
-    "@nrwl/workspace" "15.6.0"
+    "@nrwl/devkit" "15.6.2"
+    "@nrwl/js" "15.6.2"
+    "@nrwl/workspace" "15.6.2"
     "@rollup/plugin-babel" "^5.3.0"
     "@rollup/plugin-commonjs" "^20.0.0"
     "@rollup/plugin-image" "^2.1.0"
@@ -2400,18 +2416,18 @@
   dependencies:
     nx "15.6.2"
 
-"@nrwl/web@^15.6.0":
-  version "15.6.0"
-  resolved "https://registry.yarnpkg.com/@nrwl/web/-/web-15.6.0.tgz#cf5876ba22e8e73e52c874ae73b6b8276c3b6848"
-  integrity sha512-9HggFIIxR23UvvBiotTz0ISGpoQp9dtcZkrlOJrDX/QdhPteodpLJP/PexJgMUCRMZoBwTXO4hEgVFu+ImCVhA==
+"@nrwl/web@^15.6.2":
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/web/-/web-15.6.2.tgz#61ef2478fb05ea290418fd6c718ad33568d9bb74"
+  integrity sha512-HFtZZtM7915dlJmKVXDvFY5B0CfaY9XB02CzPjhFTRT/EgrczWba0fOXOfyuguAN3c5DwBv7naYDdwn3Tejl8A==
   dependencies:
-    "@nrwl/cypress" "15.6.0"
-    "@nrwl/devkit" "15.6.0"
-    "@nrwl/jest" "15.6.0"
-    "@nrwl/js" "15.6.0"
-    "@nrwl/linter" "15.6.0"
-    "@nrwl/rollup" "15.6.0"
-    "@nrwl/workspace" "15.6.0"
+    "@nrwl/cypress" "15.6.2"
+    "@nrwl/devkit" "15.6.2"
+    "@nrwl/jest" "15.6.2"
+    "@nrwl/js" "15.6.2"
+    "@nrwl/linter" "15.6.2"
+    "@nrwl/rollup" "15.6.2"
+    "@nrwl/workspace" "15.6.2"
     chalk "^4.1.0"
     chokidar "^3.5.1"
     http-server "^14.1.0"
