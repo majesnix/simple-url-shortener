@@ -2250,7 +2250,7 @@
     resolve.exports "1.1.0"
     tslib "^2.3.0"
 
-"@nrwl/jest@^15.6.2":
+"@nrwl/jest@15.6.2", "@nrwl/jest@^15.6.2":
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-15.6.2.tgz#a9ae2dcc906bedf0102e62ef33b5fb992c753543"
   integrity sha512-+0r2i63LzuCosLvWjk7CGFNSJ4qWbf/fmofCFXpY3DnqUgEVbl3jmXtQdTS/Trc4h+ecMzrAvijJezaea76J5Q==
@@ -2296,6 +2296,34 @@
     tree-kill "1.2.2"
     tslib "^2.3.0"
 
+"@nrwl/js@15.6.2":
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/js/-/js-15.6.2.tgz#6efa4427587c2991d67bd95a6965f36c669c9b1e"
+  integrity sha512-3CoDJOfWVaUpHMOk0O4BT/iCj422r86Bjxf71fLG3rOZyG/kMfcwrf1/gL1DGeVIAI+0HRNINGf0uDxiWiP7GA==
+  dependencies:
+    "@babel/core" "^7.15.0"
+    "@babel/plugin-proposal-class-properties" "^7.14.5"
+    "@babel/plugin-proposal-decorators" "^7.14.5"
+    "@babel/plugin-transform-runtime" "^7.15.0"
+    "@babel/preset-env" "^7.15.0"
+    "@babel/preset-typescript" "^7.15.0"
+    "@babel/runtime" "^7.14.8"
+    "@nrwl/devkit" "15.6.2"
+    "@nrwl/linter" "15.6.2"
+    "@nrwl/workspace" "15.6.2"
+    babel-plugin-const-enum "^1.0.1"
+    babel-plugin-macros "^2.8.0"
+    babel-plugin-transform-typescript-metadata "^0.3.1"
+    chalk "^4.1.0"
+    fast-glob "3.2.7"
+    fs-extra "^11.1.0"
+    ignore "^5.0.4"
+    js-tokens "^4.0.0"
+    minimatch "3.0.5"
+    source-map-support "0.5.19"
+    tree-kill "1.2.2"
+    tslib "^2.3.0"
+
 "@nrwl/linter@13.9.7":
   version "13.9.7"
   resolved "https://registry.yarnpkg.com/@nrwl/linter/-/linter-13.9.7.tgz#1f877da490630ad337cdfaa525e38845578edf6e"
@@ -2327,7 +2355,7 @@
     tmp "~0.2.1"
     tslib "^2.3.0"
 
-"@nrwl/node@15.6.0", "@nrwl/node@^15.4.4":
+"@nrwl/node@15.6.0":
   version "15.6.0"
   resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-15.6.0.tgz#ef0ad61c6e9bd49a2a07e3ae321cd41a254fbf2b"
   integrity sha512-hLjeB73WkP17lpqN4hatBOEpPXaiduB89mb7/EYGTCat/PSMdY8vzsxnZQF8gYRIiIBzJpA0TFUpZHFhgc/4Lw==
@@ -2338,6 +2366,19 @@
     "@nrwl/linter" "15.6.0"
     "@nrwl/webpack" "15.6.0"
     "@nrwl/workspace" "15.6.0"
+    tslib "^2.3.0"
+
+"@nrwl/node@^15.6.2":
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-15.6.2.tgz#5129460b200dc8951664b64f0351edd55cb5eb0f"
+  integrity sha512-2d4wxYh80LK6nEp3PUB+jhYW2hH4VBlGcZsqwUDr3q3iHb0U9qaZzkRXsn4Zf1mLJrGo3yq4XX2Zi2XbwyCAHQ==
+  dependencies:
+    "@nrwl/devkit" "15.6.2"
+    "@nrwl/jest" "15.6.2"
+    "@nrwl/js" "15.6.2"
+    "@nrwl/linter" "15.6.2"
+    "@nrwl/webpack" "15.6.2"
+    "@nrwl/workspace" "15.6.2"
     tslib "^2.3.0"
 
 "@nrwl/react@^15.6.2":
@@ -2426,6 +2467,55 @@
     "@nrwl/devkit" "15.6.0"
     "@nrwl/js" "15.6.0"
     "@nrwl/workspace" "15.6.0"
+    autoprefixer "^10.4.9"
+    babel-loader "^9.1.2"
+    chalk "^4.1.0"
+    chokidar "^3.5.1"
+    copy-webpack-plugin "^10.2.4"
+    css-loader "^6.4.0"
+    css-minimizer-webpack-plugin "^3.4.1"
+    dotenv "~10.0.0"
+    file-loader "^6.2.0"
+    fork-ts-checker-webpack-plugin "7.2.13"
+    fs-extra "^11.1.0"
+    ignore "^5.0.4"
+    less "3.12.2"
+    less-loader "^11.1.0"
+    license-webpack-plugin "^4.0.2"
+    loader-utils "^2.0.3"
+    mini-css-extract-plugin "~2.4.7"
+    parse5 "4.0.0"
+    parse5-html-rewriting-stream "6.0.1"
+    postcss "^8.4.14"
+    postcss-import "~14.1.0"
+    postcss-loader "^6.1.1"
+    rxjs "^6.5.4"
+    sass "^1.42.1"
+    sass-loader "^12.2.0"
+    source-map-loader "^3.0.0"
+    style-loader "^3.3.0"
+    stylus "^0.55.0"
+    stylus-loader "^7.1.0"
+    terser-webpack-plugin "^5.3.3"
+    ts-loader "^9.3.1"
+    ts-node "10.9.1"
+    tsconfig-paths "^4.1.2"
+    tsconfig-paths-webpack-plugin "4.0.0"
+    tslib "^2.3.0"
+    webpack "^5.75.0"
+    webpack-dev-server "^4.9.3"
+    webpack-merge "^5.8.0"
+    webpack-node-externals "^3.0.0"
+    webpack-subresource-integrity "^5.1.0"
+
+"@nrwl/webpack@15.6.2":
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/webpack/-/webpack-15.6.2.tgz#a3e84d99504bf76336d2e89b805b64343ebff568"
+  integrity sha512-xwVdj6HZBhzevfh+7cl1AExQHBpzDxg23P2vGGuZVKEfz/TbR4EEHNC2EYDTq4EVHSlIO9O9KJ08Diw7wpNE8A==
+  dependencies:
+    "@nrwl/devkit" "15.6.2"
+    "@nrwl/js" "15.6.2"
+    "@nrwl/workspace" "15.6.2"
     autoprefixer "^10.4.9"
     babel-loader "^9.1.2"
     chalk "^4.1.0"
