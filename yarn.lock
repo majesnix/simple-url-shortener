@@ -2322,14 +2322,14 @@
     "@nrwl/workspace" "15.6.2"
     tslib "^2.3.0"
 
-"@nrwl/react@^15.6.2":
-  version "15.6.2"
-  resolved "https://registry.yarnpkg.com/@nrwl/react/-/react-15.6.2.tgz#141ab396924091478ebed25f86eaf81dd8fbb861"
-  integrity sha512-uUORSfxuOltHqed3ix+6mIXcGsZ5CXcSQj/RfMzIp9uBu66PabAzActFYETGFFEImW7OuvfWYQitje2xY9DnqQ==
+"@nrwl/react@^15.6.3":
+  version "15.6.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/react/-/react-15.6.3.tgz#2165d6b51b99bde0f1e4e9dc784f35f687e2cc1b"
+  integrity sha512-WpINxLNsX4Wq9O/stsJIXDGE8GdatyyeeKI0Y9GjVdMPfdPq3qTifnCsUrb97D0WjTEceyPGUzGsx0GmhPB3Dg==
   dependencies:
-    "@nrwl/devkit" "15.6.2"
-    "@nrwl/linter" "15.6.2"
-    "@nrwl/workspace" "15.6.2"
+    "@nrwl/devkit" "15.6.3"
+    "@nrwl/linter" "15.6.3"
+    "@nrwl/workspace" "15.6.3"
     "@phenomnomnominal/tsquery" "4.1.1"
     chalk "^4.1.0"
     minimatch "3.0.5"
