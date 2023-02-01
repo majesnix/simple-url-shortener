@@ -2232,7 +2232,7 @@
     rxjs "^6.5.4"
     tslib "^2.3.0"
 
-"@nrwl/jest@15.6.2", "@nrwl/jest@^15.6.2":
+"@nrwl/jest@15.6.2":
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-15.6.2.tgz#a9ae2dcc906bedf0102e62ef33b5fb992c753543"
   integrity sha512-+0r2i63LzuCosLvWjk7CGFNSJ4qWbf/fmofCFXpY3DnqUgEVbl3jmXtQdTS/Trc4h+ecMzrAvijJezaea76J5Q==
@@ -2250,7 +2250,7 @@
     resolve.exports "1.1.0"
     tslib "^2.3.0"
 
-"@nrwl/jest@15.6.3":
+"@nrwl/jest@15.6.3", "@nrwl/jest@^15.6.3":
   version "15.6.3"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-15.6.3.tgz#66b1c387352cbbf666959fd7fe921d4980c6084a"
   integrity sha512-pG8ESEJFkgyBGOOVZ6bFohklkDXn7JrDPSjmnoKvcOzprluPS7Nx4Ce5bw7wk2Ul3fqJcpAcH5LAZvb+HtA85w==
