@@ -2194,14 +2194,14 @@
     chalk "4.1.0"
     confusing-browser-globals "^1.0.9"
 
-"@nrwl/express@^15.6.3":
-  version "15.6.3"
-  resolved "https://registry.yarnpkg.com/@nrwl/express/-/express-15.6.3.tgz#70412c03322bb2f6e4b752bd792208dc2d18faf1"
-  integrity sha512-88TK8VAA78qhiV0zUN76ZFTCaNoE5IzWTb6DlCoDVXgfeab6KfM22wUjHsgb2JVnHVgtsozUma6c59STSXvkxg==
+"@nrwl/express@^15.7.0":
+  version "15.7.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/express/-/express-15.7.0.tgz#3c5569194131b0ddfe5e1d23a1d03c5dd69a8541"
+  integrity sha512-wFbNedesExHST51kB/NoXXkF2W3XJfw7x7w5F+MBuBPVwXPaLNN3A0VTQa5KUAZeRTGUqEa9sFZA8Qzzx6sS5g==
   dependencies:
-    "@nrwl/devkit" "15.6.3"
-    "@nrwl/node" "15.6.3"
-    "@nrwl/workspace" "15.6.3"
+    "@nrwl/devkit" "15.7.0"
+    "@nrwl/node" "15.7.0"
+    "@nrwl/workspace" "15.7.0"
 
 "@nrwl/jest@13.9.7":
   version "13.9.7"
@@ -2343,20 +2343,7 @@
     tmp "~0.2.1"
     tslib "^2.3.0"
 
-"@nrwl/node@15.6.3":
-  version "15.6.3"
-  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-15.6.3.tgz#3e3160f13a19edc64fe8ab9e55485934d3c6673e"
-  integrity sha512-4J98xhOn6y5FtY2wWrisJr0UEWyAWNidQb1YDJvk98XUyMXlrBxisGFndtZHpbyZHlCt0F3LXvOszDNxBpjuWA==
-  dependencies:
-    "@nrwl/devkit" "15.6.3"
-    "@nrwl/jest" "15.6.3"
-    "@nrwl/js" "15.6.3"
-    "@nrwl/linter" "15.6.3"
-    "@nrwl/webpack" "15.6.3"
-    "@nrwl/workspace" "15.6.3"
-    tslib "^2.3.0"
-
-"@nrwl/node@^15.7.0":
+"@nrwl/node@15.7.0", "@nrwl/node@^15.7.0":
   version "15.7.0"
   resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-15.7.0.tgz#ba50e58b500dc1c16519e0deaff71afa3b32215d"
   integrity sha512-sgDSUzosoF/NQbm8wAbE+W6ZJj242OA7aKN1Bv2Ymx21LU28TZ+8jshIck1DL3ulsLgJLMI1o/QtO88Pu3y8Pw==
@@ -2491,55 +2478,6 @@
     http-server "^14.1.0"
     ignore "^5.0.4"
     tslib "^2.3.0"
-
-"@nrwl/webpack@15.6.3":
-  version "15.6.3"
-  resolved "https://registry.yarnpkg.com/@nrwl/webpack/-/webpack-15.6.3.tgz#65b6d68a7a7c8580b8b97e8e4676dba5c5153090"
-  integrity sha512-/cnUHtMwUE9/FnctI0sQCc9Y/VdS4w15FBSlN1JB+CSF9Sm/CIZ9LzpINGnjqxa+3P2Pz3svx0eyzsBIUFseMA==
-  dependencies:
-    "@nrwl/devkit" "15.6.3"
-    "@nrwl/js" "15.6.3"
-    "@nrwl/workspace" "15.6.3"
-    autoprefixer "^10.4.9"
-    babel-loader "^9.1.2"
-    chalk "^4.1.0"
-    chokidar "^3.5.1"
-    copy-webpack-plugin "^10.2.4"
-    css-loader "^6.4.0"
-    css-minimizer-webpack-plugin "^3.4.1"
-    dotenv "~10.0.0"
-    file-loader "^6.2.0"
-    fork-ts-checker-webpack-plugin "7.2.13"
-    fs-extra "^11.1.0"
-    ignore "^5.0.4"
-    less "3.12.2"
-    less-loader "^11.1.0"
-    license-webpack-plugin "^4.0.2"
-    loader-utils "^2.0.3"
-    mini-css-extract-plugin "~2.4.7"
-    parse5 "4.0.0"
-    parse5-html-rewriting-stream "6.0.1"
-    postcss "^8.4.14"
-    postcss-import "~14.1.0"
-    postcss-loader "^6.1.1"
-    rxjs "^6.5.4"
-    sass "^1.42.1"
-    sass-loader "^12.2.0"
-    source-map-loader "^3.0.0"
-    style-loader "^3.3.0"
-    stylus "^0.55.0"
-    stylus-loader "^7.1.0"
-    terser-webpack-plugin "^5.3.3"
-    ts-loader "^9.3.1"
-    ts-node "10.9.1"
-    tsconfig-paths "^4.1.2"
-    tsconfig-paths-webpack-plugin "4.0.0"
-    tslib "^2.3.0"
-    webpack "^5.75.0"
-    webpack-dev-server "^4.9.3"
-    webpack-merge "^5.8.0"
-    webpack-node-externals "^3.0.0"
-    webpack-subresource-integrity "^5.1.0"
 
 "@nrwl/webpack@15.7.0":
   version "15.7.0"
@@ -10441,25 +10379,10 @@ parse-json@^5.0.0, parse-json@^5.2.0:
     json-parse-even-better-errors "^2.3.0"
     lines-and-columns "^1.1.6"
 
-parse5-html-rewriting-stream@6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/parse5-html-rewriting-stream/-/parse5-html-rewriting-stream-6.0.1.tgz#de1820559317ab4e451ea72dba05fddfd914480b"
-  integrity sha512-vwLQzynJVEfUlURxgnf51yAJDQTtVpNyGD8tKi2Za7m+akukNHxCcUQMAa/mUGLhCeicFdpy7Tlvj8ZNKadprg==
-  dependencies:
-    parse5 "^6.0.1"
-    parse5-sax-parser "^6.0.1"
-
 parse5-htmlparser2-tree-adapter@^6.0.0:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/parse5-htmlparser2-tree-adapter/-/parse5-htmlparser2-tree-adapter-6.0.1.tgz#2cdf9ad823321140370d4dbf5d3e92c7c8ddc6e6"
   integrity sha512-qPuWvbLgvDGilKc5BoicRovlT4MtYT6JfJyBOMDsKoiT+GiuP5qyrPCnR9HcPECIJJmZh5jRndyNThnhhb/vlA==
-  dependencies:
-    parse5 "^6.0.1"
-
-parse5-sax-parser@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/parse5-sax-parser/-/parse5-sax-parser-6.0.1.tgz#98b4d366b5b266a7cd90b4b58906667af882daba"
-  integrity sha512-kXX+5S81lgESA0LsDuGjAlBybImAChYRMT+/uKCEXFBFOeEhS52qUCydGhU3qLRD8D9DVjaUo821WK7DM4iCeg==
   dependencies:
     parse5 "^6.0.1"
 
