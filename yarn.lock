@@ -2200,20 +2200,7 @@
   dependencies:
     nx "15.8.3"
 
-"@nrwl/cypress@15.8.1":
-  version "15.8.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-15.8.1.tgz#26eaecf7426a1e2dc2c0ef95c8f30af1c31598c5"
-  integrity sha512-zsatm13DHojDZM9MB0UOWWxZKr0CVMaGhrqjACnu8XA8K51jaxFzC5prdP5FLfoslWiOTXTt8kPx9aKB9C0LVQ==
-  dependencies:
-    "@nrwl/devkit" "15.8.1"
-    "@nrwl/js" "15.8.1"
-    "@nrwl/linter" "15.8.1"
-    "@nrwl/workspace" "15.8.1"
-    "@phenomnomnominal/tsquery" "4.1.1"
-    dotenv "~10.0.0"
-    semver "7.3.4"
-
-"@nrwl/cypress@^15.8.3":
+"@nrwl/cypress@15.8.3", "@nrwl/cypress@^15.8.3":
   version "15.8.3"
   resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-15.8.3.tgz#5cc80149e23e4dc37b3684539a5ceb1dde769009"
   integrity sha512-ob7rinAZEBq7Z0PXBuI378HWH02k2AZWYoxdJ9B0dtPMzrTx0BQFZKbHCaR7WH9+Pz8UA2d3OOIRcl38MhduAw==
@@ -2299,7 +2286,7 @@
     rxjs "^6.5.4"
     tslib "^2.3.0"
 
-"@nrwl/jest@15.8.1", "@nrwl/jest@^15.8.1":
+"@nrwl/jest@15.8.1":
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-15.8.1.tgz#c02a86b4c5d0518e46efce15424f0f5d95fadc74"
   integrity sha512-wJ42yJ3u2mlqtKOXwnyd5c5iGDoy/mLb3LEwO96AymIJ0Tjbr9++oiGAKDO6HDLv6H2ZBcjkYUucDvwauWgoEg==
@@ -2308,6 +2295,25 @@
     "@jest/test-result" "28.1.1"
     "@nrwl/devkit" "15.8.1"
     "@nrwl/js" "15.8.1"
+    "@phenomnomnominal/tsquery" "4.1.1"
+    chalk "^4.1.0"
+    dotenv "~10.0.0"
+    identity-obj-proxy "3.0.0"
+    jest-config "28.1.1"
+    jest-resolve "28.1.1"
+    jest-util "28.1.1"
+    resolve.exports "1.1.0"
+    tslib "^2.3.0"
+
+"@nrwl/jest@15.8.3", "@nrwl/jest@^15.8.1":
+  version "15.8.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-15.8.3.tgz#40520d483e85b037b61af30c76d1eaec89136f51"
+  integrity sha512-U6scBchk73T8cnG7aK8E4j/gdWZ8uZpdUVTbFzCOQv7D7g16ElTEE2EQVhfAdBbX5CYO3zIaGx3Lop3NlZNFpg==
+  dependencies:
+    "@jest/reporters" "28.1.1"
+    "@jest/test-result" "28.1.1"
+    "@nrwl/devkit" "15.8.3"
+    "@nrwl/js" "15.8.3"
     "@phenomnomnominal/tsquery" "4.1.1"
     chalk "^4.1.0"
     dotenv "~10.0.0"
@@ -2523,14 +2529,14 @@
     chalk "^4.1.0"
     minimatch "3.0.5"
 
-"@nrwl/rollup@15.8.1":
-  version "15.8.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/rollup/-/rollup-15.8.1.tgz#7177fe256b19c9dba69eff3ab8826ad517d0f230"
-  integrity sha512-QqGMxC59rrlG6boYXRVt/LLWFTaAHDHvzOHuk2mMNBStQeEmA/Zic29CtEdGcXDFDQarOeFloMnrI/PdWY4E8Q==
+"@nrwl/rollup@15.8.3":
+  version "15.8.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/rollup/-/rollup-15.8.3.tgz#e427f2482cea648c0052b1e228a7f95886d5ac0f"
+  integrity sha512-odKorQgJbXCgK8ghAIpIgqu6/b7IrhcLoHbWkMhyJ0V2OgFxmRQyk+QU4wCkvzKDugWvdcaXwQfaWBrbwl/oUg==
   dependencies:
-    "@nrwl/devkit" "15.8.1"
-    "@nrwl/js" "15.8.1"
-    "@nrwl/workspace" "15.8.1"
+    "@nrwl/devkit" "15.8.3"
+    "@nrwl/js" "15.8.3"
+    "@nrwl/workspace" "15.8.3"
     "@rollup/plugin-babel" "^5.3.0"
     "@rollup/plugin-commonjs" "^20.0.0"
     "@rollup/plugin-image" "^2.1.0"
@@ -2570,18 +2576,18 @@
   dependencies:
     nx "15.8.3"
 
-"@nrwl/web@^15.8.1":
-  version "15.8.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/web/-/web-15.8.1.tgz#0c5b00d1ae32fed9b8191332ca9680830ac14fc9"
-  integrity sha512-copoTulfdCuWTfGhCqf1RDDQ6e0CccYS2k2qThOlmvyJKjcRj5QtFVnP3vnnGFW/hoQ8houVVxwGeNDaRXNJLg==
+"@nrwl/web@^15.8.3":
+  version "15.8.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/web/-/web-15.8.3.tgz#c57e6b75202c16c6a48d37d0f20f61ffdee3136b"
+  integrity sha512-rHnGupJpjpF0XNkemMXyO17tY2OlDEePgYNdkdaE/It2NjX7o4nXWBKHQhoq1tD+L6rxQCjkaAHZbrCRAPyxIg==
   dependencies:
-    "@nrwl/cypress" "15.8.1"
-    "@nrwl/devkit" "15.8.1"
-    "@nrwl/jest" "15.8.1"
-    "@nrwl/js" "15.8.1"
-    "@nrwl/linter" "15.8.1"
-    "@nrwl/rollup" "15.8.1"
-    "@nrwl/workspace" "15.8.1"
+    "@nrwl/cypress" "15.8.3"
+    "@nrwl/devkit" "15.8.3"
+    "@nrwl/jest" "15.8.3"
+    "@nrwl/js" "15.8.3"
+    "@nrwl/linter" "15.8.3"
+    "@nrwl/rollup" "15.8.3"
+    "@nrwl/workspace" "15.8.3"
     chalk "^4.1.0"
     chokidar "^3.5.1"
     http-server "^14.1.0"
