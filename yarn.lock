@@ -2299,7 +2299,7 @@
     rxjs "^6.5.4"
     tslib "^2.3.0"
 
-"@nrwl/jest@15.8.1", "@nrwl/jest@^15.8.1":
+"@nrwl/jest@15.8.1":
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-15.8.1.tgz#c02a86b4c5d0518e46efce15424f0f5d95fadc74"
   integrity sha512-wJ42yJ3u2mlqtKOXwnyd5c5iGDoy/mLb3LEwO96AymIJ0Tjbr9++oiGAKDO6HDLv6H2ZBcjkYUucDvwauWgoEg==
@@ -2308,6 +2308,25 @@
     "@jest/test-result" "28.1.1"
     "@nrwl/devkit" "15.8.1"
     "@nrwl/js" "15.8.1"
+    "@phenomnomnominal/tsquery" "4.1.1"
+    chalk "^4.1.0"
+    dotenv "~10.0.0"
+    identity-obj-proxy "3.0.0"
+    jest-config "28.1.1"
+    jest-resolve "28.1.1"
+    jest-util "28.1.1"
+    resolve.exports "1.1.0"
+    tslib "^2.3.0"
+
+"@nrwl/jest@^15.8.3":
+  version "15.8.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-15.8.3.tgz#40520d483e85b037b61af30c76d1eaec89136f51"
+  integrity sha512-U6scBchk73T8cnG7aK8E4j/gdWZ8uZpdUVTbFzCOQv7D7g16ElTEE2EQVhfAdBbX5CYO3zIaGx3Lop3NlZNFpg==
+  dependencies:
+    "@jest/reporters" "28.1.1"
+    "@jest/test-result" "28.1.1"
+    "@nrwl/devkit" "15.8.3"
+    "@nrwl/js" "15.8.3"
     "@phenomnomnominal/tsquery" "4.1.1"
     chalk "^4.1.0"
     dotenv "~10.0.0"
