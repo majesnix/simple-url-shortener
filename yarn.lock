@@ -2286,7 +2286,7 @@
     rxjs "^6.5.4"
     tslib "^2.3.0"
 
-"@nrwl/jest@15.8.3", "@nrwl/jest@^15.8.1":
+"@nrwl/jest@15.8.3":
   version "15.8.3"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-15.8.3.tgz#40520d483e85b037b61af30c76d1eaec89136f51"
   integrity sha512-U6scBchk73T8cnG7aK8E4j/gdWZ8uZpdUVTbFzCOQv7D7g16ElTEE2EQVhfAdBbX5CYO3zIaGx3Lop3NlZNFpg==
@@ -2295,6 +2295,25 @@
     "@jest/test-result" "28.1.1"
     "@nrwl/devkit" "15.8.3"
     "@nrwl/js" "15.8.3"
+    "@phenomnomnominal/tsquery" "4.1.1"
+    chalk "^4.1.0"
+    dotenv "~10.0.0"
+    identity-obj-proxy "3.0.0"
+    jest-config "28.1.1"
+    jest-resolve "28.1.1"
+    jest-util "28.1.1"
+    resolve.exports "1.1.0"
+    tslib "^2.3.0"
+
+"@nrwl/jest@15.8.5", "@nrwl/jest@^15.8.1":
+  version "15.8.5"
+  resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-15.8.5.tgz#9c5ed7e06ede941abf139c7fc598c34af7cd3b25"
+  integrity sha512-19je0KLYqQnjGvjt8CN4jBnGquRnNnRUnH948atIRjW0AyV1INeHxqtrYUJKaOx3m8snQCa01FqJvJjVjl1oAg==
+  dependencies:
+    "@jest/reporters" "28.1.1"
+    "@jest/test-result" "28.1.1"
+    "@nrwl/devkit" "15.8.5"
+    "@nrwl/js" "15.8.5"
     "@phenomnomnominal/tsquery" "4.1.1"
     chalk "^4.1.0"
     dotenv "~10.0.0"
@@ -2394,7 +2413,7 @@
     tmp "~0.2.1"
     tslib "^2.3.0"
 
-"@nrwl/node@15.8.3", "@nrwl/node@^15.8.3":
+"@nrwl/node@15.8.3":
   version "15.8.3"
   resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-15.8.3.tgz#bacc59dce8e8e047728b4ce2de1d99b697619399"
   integrity sha512-RjpCCTS9QxYgf0E5/N8NSixNmrMzQgjvwoXYeRWiZUZ7brzLjSXgEODt78Pdc/EmqtrHeUZEe+kxHhIOWcAZ2Q==
@@ -2405,6 +2424,19 @@
     "@nrwl/linter" "15.8.3"
     "@nrwl/webpack" "15.8.3"
     "@nrwl/workspace" "15.8.3"
+    tslib "^2.3.0"
+
+"@nrwl/node@^15.8.5":
+  version "15.8.5"
+  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-15.8.5.tgz#3a5b1593a86e748afaabc1a0542dde9085ba21b0"
+  integrity sha512-d3SsuplX3/GS6oXnwc1u9aR3n4A9CXglqHCtRVppYATVTHvYS6NODjjwXonu7m/rnyXpirqueWQ9BbGvEej6tw==
+  dependencies:
+    "@nrwl/devkit" "15.8.5"
+    "@nrwl/jest" "15.8.5"
+    "@nrwl/js" "15.8.5"
+    "@nrwl/linter" "15.8.5"
+    "@nrwl/webpack" "15.8.5"
+    "@nrwl/workspace" "15.8.5"
     tslib "^2.3.0"
 
 "@nrwl/nx-darwin-arm64@15.8.3":
@@ -2583,6 +2615,52 @@
     "@nrwl/devkit" "15.8.3"
     "@nrwl/js" "15.8.3"
     "@nrwl/workspace" "15.8.3"
+    autoprefixer "^10.4.9"
+    babel-loader "^9.1.2"
+    chalk "^4.1.0"
+    chokidar "^3.5.1"
+    copy-webpack-plugin "^10.2.4"
+    css-loader "^6.4.0"
+    css-minimizer-webpack-plugin "^3.4.1"
+    dotenv "~10.0.0"
+    file-loader "^6.2.0"
+    fork-ts-checker-webpack-plugin "7.2.13"
+    ignore "^5.0.4"
+    less "4.1.3"
+    less-loader "11.1.0"
+    license-webpack-plugin "^4.0.2"
+    loader-utils "^2.0.3"
+    mini-css-extract-plugin "~2.4.7"
+    parse5 "4.0.0"
+    postcss "^8.4.14"
+    postcss-import "~14.1.0"
+    postcss-loader "^6.1.1"
+    rxjs "^6.5.4"
+    sass "^1.42.1"
+    sass-loader "^12.2.0"
+    source-map-loader "^3.0.0"
+    style-loader "^3.3.0"
+    stylus "^0.55.0"
+    stylus-loader "^7.1.0"
+    terser-webpack-plugin "^5.3.3"
+    ts-loader "^9.3.1"
+    ts-node "10.9.1"
+    tsconfig-paths "^4.1.2"
+    tsconfig-paths-webpack-plugin "4.0.0"
+    tslib "^2.3.0"
+    webpack "^5.75.0"
+    webpack-dev-server "^4.9.3"
+    webpack-node-externals "^3.0.0"
+    webpack-subresource-integrity "^5.1.0"
+
+"@nrwl/webpack@15.8.5":
+  version "15.8.5"
+  resolved "https://registry.yarnpkg.com/@nrwl/webpack/-/webpack-15.8.5.tgz#1103e190ac34760578f2247a59d56497c84dff7d"
+  integrity sha512-oN0ZCK6Bak8w5YOpyBxQRNxGwNbq31XneRvKPb9gSs71eJZtqLr5wwANfOOHe4m43CgDayp+nVOCQMNhsdxNFg==
+  dependencies:
+    "@nrwl/devkit" "15.8.5"
+    "@nrwl/js" "15.8.5"
+    "@nrwl/workspace" "15.8.5"
     autoprefixer "^10.4.9"
     babel-loader "^9.1.2"
     chalk "^4.1.0"
