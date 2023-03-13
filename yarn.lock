@@ -2212,7 +2212,7 @@
   dependencies:
     nx "15.8.6"
 
-"@nrwl/cypress@15.8.5", "@nrwl/cypress@^15.8.5":
+"@nrwl/cypress@15.8.5":
   version "15.8.5"
   resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-15.8.5.tgz#1a4038740737d48109d0b322eaac9b60d5cfe156"
   integrity sha512-y9+mLL5Yw8RRaCBkdmFG8br39rYUPF03P3kx2AI7KbCs0e1kfPe6E7TaPOgdtEeSTvitjE9YeamFlWfOEHXp0A==
@@ -2221,6 +2221,19 @@
     "@nrwl/js" "15.8.5"
     "@nrwl/linter" "15.8.5"
     "@nrwl/workspace" "15.8.5"
+    "@phenomnomnominal/tsquery" "4.1.1"
+    dotenv "~10.0.0"
+    semver "7.3.4"
+
+"@nrwl/cypress@^15.8.6":
+  version "15.8.6"
+  resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-15.8.6.tgz#7af80e3a2de92898d45f06f1cc5a9bed98ace393"
+  integrity sha512-VnIQOChL+T4BJxLitsjsU2ziVMLrhlLyHpsd4Cz1+jCDajrcywUZkDNuwwGJ58RL9tERBgO0iVmIbWPNcue2dA==
+  dependencies:
+    "@nrwl/devkit" "15.8.6"
+    "@nrwl/js" "15.8.6"
+    "@nrwl/linter" "15.8.6"
+    "@nrwl/workspace" "15.8.6"
     "@phenomnomnominal/tsquery" "4.1.1"
     dotenv "~10.0.0"
     semver "7.3.4"
