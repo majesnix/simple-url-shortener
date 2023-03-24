@@ -2522,15 +2522,15 @@
   resolved "https://registry.yarnpkg.com/@nrwl/nx-win32-x64-msvc/-/nx-win32-x64-msvc-15.8.8.tgz#26854dd7215e9dedcb3425c04e347589ba379c16"
   integrity sha512-EGILRtNR5jCmFwEJclGwxBYaL0DauAf1vTucblwdNA2wnOW/jWkRyg6klgYgHA485zLUrnLZlLSGospO4G7Iwg==
 
-"@nrwl/react@^15.8.7":
-  version "15.8.7"
-  resolved "https://registry.yarnpkg.com/@nrwl/react/-/react-15.8.7.tgz#a14b6ba5c8784bc711f9cb95126583b83284ffa7"
-  integrity sha512-sfgELPC2VXad85yGArc66URyiOIRYfQ78iBdQ8GHF67YkSyWKPbnQMPpCTQ4GWMDmCvIaoS+2sTeGpsi/M6j1Q==
+"@nrwl/react@^15.8.8":
+  version "15.8.8"
+  resolved "https://registry.yarnpkg.com/@nrwl/react/-/react-15.8.8.tgz#d4bca8e82cc4ec767e1a1fdd09a138782f690f49"
+  integrity sha512-mUYZc3H898LXgFFVIrKKfMo+Ype7p71vR150xLbtlMynDAjYumYJ3/g8UB2iir/yx7QOsqgyW9msOuwh7iUQ/g==
   dependencies:
-    "@nrwl/devkit" "15.8.7"
-    "@nrwl/js" "15.8.7"
-    "@nrwl/linter" "15.8.7"
-    "@nrwl/workspace" "15.8.7"
+    "@nrwl/devkit" "15.8.8"
+    "@nrwl/js" "15.8.8"
+    "@nrwl/linter" "15.8.8"
+    "@nrwl/workspace" "15.8.8"
     "@phenomnomnominal/tsquery" "4.1.1"
     chalk "^4.1.0"
     minimatch "3.0.5"
