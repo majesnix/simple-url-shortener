@@ -2261,16 +2261,17 @@
   dependencies:
     nx "15.9.2"
 
-"@nrwl/cypress@^15.8.9":
-  version "15.8.9"
-  resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-15.8.9.tgz#cd489dcff96f22cbe949c27187ba9fa050f12f12"
-  integrity sha512-a9ud7Um1xPCQevWBVTDEx7mN0V7k7PXWrD1Dym3xIk1fxd7uKiKoIZR7pGY8PIp1hEDSnWTJsmTUxuI09dFs2w==
+"@nrwl/cypress@^15.9.2":
+  version "15.9.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-15.9.2.tgz#e86b4d44024325461ec0267a3cf4adb98670c8a9"
+  integrity sha512-spgcq2G6cBN0D6fcSmgeQ1gbbDZu2oyorJoCe/yQBbMD2X9YTwjeVK07vzmJDwWybVv1P2zdaYZms1DSYMQyaQ==
   dependencies:
-    "@nrwl/devkit" "15.8.9"
-    "@nrwl/js" "15.8.9"
-    "@nrwl/linter" "15.8.9"
-    "@nrwl/workspace" "15.8.9"
+    "@nrwl/devkit" "15.9.2"
+    "@nrwl/js" "15.9.2"
+    "@nrwl/linter" "15.9.2"
+    "@nrwl/workspace" "15.9.2"
     "@phenomnomnominal/tsquery" "4.1.1"
+    detect-port "^1.5.1"
     dotenv "~10.0.0"
     semver "7.3.4"
 
@@ -4456,6 +4457,11 @@ acorn@^8.8.0:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.8.0.tgz#88c0187620435c7f6015803f5539dae05a9dbea8"
   integrity sha512-QOxyigPVrpZ2GXT+PFyZTl6TtOFc5egxHIP9IlQ+RbupQuX4RkT/Bee4/kQuC02Xkzg84JcT7oLYtDIQxp+v7w==
 
+address@^1.0.1:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/address/-/address-1.2.2.tgz#2b5248dac5485a6390532c6a517fda2e3faac89e"
+  integrity sha512-4B/qKCfeE/ODUaAUpSwfzazo5x29WD4r3vXiWsB7I2mSDAihwEqKO+g8GELZUQSSAo5e1XTYh3ZVfLyxBc12nA==
+
 agent-base@6:
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/agent-base/-/agent-base-6.0.2.tgz#49fff58577cfee3f37176feab4c22e00f86d7f77"
@@ -6147,6 +6153,14 @@ detect-node@^2.0.4:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/detect-node/-/detect-node-2.1.0.tgz#c9c70775a49c3d03bc2c06d9a73be550f978f8b1"
   integrity sha512-T0NIuQpnTvFDATNuHN5roPwSBG83rFsuO+MXXH9/3N1eFbn4wcPjttvjMLEPWJ0RGUYgQE7cGgS3tNxbqCGM7g==
+
+detect-port@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/detect-port/-/detect-port-1.5.1.tgz#451ca9b6eaf20451acb0799b8ab40dff7718727b"
+  integrity sha512-aBzdj76lueB6uUst5iAs7+0H/oOjqI5D16XUWxlWMIMROhcM0rfsNVk93zTngq1dDNpoXRr++Sus7ETAExppAQ==
+  dependencies:
+    address "^1.0.1"
+    debug "4"
 
 diff-sequences@^27.4.0:
   version "27.4.0"
