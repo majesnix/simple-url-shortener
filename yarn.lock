@@ -2079,17 +2079,6 @@
   dependencies:
     "@nx/js" "16.0.0"
 
-"@nrwl/linter@15.9.2":
-  version "15.9.2"
-  resolved "https://registry.yarnpkg.com/@nrwl/linter/-/linter-15.9.2.tgz#1f67b93feced2f1dd85b10c97cb0467782a80e6b"
-  integrity sha512-/kUSwf8s1Q4k+jQI4Ibhh0rXRokrhppG1Y1Yrg3aMB7H0mAEIb4lNOzTN01lJ4kC1WxL5QWRqj45xG6MPE2Zgg==
-  dependencies:
-    "@nrwl/devkit" "15.9.2"
-    "@nrwl/js" "15.9.2"
-    "@phenomnomnominal/tsquery" "4.1.1"
-    tmp "~0.2.1"
-    tslib "^2.3.0"
-
 "@nrwl/linter@16.0.0":
   version "16.0.0"
   resolved "https://registry.yarnpkg.com/@nrwl/linter/-/linter-16.0.0.tgz#dd530c6aac9677712d1444a6e529c0b6b2a525e3"
@@ -2201,7 +2190,7 @@
   dependencies:
     "@nx/react" "16.0.0"
 
-"@nrwl/tao@15.9.2", "@nrwl/tao@^15.9.2":
+"@nrwl/tao@15.9.2":
   version "15.9.2"
   resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-15.9.2.tgz#e970efa8b3fb828007b02286e9e505247032b5b3"
   integrity sha512-+LqNC37w9c6q6Ukdpf0z0tt1PQFNi4gwhHpJvkYQiKRETHjyrrlyqTNEPEyA7PI62RuYC6VrpVw2gzI7ufqZEA==
@@ -2215,7 +2204,7 @@
   dependencies:
     nx "15.9.3"
 
-"@nrwl/tao@16.0.0":
+"@nrwl/tao@16.0.0", "@nrwl/tao@^16.0.0":
   version "16.0.0"
   resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-16.0.0.tgz#976d8a1886c08bb9525c5260f210882c9f130671"
   integrity sha512-0A+e6jGmBBhpcaSlFr24uNvMRNZmlAWETj8K7gvYYjbWpVx3VP5hY+9R9vOxRwozWEHeEDFl1xue8ci0HWzORA==
