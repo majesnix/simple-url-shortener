@@ -2097,12 +2097,12 @@
   dependencies:
     "@nx/eslint-plugin" "16.0.0"
 
-"@nrwl/express@16.0.0", "@nrwl/express@^16.0.0":
-  version "16.0.0"
-  resolved "https://registry.yarnpkg.com/@nrwl/express/-/express-16.0.0.tgz#e115dcda8180ba00214ce59e4d4ffea08d95b2bc"
-  integrity sha512-2nczkmwZmtwBpcWYxTh9rYXNahtnglnO4sgtpxBEdX8STo4wchChmSJ2u8t4cHOKZau4zJe4sEXoCnR6J/RTqQ==
+"@nrwl/express@16.0.1", "@nrwl/express@^16.0.1":
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/express/-/express-16.0.1.tgz#25b4cabf6c0c21b32af0aad7c7f12d495daa3d85"
+  integrity sha512-7lcIhC7Zzzn13V6R0tLzbggMh1z1esa7oZwMU/J1fsUvsqZY4CGgJn8fAETcHqVBautU9K3xqwydX+GYgz8gsw==
   dependencies:
-    "@nx/express" "16.0.0"
+    "@nx/express" "16.0.1"
 
 "@nrwl/jest@16.0.0":
   version "16.0.0"
@@ -2152,6 +2152,13 @@
   integrity sha512-UoDFlg50oJqrl56xJW0dWSutk41GiJEg1qCxASq12S9Tz7+hp7LlSxn178MW3Ozcsxp1v0hf+SAAo47lOPgIYA==
   dependencies:
     "@nx/node" "16.0.0"
+
+"@nrwl/node@16.0.1":
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-16.0.1.tgz#6b779583cae951f7c4983e20a44bac6cba035aec"
+  integrity sha512-vg1EDdmCdbgyAPah9mcmS06uy2E1w9PGflmCh3R3S4MjhX2cnRGiGynIgTD/KCs98nrciRwdMcPmSu9FZb80xA==
+  dependencies:
+    "@nx/node" "16.0.1"
 
 "@nrwl/nx-darwin-arm64@15.9.3":
   version "15.9.3"
@@ -2351,14 +2358,14 @@
     confusing-browser-globals "^1.0.9"
     semver "7.3.4"
 
-"@nx/express@16.0.0":
-  version "16.0.0"
-  resolved "https://registry.yarnpkg.com/@nx/express/-/express-16.0.0.tgz#70fe7f1641ba2abebf2aa9e15df17c9b06438975"
-  integrity sha512-2JI5/KT23f2mOrTtmlcBztiYVNZj3bSYRvZXdWNQCZTOF9UPvaCfLb7XA4DX6MilaHG/3wLj8z+nNurgWspcOA==
+"@nx/express@16.0.1":
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/@nx/express/-/express-16.0.1.tgz#91ccf0f922aa52e7b6540e17567473f85d2f961e"
+  integrity sha512-v7K0AETIwbjmU+tUNJ8TynakiVJoYRb9VCx+9I64TwgYw1EfxdMLH1JDJ98iBYYlmJ0LiB8dm6ftcKgVKtmHaQ==
   dependencies:
-    "@nrwl/express" "16.0.0"
-    "@nx/devkit" "16.0.0"
-    "@nx/node" "16.0.0"
+    "@nrwl/express" "16.0.1"
+    "@nx/devkit" "16.0.1"
+    "@nx/node" "16.0.1"
 
 "@nx/jest@16.0.0":
   version "16.0.0"
@@ -2493,6 +2500,19 @@
     "@nx/js" "16.0.0"
     "@nx/linter" "16.0.0"
     "@nx/workspace" "16.0.0"
+    tslib "^2.3.0"
+
+"@nx/node@16.0.1":
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/@nx/node/-/node-16.0.1.tgz#265c21ec415590d3a3efff8c91fddc85f7cf2a15"
+  integrity sha512-3ZAT9WVLKsrpd3mqvsQq4NwJLK0Ojr7myKhzgKAUP2WwqHkb12XEkLSkc+VIxipvF1jBiNyq53VAtiq45VY6dQ==
+  dependencies:
+    "@nrwl/node" "16.0.1"
+    "@nx/devkit" "16.0.1"
+    "@nx/jest" "16.0.1"
+    "@nx/js" "16.0.1"
+    "@nx/linter" "16.0.1"
+    "@nx/workspace" "16.0.1"
     tslib "^2.3.0"
 
 "@nx/nx-darwin-arm64@16.0.0":
