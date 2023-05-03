@@ -2032,12 +2032,12 @@
   dependencies:
     "@nx/eslint-plugin" "16.0.3"
 
-"@nrwl/express@16.0.1", "@nrwl/express@^16.0.1":
-  version "16.0.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/express/-/express-16.0.1.tgz#25b4cabf6c0c21b32af0aad7c7f12d495daa3d85"
-  integrity sha512-7lcIhC7Zzzn13V6R0tLzbggMh1z1esa7oZwMU/J1fsUvsqZY4CGgJn8fAETcHqVBautU9K3xqwydX+GYgz8gsw==
+"@nrwl/express@16.0.3", "@nrwl/express@^16.0.3":
+  version "16.0.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/express/-/express-16.0.3.tgz#138f165f0c0331d1e20cfb9733b6a58772224ca7"
+  integrity sha512-wlrTOLRV43Z/dQ1ftrnidXnMR8troo8Rq8ZA1iYPB/9Of+Kmsc/sw2TFp2lqA8Fce4xWr9+lcyQ7icnnJfObEw==
   dependencies:
-    "@nx/express" "16.0.1"
+    "@nx/express" "16.0.3"
 
 "@nrwl/jest@16.0.1", "@nrwl/jest@^16.0.1":
   version "16.0.1"
@@ -2045,6 +2045,13 @@
   integrity sha512-RCTEziX6PKsAAd95FevcWoRfb1cR6i5494nuRY9Krc9AAFYTz6YGaaGgRgKvHaTIfNY3Nl2Hgojhq5v5FzXaUA==
   dependencies:
     "@nx/jest" "16.0.1"
+
+"@nrwl/jest@16.0.3":
+  version "16.0.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-16.0.3.tgz#dc5fcc8a4395e5ab43e6d9d7ff10d812ee18a33b"
+  integrity sha512-rIwmz8IXc0X0MPajhhmfcCJEPbPv+k3ozmv/nD7cjvD82Ix9ZgD3kCOclpVWBVgKf8GU1mCHLP5YgrruKuuz2Q==
+  dependencies:
+    "@nx/jest" "16.0.3"
 
 "@nrwl/js@16.0.1":
   version "16.0.1"
@@ -2080,6 +2087,13 @@
   integrity sha512-vg1EDdmCdbgyAPah9mcmS06uy2E1w9PGflmCh3R3S4MjhX2cnRGiGynIgTD/KCs98nrciRwdMcPmSu9FZb80xA==
   dependencies:
     "@nx/node" "16.0.1"
+
+"@nrwl/node@16.0.3":
+  version "16.0.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-16.0.3.tgz#f94b1dc8e11dd5a9cb315884b92067d7bd00dc68"
+  integrity sha512-TUWbaxUoVNBjq/3XnWo9y04AAyjOrQwp+fdCWmwQ33VR6zQncJNzg1CcTqDRlxJYsqwoAJwgoyGAD9eczjU6GA==
+  dependencies:
+    "@nx/node" "16.0.3"
 
 "@nrwl/nx-darwin-arm64@15.9.3":
   version "15.9.3"
@@ -2279,14 +2293,14 @@
     confusing-browser-globals "^1.0.9"
     semver "7.3.4"
 
-"@nx/express@16.0.1":
-  version "16.0.1"
-  resolved "https://registry.yarnpkg.com/@nx/express/-/express-16.0.1.tgz#91ccf0f922aa52e7b6540e17567473f85d2f961e"
-  integrity sha512-v7K0AETIwbjmU+tUNJ8TynakiVJoYRb9VCx+9I64TwgYw1EfxdMLH1JDJ98iBYYlmJ0LiB8dm6ftcKgVKtmHaQ==
+"@nx/express@16.0.3":
+  version "16.0.3"
+  resolved "https://registry.yarnpkg.com/@nx/express/-/express-16.0.3.tgz#47e84bbd9541c654ed588c7929ba5c7349b120b8"
+  integrity sha512-C1Rg9vfN0uez3ZhwOIr4i25+UTKzj2mXP5CNtThYwUI3NKZcb3c8aDF0e+08n1iN72s7mJe54Kb5XsTcu/OtmA==
   dependencies:
-    "@nrwl/express" "16.0.1"
-    "@nx/devkit" "16.0.1"
-    "@nx/node" "16.0.1"
+    "@nrwl/express" "16.0.3"
+    "@nx/devkit" "16.0.3"
+    "@nx/node" "16.0.3"
 
 "@nx/jest@16.0.1":
   version "16.0.1"
@@ -2298,6 +2312,26 @@
     "@nrwl/jest" "16.0.1"
     "@nx/devkit" "16.0.1"
     "@nx/js" "16.0.1"
+    "@phenomnomnominal/tsquery" "~5.0.1"
+    chalk "^4.1.0"
+    dotenv "~10.0.0"
+    identity-obj-proxy "3.0.0"
+    jest-config "^29.4.1"
+    jest-resolve "^29.4.1"
+    jest-util "^29.4.1"
+    resolve.exports "1.1.0"
+    tslib "^2.3.0"
+
+"@nx/jest@16.0.3":
+  version "16.0.3"
+  resolved "https://registry.yarnpkg.com/@nx/jest/-/jest-16.0.3.tgz#1bf7272741a5ca2a46c45037567a1e119cb74d48"
+  integrity sha512-j8Ifkf7RTngGG4xh1/+ryaok+7qEN1frUm96oZN52m1ioAVBIKfCG0VtIicafDhFQ4xTOpHvCY/yB0B90kF2ug==
+  dependencies:
+    "@jest/reporters" "^29.4.1"
+    "@jest/test-result" "^29.4.1"
+    "@nrwl/jest" "16.0.3"
+    "@nx/devkit" "16.0.3"
+    "@nx/js" "16.0.3"
     "@phenomnomnominal/tsquery" "~5.0.1"
     chalk "^4.1.0"
     dotenv "~10.0.0"
@@ -2401,6 +2435,19 @@
     "@nx/js" "16.0.1"
     "@nx/linter" "16.0.1"
     "@nx/workspace" "16.0.1"
+    tslib "^2.3.0"
+
+"@nx/node@16.0.3":
+  version "16.0.3"
+  resolved "https://registry.yarnpkg.com/@nx/node/-/node-16.0.3.tgz#00e093c2089d3338fa0e44ef20af4bbe9a6098bf"
+  integrity sha512-SdBXpYNkApk36LmLS9BClJC/fLTq/Sk+Zo9LN21uxeE0RZqQJ2l+R1GlMqrtH0Uf7Syu97XCWFnumPak8pCtSw==
+  dependencies:
+    "@nrwl/node" "16.0.3"
+    "@nx/devkit" "16.0.3"
+    "@nx/jest" "16.0.3"
+    "@nx/js" "16.0.3"
+    "@nx/linter" "16.0.3"
+    "@nx/workspace" "16.0.3"
     tslib "^2.3.0"
 
 "@nx/nx-darwin-arm64@16.0.1":
