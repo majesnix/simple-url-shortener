@@ -2154,14 +2154,7 @@
   dependencies:
     nx "16.0.3"
 
-"@nrwl/web@16.0.1", "@nrwl/web@^16.0.1":
-  version "16.0.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/web/-/web-16.0.1.tgz#60c2da8e2e4d3cc54cc79cad653ca1f0f5b38018"
-  integrity sha512-cRUUIVZP9I7ZPauRhAO+8iNCqW5lvVVTgqAwEw7dkleLRkX9CfCVJSE4HhWRKHz+imoONVdORyqq/e0XibHNbA==
-  dependencies:
-    "@nx/web" "16.0.1"
-
-"@nrwl/web@16.0.3":
+"@nrwl/web@16.0.3", "@nrwl/web@^16.0.3":
   version "16.0.3"
   resolved "https://registry.yarnpkg.com/@nrwl/web/-/web-16.0.3.tgz#ebaf116386bdba44e673fb67dc099fe6fd85ddf9"
   integrity sha512-c7Qjsjj+xGKIvrkpczYZZY7I7S/QUvWFjzSahr2v889DxfLLHTvn/p9MTUfK0kWQ/TMaCgNWhq3pivP6qOng+A==
@@ -2508,20 +2501,6 @@
     chalk "^4.1.0"
     file-loader "^6.2.0"
     minimatch "3.0.5"
-
-"@nx/web@16.0.1":
-  version "16.0.1"
-  resolved "https://registry.yarnpkg.com/@nx/web/-/web-16.0.1.tgz#0e6bc9fa8afe2a0fd434c4d35fccafb1be44e73c"
-  integrity sha512-1uALlKcOAMSC1GJ9GyhTiyQkbhGvpjYmDMDdJZUBiJhEE0TJoQYs9yakejba3nhCmE+P6uMH5ejdv9Lk7ktQLw==
-  dependencies:
-    "@nrwl/web" "16.0.1"
-    "@nx/devkit" "16.0.1"
-    "@nx/js" "16.0.1"
-    chalk "^4.1.0"
-    chokidar "^3.5.1"
-    http-server "^14.1.0"
-    ignore "^5.0.4"
-    tslib "^2.3.0"
 
 "@nx/web@16.0.3":
   version "16.0.3"
