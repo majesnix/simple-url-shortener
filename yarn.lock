@@ -2004,12 +2004,12 @@
   dependencies:
     nx "15.9.3"
 
-"@nrwl/cypress@16.0.3", "@nrwl/cypress@^16.0.3":
-  version "16.0.3"
-  resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-16.0.3.tgz#fc822de6a20ab47591434097326703ac520e7ccd"
-  integrity sha512-TO1xuoZvFlJK+DYirJ8gys6hpgRiwiwOZfZ6/3AtO/t3xv6ngc63sfzT/lFUoHlEQwMvcypARUtgmSqXAaP9oA==
+"@nrwl/cypress@16.1.0", "@nrwl/cypress@^16.1.0":
+  version "16.1.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-16.1.0.tgz#d3c5b4eed9b90868a20718e6c0df81ecc5316a3b"
+  integrity sha512-I2LAKkuXtHIQ2ThtpdbeI+0o6Kfz4Ag89yGtElW09iEyOgoewY3wJdZY5Rd3D9g1dwTMN5PXZQ1YS3afxQlhDQ==
   dependencies:
-    "@nx/cypress" "16.0.3"
+    "@nx/cypress" "16.1.0"
 
 "@nrwl/devkit@16.0.3":
   version "16.0.3"
@@ -2073,6 +2073,13 @@
   integrity sha512-IxpWNMwYOBrtrsaN/Fszxks0THHVRI6M+Uh/dGvhhqB32riNB+aGonwxYE4X+kTvJQRWasYep4ttiC8ZF/nNBQ==
   dependencies:
     "@nx/linter" "16.0.3"
+
+"@nrwl/linter@16.1.0":
+  version "16.1.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/linter/-/linter-16.1.0.tgz#2616fa7881e7051e8e118a968d4bc5642598d7f0"
+  integrity sha512-9wriNH+qY1aUDXVtIQAxqVrIhf4g8REhDLb/kzUGKvYGVSs3Fp7k7FoG9lBJ6SzjHicoAhxshV3JALfddcY/Yw==
+  dependencies:
+    "@nx/linter" "16.1.0"
 
 "@nrwl/node@16.0.3", "@nrwl/node@^16.0.3":
   version "16.0.3"
@@ -2221,15 +2228,15 @@
   optionalDependencies:
     "@nx-tools/docker-metadata" "^3.0.8"
 
-"@nx/cypress@16.0.3":
-  version "16.0.3"
-  resolved "https://registry.yarnpkg.com/@nx/cypress/-/cypress-16.0.3.tgz#a7b3a9d0d6740f31ea01ff2e93b6d30ae5cc7319"
-  integrity sha512-3/hZEhSpBAdr7J4BsAFW7Kd68lJ0POTKojF0ObjxTTI99XPPuPsNtxUCTvKGuEm8uUfI60g8Esy8oGhfwDTvaQ==
+"@nx/cypress@16.1.0":
+  version "16.1.0"
+  resolved "https://registry.yarnpkg.com/@nx/cypress/-/cypress-16.1.0.tgz#af38b78a62703d5c9316b719b449486e534616d0"
+  integrity sha512-9NiX3x9P9HnwUkbmcOzxjAry0BSDbo1hK9yXUXsHTGXUgZG9RKiUhG+kfd0dIu8KNdI3YrBFvAGKiKHM/WBMng==
   dependencies:
-    "@nrwl/cypress" "16.0.3"
-    "@nx/devkit" "16.0.3"
-    "@nx/js" "16.0.3"
-    "@nx/linter" "16.0.3"
+    "@nrwl/cypress" "16.1.0"
+    "@nx/devkit" "16.1.0"
+    "@nx/js" "16.1.0"
+    "@nx/linter" "16.1.0"
     "@phenomnomnominal/tsquery" "~5.0.1"
     detect-port "^1.5.1"
     dotenv "~10.0.0"
@@ -2387,6 +2394,18 @@
     "@nrwl/linter" "16.0.3"
     "@nx/devkit" "16.0.3"
     "@nx/js" "16.0.3"
+    "@phenomnomnominal/tsquery" "~5.0.1"
+    tmp "~0.2.1"
+    tslib "^2.3.0"
+
+"@nx/linter@16.1.0":
+  version "16.1.0"
+  resolved "https://registry.yarnpkg.com/@nx/linter/-/linter-16.1.0.tgz#a7ce08914997aa776822e874b58387cb057c4cb4"
+  integrity sha512-8/d0e+MIujLezo4XBGyp2zKZ+fmumijmTs7hkYIW8CSd1rNZRSaVNVGqMiMFQDivxFKscuhLhBW/0edsiNt5fA==
+  dependencies:
+    "@nrwl/linter" "16.1.0"
+    "@nx/devkit" "16.1.0"
+    "@nx/js" "16.1.0"
     "@phenomnomnominal/tsquery" "~5.0.1"
     tmp "~0.2.1"
     tslib "^2.3.0"
