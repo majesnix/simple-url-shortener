@@ -49,7 +49,7 @@
     "mobx-keystone": "^1.5.0",
     "mobx-react-lite": "^4.0.2",
     "nanoid": "^4.0.2",
-    "pg": "^8.10.0",
+    "pg": "^8.11.0",
     "react": "^17.0.2",
     "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^17.0.2",
