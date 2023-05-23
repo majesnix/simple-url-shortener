@@ -7953,14 +7953,14 @@ mkdirp@^2.1.3:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-2.1.3.tgz#b083ff37be046fd3d6552468c1f0ff44c1545d1f"
   integrity sha512-sjAkg21peAG9HS+Dkx7hlG9Ztx7HLeKnvB3NQRcu/mltCVmvkF0pisbiTSfDVYTT86XEfZrTUosLdZLStquZUw==
 
-mobx-keystone@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/mobx-keystone/-/mobx-keystone-1.5.0.tgz#3a3fad522a1e45820da27d4cad29fe19b4b9e027"
-  integrity sha512-B4MMde5/uG/uhAhwa8iU7A9Z9kQwBaGG8THSBPtnwyCZU+zWmXL3HIClih50zkDExDicnkyx3S6qpCYmvJMjVw==
+mobx-keystone@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/mobx-keystone/-/mobx-keystone-1.6.0.tgz#f4dd09b0ca78fe091e4e95330961d086f18c865f"
+  integrity sha512-iRMMI3afkb33X2yeCeoiXfFUrpt7w7nqVp+Mr1yf90vctq5tI6c5Gi37wvTLF0NUDzkk4ti6rxLrCkPIoWgHpg==
   dependencies:
     fast-deep-equal "^3.1.3"
     ts-toolbelt "^9.6.0"
-    tslib "^2.5.0"
+    tslib "^2.5.2"
 
 mobx-react-lite@^4.0.2:
   version "4.0.2"
