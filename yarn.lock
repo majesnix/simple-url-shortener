@@ -3041,10 +3041,10 @@
   resolved "https://registry.yarnpkg.com/@types/aria-query/-/aria-query-4.2.2.tgz#ed4e0ad92306a704f9fb132a0cfcf77486dbe2bc"
   integrity sha512-HnYpAE1Y6kRyKM/XkEuiRQhTHvkzMBurTHnpFLYLBGPIylZNPs9jJcuOOYWxPLJCSEtmZT0Y8rHDokKN7rRTig==
 
-"@types/auth0-js@^9.14.7":
-  version "9.14.7"
-  resolved "https://registry.yarnpkg.com/@types/auth0-js/-/auth0-js-9.14.7.tgz#ffa07e66ba37b1e07c5299e877658c0c841c071e"
-  integrity sha512-Lfoj9XItsnjI/1lxHs4r5wlQjkD4XLy81tAVt6B3j3N9mJL4o4ZQu1SbNcq7aImdhkzss53vxubwBJ3rp3AjUQ==
+"@types/auth0-js@^9.21.0":
+  version "9.21.0"
+  resolved "https://registry.yarnpkg.com/@types/auth0-js/-/auth0-js-9.21.0.tgz#48873f718e3ec75f30e5734b74e4d07356fa2bba"
+  integrity sha512-tnF0BKFwI+Vzqwb9p7KgpaKStg/WHqbiGWz5GPpn+ZeBvJ1iY7NkmeNJUsHIN/4c7CF2zr8FT5JRhs3F5aAPNw==
 
 "@types/babel__core@^7.0.0", "@types/babel__core@^7.1.14":
   version "7.1.16"
