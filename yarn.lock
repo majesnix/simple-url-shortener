@@ -2259,12 +2259,19 @@
   dependencies:
     nx "16.4.1"
 
-"@nrwl/web@16.4.0", "@nrwl/web@^16.4.0":
+"@nrwl/web@16.4.0":
   version "16.4.0"
   resolved "https://registry.yarnpkg.com/@nrwl/web/-/web-16.4.0.tgz#bd518e1e1d80832ff0d1f32bbd113358f1ab46d6"
   integrity sha512-Eb4LRlRObMaQlgPkK5qCVzyIxuH+4XyPP+kkwE6WmtO0Wozse0Z5hbZAIj7kzo1f8xr5FbCX7Do6yK2ILSItEA==
   dependencies:
     "@nx/web" "16.4.0"
+
+"@nrwl/web@16.4.1", "@nrwl/web@^16.4.1":
+  version "16.4.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/web/-/web-16.4.1.tgz#59df5e9d31dbc081a417b7ea0b1848852c9be636"
+  integrity sha512-oE2h59w8BSOvLxnxSmbv46WDEMopH3puRTYFHr0RdnUf00q98Q6WPY2IigglU0IqZTaRtRxAebUZUaTM8cmUVA==
+  dependencies:
+    "@nx/web" "16.4.1"
 
 "@nrwl/workspace@16.4.0":
   version "16.4.0"
@@ -2662,6 +2669,21 @@
     "@nrwl/web" "16.4.0"
     "@nx/devkit" "16.4.0"
     "@nx/js" "16.4.0"
+    chalk "^4.1.0"
+    chokidar "^3.5.1"
+    detect-port "^1.5.1"
+    http-server "^14.1.0"
+    ignore "^5.0.4"
+    tslib "^2.3.0"
+
+"@nx/web@16.4.1":
+  version "16.4.1"
+  resolved "https://registry.yarnpkg.com/@nx/web/-/web-16.4.1.tgz#156b02f6b678aa8d00acd7eb8c7e94563e7db9d1"
+  integrity sha512-E31f+QMhBQo8E5xmfWtD+AaqhrPov937Ndsga8ziVIwYe1NjLmkJDXmO14iYHj4HHywJPScqbTnSyzoRch+P6g==
+  dependencies:
+    "@nrwl/web" "16.4.1"
+    "@nx/devkit" "16.4.1"
+    "@nx/js" "16.4.1"
     chalk "^4.1.0"
     chokidar "^3.5.1"
     detect-port "^1.5.1"
