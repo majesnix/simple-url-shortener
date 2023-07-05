@@ -2283,14 +2283,14 @@
   dependencies:
     "@nx/web" "16.4.2"
 
-"@nrwl/workspace@16.4.2", "@nrwl/workspace@^16.4.2":
+"@nrwl/workspace@16.4.2":
   version "16.4.2"
   resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-16.4.2.tgz#58fb45ba6c0a47e8cc6029996e5a403b4559acd7"
   integrity sha512-FftJH0sBPcC27YSqRjgKjfusCjTCVfh/QxkyWXEqqlLqhSSFZaYlAsJM1LBeEfOd8EKDaSSM+G3heq//jYBfBQ==
   dependencies:
     "@nx/workspace" "16.4.2"
 
-"@nrwl/workspace@16.4.3":
+"@nrwl/workspace@16.4.3", "@nrwl/workspace@^16.4.3":
   version "16.4.3"
   resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-16.4.3.tgz#5d8bd06d2d1650318237dd9eb786e6695ebe7802"
   integrity sha512-8FKqGgB8IFeMebCZeaD2Ta0/wSqWMFEX0FWCj1piuJNosgfImdQZUgYfLorsAjyR69GBP+59OkmsxDClZcCPMw==
