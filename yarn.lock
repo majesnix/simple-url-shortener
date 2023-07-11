@@ -2161,12 +2161,19 @@
   dependencies:
     "@nx/express" "16.5.0"
 
-"@nrwl/jest@16.5.0", "@nrwl/jest@^16.5.0":
+"@nrwl/jest@16.5.0":
   version "16.5.0"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-16.5.0.tgz#76302593fdcb91e23097c3f5df9dbd5c5c7b31ba"
   integrity sha512-ts3Gt269OciOJfJ5wDJMw414QUV2UJ3+KA5Iq625qbejQQ3gsv/HGE86h/zIJ80of7KAQz9nZ/eSKQd7vzH6FQ==
   dependencies:
     "@nx/jest" "16.5.0"
+
+"@nrwl/jest@16.5.1", "@nrwl/jest@^16.5.1":
+  version "16.5.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-16.5.1.tgz#882c8f24ae2c7587332d9bb2045be58454e5dfbf"
+  integrity sha512-TP2R97nNw3NT9KKFu5zCe1GIeEgH8jybSuqE9AxJ6tHI8dnmZlMuOtnNmXOsAZbSU+zokTympqNweCdWhoNZIg==
+  dependencies:
+    "@nx/jest" "16.5.1"
 
 "@nrwl/js@16.5.0":
   version "16.5.0"
@@ -2174,6 +2181,13 @@
   integrity sha512-phWuClgKKVXUFk3TXvJQFIDrsoeZXa0j8+vccLMgdOKhjJ5P/33UAMCn7Vp47iRYJbQsbMbzDtoT4bR3sKnvWw==
   dependencies:
     "@nx/js" "16.5.0"
+
+"@nrwl/js@16.5.1":
+  version "16.5.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/js/-/js-16.5.1.tgz#4ad0482043c872480283ac66d55dcefb6ca83eb5"
+  integrity sha512-fVNMTaG/NiGUrGjGd2wzkiut7UIcVtmTvYOMBiF+yly3ZTrESi4cib0Hg10FbDKi759D/0qcUirFx522ePxv7g==
+  dependencies:
+    "@nx/js" "16.5.1"
 
 "@nrwl/linter@16.5.0":
   version "16.5.0"
@@ -2411,6 +2425,26 @@
     resolve.exports "1.1.0"
     tslib "^2.3.0"
 
+"@nx/jest@16.5.1":
+  version "16.5.1"
+  resolved "https://registry.yarnpkg.com/@nx/jest/-/jest-16.5.1.tgz#2fb82c10bd5bce51770d0bc4f31f8301465d07b1"
+  integrity sha512-fekNq7HPd9WU7mf4/9n57a37fAKpzNd4g9yFD6WgSe+ZesxyuPJ4hhVsda1FrbkBHUod4kUGpIVRSSpPzgIHzg==
+  dependencies:
+    "@jest/reporters" "^29.4.1"
+    "@jest/test-result" "^29.4.1"
+    "@nrwl/jest" "16.5.1"
+    "@nx/devkit" "16.5.1"
+    "@nx/js" "16.5.1"
+    "@phenomnomnominal/tsquery" "~5.0.1"
+    chalk "^4.1.0"
+    dotenv "~10.0.0"
+    identity-obj-proxy "3.0.0"
+    jest-config "^29.4.1"
+    jest-resolve "^29.4.1"
+    jest-util "^29.4.1"
+    resolve.exports "1.1.0"
+    tslib "^2.3.0"
+
 "@nx/js@16.5.0":
   version "16.5.0"
   resolved "https://registry.yarnpkg.com/@nx/js/-/js-16.5.0.tgz#638ee27f26e81337e91f051220d0aa2fcbde1dd6"
@@ -2426,6 +2460,36 @@
     "@nrwl/js" "16.5.0"
     "@nx/devkit" "16.5.0"
     "@nx/workspace" "16.5.0"
+    "@phenomnomnominal/tsquery" "~5.0.1"
+    babel-plugin-const-enum "^1.0.1"
+    babel-plugin-macros "^2.8.0"
+    babel-plugin-transform-typescript-metadata "^0.3.1"
+    chalk "^4.1.0"
+    detect-port "^1.5.1"
+    fast-glob "3.2.7"
+    fs-extra "^11.1.0"
+    ignore "^5.0.4"
+    js-tokens "^4.0.0"
+    minimatch "3.0.5"
+    semver "7.5.3"
+    source-map-support "0.5.19"
+    tslib "^2.3.0"
+
+"@nx/js@16.5.1":
+  version "16.5.1"
+  resolved "https://registry.yarnpkg.com/@nx/js/-/js-16.5.1.tgz#81c7008721fd58034467db1fc576c34ad01bfce8"
+  integrity sha512-H7TLXQXtStOZLk4bknGgKsX+jKq958zwkPjh3TKmurOULWfKSU4BXG9j7/j6rgm5yFBQH7kC1EV/5WjhMeSrJw==
+  dependencies:
+    "@babel/core" "^7.15.0"
+    "@babel/plugin-proposal-class-properties" "^7.14.5"
+    "@babel/plugin-proposal-decorators" "^7.14.5"
+    "@babel/plugin-transform-runtime" "^7.15.0"
+    "@babel/preset-env" "^7.15.0"
+    "@babel/preset-typescript" "^7.15.0"
+    "@babel/runtime" "^7.14.8"
+    "@nrwl/js" "16.5.1"
+    "@nx/devkit" "16.5.1"
+    "@nx/workspace" "16.5.1"
     "@phenomnomnominal/tsquery" "~5.0.1"
     babel-plugin-const-enum "^1.0.1"
     babel-plugin-macros "^2.8.0"
