@@ -47,7 +47,7 @@
     "jwks-rsa": "^3.0.1",
     "mobx": "^6.9.1",
     "mobx-keystone": "^1.6.3",
-    "mobx-react-lite": "^4.0.2",
+    "mobx-react-lite": "^4.0.3",
     "nanoid": "^4.0.2",
     "pg": "^8.11.1",
     "react": "^17.0.2",
