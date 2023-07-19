@@ -2151,12 +2151,12 @@
   dependencies:
     "@nx/eslint-plugin" "16.5.3"
 
-"@nrwl/express@16.5.2", "@nrwl/express@^16.5.2":
-  version "16.5.2"
-  resolved "https://registry.yarnpkg.com/@nrwl/express/-/express-16.5.2.tgz#1e09575bbe45e8fdc8e89077d0140c679dbe1834"
-  integrity sha512-qK2fof+2jLqURYcuVoBYk/Zh908KvyfPQgZ+F7vWbWUn64YP3VamvYnubY3OOx9YjeHzn+d2zZLErf8HB0YoYw==
+"@nrwl/express@16.5.3", "@nrwl/express@^16.5.3":
+  version "16.5.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/express/-/express-16.5.3.tgz#06c3d7afe8f5cba2f1a9673977b1435ca0598674"
+  integrity sha512-jXzNnY4gSxagyf7vzjkcat/CIY6f235Mfj8z+Bm9TZKwZdwMzIPxo5D1bU7iMt1n1zFAxPRGJ/LtdodkPKUsBA==
   dependencies:
-    "@nx/express" "16.5.2"
+    "@nx/express" "16.5.3"
 
 "@nrwl/jest@16.5.2", "@nrwl/jest@^16.5.2":
   version "16.5.2"
@@ -2164,6 +2164,13 @@
   integrity sha512-Chd4YGyo+8G1OmqAd9k0dtMjo9rO7Uh8vsUkWFtEDIyxmmElEReBC9nGBE/9FQYZFoc+xP1a5IaceGqupZX8bQ==
   dependencies:
     "@nx/jest" "16.5.2"
+
+"@nrwl/jest@16.5.3":
+  version "16.5.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-16.5.3.tgz#9d4344f29b16816749ea84a79dae43e44ceedf06"
+  integrity sha512-QwClOTlcVf8uD17vPUlnmAl/6Ul8t9EEPbwtUXZb6QZSJ3Ihn/7EphmKhz77lJ2Em8XHpdkPdBTVXg665J/CmA==
+  dependencies:
+    "@nx/jest" "16.5.3"
 
 "@nrwl/js@16.5.2":
   version "16.5.2"
@@ -2186,12 +2193,26 @@
   dependencies:
     "@nx/linter" "16.5.2"
 
+"@nrwl/linter@16.5.3":
+  version "16.5.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/linter/-/linter-16.5.3.tgz#09c067c227aa18fca8e96459a397f3a232b1289f"
+  integrity sha512-miUER7nOqEuAty8JKul0WxRsbRem2zNuZhG6a9MW6Ss2ny9uBeGKrElts+nDFGaL7eXQJgtoB0ChRfp06pKSoA==
+  dependencies:
+    "@nx/linter" "16.5.3"
+
 "@nrwl/node@16.5.2", "@nrwl/node@^16.5.2":
   version "16.5.2"
   resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-16.5.2.tgz#2e23e96d28e9525884924db49b117e860da1fa6d"
   integrity sha512-0eaR8iMQXPtO9E9bIyL6Ujqy9W4Ei3+Dc9ycrbNWs3os+GJ0hM8uACQuIpj5G1vGFxar78Tvb/6cp43duRf6XQ==
   dependencies:
     "@nx/node" "16.5.2"
+
+"@nrwl/node@16.5.3":
+  version "16.5.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-16.5.3.tgz#8c15482b3e503ceafde996de44837c0b707458ff"
+  integrity sha512-AXHs+W7x6SytN1Cb0BdzGfKKM4SyZVGNLEbssFwIvwC6FWhJ4N93usxbQU6sB1+1oQSqqTK7TvF51Jrg5xnd3A==
+  dependencies:
+    "@nx/node" "16.5.3"
 
 "@nrwl/nx-darwin-arm64@15.9.3":
   version "15.9.3"
@@ -2386,14 +2407,14 @@
     jsonc-eslint-parser "^2.1.0"
     semver "7.5.3"
 
-"@nx/express@16.5.2":
-  version "16.5.2"
-  resolved "https://registry.yarnpkg.com/@nx/express/-/express-16.5.2.tgz#577786a93942223462e72052646fc47d5ce38d20"
-  integrity sha512-Nev7YrKz6CzqAepjx/Yh2i27YzKI7v//79fAN0/G8sWSUPMzgUG5GHACZ2UtgXR0sQo4utTsdvqEKflaqxnFvA==
+"@nx/express@16.5.3":
+  version "16.5.3"
+  resolved "https://registry.yarnpkg.com/@nx/express/-/express-16.5.3.tgz#2250043af48601560de90a4b79da4f2388c33fa5"
+  integrity sha512-Rln9G1G2bam+p6hAhikM2jWTknin5XsVVeoDsrNq0f9fqE4i1TMaQUcBlZpaeSsJ1Kda37VrSZ7wH92yakWcbg==
   dependencies:
-    "@nrwl/express" "16.5.2"
-    "@nx/devkit" "16.5.2"
-    "@nx/node" "16.5.2"
+    "@nrwl/express" "16.5.3"
+    "@nx/devkit" "16.5.3"
+    "@nx/node" "16.5.3"
 
 "@nx/jest@16.5.2":
   version "16.5.2"
@@ -2405,6 +2426,26 @@
     "@nrwl/jest" "16.5.2"
     "@nx/devkit" "16.5.2"
     "@nx/js" "16.5.2"
+    "@phenomnomnominal/tsquery" "~5.0.1"
+    chalk "^4.1.0"
+    dotenv "~10.0.0"
+    identity-obj-proxy "3.0.0"
+    jest-config "^29.4.1"
+    jest-resolve "^29.4.1"
+    jest-util "^29.4.1"
+    resolve.exports "1.1.0"
+    tslib "^2.3.0"
+
+"@nx/jest@16.5.3":
+  version "16.5.3"
+  resolved "https://registry.yarnpkg.com/@nx/jest/-/jest-16.5.3.tgz#319493b590f7a7d28dccb5e5556de3de18dfbab8"
+  integrity sha512-E9SMO/wFDXBZCepcE3TcAk6Fu0Q/wTIGCXNum6urTS+2hqetisugC+cxCoisBrevPlqZvTm5WmBU/4UipmxN0g==
+  dependencies:
+    "@jest/reporters" "^29.4.1"
+    "@jest/test-result" "^29.4.1"
+    "@nrwl/jest" "16.5.3"
+    "@nx/devkit" "16.5.3"
+    "@nx/js" "16.5.3"
     "@phenomnomnominal/tsquery" "~5.0.1"
     chalk "^4.1.0"
     dotenv "~10.0.0"
@@ -2487,6 +2528,18 @@
     tmp "~0.2.1"
     tslib "^2.3.0"
 
+"@nx/linter@16.5.3":
+  version "16.5.3"
+  resolved "https://registry.yarnpkg.com/@nx/linter/-/linter-16.5.3.tgz#a5a1d8c44d67748f67c2e3bcc694987764ebdf5f"
+  integrity sha512-md+dzialAUqXMgEZWqguhTyeFkuGMJ2oRQed3k4EkkJ2JScXXtnj/Izk2kob7Eik7KEoBTSlNdOMHdCgc4FeIA==
+  dependencies:
+    "@nrwl/linter" "16.5.3"
+    "@nx/devkit" "16.5.3"
+    "@nx/js" "16.5.3"
+    "@phenomnomnominal/tsquery" "~5.0.1"
+    tmp "~0.2.1"
+    tslib "^2.3.0"
+
 "@nx/node@16.5.2":
   version "16.5.2"
   resolved "https://registry.yarnpkg.com/@nx/node/-/node-16.5.2.tgz#d96089fbc077bae08400099f87900ec488611dfe"
@@ -2498,6 +2551,19 @@
     "@nx/js" "16.5.2"
     "@nx/linter" "16.5.2"
     "@nx/workspace" "16.5.2"
+    tslib "^2.3.0"
+
+"@nx/node@16.5.3":
+  version "16.5.3"
+  resolved "https://registry.yarnpkg.com/@nx/node/-/node-16.5.3.tgz#42f86564a23aedd9f568716ccf6c926142ff0f82"
+  integrity sha512-bF5xcmmPEEGVvtIlfyg4tWxgmGF7iuH5Esghj4FcM68p62X54Qo5RKqUrrflnrjT/Sg97anYb0BpGHSa99RBAw==
+  dependencies:
+    "@nrwl/node" "16.5.3"
+    "@nx/devkit" "16.5.3"
+    "@nx/jest" "16.5.3"
+    "@nx/js" "16.5.3"
+    "@nx/linter" "16.5.3"
+    "@nx/workspace" "16.5.3"
     tslib "^2.3.0"
 
 "@nx/nx-darwin-arm64@16.5.2":
