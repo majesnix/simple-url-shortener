@@ -77,7 +77,7 @@
     "@nrwl/cli": "^15.9.3",
     "@nrwl/cypress": "^16.5.2",
     "@nrwl/eslint-plugin-nx": "^16.5.3",
-    "@nrwl/express": "^16.5.2",
+    "@nrwl/express": "^16.5.3",
     "@nrwl/jest": "^16.5.2",
     "@nrwl/node": "^16.5.2",
     "@nrwl/react": "^16.5.2",
