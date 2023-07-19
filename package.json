@@ -45,7 +45,7 @@
     "inversify": "^6.0.1",
     "jsonwebtoken": "^9.0.1",
     "jwks-rsa": "^3.0.1",
-    "mobx": "^6.9.1",
+    "mobx": "^6.10.0",
     "mobx-keystone": "^1.6.3",
     "mobx-react-lite": "^4.0.3",
     "nanoid": "^4.0.2",
