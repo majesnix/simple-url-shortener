@@ -2165,26 +2165,12 @@
   dependencies:
     "@nx/jest" "16.5.3"
 
-"@nrwl/js@16.5.2":
-  version "16.5.2"
-  resolved "https://registry.yarnpkg.com/@nrwl/js/-/js-16.5.2.tgz#cb1bedaa7c033fa3f892adfd2199166a0dd59faf"
-  integrity sha512-5kr4h869oq3qoKPiVELSWBrb18szZKjKHmCOxJvyL1AUeNR+F7AQxYcuyqNwLKQXBVMhQU2cAUJjqUc0gezlnA==
-  dependencies:
-    "@nx/js" "16.5.2"
-
 "@nrwl/js@16.5.3":
   version "16.5.3"
   resolved "https://registry.yarnpkg.com/@nrwl/js/-/js-16.5.3.tgz#421afe18ec559a6bbe1d5836e9cc5e36a27f7e35"
   integrity sha512-l1mpG5ItfiuMRwTxpHpu0+uNR4Stk3usR4Bhy0MwW1QYk9DtgqCYfTs0/gF2CLKCTXJ211RkSXJ9NHge1m39hA==
   dependencies:
     "@nx/js" "16.5.3"
-
-"@nrwl/linter@16.5.2":
-  version "16.5.2"
-  resolved "https://registry.yarnpkg.com/@nrwl/linter/-/linter-16.5.2.tgz#16a7cd8ce025d4efbd80af60b489ea4d92321fa2"
-  integrity sha512-8P9rxKVOWvckwn80YUJwI7PUI2Tegp0ecbwZi2gju0KATV1sEGxrrR2luHHaxfgC+lXGj1B88LzgxpDaD8Q9Hw==
-  dependencies:
-    "@nx/linter" "16.5.2"
 
 "@nrwl/linter@16.5.3":
   version "16.5.3"
@@ -2245,12 +2231,12 @@
   resolved "https://registry.yarnpkg.com/@nrwl/nx-win32-x64-msvc/-/nx-win32-x64-msvc-15.9.3.tgz#03dc071b93cc0b91646a097bf0337658364c0011"
   integrity sha512-gdnvqURKnu0EQGOFJ6NUKq6wSB+viNb7Z8qtKhzSmFwVjT8akOnLWn7ZhL9v28TAjLM7/s1Mwvmz/IMj1PGlcQ==
 
-"@nrwl/react@16.5.2", "@nrwl/react@^16.5.2":
-  version "16.5.2"
-  resolved "https://registry.yarnpkg.com/@nrwl/react/-/react-16.5.2.tgz#c66078266e5f8a149a3d366bd6c4387f39d72505"
-  integrity sha512-sMgNBJDpmqEG8ly3LM7YPwxo9SG1F2rBIb/E0y51drxZx8e2colCdeVumy0p8LSQBvsL/Cze9wj0xh7VOB3FxQ==
+"@nrwl/react@16.5.3", "@nrwl/react@^16.5.3":
+  version "16.5.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/react/-/react-16.5.3.tgz#c172dfdcbec387421a1e33492b1a5798a737b10a"
+  integrity sha512-XOG0/FOJnLIGNcrmBk2kGMkhEsweoSOUtYYtTma8Bsn1w4TclUQ9OXNrnTHJDxnhjNEGJDtf+VCFduDmOSSqLg==
   dependencies:
-    "@nx/react" "16.5.2"
+    "@nx/react" "16.5.3"
 
 "@nrwl/tao@15.9.3":
   version "15.9.3"
@@ -2272,13 +2258,6 @@
   integrity sha512-GHL8NU2P/kMahXo9lhExTgG1ow9sI3CbCe8E+UPgp4GOscIJypCpD5FuvwmkYJHgMzAx1nknlDYXN12xEe7QVg==
   dependencies:
     nx "16.5.3"
-
-"@nrwl/web@16.5.2":
-  version "16.5.2"
-  resolved "https://registry.yarnpkg.com/@nrwl/web/-/web-16.5.2.tgz#13d8807cf9f0985aa642f017b8711b5f82e573d9"
-  integrity sha512-633fulnm8rCevq/TcjoneLJlSpBg4Dle/O4NopedlGeeMDaCAbxi9Ez6hXUslJjPH7N4iUBD4tcxgNSwXfJI7w==
-  dependencies:
-    "@nx/web" "16.5.2"
 
 "@nrwl/web@16.5.3", "@nrwl/web@^16.5.3":
   version "16.5.3"
@@ -2429,36 +2408,6 @@
     resolve.exports "1.1.0"
     tslib "^2.3.0"
 
-"@nx/js@16.5.2":
-  version "16.5.2"
-  resolved "https://registry.yarnpkg.com/@nx/js/-/js-16.5.2.tgz#200e1ddad3f61f8a200397717edbeb4d51e23d47"
-  integrity sha512-CuV0I3erdx9Kv3QParQrdUnIxzHt9iWOMI6hhrcGARrP0C2l2cxQ10X/pG7pA9XMMWw5aibfHj7sPQzHXWWkSw==
-  dependencies:
-    "@babel/core" "^7.15.0"
-    "@babel/plugin-proposal-class-properties" "^7.14.5"
-    "@babel/plugin-proposal-decorators" "^7.14.5"
-    "@babel/plugin-transform-runtime" "^7.15.0"
-    "@babel/preset-env" "^7.15.0"
-    "@babel/preset-typescript" "^7.15.0"
-    "@babel/runtime" "^7.14.8"
-    "@nrwl/js" "16.5.2"
-    "@nx/devkit" "16.5.2"
-    "@nx/workspace" "16.5.2"
-    "@phenomnomnominal/tsquery" "~5.0.1"
-    babel-plugin-const-enum "^1.0.1"
-    babel-plugin-macros "^2.8.0"
-    babel-plugin-transform-typescript-metadata "^0.3.1"
-    chalk "^4.1.0"
-    detect-port "^1.5.1"
-    fast-glob "3.2.7"
-    fs-extra "^11.1.0"
-    ignore "^5.0.4"
-    js-tokens "^4.0.0"
-    minimatch "3.0.5"
-    semver "7.5.3"
-    source-map-support "0.5.19"
-    tslib "^2.3.0"
-
 "@nx/js@16.5.3":
   version "16.5.3"
   resolved "https://registry.yarnpkg.com/@nx/js/-/js-16.5.3.tgz#ababd7048279610c4304cd88fff002b7a3577284"
@@ -2487,18 +2436,6 @@
     minimatch "3.0.5"
     semver "7.5.3"
     source-map-support "0.5.19"
-    tslib "^2.3.0"
-
-"@nx/linter@16.5.2":
-  version "16.5.2"
-  resolved "https://registry.yarnpkg.com/@nx/linter/-/linter-16.5.2.tgz#59cf9a0116fc01b544c6c63960c781715e1677d5"
-  integrity sha512-d9HPiVCcYb8s5bYrjI7uqwZO640arOwB6FKn3AdIo6SHge1wn8rNvsytDx1IB0C3TcGQhjIC+4X7ZxN5GmfRbw==
-  dependencies:
-    "@nrwl/linter" "16.5.2"
-    "@nx/devkit" "16.5.2"
-    "@nx/js" "16.5.2"
-    "@phenomnomnominal/tsquery" "~5.0.1"
-    tmp "~0.2.1"
     tslib "^2.3.0"
 
 "@nx/linter@16.5.3":
@@ -2626,36 +2563,21 @@
   resolved "https://registry.yarnpkg.com/@nx/nx-win32-x64-msvc/-/nx-win32-x64-msvc-16.5.3.tgz#574b81c46f5af0f2d374297b20168a98d79af5a2"
   integrity sha512-QTpDoqxQq7wSuErkCgQoFegaUZ3D9lgmpS20zexlHm43SwS/MXtqRm9i5XNoJPTx19rpJ7gqaOm6+eOkOYLETg==
 
-"@nx/react@16.5.2":
-  version "16.5.2"
-  resolved "https://registry.yarnpkg.com/@nx/react/-/react-16.5.2.tgz#e3d67722e55bf022d3bad1b314d4981e10ad3655"
-  integrity sha512-5bEHG20/UXYjXkp51gTJzcyPwEAp5sJ5teXuO6xOY5ZKLGYHjM+Q1fSFRNP9wTBmxIFxAlVnOJhstGz+9qbd/A==
+"@nx/react@16.5.3":
+  version "16.5.3"
+  resolved "https://registry.yarnpkg.com/@nx/react/-/react-16.5.3.tgz#f7fc457b43ebc76e99ed4a2987d8b90031d075aa"
+  integrity sha512-I1SjCuiT4c7Kqhx2lqRWgzl7LZlGmQHGoOaEAPi0pbrptccGKgEXxnA7KaLXKog7gMC9u8iTvJIGdrWrlTjVlg==
   dependencies:
-    "@nrwl/react" "16.5.2"
-    "@nx/devkit" "16.5.2"
-    "@nx/js" "16.5.2"
-    "@nx/linter" "16.5.2"
-    "@nx/web" "16.5.2"
+    "@nrwl/react" "16.5.3"
+    "@nx/devkit" "16.5.3"
+    "@nx/js" "16.5.3"
+    "@nx/linter" "16.5.3"
+    "@nx/web" "16.5.3"
     "@phenomnomnominal/tsquery" "~5.0.1"
     "@svgr/webpack" "^8.0.1"
     chalk "^4.1.0"
     file-loader "^6.2.0"
     minimatch "3.0.5"
-
-"@nx/web@16.5.2":
-  version "16.5.2"
-  resolved "https://registry.yarnpkg.com/@nx/web/-/web-16.5.2.tgz#4ce088a3c8d3aaf5f3f494af8624abcb8f8b3b5a"
-  integrity sha512-kmzLChwTRPYqSQtM9RK4OHAIcKYywZiqvlCE7FAwOJwyHZTTHjcP2xThwzAU4J3rSDRLI1MFpkJyKM2wtZhlwA==
-  dependencies:
-    "@nrwl/web" "16.5.2"
-    "@nx/devkit" "16.5.2"
-    "@nx/js" "16.5.2"
-    chalk "^4.1.0"
-    chokidar "^3.5.1"
-    detect-port "^1.5.1"
-    http-server "^14.1.0"
-    ignore "^5.0.4"
-    tslib "^2.3.0"
 
 "@nx/web@16.5.3":
   version "16.5.3"
