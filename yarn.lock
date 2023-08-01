@@ -2247,13 +2247,6 @@
   dependencies:
     "@nx/js" "16.6.0"
 
-"@nrwl/linter@16.5.5":
-  version "16.5.5"
-  resolved "https://registry.yarnpkg.com/@nrwl/linter/-/linter-16.5.5.tgz#05dcb0a3317ce1bd4ef489b6ca28fdf319155925"
-  integrity sha512-sl+86AIR0QmbNNjx3TV5nlkT5TqrMCXwj2kTLafgzVfxLna2ssxgOfUYC2ve/5aIKJ4PG+6SzbnJg5SHqip50g==
-  dependencies:
-    "@nx/linter" "16.5.5"
-
 "@nrwl/linter@16.6.0":
   version "16.6.0"
   resolved "https://registry.yarnpkg.com/@nrwl/linter/-/linter-16.6.0.tgz#6fbeb959e14d773ada9ecc9f2224ab92ac6e18ca"
@@ -2261,14 +2254,7 @@
   dependencies:
     "@nx/linter" "16.6.0"
 
-"@nrwl/node@16.5.5", "@nrwl/node@^16.5.5":
-  version "16.5.5"
-  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-16.5.5.tgz#00a2970fa1664bfc09cf8412cb2f6c89f5a077fd"
-  integrity sha512-BFdQ7hzzQ+GKdnx/r6WbyzAYuG+Ldyxbz5fe7LoZ+j+wv/c+J5NXu3yPzdoVRINR41ryyWWsiqUsKbYfjQDZpg==
-  dependencies:
-    "@nx/node" "16.5.5"
-
-"@nrwl/node@16.6.0":
+"@nrwl/node@16.6.0", "@nrwl/node@^16.6.0":
   version "16.6.0"
   resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-16.6.0.tgz#59b4add412e14d20338f6e0dcbdff3a90d0321d9"
   integrity sha512-4wJ6xHxGqsvzY8klq5gwW5BJmvK80CiI5/o37ocF9+8UbD5eYfxaWZQM4091Wwf6tX8M4YluAzLn4DPkHgZLnQ==
@@ -2590,18 +2576,6 @@
     tsconfig-paths "^4.1.2"
     tslib "^2.3.0"
 
-"@nx/linter@16.5.5":
-  version "16.5.5"
-  resolved "https://registry.yarnpkg.com/@nx/linter/-/linter-16.5.5.tgz#754c5d5591309f4fca7c20fb4b91675ff6e3c0a1"
-  integrity sha512-dbIeDQJJ/8wb2wue+4e/4xEGxJJy8WUZSCmTZf6secHScp20Kr8iHfmZIiM4Qv9t8e9fHueDxiVohDwQFOSm5g==
-  dependencies:
-    "@nrwl/linter" "16.5.5"
-    "@nx/devkit" "16.5.5"
-    "@nx/js" "16.5.5"
-    "@phenomnomnominal/tsquery" "~5.0.1"
-    tmp "~0.2.1"
-    tslib "^2.3.0"
-
 "@nx/linter@16.6.0":
   version "16.6.0"
   resolved "https://registry.yarnpkg.com/@nx/linter/-/linter-16.6.0.tgz#bab04526282fef6adf83193c9cde919bc17757df"
@@ -2612,19 +2586,6 @@
     "@nx/js" "16.6.0"
     "@phenomnomnominal/tsquery" "~5.0.1"
     tmp "~0.2.1"
-    tslib "^2.3.0"
-
-"@nx/node@16.5.5":
-  version "16.5.5"
-  resolved "https://registry.yarnpkg.com/@nx/node/-/node-16.5.5.tgz#03fc8ac4158b9b4a612cf053318fc36a561dc3b9"
-  integrity sha512-LKms8f1MJsDbDHjSKMuBCW/PLpbTOzn2646oGGsYU29pmL50+mmhg56G5DeAjXXQSRwkNSforcrtOyI1vYf9Hw==
-  dependencies:
-    "@nrwl/node" "16.5.5"
-    "@nx/devkit" "16.5.5"
-    "@nx/jest" "16.5.5"
-    "@nx/js" "16.5.5"
-    "@nx/linter" "16.5.5"
-    "@nx/workspace" "16.5.5"
     tslib "^2.3.0"
 
 "@nx/node@16.6.0":
