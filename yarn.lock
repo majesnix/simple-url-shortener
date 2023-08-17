@@ -2131,12 +2131,19 @@
   dependencies:
     "@nx/linter" "16.7.1"
 
-"@nrwl/node@16.7.0", "@nrwl/node@^16.7.0":
+"@nrwl/node@16.7.0":
   version "16.7.0"
   resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-16.7.0.tgz#9e7c2622dc597c706eab043a5a83a475a6989565"
   integrity sha512-eH5BdjRHyPpv8U2XiFMgYPhtz3bic4auTF+cQJCXiXCVnM3Fk2Ys7XZnwkiCQhk8BgDSMCy3cKSVGDLkPI1N2g==
   dependencies:
     "@nx/node" "16.7.0"
+
+"@nrwl/node@16.7.1", "@nrwl/node@^16.7.1":
+  version "16.7.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-16.7.1.tgz#e3caa4b6a0a83d2364177e77113dbec7fba0084c"
+  integrity sha512-TcwX1diGs1CXXK498rgzywN2FIi//Dbwu+A5BfXUQKq6q4ypzlFyZRstop8oW48VMVGao2DttPhSIJxpU7qrng==
+  dependencies:
+    "@nx/node" "16.7.1"
 
 "@nrwl/nx-darwin-arm64@15.9.3":
   version "15.9.3"
@@ -2493,6 +2500,19 @@
     "@nx/js" "16.7.0"
     "@nx/linter" "16.7.0"
     "@nx/workspace" "16.7.0"
+    tslib "^2.3.0"
+
+"@nx/node@16.7.1":
+  version "16.7.1"
+  resolved "https://registry.yarnpkg.com/@nx/node/-/node-16.7.1.tgz#add5832be61343c09aa68e46eaf3b791481694b7"
+  integrity sha512-jbnWg61FFBsGaOBv9yCAnBTp259lqVCNstbyaMcZJATzQnjoZM3jkp2BCirxYC7nViIWHkqYe2P1ZGHy5sgrZw==
+  dependencies:
+    "@nrwl/node" "16.7.1"
+    "@nx/devkit" "16.7.1"
+    "@nx/jest" "16.7.1"
+    "@nx/js" "16.7.1"
+    "@nx/linter" "16.7.1"
+    "@nx/workspace" "16.7.1"
     tslib "^2.3.0"
 
 "@nx/nx-darwin-arm64@16.7.0":
