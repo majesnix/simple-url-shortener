@@ -2075,12 +2075,12 @@
   dependencies:
     "@nx/devkit" "16.7.4"
 
-"@nrwl/eslint-plugin-nx@16.7.3", "@nrwl/eslint-plugin-nx@^16.7.3":
-  version "16.7.3"
-  resolved "https://registry.yarnpkg.com/@nrwl/eslint-plugin-nx/-/eslint-plugin-nx-16.7.3.tgz#f7e7dfac804d95b73e1d9de30d9375ace78b02a3"
-  integrity sha512-/EMb5YjabURsclJA+NU9d3WZtespL59jyAeY9O5ytTNr05hAL1F7fGFoJeEuGnS8yesSW7EqIQoMMT909nTrVw==
+"@nrwl/eslint-plugin-nx@16.7.4", "@nrwl/eslint-plugin-nx@^16.7.4":
+  version "16.7.4"
+  resolved "https://registry.yarnpkg.com/@nrwl/eslint-plugin-nx/-/eslint-plugin-nx-16.7.4.tgz#2719debd24db6829908e63d8f22527122f289034"
+  integrity sha512-/qN/Gn0f+7fxmxLO/mSacous3fkBXCeauKKIeJQl6uSi1aVhV/u4BddNK+d2zn5WNN/xBI+xZThM+DYJMsiXjA==
   dependencies:
-    "@nx/eslint-plugin" "16.7.3"
+    "@nx/eslint-plugin" "16.7.4"
 
 "@nrwl/express@16.7.4", "@nrwl/express@^16.7.4":
   version "16.7.4"
@@ -2109,13 +2109,6 @@
   integrity sha512-7mQnzhUUSpMOnSxM10Q2XOWWEj+GdtV7HVt1s+LDvRVXSFNLWBOucjfBunbttYGO36aKk+ZPCU53SvwH2aL5eA==
   dependencies:
     "@nx/js" "16.7.4"
-
-"@nrwl/linter@16.7.3":
-  version "16.7.3"
-  resolved "https://registry.yarnpkg.com/@nrwl/linter/-/linter-16.7.3.tgz#18eafaf0a41312c6c48c67c69afd90fe50cfc92f"
-  integrity sha512-kVukKWR7suURbx9Lin4MLOgjC94y0XjAGYL6KipCBaELAEOCFjw88/+AU1wi/ZlBq6akSv3om2JJ4VxZeYLlqw==
-  dependencies:
-    "@nx/linter" "16.7.3"
 
 "@nrwl/linter@16.7.4":
   version "16.7.4"
@@ -2321,14 +2314,14 @@
     tmp "~0.2.1"
     tslib "^2.3.0"
 
-"@nx/eslint-plugin@16.7.3":
-  version "16.7.3"
-  resolved "https://registry.yarnpkg.com/@nx/eslint-plugin/-/eslint-plugin-16.7.3.tgz#b58e2896f24812b325fd9e63432b42f97e694a9f"
-  integrity sha512-B95CWQxYoQZ3/Mj9lWU61/CYTRQ5SuxdDgYn3vkgU+DI6BBDvGGhnzdjQ3CPkLgWS1fkBAMgrQaYQotOrxBKYA==
+"@nx/eslint-plugin@16.7.4":
+  version "16.7.4"
+  resolved "https://registry.yarnpkg.com/@nx/eslint-plugin/-/eslint-plugin-16.7.4.tgz#09c04ff657955959f061724f8018dcfcd64677a6"
+  integrity sha512-PjpXeW/Tr/y/PJSEaB9X2xNaqW6mYXzcFSAXQrlxuDNdVEtrieSj+OiAGKfaYjkcN1d/X9dupV6b/L0V+HcSlw==
   dependencies:
-    "@nrwl/eslint-plugin-nx" "16.7.3"
-    "@nx/devkit" "16.7.3"
-    "@nx/js" "16.7.3"
+    "@nrwl/eslint-plugin-nx" "16.7.4"
+    "@nx/devkit" "16.7.4"
+    "@nx/js" "16.7.4"
     "@typescript-eslint/type-utils" "^5.60.1"
     "@typescript-eslint/utils" "^5.60.1"
     chalk "^4.1.0"
@@ -2429,18 +2422,6 @@
     source-map-support "0.5.19"
     ts-node "10.9.1"
     tsconfig-paths "^4.1.2"
-    tslib "^2.3.0"
-
-"@nx/linter@16.7.3":
-  version "16.7.3"
-  resolved "https://registry.yarnpkg.com/@nx/linter/-/linter-16.7.3.tgz#ce0641fb4fdec76862af1b8a1edfcc36f4d03c5d"
-  integrity sha512-qrwEDF5TxTk1V57P/ZjFO87Jn8brmgnIZ4eu5FkI/sv4HobqLMint4ip2V0zeDiyQJ1TJeI7dhhHePNnDuInmw==
-  dependencies:
-    "@nrwl/linter" "16.7.3"
-    "@nx/devkit" "16.7.3"
-    "@nx/js" "16.7.3"
-    "@phenomnomnominal/tsquery" "~5.0.1"
-    tmp "~0.2.1"
     tslib "^2.3.0"
 
 "@nx/linter@16.7.4":
