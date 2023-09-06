@@ -2117,6 +2117,13 @@
   dependencies:
     "@nx/devkit" "16.7.4"
 
+"@nrwl/devkit@16.8.0":
+  version "16.8.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-16.8.0.tgz#4e41c68999c3914712a29a3a4049ce14440b282c"
+  integrity sha512-zpSNUCj9RZAAcCIHcjeVQT8FPutnaCe0empvm0yxWPbmIXjN/4Lw1f4V5K42MNDSa4Z8Hvj1tTL3+8JXSV9JxA==
+  dependencies:
+    "@nx/devkit" "16.8.0"
+
 "@nrwl/eslint-plugin-nx@16.7.4", "@nrwl/eslint-plugin-nx@^16.7.4":
   version "16.7.4"
   resolved "https://registry.yarnpkg.com/@nrwl/eslint-plugin-nx/-/eslint-plugin-nx-16.7.4.tgz#2719debd24db6829908e63d8f22527122f289034"
@@ -2241,12 +2248,19 @@
   dependencies:
     "@nx/web" "16.7.4"
 
-"@nrwl/workspace@16.7.4", "@nrwl/workspace@^16.7.4":
+"@nrwl/workspace@16.7.4":
   version "16.7.4"
   resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-16.7.4.tgz#fcac4467e78477125dcb771e007b7a6bfd8411ea"
   integrity sha512-i2mMSzF/qfsFbTD0DBMSRTNKSahJZoJCnDrTSgwZeTVfLoKYOO5QaiAqB0zKh/5qTsBCt/rKtAlfTd5uGpBzPQ==
   dependencies:
     "@nx/workspace" "16.7.4"
+
+"@nrwl/workspace@16.8.0", "@nrwl/workspace@^16.8.0":
+  version "16.8.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-16.8.0.tgz#a28342aa0e99c3c7d28f1b0ecc22b84d4e943255"
+  integrity sha512-mWrbkLsqBWrlvQLxw2vqBst/hO8iyYhdCHUyWHjHTDSe0VZmH++qUPLgru0H3VzHUn0zEENW2UrdsZWh/vz6qQ==
+  dependencies:
+    "@nx/workspace" "16.8.0"
 
 "@nx-tools/ci-context@^3.0.8":
   version "3.0.8"
@@ -2315,6 +2329,19 @@
   integrity sha512-SLito+/TAeDYR+d7IIpp/sBJm41WM+nIevILv0TSQW4Pq0ylUy1nUvV8Pe7l1ohZccDrQuebMUWPwGO0hv8SeQ==
   dependencies:
     "@nrwl/devkit" "16.7.4"
+    ejs "^3.1.7"
+    enquirer "~2.3.6"
+    ignore "^5.0.4"
+    semver "7.5.3"
+    tmp "~0.2.1"
+    tslib "^2.3.0"
+
+"@nx/devkit@16.8.0":
+  version "16.8.0"
+  resolved "https://registry.yarnpkg.com/@nx/devkit/-/devkit-16.8.0.tgz#21772d89b0326f97163d80e64c45d785b34de0fa"
+  integrity sha512-vFeWR6dQSmiVWOccIj9vpnB0nRzOY+VWucDDbQ4TKWQKzKfpnFDMsGxImff1AHFI0h4pvJOimDrY5+hktRrYew==
+  dependencies:
+    "@nrwl/devkit" "16.8.0"
     ejs "^3.1.7"
     enquirer "~2.3.6"
     ignore "^5.0.4"
@@ -2567,6 +2594,21 @@
     chalk "^4.1.0"
     ignore "^5.0.4"
     nx "16.7.4"
+    rxjs "^7.8.0"
+    tslib "^2.3.0"
+    yargs-parser "21.1.1"
+
+"@nx/workspace@16.8.0":
+  version "16.8.0"
+  resolved "https://registry.yarnpkg.com/@nx/workspace/-/workspace-16.8.0.tgz#ede5b14ef79b6ade58dd87b28fe6ba595628dd4a"
+  integrity sha512-cS8ahfV/MYof9AQ7ofdhwbc4NkAtgrHGem1vG/TqyWYxSNYgP5TiJ5CuN8XIIpXet9tTtQc/Cml1xSjEAd7qMQ==
+  dependencies:
+    "@nrwl/workspace" "16.8.0"
+    "@nx/devkit" "16.8.0"
+    chalk "^4.1.0"
+    enquirer "~2.3.6"
+    ignore "^5.0.4"
+    nx "16.8.0"
     rxjs "^7.8.0"
     tslib "^2.3.0"
     yargs-parser "21.1.1"
