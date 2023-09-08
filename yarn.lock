@@ -2239,12 +2239,12 @@
   resolved "https://registry.yarnpkg.com/@nrwl/nx-win32-x64-msvc/-/nx-win32-x64-msvc-15.9.3.tgz#03dc071b93cc0b91646a097bf0337658364c0011"
   integrity sha512-gdnvqURKnu0EQGOFJ6NUKq6wSB+viNb7Z8qtKhzSmFwVjT8akOnLWn7ZhL9v28TAjLM7/s1Mwvmz/IMj1PGlcQ==
 
-"@nrwl/react@16.8.0", "@nrwl/react@^16.8.0":
-  version "16.8.0"
-  resolved "https://registry.yarnpkg.com/@nrwl/react/-/react-16.8.0.tgz#062b512e2a2d52a04a0d8509f81392c9db45594c"
-  integrity sha512-TC4kuul8249Dji4TFqiFaWAVDyKG+YOlAN9ZwTP38/R0JZpc0ihljnjS/HpV2S3VdrkiwVINwiqnabkMkfG3ug==
+"@nrwl/react@16.8.1", "@nrwl/react@^16.8.1":
+  version "16.8.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/react/-/react-16.8.1.tgz#6c86c7ccb00e7549ff6bc90ce7c09b043a453e07"
+  integrity sha512-0Mhaa9WalF3DzvvIeLeiVZ1ykaUK/kVXCkMu+0982hDARB5uZAEkriVPv7YWXOTYiBP+mMt/oJmwhq/JDGC7yA==
   dependencies:
-    "@nx/react" "16.8.0"
+    "@nx/react" "16.8.1"
 
 "@nrwl/tao@15.9.3":
   version "15.9.3"
@@ -2275,6 +2275,13 @@
   integrity sha512-bjiIBXXbedqV1B6nHzigRUbMtm3u9zfQsoUr8OgUQTuYnL5QWwRBhznigMJZ01o2wXxv9oD3UtDP72fANxnPrw==
   dependencies:
     "@nx/web" "16.8.0"
+
+"@nrwl/web@16.8.1":
+  version "16.8.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/web/-/web-16.8.1.tgz#f115d2a40a31d359f00e5fba75cdf10d861d9468"
+  integrity sha512-GgpAt0OsnEzz+0rVtiPdO911AKvBtljP2hcVlhReQRohBeZ3F472uYVPq/OF/G+ELZU4toXgIuGr2Ggfd6XM8g==
+  dependencies:
+    "@nx/web" "16.8.1"
 
 "@nrwl/workspace@16.8.0", "@nrwl/workspace@^16.8.0":
   version "16.8.0"
@@ -2656,16 +2663,16 @@
   resolved "https://registry.yarnpkg.com/@nx/nx-win32-x64-msvc/-/nx-win32-x64-msvc-16.8.1.tgz#6ec1930aaf4d9dea19149d6b3d100b2c7e69d582"
   integrity sha512-yHZ5FAcx54rVc31R0yIpniepkHMPwaxG23l8E/ZYbL1iPwE/Wc1HeUzUvxUuSXtguRp7ihcRhaUEPkcSl2EAVw==
 
-"@nx/react@16.8.0":
-  version "16.8.0"
-  resolved "https://registry.yarnpkg.com/@nx/react/-/react-16.8.0.tgz#8f3ac3bbaa863b33ee436a0d9535eedeec1107ec"
-  integrity sha512-5Oz7erXPjqp1Z+bpHmBzGewa9fzPX3gFgGBpiyivSJ61OVyDW2Ga3ffaKrWpS8UvemIfgpbb9XVL4mrkfDeoNA==
+"@nx/react@16.8.1":
+  version "16.8.1"
+  resolved "https://registry.yarnpkg.com/@nx/react/-/react-16.8.1.tgz#458b0b1267326e1278791558bff97f485ed47e2b"
+  integrity sha512-oCrMT0A0vuC41M8j+k1200l7LCqt6cf0rESl9jPoD3JrFhAvAOdaAxhDKZF4p5cMwaIy2j1OjVKb+bPU6h83NQ==
   dependencies:
-    "@nrwl/react" "16.8.0"
-    "@nx/devkit" "16.8.0"
-    "@nx/js" "16.8.0"
-    "@nx/linter" "16.8.0"
-    "@nx/web" "16.8.0"
+    "@nrwl/react" "16.8.1"
+    "@nx/devkit" "16.8.1"
+    "@nx/js" "16.8.1"
+    "@nx/linter" "16.8.1"
+    "@nx/web" "16.8.1"
     "@phenomnomnominal/tsquery" "~5.0.1"
     "@svgr/webpack" "^8.0.1"
     chalk "^4.1.0"
@@ -2681,6 +2688,19 @@
     "@nrwl/web" "16.8.0"
     "@nx/devkit" "16.8.0"
     "@nx/js" "16.8.0"
+    chalk "^4.1.0"
+    detect-port "^1.5.1"
+    http-server "^14.1.0"
+    tslib "^2.3.0"
+
+"@nx/web@16.8.1":
+  version "16.8.1"
+  resolved "https://registry.yarnpkg.com/@nx/web/-/web-16.8.1.tgz#de81f53d87a52dcda2ca4cf355562eb2f7c007c0"
+  integrity sha512-3dOOJk81lnqIiS8T6tRmQ8XFcQuYpi0416es/HhJ9F6z40RJhg5T0U6DYPC2DtqqYdsmmGYY/lsWYWH+Q9lT3w==
+  dependencies:
+    "@nrwl/web" "16.8.1"
+    "@nx/devkit" "16.8.1"
+    "@nx/js" "16.8.1"
     chalk "^4.1.0"
     detect-port "^1.5.1"
     http-server "^14.1.0"

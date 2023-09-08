@@ -80,7 +80,7 @@
     "@nrwl/express": "^16.8.1",
     "@nrwl/jest": "^16.8.0",
     "@nrwl/node": "^16.8.0",
-    "@nrwl/react": "^16.8.0",
+    "@nrwl/react": "^16.8.1",
     "@nrwl/tao": "^16.8.0",
     "@nrwl/web": "^16.8.0",
     "@nrwl/workspace": "^16.8.0",
