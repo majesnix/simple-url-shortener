@@ -2103,12 +2103,12 @@
   dependencies:
     nx "15.9.3"
 
-"@nrwl/cypress@16.8.0", "@nrwl/cypress@^16.8.0":
-  version "16.8.0"
-  resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-16.8.0.tgz#07a7c38578db082d8dd0e7197a4dd1dbaa97bb91"
-  integrity sha512-5E6x21VGgBUZir5NdBSXT9u1RNc3EPTeAAaGsIp6sBjPRWpCye9uiRFhmysTRToTZHHAfFOSVagyUL0ymTj4Kg==
+"@nrwl/cypress@16.8.1", "@nrwl/cypress@^16.8.1":
+  version "16.8.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-16.8.1.tgz#ad072bee2d27c5d2bbbab96c9e541eee0321efcc"
+  integrity sha512-set8MUV6b1QpHCSqQ4It01BM9u6hf0e6s02DZdi/1OW3h/JYo5kqcLrYQra3AKCIimGByXdoHtCUjyFT0pMrdg==
   dependencies:
-    "@nx/cypress" "16.8.0"
+    "@nx/cypress" "16.8.1"
 
 "@nrwl/devkit@16.8.0":
   version "16.8.0"
@@ -2336,15 +2336,15 @@
   optionalDependencies:
     "@nx-tools/docker-metadata" "^3.0.8"
 
-"@nx/cypress@16.8.0":
-  version "16.8.0"
-  resolved "https://registry.yarnpkg.com/@nx/cypress/-/cypress-16.8.0.tgz#28fc67754af40effbb70bcd223aaea0c5e7d91ae"
-  integrity sha512-mL3gGzLPnpOLxGxJgpPsymAPO37OR/eP2EJNU7DyEudTKQ5wgZWqLdBxjPZAgKo7WCynyKupg6DecrPZmvhgFg==
+"@nx/cypress@16.8.1":
+  version "16.8.1"
+  resolved "https://registry.yarnpkg.com/@nx/cypress/-/cypress-16.8.1.tgz#1788f2450580b43306a4268dfe5b8f48b25ca3a1"
+  integrity sha512-Yao0YWb0PVyAKDWXKjHsLjwuULx7GPUsoAuz8qr990YeKDuhqFKOPmSPSv8a8VAOo7yltCWuBmzvL1X8xF2amQ==
   dependencies:
-    "@nrwl/cypress" "16.8.0"
-    "@nx/devkit" "16.8.0"
-    "@nx/js" "16.8.0"
-    "@nx/linter" "16.8.0"
+    "@nrwl/cypress" "16.8.1"
+    "@nx/devkit" "16.8.1"
+    "@nx/js" "16.8.1"
+    "@nx/linter" "16.8.1"
     "@phenomnomnominal/tsquery" "~5.0.1"
     detect-port "^1.5.1"
     semver "7.5.3"
