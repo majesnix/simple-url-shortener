@@ -81,7 +81,7 @@
     "@nrwl/jest": "^16.8.1",
     "@nrwl/node": "^16.8.1",
     "@nrwl/react": "^16.8.1",
-    "@nrwl/tao": "^16.8.1",
+    "@nrwl/tao": "^16.9.0",
     "@nrwl/web": "^16.8.1",
     "@nrwl/workspace": "^16.9.0",
     "@nx-tools/nx-docker": "^3.0.8",
