@@ -2231,12 +2231,12 @@
   dependencies:
     "@nx/react" "16.9.0"
 
-"@nrwl/tao@*", "@nrwl/tao@^16.9.0":
-  version "16.9.0"
-  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-16.9.0.tgz#0a99a0cac3822c074f60391860caafc663a259b1"
-  integrity sha512-2gkP2pKPgIfIsQXfly8ogRvbKpyiJTpYO6q0sIUCdir+MN1HvZH1Ymm8JVlzNasy+TpMYKE5YWgAJW5gVBrrtg==
+"@nrwl/tao@*", "@nrwl/tao@16.9.1", "@nrwl/tao@^16.9.1":
+  version "16.9.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-16.9.1.tgz#84e9be4002792cf5a2cf45f4e0733ac7091d732a"
+  integrity sha512-KsRBRAE5mSP83ZjO9cPW6ZQZWOtkMfCBih/WE9qpaiHn+hCydtYStyAO2QSic4tHVV+8VpPUQWYnpf5rhkNzWg==
   dependencies:
-    nx "16.9.0"
+    nx "16.9.1"
     tslib "^2.3.0"
 
 "@nrwl/tao@15.9.3":
