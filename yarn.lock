@@ -2109,12 +2109,19 @@
   dependencies:
     nx "15.9.3"
 
-"@nrwl/cypress@16.9.1", "@nrwl/cypress@^16.9.1":
-  version "16.9.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-16.9.1.tgz#e7afc0661ff0b6e36ea9bc1578f4a5c99eed397f"
-  integrity sha512-nXYB4jrw9p5MN512UToy0e34ZFzv3W0XF0RyKV5vlTH676nIP4iQi3FAM5rlgUyd5epTWdrjQpNQJxTfWCc6kw==
+"@nrwl/cypress@16.10.0", "@nrwl/cypress@^16.10.0":
+  version "16.10.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-16.10.0.tgz#89a073cdc4e87b57eb10b98d212e1e96bb4a33d3"
+  integrity sha512-ns6VQrrF08XYwZE4OduLVK2rwpN6dNrkVArw4fzJccuZ1g3YxR5JSuxpdBQA3FjKWoo2DybivuQudpIlYGq3UQ==
   dependencies:
-    "@nx/cypress" "16.9.1"
+    "@nx/cypress" "16.10.0"
+
+"@nrwl/devkit@16.10.0":
+  version "16.10.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-16.10.0.tgz#ac8c5b4db00f12c4b817c937be2f7c4eb8f2593c"
+  integrity sha512-fRloARtsDQoQgQ7HKEy0RJiusg/HSygnmg4gX/0n/Z+SUS+4KoZzvHjXc6T5ZdEiSjvLypJ+HBM8dQzIcVACPQ==
+  dependencies:
+    "@nx/devkit" "16.10.0"
 
 "@nrwl/devkit@16.10.0":
   version "16.10.0"
@@ -2335,15 +2342,15 @@
   optionalDependencies:
     "@nx-tools/docker-metadata" "^3.0.8"
 
-"@nx/cypress@16.9.1":
-  version "16.9.1"
-  resolved "https://registry.yarnpkg.com/@nx/cypress/-/cypress-16.9.1.tgz#1e838901737043194bf71de602b95038820b7c9b"
-  integrity sha512-xJT3yP4Mn/uqM6KGqVYjjoVItCG1rKMSRTVzJZULoynmqxasisjctznAbwPQCHRMHKj42o/6KEdA6l9TH+wVWA==
+"@nx/cypress@16.10.0":
+  version "16.10.0"
+  resolved "https://registry.yarnpkg.com/@nx/cypress/-/cypress-16.10.0.tgz#81f865ce1a761c849a61743bea5c5c572e2d0d3a"
+  integrity sha512-suYc5jC6Os0D78Fn2pAIuGOkM6nhIWsSEb94PWwdZWE0XKQiWrgQJZBXDIu3x2zq6oZxYdx8OufUFli8vr4/Tw==
   dependencies:
-    "@nrwl/cypress" "16.9.1"
-    "@nx/devkit" "16.9.1"
-    "@nx/js" "16.9.1"
-    "@nx/linter" "16.9.1"
+    "@nrwl/cypress" "16.10.0"
+    "@nx/devkit" "16.10.0"
+    "@nx/js" "16.10.0"
+    "@nx/linter" "16.10.0"
     "@phenomnomnominal/tsquery" "~5.0.1"
     detect-port "^1.5.1"
     semver "7.5.3"
