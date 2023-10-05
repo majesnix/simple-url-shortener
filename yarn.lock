@@ -2275,19 +2275,12 @@
     nx "16.9.1"
     tslib "^2.3.0"
 
-"@nrwl/web@16.10.0":
+"@nrwl/web@16.10.0", "@nrwl/web@^16.10.0":
   version "16.10.0"
   resolved "https://registry.yarnpkg.com/@nrwl/web/-/web-16.10.0.tgz#f88d798ef7a24cc37c75ad36cd266998e4bd5dbc"
   integrity sha512-BRQGOHiuEptVhjmXnlqM47epUL00RoUMjhcsfMNjyZ7WpdY0JjwJaNx4afylt3h28mSXVi4t008oE5FEC+YfYw==
   dependencies:
     "@nx/web" "16.10.0"
-
-"@nrwl/web@16.9.1", "@nrwl/web@^16.9.1":
-  version "16.9.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/web/-/web-16.9.1.tgz#420a42bb83de600ab6a7c971410ba2c45a87a57a"
-  integrity sha512-bDwdvGTWobXhx2z9bcpa0mmxyN9nkCjbEz657HoO2qg78oJpPwwyRl81wdCh0Bd8o+kv/m9ya7ZA5gIt3p+R2A==
-  dependencies:
-    "@nx/web" "16.9.1"
 
 "@nrwl/workspace@16.10.0", "@nrwl/workspace@^16.10.0":
   version "16.10.0"
@@ -2702,19 +2695,6 @@
     "@nrwl/web" "16.10.0"
     "@nx/devkit" "16.10.0"
     "@nx/js" "16.10.0"
-    chalk "^4.1.0"
-    detect-port "^1.5.1"
-    http-server "^14.1.0"
-    tslib "^2.3.0"
-
-"@nx/web@16.9.1":
-  version "16.9.1"
-  resolved "https://registry.yarnpkg.com/@nx/web/-/web-16.9.1.tgz#ef6c1328072d6980e99e7c00ec2f9474616c7d75"
-  integrity sha512-N5fVfkuJIBhmT95yVQB4NmyR3CNnynZVTgwSeWtItxaNWWIIoQt3J/XXTEO2gwQ4xM/S2WS4IfzNHDDNo5oNxQ==
-  dependencies:
-    "@nrwl/web" "16.9.1"
-    "@nx/devkit" "16.9.1"
-    "@nx/js" "16.9.1"
     chalk "^4.1.0"
     detect-port "^1.5.1"
     http-server "^14.1.0"
