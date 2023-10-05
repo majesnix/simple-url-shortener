@@ -2123,20 +2123,6 @@
   dependencies:
     "@nx/devkit" "16.10.0"
 
-"@nrwl/devkit@16.10.0":
-  version "16.10.0"
-  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-16.10.0.tgz#ac8c5b4db00f12c4b817c937be2f7c4eb8f2593c"
-  integrity sha512-fRloARtsDQoQgQ7HKEy0RJiusg/HSygnmg4gX/0n/Z+SUS+4KoZzvHjXc6T5ZdEiSjvLypJ+HBM8dQzIcVACPQ==
-  dependencies:
-    "@nx/devkit" "16.10.0"
-
-"@nrwl/devkit@16.10.0":
-  version "16.10.0"
-  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-16.10.0.tgz#ac8c5b4db00f12c4b817c937be2f7c4eb8f2593c"
-  integrity sha512-fRloARtsDQoQgQ7HKEy0RJiusg/HSygnmg4gX/0n/Z+SUS+4KoZzvHjXc6T5ZdEiSjvLypJ+HBM8dQzIcVACPQ==
-  dependencies:
-    "@nx/devkit" "16.10.0"
-
 "@nrwl/devkit@16.9.1":
   version "16.9.1"
   resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-16.9.1.tgz#e8b42ac23926a241338b173f3eed66757d75e530"
@@ -2303,14 +2289,14 @@
   dependencies:
     "@nx/web" "16.9.1"
 
-"@nrwl/workspace@16.10.0":
+"@nrwl/workspace@16.10.0", "@nrwl/workspace@^16.10.0":
   version "16.10.0"
   resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-16.10.0.tgz#0b75465c1887ef3953df32f0c234a9568c1504be"
   integrity sha512-fZeNxhFs/2cm326NebfJIgSI3W4KZN94WGS46wlIBrUUGP5/vwHYsi09Kx6sG1kRkAuZVtgJ33uU2F6xcAWzUA==
   dependencies:
     "@nx/workspace" "16.10.0"
 
-"@nrwl/workspace@16.9.1", "@nrwl/workspace@^16.9.1":
+"@nrwl/workspace@16.9.1":
   version "16.9.1"
   resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-16.9.1.tgz#f4f73c3652b4968740a5103e5d0190be04c1bed7"
   integrity sha512-jtQmsC1dmM/aUXFHw261tYu7tMqOHw4Sb3NWH4hXoasOn862L4kwkTYWn/MdQ4JTbv9uTf4+cRohP2F6aOj+jA==
