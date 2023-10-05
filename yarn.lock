@@ -2130,6 +2130,13 @@
   dependencies:
     "@nx/devkit" "16.10.0"
 
+"@nrwl/devkit@16.10.0":
+  version "16.10.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-16.10.0.tgz#ac8c5b4db00f12c4b817c937be2f7c4eb8f2593c"
+  integrity sha512-fRloARtsDQoQgQ7HKEy0RJiusg/HSygnmg4gX/0n/Z+SUS+4KoZzvHjXc6T5ZdEiSjvLypJ+HBM8dQzIcVACPQ==
+  dependencies:
+    "@nx/devkit" "16.10.0"
+
 "@nrwl/devkit@16.9.1":
   version "16.9.1"
   resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-16.9.1.tgz#e8b42ac23926a241338b173f3eed66757d75e530"
@@ -2144,12 +2151,19 @@
   dependencies:
     "@nx/eslint-plugin" "16.9.1"
 
-"@nrwl/express@16.9.1", "@nrwl/express@^16.9.1":
-  version "16.9.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/express/-/express-16.9.1.tgz#d8ea54c73c5f22bf1529e4cfeb464dd5a60950b3"
-  integrity sha512-CdzpZtotOCRxagUIoORPuWXH0iJhNCkQij+O6D3W8aoXr8PzJb+ahn8LhkyvizlhFGVNSLO76i2Akdpt8JvoTQ==
+"@nrwl/express@16.10.0", "@nrwl/express@^16.10.0":
+  version "16.10.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/express/-/express-16.10.0.tgz#2abf76e3e7f6d33b0403594ad95a729e229e2a7c"
+  integrity sha512-/tfAnZuvT2A5ddJ0Ae/k5ixln54Iy0GobvWvSlsZp5I62kMZLWu7fnqml/rUqD5JnyfdPKE8+Yh6+3jkN3VTPQ==
   dependencies:
-    "@nx/express" "16.9.1"
+    "@nx/express" "16.10.0"
+
+"@nrwl/jest@16.10.0":
+  version "16.10.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-16.10.0.tgz#5c7cd692e7aacba43687271bb3528568c14c1239"
+  integrity sha512-hZuIK3xXh4HaE6/Ny8hGidjkJ4aLZjnQtPDxKD/423gznQe2FdHx3avoSlbOEOx5Oc6sJ9QGGZLcvckKQ5uWww==
+  dependencies:
+    "@nx/jest" "16.10.0"
 
 "@nrwl/jest@16.9.1", "@nrwl/jest@^16.9.1":
   version "16.9.1"
@@ -2185,6 +2199,13 @@
   integrity sha512-T8HIKMTYdlW8b/HK2k8ZOFn4MH6LUDC5TfGhbvPL4lM/zbbYPa0YfyqYBan7QoBG0WRqVvgZLIVk7Ho211Uyow==
   dependencies:
     "@nx/linter" "16.9.1"
+
+"@nrwl/node@16.10.0":
+  version "16.10.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-16.10.0.tgz#730e4a9d0fd41f48ea999ccd2a4c2fc9b721096b"
+  integrity sha512-UZ1s02f2IpFRXzVZIBuDLXXB+obyP280RFHV9smYruhOHrj8iA5wXNSXcJJGorwpKP3WCUS/+KS49oVSHOkLUA==
+  dependencies:
+    "@nx/node" "16.10.0"
 
 "@nrwl/node@16.9.1", "@nrwl/node@^16.9.1":
   version "16.9.1"
@@ -2398,14 +2419,33 @@
     semver "7.5.3"
     tslib "^2.3.0"
 
-"@nx/express@16.9.1":
-  version "16.9.1"
-  resolved "https://registry.yarnpkg.com/@nx/express/-/express-16.9.1.tgz#3d6600c2ecac99e916364d23038b4d12c27657c2"
-  integrity sha512-ZyZ25YR6fL9Tx2I8TzXlW+ELNBX0Qr6ZBO21QICjIZ59VvPJqElCyhuz6sYNI0tT9yz0/Jf+oymRsTo+Zb+aBQ==
+"@nx/express@16.10.0":
+  version "16.10.0"
+  resolved "https://registry.yarnpkg.com/@nx/express/-/express-16.10.0.tgz#bb331e0471e4cdf61f5b1448e6bebb1cadc8b115"
+  integrity sha512-lCZoAPPDP7+pxhuTdPy+SJUgG6RngheArI6QmcS9dgc5Kv/EoOaOvCnhbDFCuA/x2DodoCzwA1QkDo3Sp2UKXg==
   dependencies:
-    "@nrwl/express" "16.9.1"
-    "@nx/devkit" "16.9.1"
-    "@nx/node" "16.9.1"
+    "@nrwl/express" "16.10.0"
+    "@nx/devkit" "16.10.0"
+    "@nx/node" "16.10.0"
+    tslib "^2.3.0"
+
+"@nx/jest@16.10.0":
+  version "16.10.0"
+  resolved "https://registry.yarnpkg.com/@nx/jest/-/jest-16.10.0.tgz#f3f15e777035877b5c37172c5611b53af9917310"
+  integrity sha512-QseeLjDrl4c9q9Dd/057SXYqd47JVLhD2VQlQDraYwjsHz3lWkzlGaaHy0ZrVu8LSzY7lUUhJMPyYO3qo8wT6A==
+  dependencies:
+    "@jest/reporters" "^29.4.1"
+    "@jest/test-result" "^29.4.1"
+    "@nrwl/jest" "16.10.0"
+    "@nx/devkit" "16.10.0"
+    "@nx/js" "16.10.0"
+    "@phenomnomnominal/tsquery" "~5.0.1"
+    chalk "^4.1.0"
+    identity-obj-proxy "3.0.0"
+    jest-config "^29.4.1"
+    jest-resolve "^29.4.1"
+    jest-util "^29.4.1"
+    resolve.exports "1.1.0"
     tslib "^2.3.0"
 
 "@nx/jest@16.9.1":
@@ -2524,6 +2564,19 @@
     tmp "~0.2.1"
     tslib "^2.3.0"
     typescript "~5.1.3"
+
+"@nx/node@16.10.0":
+  version "16.10.0"
+  resolved "https://registry.yarnpkg.com/@nx/node/-/node-16.10.0.tgz#117490d96a8e1460cace475c78e6fbd3ec55a7b7"
+  integrity sha512-mOGxsZzLNg9kMy/FDkCQfhb/ig3WsttHxzG9+ynCHBV5svKOIqA3F+EUp1gre6wgRyi/qrEUhk6GER5ZTX2ygw==
+  dependencies:
+    "@nrwl/node" "16.10.0"
+    "@nx/devkit" "16.10.0"
+    "@nx/jest" "16.10.0"
+    "@nx/js" "16.10.0"
+    "@nx/linter" "16.10.0"
+    "@nx/workspace" "16.10.0"
+    tslib "^2.3.0"
 
 "@nx/node@16.9.1":
   version "16.9.1"
