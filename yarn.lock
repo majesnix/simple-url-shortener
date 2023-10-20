@@ -2105,14 +2105,14 @@
   dependencies:
     "@nx/express" "17.0.0"
 
-"@nrwl/jest@16.10.0", "@nrwl/jest@^16.10.0":
+"@nrwl/jest@16.10.0":
   version "16.10.0"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-16.10.0.tgz#5c7cd692e7aacba43687271bb3528568c14c1239"
   integrity sha512-hZuIK3xXh4HaE6/Ny8hGidjkJ4aLZjnQtPDxKD/423gznQe2FdHx3avoSlbOEOx5Oc6sJ9QGGZLcvckKQ5uWww==
   dependencies:
     "@nx/jest" "16.10.0"
 
-"@nrwl/jest@17.0.0":
+"@nrwl/jest@17.0.0", "@nrwl/jest@^17.0.0":
   version "17.0.0"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-17.0.0.tgz#10712dbfd5c7e04cf813efb9a9ddf570aebbe365"
   integrity sha512-j+7SM/y63c5zET9YQ6TAt8W6bxxagu3e3zIV68ccEq3pF1jdGnmx9r9RMaiFRo5LWA5gsIayDQDtJ8vpdH2M2g==
