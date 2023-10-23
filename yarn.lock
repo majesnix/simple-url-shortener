@@ -2032,12 +2032,12 @@
   dependencies:
     "@nx/eslint-plugin" "17.0.0"
 
-"@nrwl/express@17.0.0", "@nrwl/express@^17.0.0":
-  version "17.0.0"
-  resolved "https://registry.yarnpkg.com/@nrwl/express/-/express-17.0.0.tgz#926e5bfd5310e7ab1dba0bc21002e28a4c89cbf7"
-  integrity sha512-dky7weOLEykALsSua/yulhD+PzweEkxTZe7AjOCx3wGfoQ9qXdNgLEaJ4m32MPRxz3ytX+sXn8cE6AfE59xz7A==
+"@nrwl/express@17.0.1", "@nrwl/express@^17.0.1":
+  version "17.0.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/express/-/express-17.0.1.tgz#4eb88c02ab9a6af801f6af332c27b092799c3340"
+  integrity sha512-qYPNFN/UI7pjMYdwUa65R0MFLceM9GAGjO82GdfVv3R235bar5OA/uasr7QzfVWjOEbMhyHSGmqHfa56R1CXYQ==
   dependencies:
-    "@nx/express" "17.0.0"
+    "@nx/express" "17.0.1"
 
 "@nrwl/jest@17.0.0", "@nrwl/jest@^17.0.0":
   version "17.0.0"
@@ -2045,6 +2045,13 @@
   integrity sha512-j+7SM/y63c5zET9YQ6TAt8W6bxxagu3e3zIV68ccEq3pF1jdGnmx9r9RMaiFRo5LWA5gsIayDQDtJ8vpdH2M2g==
   dependencies:
     "@nx/jest" "17.0.0"
+
+"@nrwl/jest@17.0.1":
+  version "17.0.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-17.0.1.tgz#13cbef48195baebefab4c57bba9a468f63071d44"
+  integrity sha512-FoCOtgyGTg0DRePiOXKFSOXVFQrQ3hQp+YIt/GPraXSp0xzP5hqbl7WH8i+7pghujm4YUv7lHK6sFSht9SxQWQ==
+  dependencies:
+    "@nx/jest" "17.0.1"
 
 "@nrwl/js@17.0.0":
   version "17.0.0"
@@ -2066,6 +2073,13 @@
   integrity sha512-iT3ku9EHcvflj+JpHMdCIufAeg1A6WnrrKPzqej1Pme2fWuG74EIugi7IShLxmKA1NLtMp4WjItGQidZ7lRzdA==
   dependencies:
     "@nx/node" "17.0.0"
+
+"@nrwl/node@17.0.1":
+  version "17.0.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-17.0.1.tgz#b69dd5818bbe53b822f93797003794e2897fc0fb"
+  integrity sha512-FvZ/bnZn1XE2gfYx1hxT4c96C+8W2QiEBVyJfYSQtTWeSaerAadWS01ewrVvFw39fa75vTOtjEkUCRY5CPPo3A==
+  dependencies:
+    "@nx/node" "17.0.1"
 
 "@nrwl/nx-darwin-arm64@15.9.3":
   version "15.9.3"
@@ -2294,14 +2308,14 @@
     tslib "^2.3.0"
     typescript "~5.1.3"
 
-"@nx/express@17.0.0":
-  version "17.0.0"
-  resolved "https://registry.yarnpkg.com/@nx/express/-/express-17.0.0.tgz#5f38aca57997463a9c5f076650e9f39f5e6bb2b0"
-  integrity sha512-9rU96xUz8oI/GeXiMncVy+H+BUVB5KijrqP3UFhUbAIJ2v/iSfSg+JkVZxJWrhookpgpWpscukmKvmCOCzLDSQ==
+"@nx/express@17.0.1":
+  version "17.0.1"
+  resolved "https://registry.yarnpkg.com/@nx/express/-/express-17.0.1.tgz#08f0f82d65aedb3d109233027731e8151ff227c3"
+  integrity sha512-GnSTZ4SRm+amp2b5/dhhBNw2i5+usApYUycLgN9xJ3JCC26HlC3KeI9mjWiCsUuZonB6sRK3fQALjwSQTYAYbA==
   dependencies:
-    "@nrwl/express" "17.0.0"
-    "@nx/devkit" "17.0.0"
-    "@nx/node" "17.0.0"
+    "@nrwl/express" "17.0.1"
+    "@nx/devkit" "17.0.1"
+    "@nx/node" "17.0.1"
     tslib "^2.3.0"
 
 "@nx/jest@17.0.0":
@@ -2314,6 +2328,25 @@
     "@nrwl/jest" "17.0.0"
     "@nx/devkit" "17.0.0"
     "@nx/js" "17.0.0"
+    "@phenomnomnominal/tsquery" "~5.0.1"
+    chalk "^4.1.0"
+    identity-obj-proxy "3.0.0"
+    jest-config "^29.4.1"
+    jest-resolve "^29.4.1"
+    jest-util "^29.4.1"
+    resolve.exports "1.1.0"
+    tslib "^2.3.0"
+
+"@nx/jest@17.0.1":
+  version "17.0.1"
+  resolved "https://registry.yarnpkg.com/@nx/jest/-/jest-17.0.1.tgz#701e80afa3e1e9b0603720a878c6f2b2e813158a"
+  integrity sha512-DROBrzayTe1M3ud49pyrogPchRLCwdDIkfJbpuH1oYaB2K4WDVcAc7t+ijDnfxHjP+1Yv8CQ2Vp7lA+buBjBlw==
+  dependencies:
+    "@jest/reporters" "^29.4.1"
+    "@jest/test-result" "^29.4.1"
+    "@nrwl/jest" "17.0.1"
+    "@nx/devkit" "17.0.1"
+    "@nx/js" "17.0.1"
     "@phenomnomnominal/tsquery" "~5.0.1"
     chalk "^4.1.0"
     identity-obj-proxy "3.0.0"
@@ -2417,6 +2450,18 @@
     "@nx/eslint" "17.0.0"
     "@nx/jest" "17.0.0"
     "@nx/js" "17.0.0"
+    tslib "^2.3.0"
+
+"@nx/node@17.0.1":
+  version "17.0.1"
+  resolved "https://registry.yarnpkg.com/@nx/node/-/node-17.0.1.tgz#2d1c3c44b456ba4776bb1d9c973b6fe403ea07ed"
+  integrity sha512-TH3qJoHi2OrGFuSXgiYSs291DtLDRM5j6UR4TMK7/R62foPMV3Yc8CufdNb3pw7InjDPD5tuT5x5HilNbCtYlg==
+  dependencies:
+    "@nrwl/node" "17.0.1"
+    "@nx/devkit" "17.0.1"
+    "@nx/eslint" "17.0.1"
+    "@nx/jest" "17.0.1"
+    "@nx/js" "17.0.1"
     tslib "^2.3.0"
 
 "@nx/nx-darwin-arm64@17.0.0":
