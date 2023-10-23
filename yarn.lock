@@ -2025,12 +2025,12 @@
   dependencies:
     "@nx/devkit" "17.0.1"
 
-"@nrwl/eslint-plugin-nx@17.0.0", "@nrwl/eslint-plugin-nx@^17.0.0":
-  version "17.0.0"
-  resolved "https://registry.yarnpkg.com/@nrwl/eslint-plugin-nx/-/eslint-plugin-nx-17.0.0.tgz#74b6152a7adf33c723b1e43df0e44c5422f636c4"
-  integrity sha512-kOYPAQMdS9qDkOG5CyAjerBN4UwxUipqZjjahVyA3GS5JwRe9DQUZ0vrFtMp5DSfJ+Cs9fNd4voHvZQEKanq2Q==
+"@nrwl/eslint-plugin-nx@17.0.1", "@nrwl/eslint-plugin-nx@^17.0.1":
+  version "17.0.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/eslint-plugin-nx/-/eslint-plugin-nx-17.0.1.tgz#4e5b4de201a2b0ac885ae3c10961e4ce27d6a83c"
+  integrity sha512-L3rD1vnZPI637tigeHhLmSUjaNxI0Rwd3xFb8BTm2sCi1wPAR8LVxb3tERC3qjVU9EWl6v2AyLnAFaRK9birhg==
   dependencies:
-    "@nx/eslint-plugin" "17.0.0"
+    "@nx/eslint-plugin" "17.0.1"
 
 "@nrwl/express@17.0.1", "@nrwl/express@^17.0.1":
   version "17.0.1"
@@ -2270,14 +2270,14 @@
     tmp "~0.2.1"
     tslib "^2.3.0"
 
-"@nx/eslint-plugin@17.0.0":
-  version "17.0.0"
-  resolved "https://registry.yarnpkg.com/@nx/eslint-plugin/-/eslint-plugin-17.0.0.tgz#ff43e3f28de006e03f9be88b23a7feff6bc0e378"
-  integrity sha512-q1kUSPRGHhbaXwJq+JthprIDVjL9mVaPeB/2mFmMFdsU6RPZsud8oJoQCamMKkGMMcN/VrtAm3L680EYv/abQw==
+"@nx/eslint-plugin@17.0.1":
+  version "17.0.1"
+  resolved "https://registry.yarnpkg.com/@nx/eslint-plugin/-/eslint-plugin-17.0.1.tgz#b157bcfec220633c27756148a61b2bfbbd844975"
+  integrity sha512-XvLqg3JcLhvU/VoSXaJK/iwnlDH4xHgCubno6X9l3V6+uLzMEJew69IPHPvRptWMwGSrkhmPKBHauQQUBDkIvQ==
   dependencies:
-    "@nrwl/eslint-plugin-nx" "17.0.0"
-    "@nx/devkit" "17.0.0"
-    "@nx/js" "17.0.0"
+    "@nrwl/eslint-plugin-nx" "17.0.1"
+    "@nx/devkit" "17.0.1"
+    "@nx/js" "17.0.1"
     "@typescript-eslint/type-utils" "^5.60.1"
     "@typescript-eslint/utils" "^5.60.1"
     chalk "^4.1.0"
