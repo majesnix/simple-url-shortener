@@ -2105,12 +2105,12 @@
   resolved "https://registry.yarnpkg.com/@nrwl/nx-win32-x64-msvc/-/nx-win32-x64-msvc-15.9.3.tgz#03dc071b93cc0b91646a097bf0337658364c0011"
   integrity sha512-gdnvqURKnu0EQGOFJ6NUKq6wSB+viNb7Z8qtKhzSmFwVjT8akOnLWn7ZhL9v28TAjLM7/s1Mwvmz/IMj1PGlcQ==
 
-"@nrwl/react@17.0.2", "@nrwl/react@^17.0.2":
-  version "17.0.2"
-  resolved "https://registry.yarnpkg.com/@nrwl/react/-/react-17.0.2.tgz#3d5a9925c13fd81dfa5c07e29d8f1655eabb68df"
-  integrity sha512-tLKF2n4497pYnVTMm/75cl2xU+MPr2KONvkojHYOT2mNj/jEJc4JVazpkcFry55laKAQeKQ1a77g89RjXqapZg==
+"@nrwl/react@17.0.3", "@nrwl/react@^17.0.3":
+  version "17.0.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/react/-/react-17.0.3.tgz#231383c52394ac38e8c93dff348a84b977d2f4c7"
+  integrity sha512-2GEBwp6ZfMuFZPxTUjjD8q7RWtR5jcOudPwmVc6nzP4a1XGSozpzJbXpTtg7RNSvUVEL8DecRA532L5EWQ81jQ==
   dependencies:
-    "@nx/react" "17.0.2"
+    "@nx/react" "17.0.3"
 
 "@nrwl/tao@15.9.3":
   version "15.9.3"
@@ -2134,13 +2134,6 @@
   dependencies:
     nx "17.0.3"
     tslib "^2.3.0"
-
-"@nrwl/web@17.0.2":
-  version "17.0.2"
-  resolved "https://registry.yarnpkg.com/@nrwl/web/-/web-17.0.2.tgz#564786ee874f45cbd58f2406b89f14e47f21e4b8"
-  integrity sha512-+kSGZ0DOEl6MoWmfCtxcDlmZV/+mqY+pGS+qSB3kZGwfRkpwbv1spAPcYyfUB2wNed9js/lSRGt9sBcwWcIY0Q==
-  dependencies:
-    "@nx/web" "17.0.2"
 
 "@nrwl/web@17.0.3", "@nrwl/web@^17.0.3":
   version "17.0.3"
@@ -2264,17 +2257,6 @@
     jsonc-eslint-parser "^2.1.0"
     semver "7.5.3"
     tslib "^2.3.0"
-
-"@nx/eslint@17.0.2":
-  version "17.0.2"
-  resolved "https://registry.yarnpkg.com/@nx/eslint/-/eslint-17.0.2.tgz#f330aff5154fe11e3e8db73747c183a27e6d54d0"
-  integrity sha512-mZXavg/m+A0GqmWORq5jNRt7ku0q9OoX2212ldivvLYI1zHHr2VFYoRxhS+NzaZBK5/EiKs/5P8dHhYb4/v7Bw==
-  dependencies:
-    "@nx/devkit" "17.0.2"
-    "@nx/js" "17.0.2"
-    "@nx/linter" "17.0.2"
-    tslib "^2.3.0"
-    typescript "~5.1.3"
 
 "@nx/eslint@17.0.3":
   version "17.0.3"
@@ -2406,13 +2388,6 @@
     tsconfig-paths "^4.1.2"
     tslib "^2.3.0"
 
-"@nx/linter@17.0.2":
-  version "17.0.2"
-  resolved "https://registry.yarnpkg.com/@nx/linter/-/linter-17.0.2.tgz#28938d5e42854088fd3356ebd160613dfd4b3706"
-  integrity sha512-cXCrx/qcZc53GKqOLRIPTqACdby9/plOpfQlo0BlHMOrwvkkKjzXsnoJgR6XRWdegDKVkqUWHWDAjDI3/aMshA==
-  dependencies:
-    "@nx/eslint" "17.0.2"
-
 "@nx/linter@17.0.3":
   version "17.0.3"
   resolved "https://registry.yarnpkg.com/@nx/linter/-/linter-17.0.3.tgz#a8b02b3212f7f80e3ef17c93f1afee077c76eae0"
@@ -2532,34 +2507,21 @@
   resolved "https://registry.yarnpkg.com/@nx/nx-win32-x64-msvc/-/nx-win32-x64-msvc-17.0.3.tgz#773639f3d271019fa4b38417f7ed23f50359bc78"
   integrity sha512-SJssAOyUM1IW9t84/Uzau9JHo14hnG5mxvcrborNGlLq+WnP0jzISVs7gvV2xWZ9j1JemxA5KLbkMuIkJyR6qQ==
 
-"@nx/react@17.0.2":
-  version "17.0.2"
-  resolved "https://registry.yarnpkg.com/@nx/react/-/react-17.0.2.tgz#87386741929dd6245ec5d3326ee810bb6397a793"
-  integrity sha512-eplguwU2yXg0saITRjrBqgj4N+65aqiCvld9UfRGpOERYPN+hM08eJqp0aAtg8JYZkPz3q+39rqNPFPyVu/c/Q==
+"@nx/react@17.0.3":
+  version "17.0.3"
+  resolved "https://registry.yarnpkg.com/@nx/react/-/react-17.0.3.tgz#053717e269f2bb2c78f953957cf07c906fca184c"
+  integrity sha512-Hx3pep3uweKRE8ZYW5eQiMPwQ1b5IqVweQsW+nfQ/qFxMtLadAiJxpugjk604mtUlNyhXCAaOFgigr9WNswX+g==
   dependencies:
-    "@nrwl/react" "17.0.2"
-    "@nx/devkit" "17.0.2"
-    "@nx/eslint" "17.0.2"
-    "@nx/js" "17.0.2"
-    "@nx/web" "17.0.2"
+    "@nrwl/react" "17.0.3"
+    "@nx/devkit" "17.0.3"
+    "@nx/eslint" "17.0.3"
+    "@nx/js" "17.0.3"
+    "@nx/web" "17.0.3"
     "@phenomnomnominal/tsquery" "~5.0.1"
     "@svgr/webpack" "^8.0.1"
     chalk "^4.1.0"
     file-loader "^6.2.0"
     minimatch "3.0.5"
-    tslib "^2.3.0"
-
-"@nx/web@17.0.2":
-  version "17.0.2"
-  resolved "https://registry.yarnpkg.com/@nx/web/-/web-17.0.2.tgz#5c1f60a5b740ba1044ab0a74686e38c54f283fa9"
-  integrity sha512-M8bausXzgkeFlNn43uO3pxtn/1EDoIs/7xgWPoGAdqV4l4RKG0JHqeLi68tP6YVA30RSAZ7UmvKQlKo14uDp0w==
-  dependencies:
-    "@nrwl/web" "17.0.2"
-    "@nx/devkit" "17.0.2"
-    "@nx/js" "17.0.2"
-    chalk "^4.1.0"
-    detect-port "^1.5.1"
-    http-server "^14.1.0"
     tslib "^2.3.0"
 
 "@nx/web@17.0.3":
