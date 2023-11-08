@@ -99,7 +99,7 @@
     "@types/react-helmet": "^6.1.9",
     "@types/react-router": "^5.1.20",
     "@types/react-router-dom": "^5.3.3",
-    "@types/react-window": "^1.8.7",
+    "@types/react-window": "^1.8.8",
     "@types/styled-components": "^5.1.29",
     "@types/uuid": "^9.0.7",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
