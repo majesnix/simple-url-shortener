@@ -2008,6 +2008,13 @@
   dependencies:
     "@nx/jest" "17.1.1"
 
+"@nrwl/jest@17.1.2":
+  version "17.1.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-17.1.2.tgz#f1eb66fe18ec85ffbe5e765fd5fe23e2acfa12cc"
+  integrity sha512-FUZcjZQaPg6ImzoK6es5KpyZGNSj6vG7AKzgAmVHzLelnSgP/0hVEZevotRKwFVWS1AmP2LLyguzpIRjtDAX0g==
+  dependencies:
+    "@nx/jest" "17.1.2"
+
 "@nrwl/js@17.1.1":
   version "17.1.1"
   resolved "https://registry.yarnpkg.com/@nrwl/js/-/js-17.1.1.tgz#8590ed142f78fd532e16b18e62fa812b3526f924"
@@ -2022,12 +2029,19 @@
   dependencies:
     "@nx/js" "17.1.2"
 
-"@nrwl/node@17.1.1", "@nrwl/node@^17.1.1":
+"@nrwl/node@17.1.1":
   version "17.1.1"
   resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-17.1.1.tgz#00cb63326ac89ac844d60928b25a2f959485b1ca"
   integrity sha512-2lw2EZ3WfgRsrshdb9C1eYHdFuW6Yv88BAogK8OrPmszTJ92AKT/fcZwkPdiquo4YfeDlWq3166ixGeM+aDtBg==
   dependencies:
     "@nx/node" "17.1.1"
+
+"@nrwl/node@17.1.2", "@nrwl/node@^17.1.2":
+  version "17.1.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-17.1.2.tgz#6caebc336e34c7c2ec016a6c99e5472db59d3905"
+  integrity sha512-tfyE+Rmr/UiQXKciJahHrLhuoZmmKjhB5gaLGCnYpTDHRur+pogpDuHP+242DF5k108SHCcTR5OuUi08SBm3Qg==
+  dependencies:
+    "@nx/node" "17.1.2"
 
 "@nrwl/nx-darwin-arm64@15.9.3":
   version "15.9.3"
@@ -2285,6 +2299,25 @@
     resolve.exports "1.1.0"
     tslib "^2.3.0"
 
+"@nx/jest@17.1.2":
+  version "17.1.2"
+  resolved "https://registry.yarnpkg.com/@nx/jest/-/jest-17.1.2.tgz#b2061c310913ce07d3381c23957de443a54b320a"
+  integrity sha512-rgwowVMbSR9/U9yzTX2LqDFpsvQ9QkWC/dEpn2jHXMYEU5qu0rbW6mnKSuQ+sHN4Fn6UgesFrYAZCwEPx+izpQ==
+  dependencies:
+    "@jest/reporters" "^29.4.1"
+    "@jest/test-result" "^29.4.1"
+    "@nrwl/jest" "17.1.2"
+    "@nx/devkit" "17.1.2"
+    "@nx/js" "17.1.2"
+    "@phenomnomnominal/tsquery" "~5.0.1"
+    chalk "^4.1.0"
+    identity-obj-proxy "3.0.0"
+    jest-config "^29.4.1"
+    jest-resolve "^29.4.1"
+    jest-util "^29.4.1"
+    resolve.exports "1.1.0"
+    tslib "^2.3.0"
+
 "@nx/js@17.1.1":
   version "17.1.1"
   resolved "https://registry.yarnpkg.com/@nx/js/-/js-17.1.1.tgz#8dc677bc829a3148b9d251d79a08f0394cd62cd0"
@@ -2381,6 +2414,18 @@
     "@nx/eslint" "17.1.1"
     "@nx/jest" "17.1.1"
     "@nx/js" "17.1.1"
+    tslib "^2.3.0"
+
+"@nx/node@17.1.2":
+  version "17.1.2"
+  resolved "https://registry.yarnpkg.com/@nx/node/-/node-17.1.2.tgz#2937513814128f4b95d2f7b983aa5950f95db588"
+  integrity sha512-o3M1RD2UliorCf9LyxSK3+QQ9qF3JUJa7gigmoc/25DiByyuZ962OUpPeyUsruNmgowJnB/ZSKh9QnhI4NiWZQ==
+  dependencies:
+    "@nrwl/node" "17.1.2"
+    "@nx/devkit" "17.1.2"
+    "@nx/eslint" "17.1.2"
+    "@nx/jest" "17.1.2"
+    "@nx/js" "17.1.2"
     tslib "^2.3.0"
 
 "@nx/nx-darwin-arm64@17.1.1":
