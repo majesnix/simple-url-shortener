@@ -1994,12 +1994,12 @@
   dependencies:
     "@nx/eslint-plugin" "17.1.2"
 
-"@nrwl/express@17.1.1", "@nrwl/express@^17.1.1":
-  version "17.1.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/express/-/express-17.1.1.tgz#da0d337104acc9850d79652d8ad6afbed7c83cfd"
-  integrity sha512-6s16LgPbfAc3mHilECOm2A/IdUn2JVi7xzbi67DEQsUjVNUCHJEv+OuaFmtDehAUDukv8gOvBnkPNi/S8Oi8xQ==
+"@nrwl/express@17.1.2", "@nrwl/express@^17.1.2":
+  version "17.1.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/express/-/express-17.1.2.tgz#1265f5689618d08b51f59e3960d439b8b7c44dc1"
+  integrity sha512-nMt/BVuUmD8LSES6V+ZCE7NnM3Iuv6sff7aLuDolul7TKhgavmPjKgaMccQW7cOUolvijeGNfZqyt8PEgw9zlA==
   dependencies:
-    "@nx/express" "17.1.1"
+    "@nx/express" "17.1.2"
 
 "@nrwl/jest@17.1.1", "@nrwl/jest@^17.1.1":
   version "17.1.1"
@@ -2028,13 +2028,6 @@
   integrity sha512-70Fx//GJdRt2Uo6ft07Up+eeSK2+jqUnkBhvGLauro91g9SVSgbHlhj+D8l86wccyKz/OULod29WEBkA6Z/t3Q==
   dependencies:
     "@nx/js" "17.1.2"
-
-"@nrwl/node@17.1.1":
-  version "17.1.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-17.1.1.tgz#00cb63326ac89ac844d60928b25a2f959485b1ca"
-  integrity sha512-2lw2EZ3WfgRsrshdb9C1eYHdFuW6Yv88BAogK8OrPmszTJ92AKT/fcZwkPdiquo4YfeDlWq3166ixGeM+aDtBg==
-  dependencies:
-    "@nx/node" "17.1.1"
 
 "@nrwl/node@17.1.2", "@nrwl/node@^17.1.2":
   version "17.1.2"
@@ -2263,14 +2256,14 @@
     tslib "^2.3.0"
     typescript "~5.2.2"
 
-"@nx/express@17.1.1":
-  version "17.1.1"
-  resolved "https://registry.yarnpkg.com/@nx/express/-/express-17.1.1.tgz#c89d15d1412c0a07cec67b86d0a9b17bb52a4588"
-  integrity sha512-hMic2HZxrgFVGS6UVcdffgd7fMeXabXnhsRF1fSBWD0Nre2GjAJG/wmm7uLpLUbYJNQjnyQeC2DS1okUPqRsYQ==
+"@nx/express@17.1.2":
+  version "17.1.2"
+  resolved "https://registry.yarnpkg.com/@nx/express/-/express-17.1.2.tgz#ecf0cdafa0479f7e9293517c4457e3a9e8165575"
+  integrity sha512-w3MKnbnSHTxImnTIlU0lqUZrQtcinm/O4ixFW8i+D3SVEX+PM3oXtqBNS+f6S+aVxaSYLvqQ+mtbtIHgi9eLzQ==
   dependencies:
-    "@nrwl/express" "17.1.1"
-    "@nx/devkit" "17.1.1"
-    "@nx/node" "17.1.1"
+    "@nrwl/express" "17.1.2"
+    "@nx/devkit" "17.1.2"
+    "@nx/node" "17.1.2"
     tslib "^2.3.0"
 
 "@nx/jest@17.1.1":
@@ -2396,18 +2389,6 @@
   integrity sha512-KS7jq61Fg2tiB+PDui3+zH9RANZV/rYyg1yzKe/Say7DabcZDziHmxw5t/JZE7JlTA2Kmy7HBMRgvJsqxOlukQ==
   dependencies:
     "@nx/eslint" "17.1.2"
-
-"@nx/node@17.1.1":
-  version "17.1.1"
-  resolved "https://registry.yarnpkg.com/@nx/node/-/node-17.1.1.tgz#621bfdcb4eb2163574c6effd5930d57284f11369"
-  integrity sha512-DPz3FgowZKlkdK7wBekJnxkU7ANvcbAYpKFIDcVrWUPcadtxIB5IHiNEpDLTbzwoQ2fi8VcXWJ55AT0HqgZ+Bw==
-  dependencies:
-    "@nrwl/node" "17.1.1"
-    "@nx/devkit" "17.1.1"
-    "@nx/eslint" "17.1.1"
-    "@nx/jest" "17.1.1"
-    "@nx/js" "17.1.1"
-    tslib "^2.3.0"
 
 "@nx/node@17.1.2":
   version "17.1.2"
