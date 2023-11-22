@@ -2901,10 +2901,10 @@
   resolved "https://registry.yarnpkg.com/@types/aria-query/-/aria-query-4.2.2.tgz#ed4e0ad92306a704f9fb132a0cfcf77486dbe2bc"
   integrity sha512-HnYpAE1Y6kRyKM/XkEuiRQhTHvkzMBurTHnpFLYLBGPIylZNPs9jJcuOOYWxPLJCSEtmZT0Y8rHDokKN7rRTig==
 
-"@types/auth0-js@^9.21.4":
-  version "9.21.4"
-  resolved "https://registry.yarnpkg.com/@types/auth0-js/-/auth0-js-9.21.4.tgz#1bb668671921c66c963f90898505a2a19a988f57"
-  integrity sha512-G2tJ6ce/+WmAeX1SFNoGTMsk9/0KuKuZQQkf7febJGepaIXGEPtbotJRBfXUS86bi06d84mA7R0p3UWiP9c9oA==
+"@types/auth0-js@^9.21.5":
+  version "9.21.5"
+  resolved "https://registry.yarnpkg.com/@types/auth0-js/-/auth0-js-9.21.5.tgz#2adec936a48ddaaf761a9118a759dfcdecfa3316"
+  integrity sha512-hQInFZkMPjrV8s49lefXBd6nym8+kdFxhdzzjlMAvy+7qHSk+TLCwUoMhvU6FQP3prj2j4NTtsufaqkUwiPgug==
 
 "@types/babel__core@^7.0.0", "@types/babel__core@^7.1.14":
   version "7.1.16"
