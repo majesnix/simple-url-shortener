@@ -1988,13 +1988,6 @@
   dependencies:
     "@nx/express" "17.2.0"
 
-"@nrwl/jest@17.1.3":
-  version "17.1.3"
-  resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-17.1.3.tgz#451835b6f6eaa3aaf186949754a7cd2f141c86ca"
-  integrity sha512-q5nbEbhvjOuNSEQMSpoUSBwR9Q3EFR92mNT2T0wbHcWVyfp1wPtJ8NAY/d2jJF+Ekm2hu3fJCfslFE3L3riZfg==
-  dependencies:
-    "@nx/jest" "17.1.3"
-
 "@nrwl/jest@17.2.0", "@nrwl/jest@^17.2.0":
   version "17.2.0"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-17.2.0.tgz#69ea82983ee83dc42ed78a0817676d397796ab2f"
@@ -2016,14 +2009,7 @@
   dependencies:
     "@nx/js" "17.2.0"
 
-"@nrwl/node@17.1.3", "@nrwl/node@^17.1.3":
-  version "17.1.3"
-  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-17.1.3.tgz#e40d46f29364c3921b8f86591e6464c13061b5b7"
-  integrity sha512-J/iIDuuLwM6NR0TIWEHXQmre9SdlkHbFtstae9nuTqATcZEBShBLYdR8I9piQT+QGMvwKIoWej5a3g21JBQhlg==
-  dependencies:
-    "@nx/node" "17.1.3"
-
-"@nrwl/node@17.2.0":
+"@nrwl/node@17.2.0", "@nrwl/node@^17.2.0":
   version "17.2.0"
   resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-17.2.0.tgz#8fafc84457d098754991b5d512f5b31331968243"
   integrity sha512-w6sjSrChQB2VXE5ImRMhbeGE6K8GvqPmuiz0/5HBk+v53yf6iGWSe9aK/OJld4Tr9TRVh7T9j0VkjbqhZ7QG3g==
@@ -2260,25 +2246,6 @@
     "@nx/node" "17.2.0"
     tslib "^2.3.0"
 
-"@nx/jest@17.1.3":
-  version "17.1.3"
-  resolved "https://registry.yarnpkg.com/@nx/jest/-/jest-17.1.3.tgz#2b4c39fac49659719976e59a56b61847e1af0592"
-  integrity sha512-08amXLb5GHIIE8XzJRT/RhIzJzKp8mSjzT0ymciK6lDRYbzSBoHFS8KN9xqqmtWNYVZWPMq6ySoDYGi1abIR4Q==
-  dependencies:
-    "@jest/reporters" "^29.4.1"
-    "@jest/test-result" "^29.4.1"
-    "@nrwl/jest" "17.1.3"
-    "@nx/devkit" "17.1.3"
-    "@nx/js" "17.1.3"
-    "@phenomnomnominal/tsquery" "~5.0.1"
-    chalk "^4.1.0"
-    identity-obj-proxy "3.0.0"
-    jest-config "^29.4.1"
-    jest-resolve "^29.4.1"
-    jest-util "^29.4.1"
-    resolve.exports "1.1.0"
-    tslib "^2.3.0"
-
 "@nx/jest@17.2.0":
   version "17.2.0"
   resolved "https://registry.yarnpkg.com/@nx/jest/-/jest-17.2.0.tgz#de9cc913e80fbd6364142556fe889628cc8dacf6"
@@ -2383,18 +2350,6 @@
   integrity sha512-jaW4/NoOaKfZMPMRJG5y/Ba9CnIodqOTDWUc72+9xX0d1uqr1LGZu99dGEMEhReIQUsasLDvzX80wvhm3Y7VIQ==
   dependencies:
     "@nx/eslint" "17.2.0"
-
-"@nx/node@17.1.3":
-  version "17.1.3"
-  resolved "https://registry.yarnpkg.com/@nx/node/-/node-17.1.3.tgz#58625dad45cdf29de70686bc013e0a0b87b1062a"
-  integrity sha512-3L937cSGuo92oCfgV+NcYpz53nTcFpqcHnt0UXO1x1VbFst5l0qM689xwPbHWoM2VCUkcCGMIwBvWOiZ+EJdLA==
-  dependencies:
-    "@nrwl/node" "17.1.3"
-    "@nx/devkit" "17.1.3"
-    "@nx/eslint" "17.1.3"
-    "@nx/jest" "17.1.3"
-    "@nx/js" "17.1.3"
-    tslib "^2.3.0"
 
 "@nx/node@17.2.0":
   version "17.2.0"
