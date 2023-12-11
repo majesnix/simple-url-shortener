@@ -1988,14 +1988,14 @@
   dependencies:
     "@nx/express" "17.2.0"
 
-"@nrwl/jest@17.1.3", "@nrwl/jest@^17.1.3":
+"@nrwl/jest@17.1.3":
   version "17.1.3"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-17.1.3.tgz#451835b6f6eaa3aaf186949754a7cd2f141c86ca"
   integrity sha512-q5nbEbhvjOuNSEQMSpoUSBwR9Q3EFR92mNT2T0wbHcWVyfp1wPtJ8NAY/d2jJF+Ekm2hu3fJCfslFE3L3riZfg==
   dependencies:
     "@nx/jest" "17.1.3"
 
-"@nrwl/jest@17.2.0":
+"@nrwl/jest@17.2.0", "@nrwl/jest@^17.2.0":
   version "17.2.0"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-17.2.0.tgz#69ea82983ee83dc42ed78a0817676d397796ab2f"
   integrity sha512-xGyWYX+1HI9sbNTHm/bDYSASwz0CVXdnCUlXSJxutTdgrL0jrmEg2GEZ0ClkluWVYcGd35afIbeWgG3/6S02Ow==
