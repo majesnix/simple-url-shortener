@@ -2083,7 +2083,7 @@
   dependencies:
     nx "15.9.3"
 
-"@nrwl/tao@17.2.0", "@nrwl/tao@^17.2.0":
+"@nrwl/tao@17.2.0":
   version "17.2.0"
   resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-17.2.0.tgz#f652de5adc6f51e60649ad3156ded2a54074d622"
   integrity sha512-pBs9CaOgzRS4tPEcSeYmktQ1g1VC2C+kzt7X2xlowPx6VRP5eyUKtZUeKztib/Pw2G3RNRxA8E3IZYYcjSb8Vg==
@@ -2091,7 +2091,7 @@
     nx "17.2.0"
     tslib "^2.3.0"
 
-"@nrwl/tao@17.2.1":
+"@nrwl/tao@17.2.1", "@nrwl/tao@^17.2.1":
   version "17.2.1"
   resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-17.2.1.tgz#d001fbbf586c55f878ea8fc426bf97ba36179479"
   integrity sha512-u/r3w6gLxYfWjiyjFZ7RVWgcpF6GQOAK8h9mu8dqYmwiihdbsFxcA+Kac4bf+LJRXuNbJCGX2em2CMumvkkGBQ==
