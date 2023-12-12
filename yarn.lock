@@ -2076,12 +2076,12 @@
   resolved "https://registry.yarnpkg.com/@nrwl/nx-win32-x64-msvc/-/nx-win32-x64-msvc-15.9.3.tgz#03dc071b93cc0b91646a097bf0337658364c0011"
   integrity sha512-gdnvqURKnu0EQGOFJ6NUKq6wSB+viNb7Z8qtKhzSmFwVjT8akOnLWn7ZhL9v28TAjLM7/s1Mwvmz/IMj1PGlcQ==
 
-"@nrwl/react@17.2.0", "@nrwl/react@^17.2.0":
-  version "17.2.0"
-  resolved "https://registry.yarnpkg.com/@nrwl/react/-/react-17.2.0.tgz#d6f61952bf7c8e494fe9bbb50ca7e0a5f5e9f891"
-  integrity sha512-I9daqtJ3L4DX66crknzWOBPC0vU0HxVM3NZZc3HdTkXYrkD1vdI7vmiKrOLtfHz4K2jxw1aPhx/VgGfvbw/5qw==
+"@nrwl/react@17.2.1", "@nrwl/react@^17.2.1":
+  version "17.2.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/react/-/react-17.2.1.tgz#3968dd7ddd0e9f71b6e8a5c82b9c1d250c614721"
+  integrity sha512-ZQfxHji9q6NSrnYPvpSJRezOz/QoHFuW01cgOqTFu2BE55omDDZdzoY/Y/ZFXl1Y+pQXifjKJJrXjE+INke5Dg==
   dependencies:
-    "@nx/react" "17.2.0"
+    "@nx/react" "17.2.1"
 
 "@nrwl/tao@15.9.3":
   version "15.9.3"
@@ -2105,13 +2105,6 @@
   dependencies:
     nx "17.2.1"
     tslib "^2.3.0"
-
-"@nrwl/web@17.2.0":
-  version "17.2.0"
-  resolved "https://registry.yarnpkg.com/@nrwl/web/-/web-17.2.0.tgz#04d2ff584f0e83e321ef8831eb0e4980885915a1"
-  integrity sha512-bNw+1uDBny+5IPCBHrCqQafKlq0C9V2na4HpE3Ucf+6q2zJAbADpm2lE3OYwP0q3uzJZL/ey6nwrqeU+YDpH4A==
-  dependencies:
-    "@nx/web" "17.2.0"
 
 "@nrwl/web@17.2.1", "@nrwl/web@^17.2.1":
   version "17.2.1"
@@ -2516,34 +2509,21 @@
   resolved "https://registry.yarnpkg.com/@nx/nx-win32-x64-msvc/-/nx-win32-x64-msvc-17.2.1.tgz#70052fe73b13614766257740375abf6f6d387e2b"
   integrity sha512-fH+dJEgFMyhlUcnlOj9IYF7F+bSBrOgG5q+VLZxmSMkETvVx12OTvmML38VKWExBdPSJHjSHlrvmsxK1toadnQ==
 
-"@nx/react@17.2.0":
-  version "17.2.0"
-  resolved "https://registry.yarnpkg.com/@nx/react/-/react-17.2.0.tgz#ef1c2db56b5d479a54008a6eb32010dc0776e7bc"
-  integrity sha512-GiR1PMl63DYJMJhfXbQ/ZNfbFZvDeQwU4xbrmMIlu/LeLA4rrU191Dtf2CODEf1xevhUYXbCFaNrplNCJchKGg==
+"@nx/react@17.2.1":
+  version "17.2.1"
+  resolved "https://registry.yarnpkg.com/@nx/react/-/react-17.2.1.tgz#db0dd620f419624ab6fe8a8245c79e51d33e2a32"
+  integrity sha512-/4HOnH+qlW6V5SFdVBgEPjvKnDbosQHjPoyjkkKzgiPhZ9HfewBPVWnDsm8eF1qQZiuXxqhHaBDEZhMvXaxGIA==
   dependencies:
-    "@nrwl/react" "17.2.0"
-    "@nx/devkit" "17.2.0"
-    "@nx/eslint" "17.2.0"
-    "@nx/js" "17.2.0"
-    "@nx/web" "17.2.0"
+    "@nrwl/react" "17.2.1"
+    "@nx/devkit" "17.2.1"
+    "@nx/eslint" "17.2.1"
+    "@nx/js" "17.2.1"
+    "@nx/web" "17.2.1"
     "@phenomnomnominal/tsquery" "~5.0.1"
     "@svgr/webpack" "^8.0.1"
     chalk "^4.1.0"
     file-loader "^6.2.0"
     minimatch "3.0.5"
-    tslib "^2.3.0"
-
-"@nx/web@17.2.0":
-  version "17.2.0"
-  resolved "https://registry.yarnpkg.com/@nx/web/-/web-17.2.0.tgz#bc35286bd3b381670f0a09fc8e23854e86991918"
-  integrity sha512-jjsAsGyFdoT1zNvCK6SqkwH9Eub3CcWD41bn6pQ08AMRicM8+QtJ7MhUivD/dXkxJwzQ2oQq3Iq/Vl63i3ZIlw==
-  dependencies:
-    "@nrwl/web" "17.2.0"
-    "@nx/devkit" "17.2.0"
-    "@nx/js" "17.2.0"
-    chalk "^4.1.0"
-    detect-port "^1.5.1"
-    http-server "^14.1.0"
     tslib "^2.3.0"
 
 "@nx/web@17.2.1":
