@@ -1961,13 +1961,6 @@
   dependencies:
     "@nx/cypress" "17.2.3"
 
-"@nrwl/devkit@17.2.1":
-  version "17.2.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-17.2.1.tgz#cb32c685ef24377df425acce64beae8449d21951"
-  integrity sha512-1MM9xhRw57iZtAcUPMxeQpApdOO6cY9+OF0MP7eyTWZ3Sz6SnqF5tpkLJAMUrRoMdkH7j21nTArdLMClkdGPGA==
-  dependencies:
-    "@nx/devkit" "17.2.1"
-
 "@nrwl/devkit@17.2.3":
   version "17.2.3"
   resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-17.2.3.tgz#4d49db452e4d136ce366197799b0d79dce169d0e"
@@ -1989,26 +1982,12 @@
   dependencies:
     "@nx/express" "17.2.3"
 
-"@nrwl/jest@17.2.1", "@nrwl/jest@^17.2.1":
-  version "17.2.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-17.2.1.tgz#8b575ab4a1e45eba6da204be543fb195dfc40a75"
-  integrity sha512-XsmM4dUqJEXU0z0uhjS3yQFfIPi8XT2spilU6+CjZFg2F2oIID3AlPt5qG/ygxibovvtsXo5jXMfaaddyt5dnQ==
-  dependencies:
-    "@nx/jest" "17.2.1"
-
-"@nrwl/jest@17.2.3":
+"@nrwl/jest@17.2.3", "@nrwl/jest@^17.2.3":
   version "17.2.3"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-17.2.3.tgz#262cb41fd5dd29987dcb5fe0e24472b9c84246d5"
   integrity sha512-hOpJqcJmj+3B2hgwvanhTx7Z9zoAMFekNx5CFZxOvpgNog+urzJ8T+5gjjSSM23/yVLjkizEGjUT4ih7FnY3MA==
   dependencies:
     "@nx/jest" "17.2.3"
-
-"@nrwl/js@17.2.1":
-  version "17.2.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/js/-/js-17.2.1.tgz#5125ec29d37c221c50fe5e94157d0c363e361de2"
-  integrity sha512-w5RcP6FR6aiQT2rTTf0tROSqI0HsSTBxWE84Nzswv+rqlrGyVlBwS4nobI1qOtbBO4rxX060GSU8LJbsgKmRLw==
-  dependencies:
-    "@nx/js" "17.2.1"
 
 "@nrwl/js@17.2.3":
   version "17.2.3"
@@ -2106,13 +2085,6 @@
   dependencies:
     "@nx/web" "17.2.3"
 
-"@nrwl/workspace@17.2.1":
-  version "17.2.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-17.2.1.tgz#65e675fa774f8b6b0c39c5f8757ac22203722f39"
-  integrity sha512-Ob8oN3KP9II5vBCN5bXyxMuBzTtHjSzzt/Mu36ccsI+w2mA86jjhuEQKDDTnjUSMC10Txu4S3+6K46/wHETm1A==
-  dependencies:
-    "@nx/workspace" "17.2.1"
-
 "@nrwl/workspace@17.2.3", "@nrwl/workspace@^17.2.3":
   version "17.2.3"
   resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-17.2.3.tgz#700a0ac2b12eb56ffdb5f2b9a3134fbf9be8c547"
@@ -2180,19 +2152,6 @@
     semver "7.5.3"
     tslib "^2.3.0"
 
-"@nx/devkit@17.2.1":
-  version "17.2.1"
-  resolved "https://registry.yarnpkg.com/@nx/devkit/-/devkit-17.2.1.tgz#c2278ab62981794dc110049946742fb7cd0c5994"
-  integrity sha512-od6APa+vnicu9lEJpxw8XvkOmuFRDqXN1EUn2RgngBt7aIwErnpAeNxRCXOgfavqRAzn9DOF+/SUrEdNSRSH/A==
-  dependencies:
-    "@nrwl/devkit" "17.2.1"
-    ejs "^3.1.7"
-    enquirer "~2.3.6"
-    ignore "^5.0.4"
-    semver "7.5.3"
-    tmp "~0.2.1"
-    tslib "^2.3.0"
-
 "@nx/devkit@17.2.3":
   version "17.2.3"
   resolved "https://registry.yarnpkg.com/@nx/devkit/-/devkit-17.2.3.tgz#d8de7e45d90bd1dfc1ae09a34dd052a0d9ac980f"
@@ -2222,17 +2181,6 @@
     semver "7.5.3"
     tslib "^2.3.0"
 
-"@nx/eslint@17.2.1":
-  version "17.2.1"
-  resolved "https://registry.yarnpkg.com/@nx/eslint/-/eslint-17.2.1.tgz#661eaa3c1645278991f1ed02586ec89a70aaeb6e"
-  integrity sha512-xK1b93WLsN6E+yTemyyMMe17Q5fPH0JkRm8ANuCffEsV3bpbqaEfm7hWalJNFb5DWJjHpb4QcaD5FWxNTmf7Eg==
-  dependencies:
-    "@nx/devkit" "17.2.1"
-    "@nx/js" "17.2.1"
-    "@nx/linter" "17.2.1"
-    tslib "^2.3.0"
-    typescript "~5.2.2"
-
 "@nx/eslint@17.2.3":
   version "17.2.3"
   resolved "https://registry.yarnpkg.com/@nx/eslint/-/eslint-17.2.3.tgz#a6ba1ef2ff511b1ce41ebb06ff6b64cdc1ded14e"
@@ -2254,25 +2202,6 @@
     "@nx/node" "17.2.3"
     tslib "^2.3.0"
 
-"@nx/jest@17.2.1":
-  version "17.2.1"
-  resolved "https://registry.yarnpkg.com/@nx/jest/-/jest-17.2.1.tgz#3ccacc1a2365fa72ff3456fde908626ba401f597"
-  integrity sha512-5otY16k7dmS73w8VFps+YsPu32SMEhL8eeyKAzHEQ8cAqrBzY4gHXEsHD5Hl26v3oSGSaeAP3W2ugqMhIiF2pw==
-  dependencies:
-    "@jest/reporters" "^29.4.1"
-    "@jest/test-result" "^29.4.1"
-    "@nrwl/jest" "17.2.1"
-    "@nx/devkit" "17.2.1"
-    "@nx/js" "17.2.1"
-    "@phenomnomnominal/tsquery" "~5.0.1"
-    chalk "^4.1.0"
-    identity-obj-proxy "3.0.0"
-    jest-config "^29.4.1"
-    jest-resolve "^29.4.1"
-    jest-util "^29.4.1"
-    resolve.exports "1.1.0"
-    tslib "^2.3.0"
-
 "@nx/jest@17.2.3":
   version "17.2.3"
   resolved "https://registry.yarnpkg.com/@nx/jest/-/jest-17.2.3.tgz#26507941070adcc46d7930d9fc0bf2a1b510125e"
@@ -2290,42 +2219,6 @@
     jest-resolve "^29.4.1"
     jest-util "^29.4.1"
     resolve.exports "1.1.0"
-    tslib "^2.3.0"
-
-"@nx/js@17.2.1":
-  version "17.2.1"
-  resolved "https://registry.yarnpkg.com/@nx/js/-/js-17.2.1.tgz#e7d6243bb899c32fd4d613d1eba4f33bc228f525"
-  integrity sha512-Hyg69wini8XDwESzbfdyzCuatyASt+dljNCICXIqmUFGOYAV41UT7/pigBe9+VQ+N333wLAUc1ChnCkOq6+qmQ==
-  dependencies:
-    "@babel/core" "^7.22.9"
-    "@babel/plugin-proposal-decorators" "^7.22.7"
-    "@babel/plugin-transform-class-properties" "^7.22.5"
-    "@babel/plugin-transform-runtime" "^7.22.9"
-    "@babel/preset-env" "^7.22.9"
-    "@babel/preset-typescript" "^7.22.5"
-    "@babel/runtime" "^7.22.6"
-    "@nrwl/js" "17.2.1"
-    "@nx/devkit" "17.2.1"
-    "@nx/workspace" "17.2.1"
-    "@phenomnomnominal/tsquery" "~5.0.1"
-    babel-plugin-const-enum "^1.0.1"
-    babel-plugin-macros "^2.8.0"
-    babel-plugin-transform-typescript-metadata "^0.3.1"
-    chalk "^4.1.0"
-    columnify "^1.6.0"
-    detect-port "^1.5.1"
-    fast-glob "3.2.7"
-    fs-extra "^11.1.0"
-    ignore "^5.0.4"
-    js-tokens "^4.0.0"
-    minimatch "3.0.5"
-    npm-package-arg "11.0.1"
-    npm-run-path "^4.0.1"
-    ora "5.3.0"
-    semver "7.5.3"
-    source-map-support "0.5.19"
-    ts-node "10.9.1"
-    tsconfig-paths "^4.1.2"
     tslib "^2.3.0"
 
 "@nx/js@17.2.3":
@@ -2363,13 +2256,6 @@
     ts-node "10.9.1"
     tsconfig-paths "^4.1.2"
     tslib "^2.3.0"
-
-"@nx/linter@17.2.1":
-  version "17.2.1"
-  resolved "https://registry.yarnpkg.com/@nx/linter/-/linter-17.2.1.tgz#12a5afc505815e865fc27646ab311be69f11b814"
-  integrity sha512-iZoji1ur9v6mWKldtrkukkOEtjeFKgqbgp6wt+wtlwVO7Vo7Y3o3aJKA2I4yDYOQQcfDC38NYyQeXSYvA7nYzg==
-  dependencies:
-    "@nx/eslint" "17.2.1"
 
 "@nx/linter@17.2.3":
   version "17.2.3"
@@ -2519,19 +2405,6 @@
     detect-port "^1.5.1"
     http-server "^14.1.0"
     tslib "^2.3.0"
-
-"@nx/workspace@17.2.1":
-  version "17.2.1"
-  resolved "https://registry.yarnpkg.com/@nx/workspace/-/workspace-17.2.1.tgz#f994e2a046a56979ecc1cc3708191c819aa6778d"
-  integrity sha512-Z/R7AP13NjzX0gUFxpFF8tj1NqCmQZ/4/34prH7J/34WX1FfrS2877bXeGIei/qJKG/UfVQpjJG8BLL718lDCg==
-  dependencies:
-    "@nrwl/workspace" "17.2.1"
-    "@nx/devkit" "17.2.1"
-    chalk "^4.1.0"
-    enquirer "~2.3.6"
-    nx "17.2.1"
-    tslib "^2.3.0"
-    yargs-parser "21.1.1"
 
 "@nx/workspace@17.2.3":
   version "17.2.3"
