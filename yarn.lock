@@ -2083,7 +2083,7 @@
   dependencies:
     nx "15.9.3"
 
-"@nrwl/tao@17.2.1", "@nrwl/tao@^17.2.1":
+"@nrwl/tao@17.2.1":
   version "17.2.1"
   resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-17.2.1.tgz#d001fbbf586c55f878ea8fc426bf97ba36179479"
   integrity sha512-u/r3w6gLxYfWjiyjFZ7RVWgcpF6GQOAK8h9mu8dqYmwiihdbsFxcA+Kac4bf+LJRXuNbJCGX2em2CMumvkkGBQ==
@@ -2091,7 +2091,7 @@
     nx "17.2.1"
     tslib "^2.3.0"
 
-"@nrwl/tao@17.2.3":
+"@nrwl/tao@17.2.3", "@nrwl/tao@^17.2.3":
   version "17.2.3"
   resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-17.2.3.tgz#734eeeeead720b74e1435c1b1311c849d73ddf19"
   integrity sha512-tbSgRw/Yda+5XAt2swhZv37f8YqWEa0Qn8lch+BhHZmRq4EamG1wUKNF+YjQH51RFODmaB/U0gU6ZBehNMe++A==
@@ -2221,17 +2221,6 @@
     jsonc-eslint-parser "^2.1.0"
     semver "7.5.3"
     tslib "^2.3.0"
-
-"@nx/eslint@17.2.1":
-  version "17.2.1"
-  resolved "https://registry.yarnpkg.com/@nx/eslint/-/eslint-17.2.1.tgz#661eaa3c1645278991f1ed02586ec89a70aaeb6e"
-  integrity sha512-xK1b93WLsN6E+yTemyyMMe17Q5fPH0JkRm8ANuCffEsV3bpbqaEfm7hWalJNFb5DWJjHpb4QcaD5FWxNTmf7Eg==
-  dependencies:
-    "@nx/devkit" "17.2.1"
-    "@nx/js" "17.2.1"
-    "@nx/linter" "17.2.1"
-    tslib "^2.3.0"
-    typescript "~5.2.2"
 
 "@nx/eslint@17.2.3":
   version "17.2.3"
@@ -2363,13 +2352,6 @@
     ts-node "10.9.1"
     tsconfig-paths "^4.1.2"
     tslib "^2.3.0"
-
-"@nx/linter@17.2.1":
-  version "17.2.1"
-  resolved "https://registry.yarnpkg.com/@nx/linter/-/linter-17.2.1.tgz#12a5afc505815e865fc27646ab311be69f11b814"
-  integrity sha512-iZoji1ur9v6mWKldtrkukkOEtjeFKgqbgp6wt+wtlwVO7Vo7Y3o3aJKA2I4yDYOQQcfDC38NYyQeXSYvA7nYzg==
-  dependencies:
-    "@nx/eslint" "17.2.1"
 
 "@nx/linter@17.2.3":
   version "17.2.3"
